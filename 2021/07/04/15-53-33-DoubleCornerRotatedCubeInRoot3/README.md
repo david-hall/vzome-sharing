@@ -8,7 +8,7 @@
 
 ### [Edit README.md][edit]
 
-Edit the automatically generated `README.md` to customize the github page featuring [DoubleCornerRotatedCubeInRoot3][github].
+Edit this automatically generated `README.md` to customize the github page featuring [DoubleCornerRotatedCubeInRoot3][github].
 
 ---
 
