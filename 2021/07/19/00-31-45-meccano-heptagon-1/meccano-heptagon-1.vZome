@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" coreVersion="7.0" field="polygon7">
+  <EditHistory editNumber="115" lastStickyEdit="96">
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0" index="0" len="0 2 1" symm="antiprism7"/>
+    <StrutCreation anchor="0 2 1 0 0 0 0 0 0" index="0" len="0 2 1" symm="antiprism7"/>
+    <StrutCreation anchor="0 4 2 0 0 0 0 0 0" index="0" len="0 2 1" symm="antiprism7"/>
+    <SelectManifestation point="0 2 1 0 0 0 0 0 0"/>
+    <ApplyTool deleteInputs="true" name="antiprism7 rotation.builtin/rotate around red through origin"/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0" index="0" len="0 2 1" symm="antiprism7"/>
+    <SelectManifestation point="0 2 1 0 0 0 0 0 0"/>
+    <JoinPoints closedLoop="false"/>
+    <StrutCreation anchor="0 6 3 0 0 0 0 0 0" dir="green" index="2" len="-1 2 0" symm="antiprism7"/>
+    <StrutCreation anchor="-1 6 2 2 -1 2 0 0 0" dir="green" index="2" len="-1 2 0" symm="antiprism7"/>
+    <StrutCreation anchor="-2 6 1 4 -2 4 0 0 0" dir="green" index="2" len="-1 2 0" symm="antiprism7"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-3 6 0 6 -3 6 0 0 0"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <ApplyTool name="antiprism7 axial symmetry.builtin/symmetry around red through origin" selectInputs="true"/>
+    <StrutCreation anchor="3 -6 0 0 6 3 0 0 0" dir="green" index="13" len="-1 2 0" symm="antiprism7"/>
+    <StrutCreation anchor="4 -6 1 -2 7 1 0 0 0" dir="green" index="13" len="-1 2 0" symm="antiprism7"/>
+    <StrutCreation anchor="5 -6 2 -4 8 -1 0 0 0" dir="green" index="13" len="-1 2 0" symm="antiprism7"/>
+    <StrutCreation anchor="6 -6 3 -6 9 -3 0 0 0" dir="green" index="7" len="-1 2 0" symm="antiprism7"/>
+    <StrutCreation anchor="4 -2 3 -4 6 -2 0 0 0" dir="green" index="7" len="-1 2 0" symm="antiprism7"/>
+    <StrutCreation anchor="2 2 3 -2 3 -1 0 0 0" dir="green" index="7" len="-1 2 0" symm="antiprism7"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-1 2 0 2 -1 2 0 0 0"/>
+    <SelectManifestation endSegment="0 2 1 0 0 0 0 0 0" startSegment="-1 2 0 2 -1 2 0 0 0"/>
+    <SelectManifestation endSegment="0 4 2 0 0 0 0 0 0" startSegment="0 2 1 0 0 0 0 0 0"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="6 -6 3 -6 9 -3 0 0 0"/>
+    <SelectManifestation point="-4 2 -4 2 -6 -1 0 0 0"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <BeginBlock/>
+    <SelectManifestation point="1 -2 -1/2 -2 3/2 -2 0 0 0"/>
+    <SelectManifestation point="-4 2 -4 2 -6 -1 0 0 0"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <BeginBlock/>
+    <SelectManifestation point="1 -2 -1/2 -2 3/2 -2 0 0 0"/>
+    <SelectManifestation point="6 -6 3 -6 9 -3 0 0 0"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <ApplyTool name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="-2 1 -2 1 -6 -2 0 0 0"/>
+    <SelectManifestation point="6 -6 3 -6 9 -3 0 0 0"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <BeginBlock/>
+    <SelectManifestation point="2 -5/2 1/2 -5/2 3/2 -5/2 0 0 0"/>
+    <SelectManifestation point="6 -6 3 -6 9 -3 0 0 0"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <BeginBlock/>
+    <SelectManifestation point="-2 1 -2 1 -6 -2 0 0 0"/>
+    <SelectManifestation point="2 -5/2 1/2 -5/2 3/2 -5/2 0 0 0"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <BeginBlock/>
+    <SelectManifestation point="-2 1 -2 1 -6 -2 0 0 0"/>
+    <SelectManifestation point="0 -3/4 -3/4 -3/4 -9/4 -9/4 0 0 0"/>
+    <SelectManifestation point="2 -5/2 1/2 -5/2 3/2 -5/2 0 0 0"/>
+    <SelectManifestation point="4 -17/4 7/4 -17/4 21/4 -11/4 0 0 0"/>
+    <SelectManifestation point="6 -6 3 -6 9 -3 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation point="-2 1 -2 1 -6 -2 0 0 0"/>
+    <SelectManifestation point="0 -3/4 -3/4 -3/4 -9/4 -9/4 0 0 0"/>
+    <SelectManifestation point="2 -5/2 1/2 -5/2 3/2 -5/2 0 0 0"/>
+    <SelectManifestation point="4 -17/4 7/4 -17/4 21/4 -11/4 0 0 0"/>
+    <SelectManifestation point="6 -6 3 -6 9 -3 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <SelectManifestation point="-4 2 -4 2 -6 -1 0 0 0"/>
+    <SelectManifestation point="-3/2 0 -9/4 0 -9/4 -3/2 0 0 0"/>
+    <SelectManifestation point="1 -2 -1/2 -2 3/2 -2 0 0 0"/>
+    <SelectManifestation point="7/2 -4 5/4 -4 21/4 -5/2 0 0 0"/>
+    <SelectManifestation point="6 -6 3 -6 9 -3 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <Branch>
+      <BeginBlock/>
+      <DeselectAll/>
+      <SelectManifestation endSegment="6 -6 3 -6 9 -3 0 0 0" startSegment="4 -17/4 7/4 -17/4 21/4 -11/4 0 0 0"/>
+      <SelectManifestation endSegment="4 -2 3 -4 6 -2 0 0 0" startSegment="6 -6 3 -6 9 -3 0 0 0"/>
+      <DeselectAll/>
+      <SelectManifestation point="6 -6 3 -6 9 -3 0 0 0"/>
+      <SelectNeighbors/>
+      <SelectNeighbors/>
+      <SelectNeighbors/>
+      <SelectNeighbors/>
+      <SelectNeighbors/>
+      <SelectNeighbors/>
+      <SelectNeighbors/>
+      <EndBlock/>
+      <BookmarkTool name="tool-0"/>
+    </Branch>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectAll/>
+    <EndBlock/>
+    <BookmarkTool name="tool-1"/>
+    <ApplyTool deleteInputs="true" name="antiprism7 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool deleteInputs="true" name="antiprism7 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool deleteInputs="true" name="antiprism7 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool deleteInputs="true" name="antiprism7 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool deleteInputs="true" name="antiprism7 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool name="tool-1" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="6 -6 3 -6 9 -3 0 0 0" startSegment="4 -17/4 7/4 -17/4 21/4 -11/4 0 0 0"/>
+    <SelectManifestation endSegment="4 -2 3 -4 6 -2 0 0 0" startSegment="6 -6 3 -6 9 -3 0 0 0"/>
+    <SelectManifestation endSegment="4 -2 3 -4 6 -2 0 0 0" startSegment="6 -6 3 -6 9 -3 0 0 0"/>
+    <SelectManifestation endSegment="-1 6 2 2 -1 2 0 0 0" startSegment="0 6 3 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="-1 6 2 2 -1 2 0 0 0" startSegment="0 6 3 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectAll/>
+    <EndBlock/>
+    <ApplyTool deleteInputs="true" name="scaling.builtin/scale up"/>
+    <ApplyTool deleteInputs="true" name="scaling.builtin/scale up"/>
+    <DeselectAll/>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="477.65057373046875" far="955.3009643554688" near="1.1941269636154175" parallel="false" stereoAngle="0.0" width="214.94284057617188">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="7.460303604602814E-4" y="0.9973147511482239" z="-0.07323181629180908"/>
+      <LookDirection x="0.02441667951643467" y="-0.07322816550731659" z="-0.9970161318778992"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="antiprism7" renderingStyle="thin antiprism">
+    <Direction color="0,141,54" name="green"/>
+    <Direction color="240,160,0" name="yellow"/>
+    <Direction color="175,0,0" name="red"/>
+    <Direction color="0,118,149" name="blue"/>
+    <Direction color="255,255,255" name="57" prototype="2 -5/4 1/2 -5/4 9/4 -3/4 0 0 0"/>
+    <Direction color="255,255,255" name="58" prototype="3/2 3 -3 9/2 -3/2 0 0 0 0"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="octahedral" renderingStyle="octahedra">
+      <Direction color="0,118,149" name="blue"/>
+      <Direction color="255,255,255" name="68" prototype="7/4 -1 1/4 -1 9/4 -3/4 0 0 0"/>
+      <Direction color="255,255,255" name="67" prototype="-5/4 9/4 -3/4 1 -9/4 3/4 0 0 0"/>
+      <Direction color="255,255,255" name="66" prototype="2 -5/4 1/2 -5/4 9/4 -3/4 0 0 0"/>
+      <Direction color="255,255,255" name="65" prototype="-1 0 0 1 -1 1 0 0 0"/>
+      <Direction color="0,141,54" name="green"/>
+      <Direction color="255,255,255" name="69" prototype="-1 2 -1 2 -2 0 0 0 0"/>
+      <Direction color="255,255,255" name="70" prototype="1 -2 1 -1 1 -1 0 0 0"/>
+      <Direction color="240,160,0" name="yellow"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool hidden="true" id="tool-0" label="bookmark 0" selectInputs="true"/>
+    <Tool id="tool-1" label="bookmark 1" selectInputs="true"/>
+  </Tools>
+</vzome:vZome>
