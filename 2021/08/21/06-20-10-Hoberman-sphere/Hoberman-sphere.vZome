@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="62" field="golden" version="7.0">
+  <EditHistory editNumber="118" lastStickyEdit="99">
+    <StrutCreation anchor="0 0 0 0 0 0" index="0" len="16 26"/>
+    <StrutCreation anchor="16 26 0 0 0 0" index="45" len="2 4"/>
+    <BeginBlock/>
+    <SelectManifestation point="14 22 0 0 0 0"/>
+    <SelectManifestation point="16 26 0 0 0 0"/>
+    <EndBlock/>
+    <ApplyTool name="icosahedral.builtin/icosahedral around origin" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="16 26 0 0 0 0"/>
+    <SelectManifestation point="13 21 5 8 -8 -13"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <BeginBlock/>
+    <SelectManifestation point="14 22 0 0 0 0"/>
+    <SelectManifestation point="11 18 4 7 -7 -11"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <BeginBlock/>
+    <SelectManifestation point="16 26 0 0 0 0"/>
+    <SelectManifestation point="29/2 47/2 5/2 4 -4 -13/2"/>
+    <SelectManifestation point="25/2 20 2 7/2 -7/2 -11/2"/>
+    <SelectManifestation point="14 22 0 0 0 0"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <BeginBlock/>
+    <SelectManifestation point="14 22 0 0 0 0"/>
+    <SelectManifestation point="16 26 0 0 0 0"/>
+    <SelectManifestation point="29/2 47/2 5/2 4 -4 -13/2"/>
+    <SelectManifestation point="25/2 20 2 7/2 -7/2 -11/2"/>
+    <SelectManifestation point="57/4 183/8 9/8 15/8 -15/8 -3"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false" joinMode="ALL_TO_LAST"/>
+    <BeginBlock/>
+    <SelectNeighbors/>
+    <DeselectAll/>
+    <SelectManifestation point="25/2 20 2 7/2 -7/2 -11/2"/>
+    <SelectManifestation point="13 21 5 8 -8 -13"/>
+    <SelectManifestation point="11 18 4 7 -7 -11"/>
+    <SelectManifestation point="29/2 47/2 5/2 4 -4 -13/2"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <BeginBlock/>
+    <SelectManifestation point="25/2 20 2 7/2 -7/2 -11/2"/>
+    <SelectManifestation point="29/2 47/2 5/2 4 -4 -13/2"/>
+    <SelectManifestation point="13 21 5 8 -8 -13"/>
+    <SelectManifestation point="11 18 4 7 -7 -11"/>
+    <SelectManifestation point="51/4 165/8 27/8 45/8 -45/8 -9"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false" joinMode="ALL_TO_LAST"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="16 26 0 0 0 0"/>
+    <SelectNeighbors/>
+    <SelectManifestation point="16 26 0 0 0 0"/>
+    <SelectManifestation endSegment="57/4 183/8 9/8 15/8 -15/8 -3" startSegment="16 26 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectAll/>
+    <ApplyTool name="icosahedral.builtin/icosahedral around origin" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectAll/>
+    <EndBlock/>
+    <ApplyTool deleteInputs="true" name="scaling.builtin/scale down"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <AdjustSelectionByOrbitLength length="1 1" orbit="55" panels="IGNORE" struts="SELECT" symmetry="icosahedral"/>
+    <EndBlock/>
+    <setItemColor blue="0" green="0" red="255"/>
+    <AdjustSelectionByOrbitLength length="1 2" orbit="56" panels="IGNORE" struts="SELECT" symmetry="icosahedral"/>
+    <setItemColor blue="0" green="255" red="0"/>
+    <AdjustSelectionByOrbitLength length="1 2" orbit="57" panels="IGNORE" struts="SELECT" symmetry="icosahedral"/>
+    <setItemColor blue="255" green="0" red="0"/>
+    <ApplyTool name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <Delete/>
+    <AdjustSelectionByClass balls="IGNORE" panels="IGNORE" struts="SELECT"/>
+    <BookmarkTool name="tool-0"/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="-5 -8 8 13 -3 -5"/>
+    <SelectManifestation point="-11/2 -9 5 15/2 -7/2 -11/2"/>
+    <SelectManifestation point="-8 -13 3 5 -5 -8"/>
+    <SelectManifestation point="-7 -11 3 4 -4 -7"/>
+    <SelectManifestation point="-13/2 -21/2 11/2 9 -4 -13/2"/>
+    <SelectManifestation point="5 15/2 7/2 11/2 -11/2 -9"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="-7 -11 3 4 -4 -7" startSegment="-8 -13 3 5 -5 -8"/>
+    <EndBlock/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="-27/4 -87/8 33/8 51/8 -33/8 -27/4"/>
+    <SelectManifestation point="-21/4 -69/8 51/8 81/8 -27/8 -21/4"/>
+    <EndBlock/>
+    <ApplyTool name="icosahedral.builtin/icosahedral around origin" selectInputs="true"/>
+    <BookmarkTool name="tool-1"/>
+    <Delete/>
+    <SelectManifestation endSegment="5 15/2 7/2 11/2 -11/2 -9" startSegment="-13/2 -21/2 11/2 9 -4 -13/2"/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="-13/2 -21/2 11/2 9 -4 -13/2"/>
+    <SelectManifestation point="-4 -7 7 11 -3 -4"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="-13/2 -21/2 11/2 9 -4 -13/2" startSegment="-7 -11 3 4 -4 -7"/>
+    <SelectManifestation endSegment="-4 -7 7 11 -3 -4" startSegment="-13/2 -21/2 11/2 9 -4 -13/2"/>
+    <EndBlock/>
+    <setItemColor blue="0" green="0" red="0"/>
+    <AdjustSelectionByClass balls="IGNORE" panels="IGNORE" struts="SELECT"/>
+    <ApplyTool name="icosahedral.builtin/icosahedral around origin" selectInputs="true"/>
+    <DeselectAll/>
+    <ApplyTool name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <Delete/>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="361.00054931640625" far="722.000732421875" near="0.9025012850761414" parallel="false" stereoAngle="0.0" width="162.4503173828125">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="-0.7504077553749084" y="0.35696324706077576" z="-0.5562974810600281"/>
+      <LookDirection x="-0.04633418843150139" y="-0.8679680824279785" z="-0.49445295333862305"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="icosahedral" renderingStyle="small dodecahedra">
+    <Direction color="0,141,54" name="green"/>
+    <Direction color="255,255,255" name="80" prototype="-15/2 11/2 -7/2 2 -1 1/2"/>
+    <Direction color="154,117,74" name="sand"/>
+    <Direction color="30,30,30" name="black"/>
+    <Direction color="255,51,143" name="rose"/>
+    <Direction color="18,205,148" name="turquoise"/>
+    <Direction color="255,255,255" name="57" prototype="5/8 -1/2 -1/2 -1/8 1/8 5/8"/>
+    <Direction color="255,255,255" name="79" prototype="1 -1/2 -5/2 5/2 -3/2 1"/>
+    <Direction color="255,255,255" name="56" prototype="5/8 -1 0 3/8 -3/8 -3/8"/>
+    <Direction color="108,0,198" name="purple"/>
+    <Direction color="220,76,0" name="orange"/>
+    <Direction color="107,53,26" name="brown"/>
+    <Direction color="255,255,255" name="55" prototype="1 -3/8 3/8 3/8 -3/8 -3/4"/>
+    <Direction color="255,255,255" name="54" prototype="-2 1/2 3/2 -1/2 1/2 -1"/>
+    <Direction color="0,118,149" name="blue"/>
+    <Direction color="18,73,48" name="spruce"/>
+    <Direction color="175,0,0" name="red"/>
+    <Direction color="255,126,106" name="coral"/>
+    <Direction color="117,0,50" name="maroon"/>
+    <Direction color="240,160,0" name="yellow"/>
+    <Direction color="230,245,62" name="sulfur"/>
+    <Direction color="116,195,0" name="apple"/>
+    <Direction color="136,37,0" name="cinnamon"/>
+    <Direction color="0,0,153" name="navy"/>
+    <Direction color="175,135,255" name="lavender"/>
+    <Direction color="100,113,0" name="olive"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="octahedral" renderingStyle="trapezoids">
+      <Direction color="18,205,148" name="turquoise"/>
+      <Direction color="0,118,149" name="blue"/>
+      <Direction color="255,255,255" name="68" prototype="-1/2 1/2 1/2 0 -1 -1/4"/>
+      <Direction color="175,135,255" name="lavender"/>
+      <Direction color="255,255,255" name="67" prototype="-1/2 -1/8 1/8 5/8 -5/8 1/2"/>
+      <Direction color="255,255,255" name="66" prototype="9/8 1/8 -1/8 0 0 -1/8"/>
+      <Direction color="255,255,255" name="65" prototype="0 -3/8 3/8 3/8 5/8 -1"/>
+      <Direction color="255,255,255" name="69" prototype="-1/2 1/2 1/2 0 0 3/4"/>
+      <Direction color="100,113,0" name="olive"/>
+      <Direction color="117,0,50" name="maroon"/>
+      <Direction color="255,255,255" name="64" prototype="-5/8 -1/8 -1/8 -1/2 1/2 -5/8"/>
+      <Direction color="108,0,198" name="purple"/>
+      <Direction color="30,30,30" name="black"/>
+      <Direction color="0,141,54" name="green"/>
+      <Direction color="240,160,0" name="yellow"/>
+      <Direction color="255,255,255" name="78" prototype="1/8 -5/4 1/2 -3/8 -3/8 1/8"/>
+      <Direction color="255,255,255" name="77" prototype="3/8 -5/8 -5/8 0 0 5/8"/>
+      <Direction color="255,255,255" name="76" prototype="-1/2 0 0 1/2 -5/4 -1/4"/>
+      <Direction color="255,255,255" name="71" prototype="7/8 3/8 -5/8 1/2 1/2 -1/8"/>
+      <Direction color="255,255,255" name="70" prototype="-7/8 1/8 -1/8 3/4 0 -7/8"/>
+      <Direction color="107,53,26" name="brown"/>
+      <Direction color="255,255,255" name="75" prototype="5/8 -7/8 -1/8 1/2 -1/2 -3/8"/>
+      <Direction color="255,255,255" name="74" prototype="1 -3/8 3/8 3/8 3/8 3/4"/>
+      <Direction color="175,0,0" name="red"/>
+      <Direction color="255,255,255" name="73" prototype="-7/8 -3/8 3/8 1/4 -1/2 7/8"/>
+      <Direction color="255,255,255" name="72" prototype="-1/8 7/8 1/8 0 1 -1/8"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool id="tool-0" label="half struts" selectInputs="true"/>
+    <Tool id="tool-1" label="cross junctions" selectInputs="true"/>
+  </Tools>
+</vzome:vZome>
