@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="62" field="polygon30" version="7.0">
+  <EditHistory editNumber="113" lastStickyEdit="10">
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" index="0" len="2 0 3 0 1 0 0 0" symm="antiprism30"/>
+    <SelectAll/>
+    <ApplyTool name="antiprism30 axial symmetry.builtin/symmetry around red through origin" selectInputs="true"/>
+    <AdjustSelectionByClass balls="DESELECT" panels="IGNORE" struts="IGNORE"/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="-2 0 -3 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <TranslationTool name="tool-0"/>
+    <BeginBlock/>
+    <SelectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <ConvexHull2d/>
+    <BeginBlock/>
+    <SelectManifestation point="-2 0 -3 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="-2 0 -3 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false" joinMode="ALL_TO_LAST"/>
+    <BeginBlock/>
+    <SelectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <ApplyTool deleteInputs="true" name="tool-0"/>
+    <ApplyTool name="tetrahedral.builtin/tetrahedral around origin" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectAll/>
+    <EndBlock/>
+    <MapToColor colorMapper="SystemColorMap" symmetry="antiprism30"/>
+    <BeginBlock/>
+    <AdjustSelectionByOrbitLength length="-2 0 -2 0 1 0 1 0" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="-2 0 -2 0 1 0 2 0" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="2 0 3 0 1 0 0 0" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="3 0 5 0 2 0 -1 0" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="0 0 1 0 2 0 2 0" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="-2 0 -1 0 3 0 3 0" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="1 0 3 0 3 0 1 0" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="4 0 6 0 2 0 0 0" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="-2 0 -2 0 1 0 1 0" orbit="blue" panels="IGNORE" struts="DESELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="-2 0 -2 0 1 0 1 0" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="-2 0 -2 0 1 0 1 0" orbit="blue" panels="IGNORE" struts="DESELECT" symmetry="antiprism30"/>
+    <EndBlock/>
+    <ApplyTool deleteInputs="true" name="scaling.builtin/scale up"/>
+    <ShowVertices/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="3 0 7/2 0 -1/2 0 -3/2 0 0 0 0 0 0 1/2 0 1/2 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="3 0 7/2 0 -1/2 0 -3/2 0 0 0 0 0 0 -1/2 0 -1/2 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <SelectManifestation point="1/2 0 1/2 0 0 0 1/2 0 0 3/2 0 3/2 0 1/2 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="1/2 0 1/2 0 0 0 1/2 0 0 -3/2 0 -3/2 0 -1/2 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <SelectManifestation point="3 0 4 0 1/2 0 -1 0 0 -1/2 0 1 0 3/2 0 1/2 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="3 0 4 0 1/2 0 -1 0 0 1/2 0 -1 0 -3/2 0 -1/2 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <SelectManifestation point="1 0 2 0 3/2 0 1/2 0 0 5/2 0 2 0 1/2 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="1 0 2 0 3/2 0 1/2 0 0 -5/2 0 -2 0 -1/2 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <SelectManifestation point="3 0 9/2 0 3/2 0 0 0 0 -1 0 0 0 3/2 0 1 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="3 0 9/2 0 3/2 0 0 0 0 1 0 0 0 -3/2 0 -1 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <SelectManifestation point="2 0 7/2 0 2 0 1 0 0 5/2 0 2 0 0 0 -1/2 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="2 0 7/2 0 2 0 1 0 0 -5/2 0 -2 0 0 0 1/2 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <SelectManifestation point="5/2 0 9/2 0 5/2 0 1/2 0 0 -2 0 -1/2 0 1 0 1/2 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="5/2 0 9/2 0 5/2 0 1/2 0 0 2 0 1/2 0 -1 0 -1/2 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <AdjustSelectionByOrbitLength length="2 0 3 0 1 0 0 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="-1 0 0 0 2 0 1 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="-1 0 -1 0 1 0 2 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="1 0 2 0 1 0 0 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="0 0 0 0 0 0 1 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="-2 0 -2 0 1 0 1 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="2 0 3 0 1 0 -1 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <EndBlock/>
+    <CentralSymmetry>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </CentralSymmetry>
+    <BeginBlock/>
+    <DeselectAll/>
+    <AdjustSelectionByOrbitLength length="-2 0 -2 0 1 0 1 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="0 0 0 0 0 0 1 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="2 0 3 0 1 0 -1 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="1 0 2 0 1 0 0 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="-1 0 -1 0 1 0 2 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="-1 0 0 0 2 0 1 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <AdjustSelectionByOrbitLength length="2 0 3 0 1 0 0 0" orbit="green" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <EndBlock/>
+    <ApplyTool name="tetrahedral.builtin/tetrahedral around origin" selectInputs="true"/>
+    <MapToColor colorMapper="SystemColorMap" symmetry="antiprism30"/>
+    <ApplyTool name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <DeselectAll/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" dir="yellow" index="0" len="0 2 0 1 0 0 0 0" symm="octahedral"/>
+    <BeginBlock/>
+    <AdjustSelectionByOrbitLength length="0 2 0 1 0 0 0 0" orbit="yellow" panels="IGNORE" struts="SELECT" symmetry="octahedral"/>
+    <DeselectAll/>
+    <EndBlock/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 2 0 1 0 0 0 0 0 2 0 1 0 0 0 0"/>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="415.24951171875" far="830.4981689453125" near="1.0381240844726562" parallel="true" stereoAngle="0.0" width="186.8623809814453">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="-0.40824830532073975" y="0.8164966106414795" z="-0.40824830532073975"/>
+      <LookDirection x="-0.5773502588272095" y="-0.5773502588272095" z="-0.5773502588272095"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="antiprism30" renderingStyle="thin antiprism">
+    <Direction color="175,0,0" name="red"/>
+    <Direction color="255,255,255" name="86" prototype="0 1/2 0 -1/2 0 0 0 0 0 0 0 0 0 0 0 0 -1/2 0 0 0 1/2 0 -1/2 0"/>
+    <Direction color="255,255,255" name="87" prototype="0 -1/2 0 -1 0 -1/2 0 1 0 0 0 0 0 0 0 0 1 0 0 0 -1/2 0 1/2 0"/>
+    <Direction color="255,255,255" name="84" prototype="1 0 1 0 -1/2 0 -1/2 0 0 0 0 0 0 0 0 0 0 -3/2 0 0 0 1/2 0 0"/>
+    <Direction color="255,255,255" name="85" prototype="0 0 0 0 0 0 0 0 -3/2 0 0 0 -1/2 0 1/2 0 0 -1/2 0 1/2 0 0 0 0"/>
+    <Direction color="255,255,255" name="88" prototype="0 0 0 0 0 0 0 0 1 0 -1/2 0 1 0 -1/2 0 0 -1/2 0 0 0 0 0 0"/>
+    <Direction color="255,255,255" name="89" prototype="0 1/2 0 -1/2 0 -1/2 0 1/2 0 0 0 0 0 0 0 0 -1/2 0 -1/2 0 0 0 0 0"/>
+    <Direction color="0,141,54" name="green"/>
+    <Direction color="255,255,255" name="90" prototype="0 0 0 -1/2 0 0 0 1/2 0 0 0 0 0 0 0 0 3/2 0 3/2 0 -1/2 0 -1/2 0"/>
+    <Direction color="255,255,255" name="71" prototype="0 0 0 0 0 0 0 0 0 -3/2 0 -1 0 1/2 0 1/2 1 0 1 0 -1/2 0 0 0"/>
+    <Direction color="255,255,255" name="93" prototype="0 0 0 0 0 0 0 0 -3/2 0 -3/2 0 1/2 0 1/2 0 0 0 0 1/2 0 0 0 -1/2"/>
+    <Direction color="255,255,255" name="72" prototype="0 0 0 0 0 0 0 0 0 3/2 0 3/2 0 -1/2 0 -1 -1/2 0 -1/2 0 0 0 1/2 0"/>
+    <Direction color="255,255,255" name="94" prototype="0 0 0 0 0 0 0 0 1 0 0 0 -1/2 0 1/2 0 0 1/2 0 1 0 1/2 0 -1"/>
+    <Direction color="255,255,255" name="91" prototype="0 1/2 0 -1/2 0 0 0 0 0 0 0 0 0 0 0 0 -3/2 0 0 0 -1/2 0 1/2 0"/>
+    <Direction color="255,255,255" name="70" prototype="0 0 1/2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1/2 0 -1 0 0 0 1/2"/>
+    <Direction color="255,255,255" name="92" prototype="0 0 0 0 0 0 0 0 0 -1/2 0 1 0 0 0 -1/2 0 0 -1/2 0 0 0 0 0"/>
+    <Direction color="240,160,0" name="yellow"/>
+    <Direction color="255,255,255" name="186" prototype="1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0"/>
+    <Direction color="255,255,255" name="75" prototype="0 0 0 0 0 0 0 0 0 -1 0 0 0 1/2 0 0 1 0 3/2 0 1/2 0 -1 0"/>
+    <Direction color="255,255,255" name="97" prototype="0 0 0 -1/2 0 1/2 0 0 0 0 0 0 0 0 0 0 -3/2 0 0 0 0 0 0 0"/>
+    <Direction color="255,255,255" name="76" prototype="0 0 0 0 0 0 0 0 -3/2 0 0 0 0 0 0 0 0 0 0 -1/2 0 1/2 0 0"/>
+    <Direction color="255,255,255" name="73" prototype="0 0 0 0 0 0 0 0 -1/2 0 -1/2 0 0 0 0 0 0 1/2 0 -1/2 0 -1/2 0 1/2"/>
+    <Direction color="255,255,255" name="95" prototype="1 0 3/2 0 1/2 0 -1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 -1/2 0 0"/>
+    <Direction color="255,255,255" name="74" prototype="0 0 0 0 0 -1/2 0 1/2 0 0 0 0 0 0 0 0 1 0 1/2 0 1/2 0 -1/2 0"/>
+    <Direction color="255,255,255" name="96" prototype="0 -1/2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 1/2 0 -1 0 1/2 0"/>
+    <Direction color="255,255,255" name="79" prototype="-1 0 -1 0 1/2 0 0 0 0 0 0 0 0 0 0 0 0 -3/2 0 -1 0 1/2 0 1/2"/>
+    <Direction color="255,255,255" name="77" prototype="0 0 0 0 0 0 0 0 0 -2 0 -1 0 1/2 0 1/2 0 0 1/2 0 1/2 0 -1/2 0"/>
+    <Direction color="255,255,255" name="78" prototype="1/2 0 1/2 0 0 0 -1/2 0 0 0 0 0 0 0 0 0 0 -3/2 0 -3/2 0 1/2 0 1"/>
+    <Direction color="0,118,149" name="blue"/>
+    <Direction color="255,255,255" name="82" prototype="0 0 0 0 0 0 0 0 1 0 -1/2 0 1/2 0 0 0 0 0 0 -1 0 -1/2 0 1"/>
+    <Direction color="255,255,255" name="83" prototype="0 0 0 0 0 0 0 0 0 -3/2 0 0 0 1/2 0 0 1 0 1 0 -1/2 0 -1/2 0"/>
+    <Direction color="255,255,255" name="80" prototype="3/2 0 3/2 0 -1/2 0 -1/2 0 0 0 0 0 0 0 0 0 0 0 0 -1/2 0 0 0 1/2"/>
+    <Direction color="255,255,255" name="81" prototype="0 0 0 0 0 0 0 0 -1/2 0 0 0 1/2 0 -1/2 0 0 -1/2 0 1/2 0 0 0 0"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="octahedral" renderingStyle="octahedra">
+      <Direction color="0,118,149" name="blue"/>
+      <Direction color="255,255,255" name="68" prototype="0 -3/2 0 0 0 1/2 0 0 -1 0 -1 0 1/2 0 1/2 0 0 0 0 0 0 0 0 0"/>
+      <Direction color="255,255,255" name="67" prototype="-1 0 1/2 0 -1 0 1/2 0 0 1/2 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+      <Direction color="255,255,255" name="66" prototype="-1 0 1/2 0 -1/2 0 0 0 0 0 0 1 0 1/2 0 -1 0 0 0 0 0 0 0 0"/>
+      <Direction color="255,255,255" name="65" prototype="-1 0 0 0 1/2 0 -1/2 0 0 1/2 0 1 0 1/2 0 -1 0 0 0 0 0 0 0 0"/>
+      <Direction color="0,141,54" name="green"/>
+      <Direction color="255,255,255" name="69" prototype="-3/2 0 0 0 -1/2 0 1/2 0 0 -1/2 0 1/2 0 0 0 0 0 0 0 0 0 0 0 0"/>
+      <Direction color="240,160,0" name="yellow"/>
+      <Direction color="255,255,255" name="64" prototype="-3/2 0 0 0 0 0 0 0 0 0 0 1/2 0 -1/2 0 0 0 0 0 0 0 0 0 0"/>
+      <Direction color="255,255,255" name="63" prototype="-1 0 -1/2 0 -1/2 0 1/2 0 0 0 0 0 0 1/2 0 -1/2 0 0 0 0 0 0 0 0"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool deleteInputs="true" id="tool-0" label="translation 0"/>
+  </Tools>
+</vzome:vZome>
