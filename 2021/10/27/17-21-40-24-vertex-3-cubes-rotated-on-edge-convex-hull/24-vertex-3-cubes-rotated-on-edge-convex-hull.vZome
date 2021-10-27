@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="64" field="polygon12" version="7.0">
+  <EditHistory editNumber="43" lastStickyEdit="15">
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0" index="0" len="0 2 0 1" symm="antiprism12"/>
+    <StrutCreation anchor="0 2 0 1 0 0 0 0 0 0 0 0" index="3" len="2 0 3 0" symm="antiprism12"/>
+    <StrutCreation anchor="0 2 0 1 0 0 0 0 0 0 0 0" index="4" len="2 0 3 0" symm="octahedral"/>
+    <StrutCreation anchor="0 2 0 1 0 0 0 0 0 0 0 0" index="7" len="2 0 3 0" symm="octahedral"/>
+    <StrutCreation anchor="0 2 0 1 0 0 0 0 0 0 0 0" index="6" len="2 0 3 0" symm="octahedral"/>
+    <BeginBlock/>
+    <AdjustSelectionByClass balls="IGNORE" panels="IGNORE" struts="SELECT"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectAll/>
+    <CentralSymmetry>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </CentralSymmetry>
+    <SelectAll/>
+    <ConvexHull3d mode=""/>
+    <BookmarkTool name="tool-0"/>
+    <setItemColor blue="0" green="0" red="255"/>
+    <SelectAll/>
+    <ApplyTool deleteInputs="true" name="antiprism12 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool deleteInputs="true" name="antiprism12 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool deleteInputs="true" name="antiprism12 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool deleteInputs="true" name="antiprism12 rotation.builtin/rotate around red through origin"/>
+    <DeselectAll/>
+    <ApplyTool name="tool-0" selectInputs="true"/>
+    <setItemColor blue="0" green="255" red="0"/>
+    <SelectAll/>
+    <ApplyTool deleteInputs="true" name="antiprism12 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool deleteInputs="true" name="antiprism12 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool deleteInputs="true" name="antiprism12 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool deleteInputs="true" name="antiprism12 rotation.builtin/rotate around red through origin"/>
+    <DeselectAll/>
+    <ApplyTool name="tool-0" selectInputs="true"/>
+    <setItemColor blue="255" green="0" red="0"/>
+    <ApplyTool name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectAll/>
+    <AdjustSelectionByClass balls="IGNORE" panels="DESELECT" struts="IGNORE"/>
+    <EndBlock/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <SelectAll/>
+    <ConvexHull3d mode="onlyPanels"/>
+    <InvertSelection/>
+    <Hide/>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="130.1749725341797" far="260.349609375" near="0.3254375457763672" parallel="false" stereoAngle="0.0" width="58.57870864868164">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.0" y="1.0" z="0.0"/>
+      <LookDirection x="0.0" y="0.0" z="-1.0"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="octahedral" renderingStyle="octahedra">
+    <Direction color="0,118,149" name="blue"/>
+    <Direction color="0,141,54" name="green"/>
+    <Direction color="255,255,255" name="215" prototype="0 0 0 0 0 -1 0 1 0 1/2 0 -1/2"/>
+    <Direction color="255,255,255" name="214" prototype="2 -3 2 -1 0 0 0 0 3/2 -2 3 -2"/>
+    <Direction color="240,160,0" name="yellow"/>
+    <Direction color="255,255,255" name="169" prototype="-1 0 0 0 -1 0 1 0 0 0 0 0"/>
+    <Direction color="255,255,255" name="213" prototype="2 -6 -1/2 3 1 -3 -1/2 2 -1 3 1/2 -2"/>
+    <Direction color="255,255,255" name="168" prototype="0 9 0 -5 0 5 0 -3 0 -10 0 6"/>
+    <Direction color="255,255,255" name="212" prototype="1 -3/2 1 -1/2 -1 3/2 -2 3/2 3/2 -2 3 -2"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="antiprism12" renderingStyle="thin antiprism">
+      <Direction color="0,118,149" name="blue"/>
+      <Direction color="240,160,0" name="yellow"/>
+      <Direction color="255,255,255" name="167" prototype="0 0 0 0 0 1 0 -1 0 1 0 -1"/>
+      <Direction color="0,141,54" name="green"/>
+      <Direction color="175,0,0" name="red"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool id="tool-0" label="cube" selectInputs="true"/>
+  </Tools>
+</vzome:vZome>
