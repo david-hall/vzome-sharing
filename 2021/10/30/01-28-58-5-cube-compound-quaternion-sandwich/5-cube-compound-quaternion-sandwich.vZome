@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="DEV" field="golden" version="7.0">
+  <EditHistory editNumber="67" lastStickyEdit="-1">
+    <StrutCreation anchor="0 0 0 0 0 0" dir="brown" index="0" len="1 2" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="brown" index="8" len="1 2" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="brown" index="4" len="1 2" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="brown" index="12" len="1 2" symm="octahedral"/>
+    <SelectManifestation endSegment="1 1 2 2 1 1" startSegment="0 0 0 0 0 0"/>
+    <LoadVEF leftQuaternion="0 0 -1 1 -2 2 -1 1" projection="Quaternion" quaternion="0 0 1 -1 2 -2 1 -1" scale="1 0">vZome VEF 6 field rational
+
+8
+0	-1	-1	-1
+0	-1	-1	 1
+0	-1	 1	-1
+0	-1	 1	 1
+0	 1	-1	-1
+0	 1	-1	 1
+0	 1	 1	-1
+0	 1	 1	 1
+
+
+12
+0	1
+0	2
+0	4
+1	3
+1	5
+2	3
+2	6
+3	7
+4	5
+4	6
+5	7
+6	7
+
+
+6
+4  0 1 3 2 
+4  0 4 5 1 
+4  5 7 3 1 
+4  6 2 3 7 
+4  6 4 0 2 
+4  6 7 5 4 
+</LoadVEF>
+    <SelectManifestation point="1 1 2 2 1 1"/>
+    <Delete/>
+    <SelectManifestation endSegment="1 1 1 1 2 2" startSegment="0 0 0 0 0 0"/>
+    <LoadVEF leftQuaternion="0 0 -1 1 -1 1 -2 2" projection="Quaternion" quaternion="0 0 1 -1 1 -1 2 -2" scale="1 0">vZome VEF 6 field rational
+
+8
+0	-1	-1	-1
+0	-1	-1	 1
+0	-1	 1	-1
+0	-1	 1	 1
+0	 1	-1	-1
+0	 1	-1	 1
+0	 1	 1	-1
+0	 1	 1	 1
+
+
+12
+0	1
+0	2
+0	4
+1	3
+1	5
+2	3
+2	6
+3	7
+4	5
+4	6
+5	7
+6	7
+
+
+6
+4  0 1 3 2 
+4  0 4 5 1 
+4  5 7 3 1 
+4  6 2 3 7 
+4  6 4 0 2 
+4  6 7 5 4 
+</LoadVEF>
+    <SelectManifestation point="1 1 1 1 2 2"/>
+    <Delete/>
+    <SelectManifestation endSegment="2 2 1 1 1 1" startSegment="0 0 0 0 0 0"/>
+    <LoadVEF leftQuaternion="0 0 -2 2 -1 1 -1 1" projection="Quaternion" quaternion="0 0 2 -2 1 -1 1 -1" scale="1 0">vZome VEF 6 field rational
+
+8
+0	-1	-1	-1
+0	-1	-1	 1
+0	-1	 1	-1
+0	-1	 1	 1
+0	 1	-1	-1
+0	 1	-1	 1
+0	 1	 1	-1
+0	 1	 1	 1
+
+
+12
+0	1
+0	2
+0	4
+1	3
+1	5
+2	3
+2	6
+3	7
+4	5
+4	6
+5	7
+6	7
+
+
+6
+4  0 1 3 2 
+4  0 4 5 1 
+4  5 7 3 1 
+4  6 2 3 7 
+4  6 4 0 2 
+4  6 7 5 4 
+</LoadVEF>
+    <SelectManifestation point="2 2 1 1 1 1"/>
+    <Delete/>
+    <SelectManifestation endSegment="-1 -1 -1 -1 2 2" startSegment="0 0 0 0 0 0"/>
+    <LoadVEF leftQuaternion="0 0 1 -1 1 -1 -2 2" projection="Quaternion" quaternion="0 0 -1 1 -1 1 2 -2" scale="1 0">vZome VEF 6 field rational
+
+8
+0	-1	-1	-1
+0	-1	-1	 1
+0	-1	 1	-1
+0	-1	 1	 1
+0	 1	-1	-1
+0	 1	-1	 1
+0	 1	 1	-1
+0	 1	 1	 1
+
+
+12
+0	1
+0	2
+0	4
+1	3
+1	5
+2	3
+2	6
+3	7
+4	5
+4	6
+5	7
+6	7
+
+
+6
+4  0 1 3 2 
+4  0 4 5 1 
+4  5 7 3 1 
+4  6 2 3 7 
+4  6 4 0 2 
+4  6 7 5 4 
+</LoadVEF>
+    <SelectManifestation point="-1 -1 -1 -1 2 2"/>
+    <Delete/>
+    <SelectAll/>
+    <ApplyTool deleteInputs="true" name="scaling.builtin/scale up"/>
+    <ApplyTool deleteInputs="true" name="scaling.builtin/scale up"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-6 0 6 0 6 0"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <setItemColor blue="0" green="0" red="255"/>
+    <BeginBlock/>
+    <SelectManifestation point="-2 0 2 0 10 0"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <setItemColor blue="0" green="255" red="0"/>
+    <BeginBlock/>
+    <SelectManifestation point="2 0 2 0 10 0"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <setItemColor blue="255" green="0" red="0"/>
+    <BeginBlock/>
+    <SelectManifestation point="-2 0 -2 0 10 0"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <setItemColor blue="0" green="255" red="255"/>
+    <LoadVEF leftQuaternion="1 0 0 0 0 0 0 0" projection="Quaternion" quaternion="1 0 0 0 0 0 0 0" scale="6 0">vZome VEF 6 field rational
+
+8
+0	-1	-1	-1
+0	-1	-1	 1
+0	-1	 1	-1
+0	-1	 1	 1
+0	 1	-1	-1
+0	 1	-1	 1
+0	 1	 1	-1
+0	 1	 1	 1
+
+
+12
+0	1
+0	2
+0	4
+1	3
+1	5
+2	3
+2	6
+3	7
+4	5
+4	6
+5	7
+6	7
+
+
+6
+4  0 1 3 2 
+4  0 4 5 1 
+4  5 7 3 1 
+4  6 2 3 7 
+4  6 4 0 2 
+4  6 7 5 4 
+</LoadVEF>
+    <ApplyTool name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <Delete/>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="115.454833984375" far="230.90956115722656" near="0.2886371612548828" parallel="false" stereoAngle="0.0" width="51.95468521118164">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.0" y="1.0" z="0.0"/>
+      <LookDirection x="0.0" y="0.0" z="-1.0"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="octahedral" renderingStyle="trapezoids">
+    <Direction color="0,118,149" name="blue"/>
+    <Direction color="175,135,255" name="lavender"/>
+    <Direction color="18,205,148" name="turquoise"/>
+    <Direction color="255,255,255" name="67" prototype="-2200 1360 -4400 2720 4400 -2720"/>
+    <Direction color="30,30,30" name="black"/>
+    <Direction color="0,141,54" name="green"/>
+    <Direction color="100,113,0" name="olive"/>
+    <Direction color="117,0,50" name="maroon"/>
+    <Direction color="107,53,26" name="brown"/>
+    <Direction color="240,160,0" name="yellow"/>
+    <Direction color="175,0,0" name="red"/>
+    <Direction color="108,0,198" name="purple"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="icosahedral" renderingStyle="solid connectors">
+      <Direction color="0,118,149" name="blue"/>
+      <Direction color="0,141,54" name="green"/>
+      <Direction color="154,117,74" name="sand"/>
+      <Direction color="18,73,48" name="spruce"/>
+      <Direction color="175,0,0" name="red"/>
+      <Direction color="255,126,106" name="coral"/>
+      <Direction color="30,30,30" name="black"/>
+      <Direction color="117,0,50" name="maroon"/>
+      <Direction color="230,245,62" name="sulfur"/>
+      <Direction color="240,160,0" name="yellow"/>
+      <Direction color="255,51,143" name="rose"/>
+      <Direction color="18,205,148" name="turquoise"/>
+      <Direction color="116,195,0" name="apple"/>
+      <Direction color="136,37,0" name="cinnamon"/>
+      <Direction color="255,255,255" name="68" prototype="-40 24 40 -24 20 -12"/>
+      <Direction color="108,0,198" name="purple"/>
+      <Direction color="220,76,0" name="orange"/>
+      <Direction color="0,0,153" name="navy"/>
+      <Direction color="107,53,26" name="brown"/>
+      <Direction color="175,135,255" name="lavender"/>
+      <Direction color="100,113,0" name="olive"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools/>
+</vzome:vZome>
