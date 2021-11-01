@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="64" field="polygon14" version="7.0">
+  <EditHistory editNumber="7" lastStickyEdit="-1">
+    <ImportColoredMeshJson scale="1 0 0 0 0 0">{
+  "field" : "polygon14",
+  "vertices" : [ [ [ 0, -5, 0, -4, 0, -1, 1 ], [ 0, 0, 0, 0, 0, 0, 1 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -4, 0, -6, 0, -5, 2 ], [ -7, 0, 14, 0, -14, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -4, 0, -6, 0, -5, 2 ], [ 7, 0, -14, 0, 14, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -13, 0, -9, 0, -4, 4 ], [ 0, 0, 21, 0, -7, 0, 4 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, 4, 0, -1, 0, -9, 2 ], [ -7, 0, 7, 0, -14, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, 4, 0, -1, 0, -9, 2 ], [ 7, 0, -7, 0, 14, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -27, 0, -16, 0, 10, 4 ], [ 0, 0, 14, 0, -7, 0, 4 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -5, 0, -4, 0, -1, 2 ], [ -7, 0, 28, 0, -21, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -10, 0, -8, 0, 5, 2 ], [ -7, 0, 14, 0, -14, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, 12, 0, 4, 0, -13, 2 ], [ -7, 0, 14, 0, -14, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, 3, 0, 1, 0, -5, 2 ], [ -7, 0, -7, 0, -7, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, 3, 0, 1, 0, -5, 2 ], [ 7, 0, 7, 0, 7, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -2, 0, -3, 0, 1, 2 ], [ -7, 0, 7, 0, -14, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -13, 0, -9, 0, 10, 4 ], [ 14, 0, -7, 0, 21, 0, 4 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, 0, 0, 0, 0, 0, 1 ], [ 0, 0, 0, 0, 0, 0, 1 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -9, 0, -3, 0, 8, 2 ], [ 0, 0, -21, 0, 7, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -3, 0, -1, 0, 5, 2 ], [ -7, 0, -7, 0, -7, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -3, 0, -1, 0, 5, 2 ], [ 7, 0, 7, 0, 7, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, 15, 0, 12, 0, -4, 4 ], [ 14, 0, -42, 0, 35, 0, 4 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, 1, 0, 5, 0, 10, 4 ], [ 14, 0, -7, 0, 21, 0, 4 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -4, 0, 1, 0, 9, 2 ], [ -7, 0, 7, 0, -14, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -4, 0, 1, 0, 9, 2 ], [ 7, 0, -7, 0, 14, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, -9, 0, -3, 0, 15, 2 ], [ -7, 0, -7, 0, -7, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, 4, 0, 6, 0, 5, 2 ], [ -7, 0, 14, 0, -14, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, 4, 0, 6, 0, 5, 2 ], [ 7, 0, -14, 0, 14, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 0, 5, 0, 4, 0, 1, 1 ], [ 0, 0, 0, 0, 0, 0, 1 ], [ 0, 0, 0, 0, 0, 0, 1 ] ], [ [ 14, -3, -42, -1, 42, 5, 2 ], [ -7, 0, -7, 0, -7, 0, 2 ], [ 0, 0, 0, 0, 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 25,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 24,
+    "color" : "#00FF00"
+  }, {
+    "vertex" : 21,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 11,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 5,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 2,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 0,
+    "color" : "#0000FF"
+  }, {
+    "vertex" : 1,
+    "color" : "#0000FF"
+  }, {
+    "vertex" : 4,
+    "color" : "#00FF00"
+  }, {
+    "vertex" : 10,
+    "color" : "#FFFF00"
+  }, {
+    "vertex" : 16,
+    "color" : "#FF0000"
+  }, {
+    "vertex" : 20,
+    "color" : "#FFFF00"
+  }, {
+    "vertex" : 23,
+    "color" : "#FFFF00"
+  }, {
+    "vertex" : 17,
+    "color" : "#FF0000"
+  }, {
+    "vertex" : 26,
+    "color" : "#FFFF00"
+  }, {
+    "vertex" : 14,
+    "color" : "#FFFFFF"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 11, 16 ],
+    "color" : "#FF0000"
+  }, {
+    "vertices" : [ 16, 10 ],
+    "color" : "#FFFF00"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#FFFF00"
+  }, {
+    "vertices" : [ 20, 4 ],
+    "color" : "#FFFF00"
+  }, {
+    "vertices" : [ 4, 21 ],
+    "color" : "#00FF00"
+  }, {
+    "vertices" : [ 21, 20 ],
+    "color" : "#FFFF00"
+  }, {
+    "vertices" : [ 1, 23 ],
+    "color" : "#FFFF00"
+  }, {
+    "vertices" : [ 23, 24 ],
+    "color" : "#FFFF00"
+  }, {
+    "vertices" : [ 24, 1 ],
+    "color" : "#0000FF"
+  }, {
+    "vertices" : [ 16, 26 ],
+    "color" : "#FFFF00"
+  } ],
+  "panels" : [ {
+    "vertices" : [ 1, 8, 7 ],
+    "color" : "#0000FF"
+  }, {
+    "vertices" : [ 4, 12, 9 ],
+    "color" : "#00FF00"
+  }, {
+    "vertices" : [ 16, 22, 15 ],
+    "color" : "#FF0000"
+  }, {
+    "vertices" : [ 18, 19, 13, 3, 6 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 18, 24, 19 ],
+    "color" : "#00FF00"
+  }, {
+    "vertices" : [ 13, 19, 17 ],
+    "color" : "#FF0000"
+  }, {
+    "vertices" : [ 3, 0, 6 ],
+    "color" : "#0000FF"
+  } ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectManifestation>
+      <polygonVertex at="0 15/4 0 3 0 -1 7/2 0 -21/2 0 35/4 0 0 0 0 0 0 0"/>
+      <polygonVertex at="0 1/4 0 5/4 0 5/2 7/2 0 -7/4 0 21/4 0 0 0 0 0 0 0"/>
+      <polygonVertex at="0 -13/4 0 -9/4 0 5/2 7/2 0 -7/4 0 21/4 0 0 0 0 0 0 0"/>
+      <polygonVertex at="0 -13/4 0 -9/4 0 -1 0 0 21/4 0 -7/4 0 0 0 0 0 0 0"/>
+      <polygonVertex at="0 -27/4 0 -4 0 5/2 0 0 7/2 0 -7/4 0 0 0 0 0 0 0"/>
+    </SelectManifestation>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="256.949462890625" far="513.8987426757812" near="0.6423735618591309" parallel="true" stereoAngle="0.0" width="115.62724304199219">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.0" y="1.0" z="0.0"/>
+      <LookDirection x="0.0" y="0.0" z="-1.0"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="antiprism14" renderingStyle="thin antiprism">
+    <Direction color="0,141,54" name="green"/>
+    <Direction color="240,160,0" name="yellow"/>
+    <Direction color="175,0,0" name="red"/>
+    <Direction color="0,118,149" name="blue"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="octahedral" renderingStyle="octahedra">
+      <Direction color="0,118,149" name="blue"/>
+      <Direction color="0,141,54" name="green"/>
+      <Direction color="240,160,0" name="yellow"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools/>
+</vzome:vZome>
