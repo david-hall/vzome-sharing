@@ -3,7 +3,9 @@ title: JackPike Col pan dual DoD twins of twins hull cubes minus some half space
 image: https://david-hall.github.io/vzome-sharing/2021/12/05/19-58-36-JackPike-Col-pan-dual-DoD-twins-of-twins-hull-cubes-minus-some-half-spaces/JackPike-Col-pan-dual-DoD-twins-of-twins-hull-cubes-minus-some-half-spaces.png
 layout: vzome
 ---
+This model removes most of JackPile's original model by adding the green "funnel" and removing all elements that are completely outside those 4 bounding planes. 
 
+A custom tetrahedral symmetry tool has been added. Applying it to the remaining parts of the model will restore the original model.
 {% comment %}
  - [***web page generated from this source***][post]
  - [data assets and more info][github]
