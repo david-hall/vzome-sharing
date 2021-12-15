@@ -2,7 +2,7 @@
 title: Rhombic Triacontahedron Struts
 image: https://david-hall.github.io/vzome-sharing/2021/12/14/21-12-40-Rhombic-Triacontahedron-Struts/Rhombic-Triacontahedron-Struts.png
 layout: vzome
-Description: RT Struts only. Click for 3D view.
+description: RT Struts only. Click for 3D view.
 ---
 
 {% comment %}
