@@ -15,7 +15,11 @@ description: Rhombic Triacontahedron. Click for 3D viewing.
 
 This page is trying to use KaTex. Let's see how it does...
 
-The diagonals of the rhombic triacontahedron's faces have a ratio of $$\\frac {1 \phi}$$ where $$\\phi = \frac {{1 + \sqrt{5}} 2}$$.
+The diagonals of the rhombic triacontahedron's faces have a ratio of $$\{ \frac {1 \phi}} $$ 
+
+where 
+
+\\[ \phi = \frac {{ 1 + \sqrt{ 5 } } 2}} \\].
 
 <vzome-viewer style="width: 100%; height: 65vh;"
        src="https://david-hall.github.io/vzome-sharing/2021/12/14/21-12-40-Rhombic-Triacontahedron-Struts/Rhombic-Triacontahedron-Struts.vZome" >
