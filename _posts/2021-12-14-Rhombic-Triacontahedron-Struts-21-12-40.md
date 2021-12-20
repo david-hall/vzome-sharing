@@ -2,7 +2,7 @@
 title: Rhombic Triacontahedron Struts
 image: https://david-hall.github.io/vzome-sharing/2021/12/14/21-12-40-Rhombic-Triacontahedron-Struts/Rhombic-Triacontahedron-Struts.png
 layout: vzome-katex
-description: Rhombic Triacontahedron. Click for 3D viewing.
+description: Rhombic Triacontahedron. Click and drag for 3D viewing.
 ---
 
 {% comment %}
@@ -13,13 +13,10 @@ description: Rhombic Triacontahedron. Click for 3D viewing.
 [github]: <https://github.com/david-hall/vzome-sharing/tree/main/2021/12/14/21-12-40-Rhombic-Triacontahedron-Struts/>
 {% endcomment %}
 
-This page is trying to use ***KaTeX***. Let's see how it does with dollar signs as delimiters in the markdowm.
+This page uses ***KaTeX***.
 
-The diagonals of the rhombic triacontahedron's faces have a ratio of $$\frac 1 \phi $$
-
-where 
-
-$$\phi = \frac {1 + \sqrt{5} {2} $$.
+The diagonals of the rhombic triacontahedron's faces have a ratio of $$\frac 1 \phi $$ where 
+$$\phi = \frac {1 + \sqrt{5}} {2} $$.
 
 <vzome-viewer style="width: 100%; height: 65vh;"
        src="https://david-hall.github.io/vzome-sharing/2021/12/14/21-12-40-Rhombic-Triacontahedron-Struts/Rhombic-Triacontahedron-Struts.vZome" >
