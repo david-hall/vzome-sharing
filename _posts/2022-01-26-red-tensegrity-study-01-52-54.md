@@ -13,13 +13,16 @@ description: An Icosahedral Tensegrity Study using vZome
 [github]: <https://github.com/david-hall/vzome-sharing/tree/main/2022/01/26/01-52-54-red-tensegrity-study/>
 {% endcomment %}
 
-{{ page.description }}
+__{{ page.description }}__
 
-I finally got around to modeling one of my favorite physical zometool designs in vZome. Yes, this design can be constructed completely from real zometool parts. It features 30 non-intersecting red lines with icosahedral symmetry and several options for scaffolding struts to hold them all in position.
+I finally got around to modeling one of my favorite physical zometool designs in vZome. 
+I realize that it's not really a tensegrity model as shown here, but I think the red struts could be held in place with strings in a way that makes the other struts unnecessary. Some day I may try it.
+
+<img src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-52-54-red-tensegrity-study/20220126-red-tensegrity-study-photo-014907.jpg" />
+
+Yes, this design can be constructed completely from real zometool parts. It features 30 non-intersecting red lines with icosahedral symmetry and several options for scaffolding struts to hold them all in position.
 
 Each red "line" consists of 4 collinear struts connected end-to end. Groups of five of these parallel lines form the edges of regular pentagonal prisms. Six of these prisms centered on the origin are the basis of the whole design.
-
-I realize that it's not really a tensegrity model as shown here, but I think the red struts could be held in place with strings in a way that makes the other struts unnecessary. Some day I may try it.
 
 <vzome-viewer style="width: 100%; height: 65vh;"
        src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-41-37-red-tensegrity-study/red-tensegrity-study.vZome" >
