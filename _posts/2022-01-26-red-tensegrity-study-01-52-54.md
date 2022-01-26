@@ -29,7 +29,7 @@ Each red "line" consists of 4 collinear struts connected end-to end. Groups of f
   <img src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-41-37-red-tensegrity-study/red-tensegrity-study.png" />
 </vzome-viewer>
 
-An interesting property of this design is the pentagonal *__prisms__* through the origin whereas most shapes with icosagedral symmetry, like the dodecahedron, have *__antiprisms__* through their centers.
+An interesting property of this design is the pentagonal *__prisms__* through the origin whereas most shapes with icosahedral symmetry, like the dodecahedron, have *__antiprisms__* through their centers.
 
 Since the red struts don't intersect, we can use blue, yellow or green struts as scaffolding to hold them in place. Any one type of strut is adequate. I'll show all three posibilities below. The downloadable vZome model has individual bookmarks that correspond to the various scaffolding configurations shown here.
 
