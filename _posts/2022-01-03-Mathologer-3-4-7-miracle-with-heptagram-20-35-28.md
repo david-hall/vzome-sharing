@@ -2,6 +2,7 @@
 title: Mathologer 3 4 7 miracle with heptagram
 image: https://david-hall.github.io/vzome-sharing/2022/01/03/20-35-28-Mathologer-3-4-7-miracle-with-heptagram/Mathologer-3-4-7-miracle-with-heptagram.png
 layout: vzome
+published: false
 ---
 
 {% comment %}

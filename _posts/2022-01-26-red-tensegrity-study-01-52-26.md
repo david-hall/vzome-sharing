@@ -2,6 +2,7 @@
 title: red tensegrity study
 image: https://david-hall.github.io/vzome-sharing/2022/01/26/01-52-26-red-tensegrity-study/red-tensegrity-study.png
 layout: vzome
+published: false
 ---
 
 {% comment %}
