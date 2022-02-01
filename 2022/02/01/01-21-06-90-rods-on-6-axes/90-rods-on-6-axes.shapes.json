@@ -30,32 +30,32 @@
   },
   "camera" : {
     "position" : {
-      "x" : -1.418732,
-      "y" : 2.1850698,
-      "z" : 289.69812
+      "x" : 367.20276,
+      "y" : 0.0,
+      "z" : -594.1466
     },
-    "width" : 130.36935,
-    "farClipDistance" : 579.41925,
-    "nearClipDistance" : 0.72427416,
-    "viewDistance" : 289.70972,
-    "fieldOfView" : 0.44262883,
-    "perspective" : false,
+    "width" : 314.30762,
+    "viewDistance" : 698.4612,
     "lookAtPoint" : {
       "x" : 0.0,
       "y" : 0.0,
       "z" : 0.0
     },
+    "fieldOfView" : 0.442629,
+    "perspective" : true,
+    "stereo" : false,
     "upDirection" : {
-      "x" : 0.036916938,
-      "y" : 0.9992917,
-      "z" : -0.007356597
+      "x" : 0.0,
+      "y" : 1.0,
+      "z" : 0.0
     },
     "lookDirection" : {
-      "x" : 0.0048970813,
-      "y" : -0.007542273,
-      "z" : -0.99996
+      "x" : -0.5257311,
+      "y" : 0.0,
+      "z" : 0.85065085
     },
-    "stereo" : false
+    "farClipDistance" : 1396.9219,
+    "nearClipDistance" : 1.7461532
   },
   "embedding" : [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ],
   "shapes" : [ {
