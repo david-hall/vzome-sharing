@@ -1,53 +1,41 @@
-
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+ <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>vZome Multiple Viewer Study</title>
-<meta property="og:title" content="vZome Multiple Viewer Study" />
-<meta property="og:locale" content="en_US" />
-<link rel="stylesheet" href="https://david-hall.github.io/vzome-sharing/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://david-hall.github.io/vzome-sharing/feed.xml" title="vzome-sharing" /></head>
-<body>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <div class="post-content e-content" itemprop="articleBody">
-        <!-- Enable the vzome-viewer custom element -->
+  <title>vZome Multiple Viewer Study</title>
+  <meta property="og:title" content="vZome Multiple Viewer Study" />
+  <meta property="og:locale" content="en_US" />
+ </head>
+ <body>
+    <!-- Enable the vzome-viewer custom element -->
     <script type="module" src="https://www.vzome.com/modules/vzome-viewer.js"></script>
 
 <button type="button" onclick='{
-var v1 = document.getElementById("vv1");
-var v2 = document.getElementById("vv2");
-if (v1.style.display=="block") {
+ var v1 = document.getElementById("vv1");
+ var v2 = document.getElementById("vv2");
+ if (v1.style.display=="block") {
   v1.style.display="none";
   v2.style.display="block";
-} else {
+ } else {
   v2.style.display="none";
   v1.style.display="block";
-}
+ }
 }
 '>swap views</button>
 
 <p> Note that the two designs have independant camera positions. </p> 
 
-<!--div id="vv1" xnostyle="display:block" -->
+<div id="vv1" style="display:block">
 <vzome-viewer style="width: 100%; height: 65vh;" src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-41-37-red-tensegrity-study/red-tensegrity-study.vZome">
   <img src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-41-37-red-tensegrity-study/red-tensegrity-study.png" />
 </vzome-viewer>
-<!--/div>
+</div>
 
-<div id="vv2" xnostyle="display:none" -->
+<div id="vv2" style="display:none">
 <vzome-viewer style="width: 100%; height: 65vh;" src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-51-45-red-tensegrity-study/red-tensegrity-study.vZome">
   <img src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-51-45-red-tensegrity-study/red-tensegrity-study.png" />
 </vzome-viewer>
-<!-- /div-->
+</div>
 
-</article>
-
-      </div>
-    </main>
 </body>
-
 </html>
