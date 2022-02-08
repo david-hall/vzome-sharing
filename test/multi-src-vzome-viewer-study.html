@@ -5,37 +5,60 @@
   <title>vZome Multiple Viewer Study</title>
   <meta property="og:title" content="vZome Multiple Viewer Study" />
   <meta property="og:locale" content="en_US" />
+  <script>
+  const sources = [
+	"https://david-hall.github.io/vzome-sharing/2022/01/26/01-41-37-red-tensegrity-study/red-tensegrity-study.vZome",
+	"https://david-hall.github.io/vzome-sharing/2022/01/26/01-51-45-red-tensegrity-study/red-tensegrity-study.vZome",
+	"https://david-hall.github.io/vzome-sharing/2022/01/26/01-52-11-red-tensegrity-study/red-tensegrity-study.vZome",
+	"https://david-hall.github.io/vzome-sharing/2022/01/26/01-52-26-red-tensegrity-study/red-tensegrity-study.vZome",
+	"https://david-hall.github.io/vzome-sharing/2022/01/26/01-52-54-red-tensegrity-study/red-tensegrity-study.vZome"
+  ];
+
+  function prevButton() {
+	stepSource(-1);
+  }
+  
+  function nextButton() {
+	stepSource(1);
+  
+  }
+  
+  function stepSource(step) {
+	  const src = document.getElementById("viewer").src;
+	  for (let i = 0; i < sources.length; i++) {
+		if(src == sources[i]) {
+			setSource(i + step);
+			break;
+		}	  
+	  }
+  }
+
+  function setSource(index) {
+	const viewer = document.getElementById("viewer");
+	viewer.src = sources[(index + sources.length) % sources.length];
+  }
+  </script>
+  
  </head>
  <body>
+	<button type="button" onclick='prevButton()'><< previous view</button>
+	<button type="button" onclick='nextButton()'>next view >></button>
+	<br />
+	<button type="button" onclick='setSource(0)'>no scaffoldiing</button>
+	<button type="button" onclick='setSource(1)'>yellow</button>
+	<button type="button" onclick='setSource(2)'>blue</button>
+	<button type="button" onclick='setSource(3)'>green</button>
+	<button type="button" onclick='setSource(4)'>combined</button>
+
+	<p> 
+	Notice that the camera position and zoom level are retained when the model is changed!
+	</p>
+	
     <!-- Enable the vzome-viewer custom element -->
     <script type="module" src="https://www.vzome.com/modules/vzome-viewer.js"></script>
-
-<button type="button" onclick='{
- var v1 = document.getElementById("vv1");
- var v2 = document.getElementById("vv2");
- if (v1.style.display=="block") {
-  v1.style.display="none";
-  v2.style.display="block";
- } else {
-  v2.style.display="none";
-  v1.style.display="block";
- }
-}
-'>swap views</button>
-
-<p> Note that the two designs have independant camera positions. </p> 
-
-<div id="vv1" style="display:block">
-<vzome-viewer style="width: 100%; height: 65vh;" src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-41-37-red-tensegrity-study/red-tensegrity-study.vZome">
-  <img src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-41-37-red-tensegrity-study/red-tensegrity-study.png" />
-</vzome-viewer>
-</div>
-
-<div id="vv2" style="display:none">
-<vzome-viewer style="width: 100%; height: 65vh;" src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-51-45-red-tensegrity-study/red-tensegrity-study.vZome">
-  <img src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-51-45-red-tensegrity-study/red-tensegrity-study.png" />
-</vzome-viewer>
-</div>
+	<vzome-viewer id="viewer" style="width: 100%; height: 65vh;" src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-41-37-red-tensegrity-study/red-tensegrity-study.vZome">
+		<img id="image" src="https://david-hall.github.io/vzome-sharing/2022/01/26/01-41-37-red-tensegrity-study/red-tensegrity-study.png" />
+	</vzome-viewer>
 
 </body>
 </html>

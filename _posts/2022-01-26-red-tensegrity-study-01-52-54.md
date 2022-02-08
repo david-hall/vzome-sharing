@@ -60,3 +60,5 @@ Green struts can be used as scaffolding at the tips of each red line.
 </vzome-viewer>
 
 This design shows all of the scaffolding combined in one model.
+
+All of these models can also be combined in a [single viewer](https://david-hall.github.io/vzome-sharing/test/multi-src-vzome-viewer-study.html).
