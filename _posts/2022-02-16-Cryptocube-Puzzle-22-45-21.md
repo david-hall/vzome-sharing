@@ -1,5 +1,5 @@
 ---
-title: Cryptocube Puzzle #1
+title: Cryptocube Puzzle
 image: https://david-hall.github.io/vzome-sharing/2022/02/16/22-45-21-Cryptocube-Puzzle/Cryptocube-Puzzle.png
 layout: vzome
 author: David Hall
