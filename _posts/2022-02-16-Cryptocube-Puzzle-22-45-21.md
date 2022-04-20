@@ -25,3 +25,5 @@ The article describing the original physical zometool model features a kitten na
        src="https://david-hall.github.io/vzome-sharing/2022/02/16/22-45-21-Cryptocube-Puzzle/Cryptocube-Puzzle.vZome" >
   <img src="https://david-hall.github.io/vzome-sharing/2022/02/16/22-45-21-Cryptocube-Puzzle/Cryptocube-Puzzle.png" />
 </vzome-viewer>
+
+This image is interactive. Drag it around with your mouse! Zoom with your mouse wheel.
