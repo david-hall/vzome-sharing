@@ -1,0 +1,7 @@
+# folders (in alphabetical order)
+temp/
+
+# files (in alphabetical order)
+*.tmp
+*.unused
+test/web.config
