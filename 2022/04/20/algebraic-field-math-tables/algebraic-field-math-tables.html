@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="utf-8">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>vZome Algebraic Field Math Tables</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="vZome Algebraic Field Math Tables" />
+<meta name="author" content="David Hall" />
+<meta name="og:author" content="David Hall" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="vZome Algebraic Field Math Tables" />
+<meta property="og:description" content="vZome Algebraic Field Math Tables" />
+<link rel="canonical" href="https://david-hall.github.io/vzome-sharing/2022/04/20/algebraic-field-math-tables.html" />
+<meta property="og:url" content="https://david-hall.github.io/vzome-sharing/2022/04/20/algebraic-field-math-tables.html" />
+<meta property="og:site_name" content="vzome-sharing" />
+<meta property="og:image" content="https://david-hall.github.io/vzome-sharing/2022/04/20/algebraic-field-math-tables/algebraic-field-math-tables.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-04-20T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://david-hall.github.io/vzome-sharing/2022/04/20/algebraic-field-math-tables/algebraic-field-math-tables.png" />
+<meta property="twitter:title" content="vZome Algebraic Field Math Tables" />
+<script>
+function showNumberFormat() {
+  // TODO: match the rules by selectorText, not by ordinal
+  // See https://stackoverflow.com/questions/324486/how-do-you-read-css-rule-values-with-javascript
+  let radios = document.getElementsByName("pickNumberFormat");
+  for (let i = 0, length = radios.length; i < length; i++) {
+	let selected = radios[i].checked;
+	let style = document.styleSheets['algebraicNumberFormats'].rules[i].style;
+	style.display = selected ? "table-cell" : "none";
+  }
+  resetFocus();
+}
+
+function toggleEmbedding() {
+  applyEmbedding();
+  resetFocus();
+}
+
+function applyEmbedding() {
+  // Called when SVG is rendered and also when embedding checkbox is toggled
+  let embeddedNode = document.getElementById("svgGroup");
+  // see https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+  embeddedNode.setAttribute("transform", 
+	document.getElementById('useEmbedding').checked
+	    ? embeddedNode.dataset.transformEmbeddingOn
+	    : embeddedNode.dataset.transformEmbeddingOff);
+}
+
+function loadJson(fieldName) {
+	// Clear out any prior content in case the fetch fails.
+	// Each processor of the json data should also clear out its own div 
+	// to deal with race conditions when the pick list is scrolled quickly.
+	let dynamics = document.getElementsByClassName('dynamic');
+	for(let i=0; i<dynamics.length; i++) {
+		dynamics[i].innerHTML = "";
+	}
+	
+	let fileName = fieldName + ".math.json";
+	let url = "./" + fileName;
+	
+	fetch(url)
+	.then(response => {
+		//console.log(response);
+        if(!response.ok) {
+			console.log(response);
+			throw new Error(response.url + "\n\n" + response.status + " " + response.statusText) 
+        } 
+		// response.clone() has several benefits over response.body.tee()
+		response.clone().text().then(text => {
+			// if the selected field has changed during the fetch, 
+			// then don't bother to render it
+			if(fieldName == getSelectedField()) {
+				loadRawJson(text);
+				let link = document.getElementById("viewJson");
+				link.href = url;
+				// accessing link.href after it's set to a relative URL returns an absolute URL.
+				// console.log(link.href);
+			}
+		});
+		return response.json(); 
+	} )
+	.then(data => {
+		//console.log(data);
+		// if the selected field has changed during the fetch, 
+		// then don't bother to render it
+		if(data.field.name == getSelectedField()) {
+			render(data);
+		}
+	})
+	.catch(error => {
+		console.log(error);
+		alert(error);
+	});
+}
+
+function loadRawJson(text) {
+	const parentDiv = document.getElementById("rawJson");
+	parentDiv.innerHTML = '<div class="tab"><button><a id="viewJson" href="" target="_blank">View JSON in new window</a></button></div>';
+	let pre = document.createElement("pre");
+	pre.textContent = text;
+	parentDiv.appendChild(pre);
+}
+
+function render(data) {
+	loadFieldMetadata(data);
+	loadEmbedding(data);
+	loadUnitTermsOrDiagonals(data);
+	loadNamedValues(data);
+	loadSvg(data);
+	loadMultiplicationTable(data);
+	loadDivisionTable(data);
+	loadExponentsTable(data);
+	loadTrigTable(data);
+}
+
+function loadFieldMetadata(data) {
+	let parentDiv = document.getElementById("fieldMetadata");
+	parentDiv.innerHTML = "";
+	let field = data.field;
+	let p = document.createElement("p");
+	let str = "The " + field.name + " field has order " + field.order;
+	if(field.name.startsWith("polygon")) {
+		str += " with " + field.diagonalCount + " unique diagonal lengths";
+	}
+	str += ".";
+	p.innerHTML = str;
+	parentDiv.appendChild(p);
+}
+
+function loadEmbedding(data) {
+	let parentDiv = document.getElementById("embedding");
+	parentDiv.innerHTML = "";
+	let table = document.createElement("table");
+	table.className = "matrix";
+	parentDiv.appendChild(table);
+	let tbody = table.createTBody();
+	tbody.className = "matrix";
+	
+	const identity = [[1,0],[0,1]];
+	let algValues, decValues, tdfValues;
+	const isEmbedded = Array.isArray(data.embedding);
+	if(isEmbedded) {
+		const nSidesX2 = 2 * data.field.polygonSides;
+		algValues = [
+			"1/" + data.unitTerms[data.field.diagonalCount-1].name + "/2",
+			"cos(π/" + nSidesX2+ ")"
+		];
+		decValues = [
+			data.embedding[1],
+			data.embedding[5]
+		];
+		tdfValues = [
+			"sin(π/" + nSidesX2 + ")",
+			"cos(π/" + nSidesX2 + ")"
+		];
+	}
+	for(let r=0; r<=1; r++) {
+		let tr = tbody.insertRow();
+		tr.className = "matrix";
+		if(r == 0) {
+			let side = tr.insertCell();
+			side.className = "matrix-bracket matrix-bracket-left";
+			side.setAttribute('rowspan', 2);
+		}
+		for(let c=0; c<=1; c++) {
+			let number = isEmbedded ? data.embedding[r*4+c] : identity[r][c];
+			if(c == 0 || ! isEmbedded || data.field.parity == "even") {
+				let cell = tr.insertCell();
+				cell.className = "matrix";
+				cell.innerHTML = number;
+			} else {
+				// make it look and behave similar to an algebraic number, but not exactly the same
+				// alg-num
+				let cell = tr.insertCell();
+				cell.className = "alg-num matrix";
+				cell.innerHTML = "<i>" + algValues[r] + "</i>";
+				// dec-num
+				cell = tr.insertCell();
+				cell.className = "dec-num matrix";
+				cell.innerHTML = decValues[r];
+				// tdf-num
+				cell = tr.insertCell();
+				cell.className = "tdf-num matrix";
+				cell.innerHTML = "<i>" + tdfValues[r] + "</i>";
+			}
+		}
+		if(r == 0) {
+			let side = tr.insertCell();
+			side.className = "matrix-bracket matrix-bracket-right";
+			side.setAttribute('rowspan', 2);
+		}
+	}		
+}
+
+function loadUnitTermsOrDiagonals(data) {
+	let parentDiv = document.getElementById("unitTerms");
+	parentDiv.innerHTML = "";
+	const order = data.field.order;
+	let terms = data.unitTerms;
+	let p = document.createElement("p");
+	p.innerHTML = data.field.name.startsWith("polygon") ?
+	"* Irrational terms consist of the shortest linearly independent diagonal lengths of the polygon. "
+	+ "Any diagonals that can be derived by adding or subtracting shorter ones are linearly dependent so they are not irrational terms."
+	: "Unit Terms";
+	parentDiv.appendChild(p);
+
+	let table = document.createElement("table");
+	table.className = "rxc";
+	parentDiv.appendChild(table);
+	let hrow = table.createTHead().insertRow();
+	let labels = ["name", "value"];
+	let isNumber = false;
+	for (let label in labels) {
+		let text = labels[label];
+		if(text == "value") {
+			isNumber = true;
+		}
+		if(isNumber) {
+			appendAlgebraicNumberHeader(hrow, text, order);
+		} else {
+			let th = document.createElement("th");
+			th.innerHTML = text;
+			hrow.appendChild(th);
+		}
+	}
+	let tbody = table.createTBody();
+	for (let t in terms) {
+		let term = terms[t];
+		let tr = tbody.insertRow();
+		tr.className = t < order ? "independent" : "dependent";
+		tr.insertCell().innerHTML = term.name;
+		appendAlgebraicNumberCells(tr, term.value, order, null);
+	}
+}
+
+function loadNamedValues(data) {
+	let parentDiv = document.getElementById("namedValues");
+	parentDiv.innerHTML = "";
+	let numbers = data.namedNumbers;
+	if(!Array.isArray(numbers)) {	
+		parentDiv.innerHTML = "<p>* Named values only apply to polygon based fields.</p>";
+	} else if(numbers.length == 0) {	
+		parentDiv.innerHTML = "<p>* No named values.</p>";
+	} else {
+		let p = document.createElement("p");
+		p.innerHTML = "* Numerator and denominator are shown when the ratio of two diagonals of the N-gon equals the named value.";
+		parentDiv.appendChild(p);
+
+		let order= data.field.order;
+		let table = document.createElement("table");
+		table.className = "rxc";
+		parentDiv.appendChild(table);
+		let hrow = table.createTHead().insertRow();
+		let labels = ["name", "value", "reciprocal", "numerator", "denominator"];
+		let isNumber = false;
+		for (let label in labels) {
+			let text = labels[label];
+			if(text == "value") {
+				isNumber = true;
+			}
+			if(isNumber) {
+				appendAlgebraicNumberHeader(hrow, text, order);
+			} else {
+				let th = document.createElement("th");
+				th.innerHTML = text;
+				hrow.appendChild(th);
+			}
+		}
+		let tbody = table.createTBody();
+		for (let n in numbers) {
+			let number = numbers[n];
+			let tr = tbody.insertRow();
+			tr.insertCell().innerHTML = number.name;
+			appendAlgebraicNumberCells(tr, number.value, order, null);
+			appendAlgebraicNumberCells(tr, number.reciprocal, order, null);
+			appendAlgebraicNumberCells(tr, number.numerator, order, null);
+			appendAlgebraicNumberCells(tr, number.denominator, order, null);
+		}
+	}
+}
+
+function loadSvg(data) {
+	const xmlns = 'http://www.w3.org/2000/svg';
+	let parentNode = document.getElementById("svgGroup");
+	parentNode.innerHTML = "";
+	
+	let ctr = parentNode.parentElement.getAttribute('width') / 2;
+	let scale = ctr * 0.90;
+	let transform = "translate(" + ctr + " " + ctr + ")	scale(" + scale + " " + -scale + ")";
+	parentNode.dataset.transformEmbeddingOff = transform; // saved as a custom data attribute
+	if(Array.isArray(data.embedding)) {
+		transform += " matrix("
+			+ data.embedding[0] + " "
+			+ data.embedding[4] + " "
+			+ data.embedding[1] + " "
+			+ data.embedding[5] + " 0 0)";
+	}
+	parentNode.dataset.transformEmbeddingOn = transform; // saved as a custom data attribute
+	applyEmbedding(); // based on the current checkbox setting
+
+	let axisStrokeWidth = 0.03;
+	const axisLength = 1.2;
+	let xAxis = document.createElementNS(xmlns, 'line');
+	xAxis.setAttribute('x1', axisLength);
+	xAxis.setAttribute('y1', 0);
+	xAxis.setAttribute('x2', -axisLength);
+	xAxis.setAttribute('y2', 0);
+	xAxis.setAttribute('stroke', 'red');
+	xAxis.setAttribute('stroke-width', axisStrokeWidth); 
+	parentNode.appendChild(xAxis);
+	
+	let yAxis = document.createElementNS(xmlns, 'line');
+	yAxis.setAttribute('x1', 0);
+	yAxis.setAttribute('y1', axisLength);
+	yAxis.setAttribute('x2', 0);
+	yAxis.setAttribute('y2', -axisLength);
+	yAxis.setAttribute('stroke', 'darkgreen');
+	yAxis.setAttribute('stroke-width', axisStrokeWidth); 
+	parentNode.appendChild(yAxis);
+
+	let originDot = document.createElementNS(xmlns, 'circle');
+	originDot.setAttribute('r', axisStrokeWidth);
+	originDot.setAttribute('fill', 'black');
+	parentNode.appendChild(originDot);
+
+	if(!Array.isArray(data.trig)) {
+		//console.log(data.field.name + " has no trig table.");
+		return;
+	}
+	const order = data.field.order;
+	let delim = "";
+	let pts = "";
+	let parity = true;
+	for (let key in data.trig) {
+	    if(parity) {
+			let trigRow = data.trig[key];
+			let x = trigRow.cos.dec;
+			let y = trigRow.sin.dec;
+			pts += (delim + x + "," + y);
+			delim = " ";
+			if(!(x == 1 && y == 0)) {
+				if(y >= 0) {
+					// use createElementNS instead of createElement
+					// to allow the diagonals to be drawn first but not obscured
+					// by the polygon which is rendered later
+					let line = document.createElementNS(xmlns, 'line');
+					line.setAttribute('x1', '1');
+					line.setAttribute('y1', '0');
+					line.setAttribute('x2', x);
+					line.setAttribute('y2', y);
+					const independent = ((key/2)-1) < order;
+					let stroke = independent ? "rgb(0, 118, 149)" : "orange";
+					line.setAttribute('stroke', stroke);
+					parentNode.appendChild(line);
+				}
+			}
+		}
+		parity = !parity;
+	}
+	if(pts != "") {
+		// use createElementNS instead of createElement so things render as desired
+		let polygon = document.createElementNS(xmlns, 'polygon');
+		polygon.setAttribute('points', pts);
+		parentNode.appendChild(polygon);
+	}
+}
+
+function loadMultiplicationTable(data) {
+	let parentDiv = document.getElementById("multiplicationTable");
+	loadMathTable(data, parentDiv, "*");
+}
+
+function loadDivisionTable(data) {
+	let parentDiv = document.getElementById("divisionTable");
+	loadMathTable(data, parentDiv, "/");
+}
+
+function loadMathTable(data, parentDiv, opLabel) {
+	let p = document.createElement("p");
+	let label = (opLabel == "*" ? "Multiplication" : "Division");
+	p.innerHTML = label + " Table";
+	parentDiv.appendChild(p);
+
+	let terms = data.unitTerms;
+	const order= data.field.order;
+	let table = document.createElement("table");
+	table.className = "rxc";
+	parentDiv.appendChild(table);
+	// header row
+	let hrow = table.createTHead().insertRow();
+	let th = document.createElement("th");
+	th.innerHTML = "row" + opLabel + "col";
+	th.className= "tableOp"
+	hrow.appendChild(th);
+	for (let term in terms) {
+		let text = terms[term].name;
+		appendAlgebraicNumberHeader(hrow, text, order);
+	}
+	// body
+	let tbody = table.createTBody();
+	let dataTable = (label == "Division") ? data.division : data.multiplication;
+	for (let row in dataTable) {
+		let rowDiag = terms[row];
+		let rowPart = row < order ? "indep" : "dep";
+		let tr = tbody.insertRow();
+		tr.insertCell().innerHTML = rowDiag.name;
+		for(col in dataTable[row]) {
+			let colDiag = terms[col];
+			let className = rowPart + "-" + (col < order ? "indep" : "dep");
+			appendAlgebraicNumberCells(tr, dataTable[row][col], order, className);
+		}
+	}
+}
+
+function loadExponentsTable(data) {
+	let parentDiv = document.getElementById("exponentsTable");
+	parentDiv.innerHTML = "";
+	let nPowers = data.exponents[0].positivePowers.length; // should be 6. All of the arrays will be the same length.
+	const order= data.field.order;
+	for(let src=0; src<2; src++) {
+		let p = document.createElement("p");
+		p.innerHTML = ["Positive", "Negative"][src] + " Powers";
+		parentDiv.appendChild(p);
+
+		let table = document.createElement("table");
+		table.className = "rxc";
+		parentDiv.appendChild(table);
+		let hrow = table.createTHead().insertRow();
+		let th = document.createElement("th");
+		th.innerHTML = "name";
+		hrow.appendChild(th);
+		let sign = (src==0) ? "" : "-";
+		let exponents = data.exponents;
+		for (let i = 0; i < nPowers; i++) {
+			let text = "N <sup>" + sign + (i+1) + "</sup>";
+			appendAlgebraicNumberHeader(hrow, text, order);
+		}
+		let tbody = table.createTBody();
+		// Include a row for the units term too even though it's not in the json and the value is always 1
+        // because doing so makes some patterns more complete and more obvious in tdf format
+		const one = data.unitTerms[0];
+		let tr = tbody.insertRow();
+		tr.insertCell().innerHTML = one.name;
+		tr.className = "independent";
+		for (let power in exponents[0].positivePowers) {
+			appendAlgebraicNumberCells(tr, one.value, order, null);
+		}
+		// now add rows for the exponents in the json
+		for (let diag in exponents) {
+			let row = exponents[diag];
+			let tr = tbody.insertRow();
+			tr.insertCell().innerHTML = row.base;
+			const independent = parseInt(diag)+1 < order;
+			tr.className = independent ? "independent" : "dependent";
+			let powers = (src==0) ? row.positivePowers : row.negativePowers;
+			for (let power in row.positivePowers) {
+				appendAlgebraicNumberCells(tr, powers[power], order, null);
+			}
+		}
+	}
+}
+
+function loadTrigTable(data) {
+	let parentDiv = document.getElementById("trigTable");
+	parentDiv.innerHTML = "";
+	if(!Array.isArray(data.trig)) {
+		parentDiv.innerHTML = "<p>* Trig tables only apply to polygon based fields.</p>";
+		return;
+	}
+	if(data.field.parity == "odd") {
+		//parentDiv.innerHTML = "<p>* Trig tables are only applicable to odd-gon fields if the embedding matrix is applied to compensate for the skewed axes.</p>";
+	}
+	let p = document.createElement("p");
+	p.innerHTML = "* Blue and green rows in the trig table correspond to the color of vZome struts rotated from the postive X axis by the indicated angle.";
+	parentDiv.appendChild(p);
+	
+	let order= data.field.order;
+	let table = document.createElement("table");
+	table.className = "rxc";
+	parentDiv.appendChild(table);
+	let hrow = table.createTHead().insertRow();
+	let labels = ["turns", "radians", "degrees", "sin", "cos", "tan", "csc = 1/sin", "sec = 1/cos", "cot = 1/tan"];
+	let isNumber = false;
+	for (let label in labels) {
+		let text = labels[label];
+		if(text == "sin") {
+			isNumber = true;
+		}
+		if(isNumber) {
+			appendAlgebraicNumberHeader(hrow, text, order);
+		} else {
+			let th = document.createElement("th");
+			th.innerHTML = text;
+			hrow.appendChild(th);
+		}
+	}
+	let tbody = table.createTBody();
+	let parity = true;
+	for (let key in data.trig) {
+		let tr = tbody.insertRow();
+		tr.className = parity ? "even" : "odd";
+		parity = ! parity;
+		let trigRow = data.trig[key];
+		tr.insertCell().innerHTML = trigRow.rot;
+		tr.insertCell().innerHTML = trigRow.rad;
+		tr.insertCell().innerHTML = trigRow.deg;
+		appendAlgebraicNumberCells(tr, trigRow.sin, order, null);
+		appendAlgebraicNumberCells(tr, trigRow.cos, order, null);
+		appendAlgebraicNumberCells(tr, trigRow.tan, order, null);
+		appendAlgebraicNumberCells(tr, trigRow.csc, order, null);
+		appendAlgebraicNumberCells(tr, trigRow.sec, order, null);
+		appendAlgebraicNumberCells(tr, trigRow.cot, order, null);
+	}
+}
+
+function appendAlgebraicNumberHeader(row, text, order) {
+	const classes = ["alg-num", "dec-num", "tdf-num"]; 
+	for (let i in classes) {
+		let th = document.createElement("th");
+		th.className = classes[i];
+		th.innerHTML = text;
+		if(i == classes.length-1) {
+			th.setAttribute("colspan", order+1);
+		}
+		row.appendChild(th);
+	}
+}
+
+function appendAlgebraicNumberCells(row, num, order, cls) {
+	const className = cls == null ? "" : " " + cls;
+	const infinity = ((num != null) && Array.isArray(num.tdf)) ? "" : " infinity";
+	let cell = row.insertCell();
+	cell.className = "alg-num" + infinity + className;
+	if(num != null) {
+		cell.innerHTML = num.alg;
+	}
+	
+	cell = row.insertCell();
+	cell.className = "dec-num" + infinity + className;
+	if(num != null) {
+		// TODO: align all of the decimal points
+		// see examples at https://stackoverflow.com/questions/1363239/aligning-decimal-points-in-html
+		cell.innerHTML = num.dec;
+	}
+	// tdf adds multiple cells unless it's infinite then one cell with equivalent colspan
+	if((num != null) && Array.isArray(num.tdf)) {
+		for(let i = 0; i <= order; i++) {
+			const isDen = i >= order;
+			let divBar = isDen ? "/" : "";
+			let denClass = isDen ? " denominator" : "";
+			let cell = row.insertCell();
+			cell.className = "tdf-num" + denClass + className;
+			let n = num.tdf[i];
+			cell.innerHTML = divBar + n;
+			if( (i > 0 && (n == 0 || num.dec == 0)) || // all but the units cell are hidden when decimal value is 0
+				(i == 0 && n == 0 && num.dec != 0) || 
+				(isDen && n == 1) ) { // denominators of 1 are hidden
+				// use color:transparent instead of visibility:hidden
+				// so that they are all shown if we highlight them for copying
+				cell.style.color = "transparent";
+			}
+		}
+	} else {
+		let cell = row.insertCell();
+		cell.className = "tdf-num" + infinity + className;
+		cell.setAttribute("colspan", order+1);
+		if(num != null) {
+			cell.innerHTML = num.tdf;
+		}
+	}
+}
+
+function getSelectedField() {
+	const pick = document.getElementById("pickField");
+	return pick.options[pick.selectedIndex].value;
+}
+
+function loadFieldData() {
+	loadJson(getSelectedField());
+	resetFocus();
+}
+
+function fillPickList() {
+	let pick = document.getElementById("pickField");
+	let optLabel;
+	let optgroup;
+	// A valid "field" queryString overrides the default selection
+	let selectedField = (new URL(document.location)).searchParams.get("field");
+	for(let i=4; i <= 100; i++) {
+		switch(i) {
+		case 4:
+			optLabel = "Polygons...";
+			break;
+		default:
+			optLabel = (i%10 == 0) ? i + "..." : "";
+			break;
+		}		
+		if(optLabel != "") {
+			optgroup = document.createElement("optgroup");
+			optgroup.label = optLabel;
+			pick.appendChild(optgroup);
+		}
+		let option = document.createElement("option");
+		option.value = "polygon" + i;
+		option.innerHTML = i + "-gon";
+		option.selected = (option.value == selectedField);
+		optgroup.appendChild(option);
+	}
+	
+	let values = ["plasticNumber",  "plasticPhi", "snubCube",  "snubDodec",         "superGolden",  "sqrtPhi"];
+	let text   = ["Plastic Number", "Plastic φ",  "Snub Cube", "Snub Dodecahedron", "Super Golden", "√φ"     ];
+	optgroup = document.createElement("optgroup");
+	optgroup.label = "Others...";
+	pick.appendChild(optgroup);
+	for(i in values) {
+		let option = document.createElement("option");
+		option.value = values[i];
+		option.innerHTML = text[i];
+		option.selected = (option.value == selectedField);
+		optgroup.appendChild(option);
+	}
+	
+	values = ["golden", "rootTwo", "rootThree", "edPegg",  "custom"];
+	text   = ["Golden", "√2",      "√3",        "Ed Pegg", "Custom"];
+	// Add these fields to the pick list only if specified in queryString, but not otherwise.
+	// Note that there is no "custom.math.json" file but we could add one later and it would just work.
+	for(i in values) {
+		if(selectedField == values[i]) {
+			optgroup = document.createElement("optgroup");
+			optgroup.label = "Hidden...";
+			pick.appendChild(optgroup);
+			let option = document.createElement("option");
+			option.value = values[i];
+			option.innerHTML = text[i];
+			option.selected = true;
+			optgroup.appendChild(option);
+			break;
+		}
+	}
+}
+
+function setNumberFormat() {
+	// A valid numFormat queryString overrides the default selection
+	let numFormat = (new URL(document.location)).searchParams.get("numFormat");
+	let radios = document.getElementsByName("pickNumberFormat");
+	for (let i = 0, length = radios.length; i < length; i++) {
+		if(radios[i].value == numFormat) {
+			radios[i].checked = true;
+			break;
+		}
+	}
+	showNumberFormat();
+}
+
+function resetFocus() {
+	document.getElementById("pickField").focus();
+}
+
+function showView(viewId) {
+	let viewbtns = document.getElementsByClassName('viewbtn');
+	for(let i=0; i < viewbtns.length; i++) {
+		let btn = viewbtns[i];
+		let parts = btn.id.split("-");
+		if(parts.length == 2 && parts[0] == "show") {
+			let id = parts[1];
+			document.getElementById(id).style.display = id == viewId ? 'block' : 'none';
+			btn.style.color = id == viewId ? 'red' : 'black';
+		}
+	}
+	resetFocus();
+}
+
+function hookViewButtons() {
+	let viewbtns = document.getElementsByClassName('viewbtn');
+	for(let i=0; i<viewbtns.length; i++) {
+		let btn = viewbtns[i];
+		let parts = btn.id.split("-");
+		if(parts.length == 2 && parts[0] == "show") {
+			btn.addEventListener("click", () => {
+				showView(parts[1]);
+			} );
+		}
+	}
+}
+
+function showInitialView() {
+	// A valid URL.hash overrides the default selection
+	// According to https://www.rfc-editor.org/rfc/rfc3986#section-4.1
+	// a valid URL has its #anchor after the ?queryString
+	// so this won't work if they're reversed. That's OK.
+	let hash = (new URL(document.location)).hash;
+	let viewbtns = document.getElementsByClassName('viewbtn');
+	let initialView = "unitTerms";
+	for(let i=0; i<viewbtns.length; i++) {
+		let btn = viewbtns[i];
+		let parts = btn.id.split("-");
+		if(parts.length == 2 && parts[0] == "show") {
+			if("#" + parts[1] == hash) {
+				initialView = parts[1];
+				break;
+			}
+		}
+	}
+	showView(initialView);
+}
+
+window.addEventListener("load", () => {
+	fillPickList();
+	setNumberFormat();
+	hookViewButtons();
+	showInitialView();
+	loadFieldData();
+  } 
+);
+</script>
+
+<!-- be sure that .alg-num, .dec-num and .tdf-num are the first three rules 
+in the 'algebraicNumberFormats' style until I clean up the hard coded hack.
+Also be sure they are in the same order as the pickNumberFormat options -->
+<style id='algebraicNumberFormats'>
+.alg-num {
+  display: table-cell;
+  white-space: nowrap;
+}
+.dec-num {
+  display: none;
+  white-space: nowrap;
+}
+.tdf-num {
+  display: none;
+  white-space: nowrap;
+}
+</style>
+
+<style>
+body {
+  overflow: scroll; /* Always show both scrollbars so they don't make other things jump around as they appear and disappear */
+}
+
+.tab {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  float: left;
+  font-size: 12;
+  font-weight: bold;
+  outline: none;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+button:hover, button:active, button:focus {
+  background-color: #ddd;
+}
+
+.matrix {
+  border: none;
+  border-color: black;
+  border-style: none;
+}
+
+.matrix-bracket {
+  border: 1px solid black;
+  border-width: .12em;
+}
+
+.matrix-bracket-left {
+  border-right-style: none;
+}
+
+.matrix-bracket-right {
+  border-left-style: none;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+tr.independent, td.indep-indep {
+  background-color: rgba(0, 118, 149, 0.4);
+}
+tr.dependent, td.indep-dep, td.dep-indep {
+  background-color: rgba(255, 165, 0, 0.4);
+}
+td.dep-dep {
+  background-color: rgba(255, 165, 0);
+}
+
+tr.even {
+  background-color: rgba(0, 118, 149, 0.4);
+}
+tr.odd {
+  background-color: rgba(0, 141, 54, 0.4);
+}
+
+tr:hover {
+  background-color: rgba(153, 153, 153, 0.1);
+}
+table.rxc th, table.rxc td:first-child {
+  background-color: rgba(0, 192, 192, 1.0);
+  text-align:center;
+}
+td.tdf-num {
+  border-left-color: #888;
+  border-right-color: #888;
+}
+td.infinity {
+  border-right-color: black;
+  text-align: center;
+}
+td.denominator {
+  background-color: rgba(153, 153, 153, 0.3);
+  border-right-color: black;
+}
+
+svg {
+  background-color: rgba(175, 200, 220, 0.2);
+}
+svg g {
+  fill: none; 
+  stroke: blue;
+  stroke-linecap: round;
+  stroke-width: 0.01; 
+}
+polygon {
+  fill: gray;
+  fill-opacity: .25;
+}
+
+.toprightcorner{
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+</style>
+</head>
+
+<body onClick="resetFocus()">
+  <div><h1>vZome Algebraic Field Math Tables</h1></div>
+
+  <!-- TODO: Make fieldMetadata a fixed size and position so it doesn't make the layout jump around when it's cleared -->
+  <div class="was-dynamic" id="fieldMetadata"> </div>
+
+  <div id='controls'>
+	<fieldset class="inline">
+    <legend>Algebraic Field</legend>
+	<select id="pickField" onchange="loadFieldData()"><!-- options are generated by script --></select>
+	</fieldset>
+	
+	<fieldset class="inline">
+    <legend>Number Format</legend>
+	<input type="radio" id="numFormat1" name="pickNumberFormat" value="alg" onclick="showNumberFormat()" checked><label for="numFormat1">Algebraic Number</label>
+	<input type="radio" id="numFormat2" name="pickNumberFormat" value="dec" onclick="showNumberFormat()"        ><label for="numFormat2">Decimal</label>
+	<input type="radio" id="numFormat3" name="pickNumberFormat" value="tdf" onclick="showNumberFormat()"        ><label for="numFormat3">Trailing Denominator</label>
+	</fieldset>
+	
+	<fieldset class="inline">
+    <legend>Embedding</legend>
+		<div class="inline-block">
+			<div><label for='useEmbedding'>Apply</label></div>
+			<div><input id='useEmbedding' type='checkbox' checked onclick='toggleEmbedding()'></div>
+		</div>
+		<div class="inline-block" id="embedding"> </div>
+	</fieldset>
+  </div>
+
+  <div class="tab" id="tabs">
+    <button class="viewbtn" id="show-unitTerms">Unit Terms</button>
+    <button class="viewbtn" id="show-namedValues">Named Values</button>
+    <button class="viewbtn" id="show-multiplicationTable">Multiplication Table</button>
+    <button class="viewbtn" id="show-divisionTable">Division Table</button>
+    <button class="viewbtn" id="show-exponentsTable">Exponents Table</button>
+    <button class="viewbtn" id="show-trigTable">Trig Table</button>
+    <button class="viewbtn" id="show-rawJson">Raw JSON</button>
+  </div>
+
+  <svg height="300" width="300" class="toprightcorner">
+    <g class="dynamic" id="svgGroup"> </g>
+    Sorry, your browser does not support inline SVG.
+  </svg>
+
+  <div class="dynamic" id="unitTerms"> </div>
+  <div class="dynamic" id="namedValues"> </div>
+  <div class="dynamic" id="multiplicationTable"> </div>
+  <div class="dynamic" id="divisionTable"> </div>
+  <div class="dynamic" id="exponentsTable"> </div>
+  <div class="dynamic" id="trigTable"> </div>
+  <div class="dynamic" id="rawJson"> </div>
+
+</body>
+</html>
+
