@@ -14,6 +14,13 @@ layout: vzome
 
 __{{ page.description }}__
 
+__*Edit 7/11/2022*__
+Scott promptly found and fixed the bug in the online debugger with the release of version 50. 
+
+I can now locate the original problem with loading the actual model. The javascript console shows that 7 struts should be selected after the `SelectNeighbors` at edit number 154. It's finding none selected.
+
+The following post describes the problem as it was originally reported.
+
 There are at least two bugs in the current vZome online viewer/debugger (version 49) that are manifested in this model.
 This model renders correctly in desktop 7.0.80. It takes about a minute to load in desktop, but closer to 15 minutes to load it from a local file in the vZome online debugger. It's a complex model in the 30-gon field, so the lengthy load times are to be expected.
 
