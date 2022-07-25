@@ -200,6 +200,7 @@ function loadUnitTermsOrDiagonals(data) {
 	parentDiv.innerHTML = "";
 	const order = data.field.order;
 	let terms = data.unitTerms;
+	let reciprocals = data.division[0];
 	let p = document.createElement("p");
 	p.innerHTML = data.field.name.startsWith("polygon") ?
 	"* Irrational terms consist of the shortest linearly independent diagonal lengths of the polygon. "
@@ -211,28 +212,21 @@ function loadUnitTermsOrDiagonals(data) {
 	table.className = "rxc";
 	parentDiv.appendChild(table);
 	let hrow = table.createTHead().insertRow();
-	let labels = ["name", "value"];
-	let isNumber = false;
-	for (let label in labels) {
-		let text = labels[label];
-		if(text == "value") {
-			isNumber = true;
-		}
-		if(isNumber) {
-			appendAlgebraicNumberHeader(hrow, text, order);
-		} else {
-			let th = document.createElement("th");
-			th.innerHTML = text;
-			hrow.appendChild(th);
-		}
-	}
+	let th = document.createElement("th"); // header row
+	th.innerHTML = "name";
+	hrow.appendChild(th);
+	appendAlgebraicNumberHeader(hrow, "value", order);
+	appendAlgebraicNumberHeader(hrow, "reciprocal", order);
+
 	let tbody = table.createTBody();
 	for (let t in terms) {
 		let term = terms[t];
+		let reciprocal = reciprocals[t];
 		let tr = tbody.insertRow();
 		tr.className = t < order ? "independent" : "dependent";
 		tr.insertCell().innerHTML = term.name;
 		appendAlgebraicNumberCells(tr, term.value, order, null);
+		appendAlgebraicNumberCells(tr, reciprocal, order, null);
 	}
 }
 
