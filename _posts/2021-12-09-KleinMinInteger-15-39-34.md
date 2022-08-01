@@ -1,10 +1,10 @@
 ---
 title: Klein Quartic with Integer Vertices
-description: A vZome bug report.
+description: A vZome bug report. (Part 1 of 2)
 image: https://david-hall.github.io/vzome-sharing/2021/12/09/15-39-34-KleinMinInteger/KleinMinInteger.png
 layout: vzome
 ---
-A Klein quartic with all vertices having integer coordinates.
+__A Klein quartic with all vertices having integer coordinates.__
 
 {% comment %}
  - [***web page generated from this source***][post]
