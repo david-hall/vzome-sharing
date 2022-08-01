@@ -1,5 +1,5 @@
 ---
-title: vZome Online KaTeX Example
+title: KaTeX and vZome
 image: https://david-hall.github.io/vzome-sharing/2021/12/14/21-12-40-Rhombic-Triacontahedron-Struts/Rhombic-Triacontahedron-Struts.png
 layout: vzome-katex
 description: A KaTeX demo featuring a Rhombic Triacontahedron.
