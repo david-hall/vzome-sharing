@@ -2,10 +2,9 @@
 title: Cryptocube Puzzle
 image: https://david-hall.github.io/vzome-sharing/2022/02/16/22-45-21-Cryptocube-Puzzle/Cryptocube-Puzzle.png
 layout: vzome
-author: David Hall
-description: A zometool model by RobertLovesPi
-publish: true
+description: A zometool model by RobertLovesPi.
 ---
+__{{ page.description }}__
 
 {% comment %}
  - [***web page generated from this source***][post]
@@ -14,8 +13,6 @@ publish: true
 [post]: <https://david-hall.github.io/vzome-sharing/2022/02/16/Cryptocube-Puzzle-22-45-21.html>
 [github]: <https://github.com/david-hall/vzome-sharing/tree/main/2022/02/16/22-45-21-Cryptocube-Puzzle/>
 {% endcomment %}
-
-__{{ page.description }}__
 
 This design is not my own. I found some photos of the original zometool model and decided to model it myself using vZome.
 

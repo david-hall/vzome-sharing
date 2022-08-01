@@ -1,8 +1,10 @@
 ---
-title: Jacobs octahedral ball convex hull
+title: Jacob's Octahedral Ball - Convex Hull
 image: https://david-hall.github.io/vzome-sharing/2021/12/05/17-53-50-Jacobs-octahedral-ball-convex-hull/Jacobs-octahedral-ball-convex-hull.png
 layout: vzome
+description: I forgot why I made this model. ;-)
 ---
+__{{ page.description }}__
 
 {% comment %}
  - [***web page generated from this source***][post]

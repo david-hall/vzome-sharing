@@ -1,8 +1,10 @@
 ---
-title: intersecting pentagonal prisms
+title: Intersecting Pentagonal Prisms
 image: https://david-hall.github.io/vzome-sharing/2022/01/26/03-26-45-intersecting-pentagonal-prisms/intersecting-pentagonal-prisms.png
 layout: vzome
+description: Six intersecting pentagonal prisms rather than the typically anti-prisms.
 ---
+__{{ page.description }}__
 
 {% comment %}
  - [***web page generated from this source***][post]
