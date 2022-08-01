@@ -31,10 +31,10 @@ but for the occasional non-convex cases the obvious side effect is that the pane
 
 The recommended solution is to replace every individual non-convex panel with multiple convex panels as in the second model below. While this avoids the problem with the artifacts, it introduces two new problems for the model's author. 
 
-First of all, the outline of the panel is intended to surround only the orignal non-convex panel, not each of the constituent convex panels. This issue only shows up in desktop since online doesn't render outlines at all. 
+First of all, the outline of the panel is intended to surround only the original non-convex panel, not each of the constituent convex panels. This issue only shows up in desktop since online doesn't render outlines at all. 
 
 Secondly, the original non-convex panel normally constitutes an entire single facet of the polyhedron. 
-By modeling it from discreet convex panels, they need to be individually selected to manipulate them, or else grouped, which is an additional step that pushes unnecessary complexity to the model author 
+By modeling it from discreet convex panels, they need to be individually selected to manipulate them, or else grouped, which is an additional step that pushes unnecessary complexity to the model's author 
 when vZome core should be able to handle non-convex panels.
 
 <vzome-viewer style="width: 100%; height: 65vh;"
