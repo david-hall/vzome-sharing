@@ -5,7 +5,7 @@ layout: vzome
 description: A vZome model inspired by Mathologer.
 published: false
 ---
-{{ page.description }}
+__{{ page.description }}__
 
 {% comment %}
  - [***web page generated from this source***][post]

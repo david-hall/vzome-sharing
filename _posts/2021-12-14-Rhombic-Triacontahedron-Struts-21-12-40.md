@@ -2,8 +2,9 @@
 title: vZome Online KaTeX Example
 image: https://david-hall.github.io/vzome-sharing/2021/12/14/21-12-40-Rhombic-Triacontahedron-Struts/Rhombic-Triacontahedron-Struts.png
 layout: vzome-katex
-description: KaTeX Demo of Rhombic Triacontahedron. Click and drag for 3D viewing.
+description: A KaTeX demo featuring a Rhombic Triacontahedron.
 ---
+__{{ page.description }}__
 
 {% comment %}
  - [***web page generated from this source***][post]
@@ -32,3 +33,4 @@ $$\phi = \frac {1 + \sqrt{5}} {2} $$.
        src="https://david-hall.github.io/vzome-sharing/2021/12/14/21-12-40-Rhombic-Triacontahedron-Struts/Rhombic-Triacontahedron-Struts.vZome" >
   <img src="https://david-hall.github.io/vzome-sharing/2021/12/14/21-12-40-Rhombic-Triacontahedron-Struts/Rhombic-Triacontahedron-Struts.png" />
 </vzome-viewer>
+ Click and drag for 3D viewing.
