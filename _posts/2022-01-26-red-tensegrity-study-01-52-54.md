@@ -2,8 +2,9 @@
 title: Zometool Tensegrity Study
 image: https://david-hall.github.io/vzome-sharing/2022/01/26/01-52-54-red-tensegrity-study/red-tensegrity-study.png
 layout: vzome
-description: An Icosahedral Tensegrity Study using vZome
+description: An Icosahedral Tensegrity Study using multiple vZome viewers.
 ---
+__{{ page.description }}__
 
 {% comment %}
  - [***web page generated from this source***][post]
@@ -12,8 +13,6 @@ description: An Icosahedral Tensegrity Study using vZome
 [post]: <https://david-hall.github.io/vzome-sharing/2022/01/26/red-tensegrity-study-01-52-54.html>
 [github]: <https://github.com/david-hall/vzome-sharing/tree/main/2022/01/26/01-52-54-red-tensegrity-study/>
 {% endcomment %}
-
-__{{ page.description }}__
 
 I finally got around to modeling one of my favorite physical zometool designs in vZome. 
 I realize that it's not really a tensegrity model as shown here, but I think the red struts could be held in place with strings in a way that makes the other struts unnecessary. Some day I may try it.
