@@ -1,5 +1,6 @@
 ---
-title: JackPike Col pan dual DoD twins of twins hull cubes minus some half spaces
+title: Bounding Plane Demo for Jack Pike
+description: Uses "funnel" bounding box and removes all elements that are completely outside the 4 bounding planes. 
 image: https://david-hall.github.io/vzome-sharing/2021/12/05/19-58-36-JackPike-Col-pan-dual-DoD-twins-of-twins-hull-cubes-minus-some-half-spaces/JackPike-Col-pan-dual-DoD-twins-of-twins-hull-cubes-minus-some-half-spaces.png
 layout: vzome
 ---
