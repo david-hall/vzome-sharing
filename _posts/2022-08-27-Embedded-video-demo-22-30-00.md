@@ -23,7 +23,7 @@ In this case, an animated gif file is rendered until the play button is clicked 
   </figcaption>
 </figure>
 
-The model and video are by John Kostick. 
+The model and video are by John Hall. 
 
 The raw markdown source file for this post is [here](https://raw.githubusercontent.com/david-hall/vzome-sharing/main/_posts/2022-08-27-Embedded-video-demo-22-30-00.md).
 
