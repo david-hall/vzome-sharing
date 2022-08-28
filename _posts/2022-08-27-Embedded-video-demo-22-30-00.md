@@ -2,6 +2,7 @@
 title: Embedded Video Demo
 description: An example of embedding a vZome model and a video in a github markdown file.
 image: https://ThynStyx.github.io/vzome-sharing/2022/08/27/09-01-49-Platonics-hull-vid-test/Platonics-hull-vid-test.png
+author: David Hall
 published: true
 layout: vzome
 ---
@@ -24,7 +25,7 @@ In this case, an animated gif file is rendered until the play button is clicked 
 
 The model and video are by John Kostick. 
 
-The markdown source file for this post is [here](https://github.com/david-hall/vzome-sharing/blob/main/_posts/2022-08-27-Embedded-video-demo-22-30-00.md).
+The raw markdown source file for this post is [here](https://raw.githubusercontent.com/david-hall/vzome-sharing/main/_posts/2022-08-27-Embedded-video-demo-22-30-00.md).
 
 <figure style="width: 87%; margin: 5%">
   <vzome-viewer style="width: 100%; height: 60vh" src="https://ThynStyx.github.io/vzome-sharing/2022/08/27/09-01-49-Platonics-hull-vid-test/Platonics-hull-vid-test.vZome">
