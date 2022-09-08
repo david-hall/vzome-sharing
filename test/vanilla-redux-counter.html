@@ -10,7 +10,7 @@
       <h1>A counter using a vanilla Redux store</h1>
 	</p>
     <p>
-	  The original code can be found in the article 
+	  The original code for this page can be found in the article 
 	  <a href='https://dev.to/papercoding22/how-redux-works-4gnl'>How Redux works ? (Only HTML & Pure JS)</a>.
 	  <br>
 	   I have modified it as follows:
@@ -21,11 +21,12 @@
 		<li>Wrap all of the initialization code into a single function and defer its execution until the window load event.</li>
 		<li>Add a new button and corresponding action to square the number in the store.</li>
 		<li>Log unexpected actions to the console to help with debugging the addition of future actions.</li>
+		<li>Enable the Redux Devtools plugin if it's installed in the browser.</li>
 	   </ol>
 	</p>
     <div>
       <p>
-        Clicked: <span id="value">0</span> times 
+        The stored value is <span id="value">0</span>.
 		<br/>
         <button id="increment">+</button>
         <button id="decrement">-</button>

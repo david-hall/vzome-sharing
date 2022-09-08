@@ -17,6 +17,9 @@ function counter(state, action) {
       return state - 1;
     case 'SQUARE':
       return state * state;
+	case "@@INIT": // store is initializing
+	  console.dir({$msg: "Initializing redux store", state, action});
+      return state;
     default:
 	  console.dir({$error: "Unexpected action.type", state, action});
       return state;
@@ -25,14 +28,17 @@ function counter(state, action) {
 
 // the render function will be notified whenever a store action is invoked (e.g. dispatch)
 function render() {
-  valueEl.innerHTML = store.getState().toString();
+  valueEl.innerHTML = store.getState(); // may initiallly be null or undefined
 }
 
 function initializeStore() {
 	// ensure that we only iinitialize once
 	if(store == null) {
-		// counter is the function that manages all actions upon the store
-		store = Redux.createStore(counter);
+		const preloadedState = 0;
+		store = Redux.createStore(counter, // the function that manages all actions upon the store
+			preloadedState, // optional param may be omitted
+			window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // may be 2nd or 3rd param to enable the chrome Redux extension
+		);
 		valueEl = document.getElementById('value');
 
 		// call render once directly from this initialization code
