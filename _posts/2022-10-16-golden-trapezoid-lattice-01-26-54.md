@@ -1,8 +1,8 @@
 ---
-title: golden trapezoid lattice
+title: Golden Trapezoid Lattice
 description: A 3D lattice of trapezoids with side lengths having the golden ratio
 image: https://david-hall.github.io/vzome-sharing/2022/10/16/01-26-54-golden-trapezoid-lattice/golden-trapezoid-lattice.png
-published: false
+published: true
 layout: vzome
 ---
 
@@ -12,7 +12,7 @@ layout: vzome
  
 {% endcomment %}
 
-A 3D lattice of trapezoids with side lengths having the golden ratio
+A 3D lattice of trapezoids with side lengths having the golden ratio.
 
 <figure style="width: 87%; margin: 5%">
   <vzome-viewer style="width: 100%; height: 60vh"
@@ -21,6 +21,12 @@ A 3D lattice of trapezoids with side lengths having the golden ratio
        src="https://david-hall.github.io/vzome-sharing/2022/10/16/01-26-54-golden-trapezoid-lattice/golden-trapezoid-lattice.png" >
   </vzome-viewer>
   <figcaption style="text-align: center; font-style: italic;">
-    golden trapezoid lattice
+    Golden Trapezoid Lattice
   </figcaption>
 </figure>
+
+Initially inspired by [Ayliean MacDonald - The Pentagon: A User’s Guide](https://www.youtube.com/watch?v=gMwOIPcfn64&t=1609s) on the G4G YouTube channel. The trapezoid edges in this lattice are identical to the edges of the "intertwined pentagons" she describes at about 26:45, except that I have removed all of the isosceles triangle faces leaving just the golden trapezoid sections of the regular pentagons.
+
+The lattice is chiral, having no rotational symmetry. It has translational symmetry along the x, Y and Z axes as well as mirror symmetry through the X, Y and Z planes.
+
+I was surprised to realize that although all of the edge lengths are in the golden ratio, this model cannot be constructed in the vZome golden field. Rather, it requires the 20-gon field.
