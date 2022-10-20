@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="5" field="polygon21" version="7.1">
+  <EditHistory editNumber="116" lastStickyEdit="114">
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" dir="red" index="0" len="0 2 0 1 0 0" symm="antiprism21"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <RotationTool corrected="true" name="tool-0" symmetry="antiprism21"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+    <Delete/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" index="0" len="2 0 3 0 1 0" symm="antiprism21"/>
+    <StrutCreation anchor="2 0 3 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0" dir="red" index="0" len="0 2 0 1 0 0" symm="antiprism21"/>
+    <SelectManifestation point="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+    <ApplyTool copyColors="true" name="symmetry.builtin/polygonal antiprism around origin" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+    <SelectManifestation point="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+    <SelectManifestation point="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+    <SelectManifestation point="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+    <SelectManifestation point="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+    <SelectManifestation point="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+    <SelectManifestation point="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+    <SelectManifestation point="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+    <SelectManifestation point="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+    <SelectManifestation point="9 1 -1 -4 -6 7 -2 0 -3 0 -1 0 0 -2 0 -1 0 0"/>
+    <EndBlock/>
+    <ConvexHull3d mode="onlyPanels"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation>
+      <polygonVertex at="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+      <polygonVertex at="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+      <polygonVertex at="9 1 -1 -4 -6 7 -2 0 -3 0 -1 0 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+      <polygonVertex at="9 1 -1 -4 -6 7 -2 0 -3 0 -1 0 0 -2 0 -1 0 0"/>
+      <polygonVertex at="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+    <SelectManifestation point="0 5 -7 4 -5 6 16 3 -7 -8 -14 16 0 -2 0 -1 0 0"/>
+    <SelectManifestation point="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+    <EndBlock/>
+    <Polygon/>
+    <BeginBlock/>
+    <SelectManifestation point="9 1 -1 -4 -6 7 -2 0 -3 0 -1 0 0 -2 0 -1 0 0"/>
+    <SelectManifestation point="-9 -1 1 4 6 -7 2 -5 3 -4 1 -1 0 2 0 1 0 0"/>
+    <SelectManifestation point="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+    <EndBlock/>
+    <Polygon/>
+    <BeginBlock/>
+    <SelectManifestation>
+      <polygonVertex at="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+      <polygonVertex at="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+      <polygonVertex at="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="9 1 -1 -4 -6 7 -2 0 -3 0 -1 0 0 -2 0 -1 0 0"/>
+      <polygonVertex at="-9 -1 1 4 6 -7 2 -5 3 -4 1 -1 0 2 0 1 0 0"/>
+      <polygonVertex at="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <setItemColor blue="0" green="0" red="255"/>
+    <SelectManifestation>
+      <polygonVertex at="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+      <polygonVertex at="9 1 -1 -4 -6 7 -2 0 -3 0 -1 0 0 -2 0 -1 0 0"/>
+      <polygonVertex at="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <setItemColor blue="0" green="255" red="0"/>
+    <SelectManifestation>
+      <polygonVertex at="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+      <polygonVertex at="0 5 -7 4 -5 6 16 3 -7 -8 -14 16 0 -2 0 -1 0 0"/>
+      <polygonVertex at="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+    </SelectManifestation>
+    <setItemColor blue="255" green="0" red="0"/>
+    <BeginBlock/>
+    <AdjustSelectionByClass balls="SELECT" panels="IGNORE" struts="IGNORE"/>
+    <AdjustSelectionByClass balls="IGNORE" panels="IGNORE" struts="SELECT"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectAll/>
+    <ApplyTool copyColors="true" name="tool-0"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" name="tool-0"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" name="tool-0"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" name="tool-0"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" name="tool-0"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" name="tool-0"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism21 rotation.builtin/rotate around red through origin"/>
+    <BeginBlock/>
+    <SelectManifestation>
+      <polygonVertex at="-16 -3 7 8 14 -16 -8 -7 8 2 11 -9 0 2 0 1 0 0"/>
+      <polygonVertex at="-13 1 4 7 10 -13 1 -6 7 -2 5 -2 0 -2 0 -1 0 0"/>
+      <polygonVertex at="13 -1 -4 -7 -10 13 -2 5 -3 4 -1 1 0 2 0 1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="16 3 -7 -8 -14 16 0 5 -7 4 -5 6 0 -2 0 -1 0 0"/>
+      <polygonVertex at="13 -1 -4 -7 -10 13 -2 5 -3 4 -1 1 0 2 0 1 0 0"/>
+      <polygonVertex at="-13 1 4 7 10 -13 1 -6 7 -2 5 -2 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="13 -1 -4 -7 -10 13 -2 5 -3 4 -1 1 0 2 0 1 0 0"/>
+      <polygonVertex at="16 3 -7 -8 -14 16 0 5 -7 4 -5 6 0 -2 0 -1 0 0"/>
+      <polygonVertex at="-1 6 -7 2 -5 2 18 3 -4 -8 -13 16 0 2 0 1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-2 0 -3 0 -1 0 9 1 -1 -4 -6 7 0 -2 0 -1 0 0"/>
+      <polygonVertex at="-1 6 -7 2 -5 2 18 3 -4 -8 -13 16 0 2 0 1 0 0"/>
+      <polygonVertex at="16 3 -7 -8 -14 16 0 5 -7 4 -5 6 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-1 6 -7 2 -5 2 18 3 -4 -8 -13 16 0 2 0 1 0 0"/>
+      <polygonVertex at="-2 0 -3 0 -1 0 9 1 -1 -4 -6 7 0 -2 0 -1 0 0"/>
+      <polygonVertex at="0 -5 7 -4 5 -6 -18 -3 4 8 13 -16 0 2 0 1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+      <polygonVertex at="0 -5 7 -4 5 -6 -18 -3 4 8 13 -16 0 2 0 1 0 0"/>
+      <polygonVertex at="-2 0 -3 0 -1 0 9 1 -1 -4 -6 7 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 -5 7 -4 5 -6 -18 -3 4 8 13 -16 0 2 0 1 0 0"/>
+      <polygonVertex at="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+      <polygonVertex at="-9 -1 1 4 6 -7 2 -5 3 -4 1 -1 0 2 0 1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="9 1 -1 -4 -6 7 -2 0 -3 0 -1 0 0 -2 0 -1 0 0"/>
+      <polygonVertex at="-9 -1 1 4 6 -7 2 -5 3 -4 1 -1 0 2 0 1 0 0"/>
+      <polygonVertex at="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-9 -1 1 4 6 -7 2 -5 3 -4 1 -1 0 2 0 1 0 0"/>
+      <polygonVertex at="9 1 -1 -4 -6 7 -2 0 -3 0 -1 0 0 -2 0 -1 0 0"/>
+      <polygonVertex at="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 5 -7 4 -5 6 16 3 -7 -8 -14 16 0 -2 0 -1 0 0"/>
+      <polygonVertex at="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+      <polygonVertex at="9 1 -1 -4 -6 7 -2 0 -3 0 -1 0 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+      <polygonVertex at="0 5 -7 4 -5 6 16 3 -7 -8 -14 16 0 -2 0 -1 0 0"/>
+      <polygonVertex at="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="1 -6 7 -2 5 -2 -13 1 4 7 10 -13 0 -2 0 -1 0 0"/>
+      <polygonVertex at="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+      <polygonVertex at="0 5 -7 4 -5 6 16 3 -7 -8 -14 16 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="2 0 3 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0"/>
+      <polygonVertex at="1 -6 7 -2 5 -2 -13 1 4 7 10 -13 0 -2 0 -1 0 0"/>
+      <polygonVertex at="-16 -3 7 8 14 -16 -8 -7 8 2 11 -9 0 2 0 1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-13 1 4 7 10 -13 1 -6 7 -2 5 -2 0 -2 0 -1 0 0"/>
+      <polygonVertex at="-16 -3 7 8 14 -16 -8 -7 8 2 11 -9 0 2 0 1 0 0"/>
+      <polygonVertex at="1 -6 7 -2 5 -2 -13 1 4 7 10 -13 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-9 -1 1 4 6 -7 2 -5 3 -4 1 -1 0 2 0 1 0 0"/>
+      <polygonVertex at="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+      <polygonVertex at="-2 0 -3 0 -1 0 9 1 -1 -4 -6 7 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-9 -1 1 4 6 -7 2 -5 3 -4 1 -1 0 2 0 1 0 0"/>
+      <polygonVertex at="9 1 -1 -4 -6 7 -2 0 -3 0 -1 0 0 -2 0 -1 0 0"/>
+      <polygonVertex at="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <BookmarkTool name="tool-1"/>
+    <InvertSelection/>
+    <BookmarkTool name="tool-2"/>
+    <BeginBlock/>
+    <InvertSelection/>
+    <SelectManifestation>
+      <polygonVertex at="11 4 -7 -3 -11 14 8 7 -8 -2 -11 9 0 2 0 1 0 0"/>
+      <polygonVertex at="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+      <polygonVertex at="-2 0 -3 0 -1 0 9 1 -1 -4 -6 7 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-11 -4 7 3 11 -14 -11 -4 7 3 11 -14 0 -2 0 -1 0 0"/>
+      <polygonVertex at="0 -5 7 -4 5 -6 -18 -3 4 8 13 -16 0 2 0 1 0 0"/>
+      <polygonVertex at="-2 0 -3 0 -1 0 9 1 -1 -4 -6 7 0 -2 0 -1 0 0"/>
+    </SelectManifestation>
+    <InvertSelection/>
+    <EndBlock/>
+    <BookmarkTool name="tool-3"/>
+    <InvertSelection/>
+    <Branch>
+      <BookmarkTool name="tool-4"/>
+    </Branch>
+    <DeselectAll/>
+    <Snapshot id="0"/>
+    <ApplyTool copyColors="true" name="tool-4" selectInputs="true"/>
+    <Hide/>
+    <Snapshot id="1"/>
+    <SelectAll/>
+    <Hide/>
+    <ApplyTool copyColors="true" name="tool-4" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="2"/>
+    <ApplyTool copyColors="true" name="tool-3" selectInputs="true"/>
+    <DeselectAll/>
+  </EditHistory>
+  <notes>
+    <page snapshot="1" title="Inner Ring">
+      <ViewModel distance="155.8477325439453" far="311.6954040527344" near="0.3896194100379944" parallel="false" stereoAngle="0.0" width="70.13148498535156">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.08432536572217941" y="0.5630371570587158" z="-0.8221200108528137"/>
+        <LookDirection x="0.1043398380279541" y="-0.8255110383033752" z="-0.5546590685844421"/>
+      </ViewModel>
+      <content xml:space="preserve">https://youtu.be/jhpA_fZufd0?t=264</content>
+    </page>
+    <page snapshot="2" title="Outer Ring">
+      <ViewModel distance="155.8477325439453" far="311.6954040527344" near="0.3896194100379944" parallel="false" stereoAngle="0.0" width="70.13148498535156">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.08432536572217941" y="0.5630371570587158" z="-0.8221200108528137"/>
+        <LookDirection x="0.1043398380279541" y="-0.8255110383033752" z="-0.5546590685844421"/>
+      </ViewModel>
+      <content xml:space="preserve">https://youtu.be/jhpA_fZufd0?t=264</content>
+    </page>
+    <page snapshot="0" title="Diplotorus">
+      <ViewModel distance="155.8477325439453" far="311.6954040527344" near="0.3896194100379944" parallel="false" stereoAngle="0.0" width="70.13148498535156">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.08432536572217941" y="0.5630371570587158" z="-0.8221200108528137"/>
+        <LookDirection x="0.1043398380279541" y="-0.8255110383033752" z="-0.5546590685844421"/>
+      </ViewModel>
+      <content xml:space="preserve">https://youtu.be/jhpA_fZufd0?t=264</content>
+    </page>
+  </notes>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="168.8278350830078" far="337.6556396484375" near="0.42206957936286926" parallel="false" stereoAngle="0.0" width="75.9725341796875">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.9966191649436951" y="0.05380087345838547" z="-0.062167689204216"/>
+      <LookDirection x="-0.06285098195075989" y="0.011121557094156742" z="-0.9979700446128845"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="octahedral" renderingStyle="octahedra">
+    <Direction color="255,255,255" name="208" prototype="24 8 -16 -14 4 8 -22 -12 18 14 -6 -6 1 0 0 -1 2 -1"/>
+    <Direction color="255,255,255" name="207" prototype="16 8 -14 -8 4 4 -6 -2 2 4 2 -4 -1 0 0 1 -2 1"/>
+    <Direction color="255,255,255" name="209" prototype="6 2 -2 -4 -2 4 0 -2 4 0 -2 0 -6 -1 0 4 3 -4"/>
+    <Direction color="0,118,149" name="blue"/>
+    <Direction color="255,255,255" name="220" prototype="-2 2 0 2 -2 0 -6 0 2 4 4 -6 6 1 0 -4 -3 4"/>
+    <Direction color="255,255,255" name="204" prototype="-28 -12 20 20 -4 -12 16 8 -14 -8 4 4 1 0 0 -1 2 -1"/>
+    <Direction color="255,255,255" name="203" prototype="0 2 -4 2 0 0 -6 0 2 4 4 -6 -6 -1 0 4 3 -4"/>
+    <Direction color="255,255,255" name="206" prototype="-2 0 0 0 -2 2 0 2 -2 -2 4 -2 -6 -1 0 4 3 -4"/>
+    <Direction color="255,255,255" name="205" prototype="2 -4 2 0 -2 2 2 -4 2 0 -2 2 -6 -1 0 4 3 -4"/>
+    <Direction color="255,255,255" name="222" prototype="-2 2 0 2 -2 0 0 2 -2 -2 4 -2 6 1 0 -4 -3 4"/>
+    <Direction color="255,255,255" name="221" prototype="-6 -6 8 6 -4 -2 -6 -6 8 6 -4 -2 -1 0 0 1 -2 1"/>
+    <Direction color="255,255,255" name="202" prototype="6 4 -4 -6 2 2 -18 -6 14 10 -6 -4 1 0 0 -1 2 -1"/>
+    <Direction color="255,255,255" name="201" prototype="-16 -6 10 10 -4 -4 22 12 -18 -16 8 6 1 0 0 -1 2 -1"/>
+    <Direction color="255,255,255" name="219" prototype="8 0 -2 -4 -2 4 0 -2 4 0 -2 0 6 1 0 -4 -3 4"/>
+    <Direction color="255,255,255" name="218" prototype="8 0 -2 -4 -2 4 2 -4 2 0 -2 2 6 1 0 -4 -3 4"/>
+    <Direction color="0,141,54" name="green"/>
+    <Direction color="240,160,0" name="yellow"/>
+    <Direction color="255,255,255" name="215" prototype="0 0 0 -2 2 0 -2 0 0 0 -2 2 6 1 0 -4 -3 4"/>
+    <Direction color="255,255,255" name="214" prototype="0 0 0 -2 2 0 6 2 -2 -4 -2 4 6 1 0 -4 -3 4"/>
+    <Direction color="255,255,255" name="217" prototype="24 8 -16 -14 4 8 -6 -6 8 6 -4 -2 1 0 0 -1 2 -1"/>
+    <Direction color="255,255,255" name="216" prototype="-12 -4 4 8 4 -8 0 2 -4 2 0 0 6 1 0 -4 -3 4"/>
+    <Direction color="255,255,255" name="211" prototype="-16 -6 10 10 -4 -4 -6 -2 2 4 2 -4 1 0 0 -1 2 -1"/>
+    <Direction color="255,255,255" name="210" prototype="6 4 -4 -6 2 2 14 6 -10 -10 2 6 1 0 0 -1 2 -1"/>
+    <Direction color="255,255,255" name="213" prototype="-18 -6 14 10 -6 -4 22 12 -18 -16 8 6 -1 0 0 1 -2 1"/>
+    <Direction color="255,255,255" name="212" prototype="-22 -12 18 14 -6 -6 14 6 -10 -10 2 6 -1 0 0 1 -2 1"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="antiprism21" renderingStyle="thin antiprism">
+      <Direction color="0,118,149" name="blue"/>
+      <Direction color="255,255,255" name="172" prototype="18 6 -14 -10 6 4 -22 -12 18 16 -8 -6 1 -1 0 -2 2 0"/>
+      <Direction color="255,255,255" name="173" prototype="0 0 0 -2 2 0 -2 0 0 0 -2 2 6 1 0 -4 -3 4"/>
+      <Direction color="255,255,255" name="170" prototype="-28 -12 20 20 -4 -12 16 8 -14 -8 4 4 1 -1 0 -2 2 0"/>
+      <Direction color="255,255,255" name="171" prototype="-24 -8 16 14 -4 -8 22 12 -18 -14 6 6 1 -1 0 -2 2 0"/>
+      <Direction color="255,255,255" name="176" prototype="-9 -3 7 4 -2 -2 -7 -3 5 5 -1 -3 56 24 -42 -34 14 16"/>
+      <Direction color="255,255,255" name="177" prototype="0 0 1 -1 1 -1 -3 -1 1 1 2 -2 8 2 -6 -4 2 2"/>
+      <Direction color="255,255,255" name="174" prototype="-1 0 -1 1 0 0 2 1 -1 -2 -1 2 8 2 -6 -4 2 2"/>
+      <Direction color="255,255,255" name="175" prototype="0 0 1 -1 -1 1 -2 -1 1 3 0 -2 -8 -2 6 4 -2 -2"/>
+      <Direction color="255,255,255" name="178" prototype="-6 0 2 4 4 -6 0 2 -4 2 0 0 6 1 0 -4 -3 4"/>
+      <Direction color="255,255,255" name="179" prototype="-6 0 2 4 4 -6 -2 2 0 2 -2 0 6 1 0 -4 -3 4"/>
+      <Direction color="255,255,255" name="138" prototype="-4 -2 2 6 0 -4 -4 -2 2 6 0 -4 -5 -2 1 5 2 -4"/>
+      <Direction color="255,255,255" name="139" prototype="0 2 -2 -2 2 0 2 4 -2 -4 0 2 -5 -2 1 5 2 -4"/>
+      <Direction color="240,160,0" name="yellow"/>
+      <Direction color="255,255,255" name="180" prototype="0 0 0 -2 2 0 6 2 -2 -4 -2 4 6 1 0 -4 -3 4"/>
+      <Direction color="255,255,255" name="183" prototype="-2 0 0 0 -2 2 0 2 -2 -2 4 -2 3 0 -2 -1 -3 4"/>
+      <Direction color="255,255,255" name="140" prototype="-2 -2 2 0 0 0 2 -2 0 0 -2 2 -5 -2 1 5 2 -4"/>
+      <Direction color="255,255,255" name="184" prototype="0 0 0 -2 2 0 -2 0 0 0 -2 2 -3 0 2 1 3 -4"/>
+      <Direction color="255,255,255" name="181" prototype="-18 -6 14 10 -6 -4 22 12 -18 -16 8 6 -1 0 0 1 -2 1"/>
+      <Direction color="255,255,255" name="182" prototype="6 4 -4 -6 2 2 -18 -6 14 10 -6 -4 1 0 0 -1 2 -1"/>
+      <Direction color="255,255,255" name="143" prototype="0 0 -2 2 2 -2 -4 -2 2 6 0 -4 -5 -2 1 5 2 -4"/>
+      <Direction color="255,255,255" name="187" prototype="-6 -2 2 4 2 -4 16 8 -14 -8 4 4 1 0 0 -1 2 -1"/>
+      <Direction color="255,255,255" name="144" prototype="-6 -2 2 4 0 -2 0 2 -2 -2 2 0 -5 -2 1 5 2 -4"/>
+      <Direction color="255,255,255" name="188" prototype="0 2 -4 2 0 0 -12 -4 4 8 4 -8 -6 -1 0 4 3 -4"/>
+      <Direction color="255,255,255" name="141" prototype="4 -2 0 0 0 0 2 -2 0 0 -2 2 -5 -2 1 5 2 -4"/>
+      <Direction color="255,255,255" name="185" prototype="-2 0 0 0 -2 2 0 2 -2 -2 4 -2 -6 -1 0 4 3 -4"/>
+      <Direction color="255,255,255" name="142" prototype="-2 2 2 -2 0 0 2 4 -2 -4 0 2 -5 -2 1 5 2 -4"/>
+      <Direction color="255,255,255" name="186" prototype="16 8 -14 -8 4 4 -28 -12 20 20 -4 -12 -1 0 0 1 -2 1"/>
+      <Direction color="255,255,255" name="147" prototype="6 4 -4 -6 0 4 -2 2 2 -2 0 0 -5 -2 1 5 2 -4"/>
+      <Direction color="255,255,255" name="148" prototype="-6 -2 2 4 0 -2 0 0 -2 2 2 -2 -5 -2 1 5 2 -4"/>
+      <Direction color="255,255,255" name="145" prototype="6 4 -4 -6 0 4 -2 -2 2 0 0 0 -5 -2 1 5 2 -4"/>
+      <Direction color="255,255,255" name="189" prototype="-16 -6 10 10 -4 -4 22 12 -18 -16 8 6 -1 0 0 1 -2 1"/>
+      <Direction color="255,255,255" name="146" prototype="0 -4 4 4 -4 0 4 -2 0 0 0 0 -5 -2 1 5 2 -4"/>
+      <Direction color="255,255,255" name="149" prototype="-24 -8 16 14 -4 -8 22 12 -18 -14 6 6 -4 0 1 1 2 -2"/>
+      <Direction color="255,255,255" name="190" prototype="-6 -2 2 4 2 -4 -16 -6 10 10 -4 -4 1 0 0 -1 2 -1"/>
+      <Direction color="255,255,255" name="191" prototype="-2 2 0 2 -2 0 0 2 -2 -2 4 -2 -6 -1 0 4 3 -4"/>
+      <Direction color="255,255,255" name="150" prototype="18 6 -14 -10 6 4 -22 -12 18 16 -8 -6 -4 0 1 1 2 -2"/>
+      <Direction color="255,255,255" name="194" prototype="6 2 -2 -4 -2 4 0 -2 4 0 -2 0 -6 -1 0 4 3 -4"/>
+      <Direction color="255,255,255" name="151" prototype="-16 -8 14 8 -4 -4 28 12 -20 -20 4 12 -4 0 1 1 2 -2"/>
+      <Direction color="255,255,255" name="195" prototype="-6 -6 8 6 -4 -2 24 8 -16 -14 4 8 -1 0 0 1 -2 1"/>
+      <Direction color="255,255,255" name="192" prototype="14 6 -10 -10 2 6 -22 -12 18 14 -6 -6 -1 0 0 1 -2 1"/>
+      <Direction color="255,255,255" name="193" prototype="6 4 -4 -6 2 2 14 6 -10 -10 2 6 1 0 0 -1 2 -1"/>
+      <Direction color="175,0,0" name="red"/>
+      <Direction color="255,255,255" name="154" prototype="6 6 -8 -6 4 2 -24 -8 16 14 -4 -8 -4 0 1 1 2 -2"/>
+      <Direction color="255,255,255" name="198" prototype="2 -4 2 0 -2 2 8 0 -2 -4 -2 4 -6 -1 0 4 3 -4"/>
+      <Direction color="255,255,255" name="155" prototype="-6 -4 4 6 -2 -2 18 6 -14 -10 6 4 -4 0 1 1 2 -2"/>
+      <Direction color="255,255,255" name="199" prototype="-22 -12 18 14 -6 -6 24 8 -16 -14 4 8 1 0 0 -1 2 -1"/>
+      <Direction color="255,255,255" name="152" prototype="16 6 -10 -10 4 4 -22 -12 18 16 -8 -6 -4 0 1 1 2 -2"/>
+      <Direction color="255,255,255" name="196" prototype="-6 -6 8 6 -4 -2 -6 -6 8 6 -4 -2 1 0 0 -1 2 -1"/>
+      <Direction color="255,255,255" name="153" prototype="-14 -6 10 10 -2 -6 22 12 -18 -14 6 6 -4 0 1 1 2 -2"/>
+      <Direction color="255,255,255" name="197" prototype="2 -4 2 0 -2 2 2 -4 2 0 -2 2 6 1 0 -4 -3 4"/>
+      <Direction color="255,255,255" name="158" prototype="-6 -4 4 6 -2 -2 -14 -6 10 10 -2 -6 -4 0 1 1 2 -2"/>
+      <Direction color="255,255,255" name="159" prototype="6 6 -8 -6 4 2 6 6 -8 -6 4 2 -4 0 1 1 2 -2"/>
+      <Direction color="0,141,54" name="green"/>
+      <Direction color="255,255,255" name="156" prototype="6 2 -2 -4 -2 4 -16 -8 14 8 -4 -4 -4 0 1 1 2 -2"/>
+      <Direction color="255,255,255" name="157" prototype="6 2 -2 -4 -2 4 16 6 -10 -10 4 4 -4 0 1 1 2 -2"/>
+      <Direction color="255,255,255" name="161" prototype="-24 -8 16 14 -4 -8 22 12 -18 -14 6 6 0 -1 1 0 -1 1"/>
+      <Direction color="255,255,255" name="162" prototype="6 4 -4 -6 2 2 -18 -6 14 10 -6 -4 1 -1 0 -2 2 0"/>
+      <Direction color="255,255,255" name="160" prototype="-24 -8 16 14 -4 -8 22 12 -18 -14 6 6 0 1 -2 -1 2 0"/>
+      <Direction color="255,255,255" name="165" prototype="6 4 -4 -6 2 2 14 6 -10 -10 2 6 1 -1 0 -2 2 0"/>
+      <Direction color="255,255,255" name="166" prototype="-6 -6 8 6 -4 -2 -6 -6 8 6 -4 -2 1 -1 0 -2 2 0"/>
+      <Direction color="255,255,255" name="163" prototype="-6 -2 2 4 2 -4 16 8 -14 -8 4 4 1 -1 0 -2 2 0"/>
+      <Direction color="255,255,255" name="164" prototype="-6 -2 2 4 2 -4 -16 -6 10 10 -4 -4 1 -1 0 -2 2 0"/>
+      <Direction color="255,255,255" name="169" prototype="22 12 -18 -16 8 6 -16 -6 10 10 -4 -4 1 -1 0 -2 2 0"/>
+      <Direction color="255,255,255" name="167" prototype="24 8 -16 -14 4 8 -6 -6 8 6 -4 -2 1 -1 0 -2 2 0"/>
+      <Direction color="255,255,255" name="200" prototype="0 -2 4 0 -2 0 8 0 -2 -4 -2 4 6 1 0 -4 -3 4"/>
+      <Direction color="255,255,255" name="168" prototype="-22 -12 18 14 -6 -6 14 6 -10 -10 2 6 1 -1 0 -2 2 0"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool copyColors="true" deleteInputs="false" id="tool-0" label="copy rotation" selectInputs="false"/>
+    <Tool copyColors="true" deleteInputs="false" hidden="true" id="tool-1" label="outer ring" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" hidden="true" id="tool-2" label="inner ring" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-3" label="inner ring" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-4" label="outer ring" selectInputs="true"/>
+  </Tools>
+</vzome:vZome>
