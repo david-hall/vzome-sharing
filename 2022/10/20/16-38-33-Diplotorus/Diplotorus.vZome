@@ -248,10 +248,10 @@
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="168.8278350830078" far="337.6556396484375" near="0.42206957936286926" parallel="false" stereoAngle="0.0" width="75.9725341796875">
+    <ViewModel distance="155.8477325439453" far="311.6954040527344" near="0.3896194100379944" parallel="false" stereoAngle="0.0" width="70.13148498535156">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-      <UpDirection x="0.9966191649436951" y="0.05380087345838547" z="-0.062167689204216"/>
-      <LookDirection x="-0.06285098195075989" y="0.011121557094156742" z="-0.9979700446128845"/>
+      <UpDirection x="0.08432536572217941" y="0.5630371570587158" z="-0.8221200108528137"/>
+      <LookDirection x="0.1043398380279541" y="-0.8255110383033752" z="-0.5546590685844421"/>
     </ViewModel>
   </Viewing>
   <SymmetrySystem name="octahedral" renderingStyle="octahedra">
