@@ -1,7 +1,9 @@
 # folders (in alphabetical order)
+node_modules/
 temp/
 
 # files (in alphabetical order)
+*.cache
 *.tmp
 *.unused
 test/web.config
