@@ -27,6 +27,6 @@ A 3D lattice of trapezoids with side lengths having the golden ratio.
 
 Initially inspired by [Ayliean MacDonald - The Pentagon: A User’s Guide](https://www.youtube.com/watch?v=gMwOIPcfn64&t=1609s) on the G4G YouTube channel. The trapezoid edges in this lattice are identical to the edges of the "intertwined pentagons" she describes at about 26:45, except that I have removed all of the isosceles triangle faces leaving just the golden trapezoid sections of the regular pentagons.
 
-The lattice is chiral, having no rotational symmetry. It has translational symmetry along the x, Y and Z axes as well as mirror symmetry through the X, Y and Z planes.
+The lattice is chiral, having no rotational symmetry. It has translational symmetry along the X, Y and Z axes as well as mirror symmetry through the X, Y and Z planes.
 
 I was surprised to realize that although all of the edge lengths are in the golden ratio, this model cannot be constructed in the vZome golden field. Rather, it requires the 20-gon field.
