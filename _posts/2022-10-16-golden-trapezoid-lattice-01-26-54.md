@@ -21,7 +21,7 @@ A 3D lattice of trapezoids with side lengths having the golden ratio.
        src="https://david-hall.github.io/vzome-sharing/2022/10/16/01-26-54-golden-trapezoid-lattice/golden-trapezoid-lattice.png" >
   </vzome-viewer>
   <figcaption style="text-align: center; font-style: italic;">
-    Golden Trapezoid Lattice
+    Golden Trapezoid Lattice (drag to rotate, wheel mouse to zoom)
   </figcaption>
 </figure>
 
