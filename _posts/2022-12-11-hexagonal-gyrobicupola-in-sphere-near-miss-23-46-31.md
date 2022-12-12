@@ -2,7 +2,7 @@
 title: Circumscribed Hexagonal Gyrobicupola (almost)
 description: Near miss: Hexagonal Gyrobicupola in a sphere
 image: https://david-hall.github.io/vzome-sharing/2022/12/11/23-46-31-hexagonal-gyrobicupola-in-sphere-near-miss/hexagonal-gyrobicupola-in-sphere-near-miss.png
-published: false
+published: true
 layout: vzome
 ---
 
@@ -24,3 +24,15 @@ Near miss: Hexagonal Gyrobicupola in a sphere
     Circumscribed Hexagonal Gyrobicupola (almost)
   </figcaption>
 </figure>
+
+The two light pink struts are the same lengths which proves that the vertices are all the same distance from the origin, thus the vertices are all on the surface of a sphere. This feature is not a requirement for gyrobicupolas in general, but was specified as an additional design criteria for this model.
+
+The darker pink strut is coincidentally the same length as the two light pink struts.
+
+The white struts are all the same length.
+The peach struts are all the same length.
+The blue struts are all the same length. They form a pair of regular hexagon end caps.
+
+However... the peach struts are **NOT** the same length as the blue struts, so the quadrilateral sides are not exactly rectangles as they should be for a true gyrobicupola, hence the _near miss_.
+
+This model uses the polygon24 algebraic field.
