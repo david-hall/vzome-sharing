@@ -12,7 +12,7 @@ layout: vzome
  
 {% endcomment %}
 
- Hexagonal Gyrobicupola in a sphere (near miss)
+ Hexagonal [Gyrobicupola](https://en.wikipedia.org/wiki/Bicupola_(geometry)#Set_of_gyrobicupolae) in a sphere (near miss)
 
 <figure style="width: 87%; margin: 5%">
   <vzome-viewer style="width: 100%; height: 60vh"
@@ -25,7 +25,7 @@ layout: vzome
   </figcaption>
 </figure>
 
-The two light pink struts are the same lengths which proves that the vertices are all the same distance from the origin, thus the vertices are all on the surface of a sphere. This feature is not a requirement for gyrobicupolas in general, but was specified as an additional design criteria for this model.
+The two light pink struts are the same length indicating that the vertices are all the same distance from the origin, thus the vertices are all on the surface of a sphere. This feature is not a requirement for gyrobicupolae in general, but was specified as an additional design criteria for this model.
 
 The darker pink strut is coincidentally the same length as the two light pink struts.
 
