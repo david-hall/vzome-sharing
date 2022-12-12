@@ -1,5 +1,5 @@
 ---
-title: Circumscribed Hexagonal Gyrobicupola (almost)
+title: Circumscribed Hexagonal Gyrobicupola
 description: Near miss: Hexagonal Gyrobicupola in a sphere
 image: https://david-hall.github.io/vzome-sharing/2022/12/11/23-46-31-hexagonal-gyrobicupola-in-sphere-near-miss/hexagonal-gyrobicupola-in-sphere-near-miss.png
 published: true
