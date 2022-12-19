@@ -12,7 +12,7 @@ layout: vzome
  
 {% endcomment %}
 
-A variation of a Rhombicuboctahedron design, originally by Jack Pike
+A variation of Jack Pike's [Black 18-CUBES IN SPHERE](https://thynstyx.github.io/vzome-sharing/2022/12/18/Black18-CUBES-IN-SPHERE-21-39-18.html) design.
 
 <figure style="width: 87%; margin: 5%">
   <vzome-viewer scene-titles="_|.." show-scenes="true" style="width: 100%; height: 60vh"
