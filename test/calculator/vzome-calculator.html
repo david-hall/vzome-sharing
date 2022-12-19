@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>vZome Calculator</title>
+	<!--link rel="stylesheet" href="./vZome-calculator.css"-->
+	<script type="module" src="./vzome-calculator-module.js"></script>
+	<!--script type="module" src="./foo-module.js"></script-->
+	<script>
+
+function getSelectedField() {
+	const pick = document.getElementById("pickField");
+	const value = pick.options[pick.selectedIndex].value;
+	return value;
+}
+
+function initializeFieldPickList() {
+	const pick = document.getElementById("pickField");
+	let optLabel;
+	let optgroup;
+	// A valid "field" queryString overrides the default selection
+	const selectedField = (new URL(document.location)).searchParams.get("field");
+	for(let i=4; i <= 100; i++) {
+		switch(i) {
+		case 4:
+			optLabel = "Polygons...";
+			break;
+		default:
+			optLabel = (i%10 == 0) ? i + "..." : "";
+			break;
+		}		
+		if(optLabel != "") {
+			optgroup = document.createElement("optgroup");
+			optgroup.label = optLabel;
+			pick.appendChild(optgroup);
+		}
+		let option = document.createElement("option");
+		option.value = "polygon" + i;
+		option.innerHTML = i + "-gon";
+		option.selected = (option.value == selectedField);
+		optgroup.appendChild(option);
+	}
+	
+	// be sure to use the meta charset="utf-8" tag  for these to all look right
+	let values = ["plasticNumber",  "plasticPhi", "snubCube",  "snubDodec",         "superGolden",  "sqrtPhi"];
+	let text   = ["Plastic Number", "Plastic φ",  "Snub Cube", "Snub Dodecahedron", "Super Golden", "√φ"     ];
+	optgroup = document.createElement("optgroup");
+	optgroup.label = "Others...";
+	pick.appendChild(optgroup);
+	for(const i in values) {
+		let option = document.createElement("option");
+		option.value = values[i];
+		option.innerHTML = text[i];
+		option.selected = (option.value == selectedField);
+		optgroup.appendChild(option);
+	}
+	
+	values = ["golden", "rootTwo", "rootThree", "heptagon", "edPegg",  "custom"];
+	text   = ["Golden", "√2",      "√3",        "Heptagon", "Ed Pegg", "Custom"];
+	// Add these fields to the pick list only if specified in queryString, but not otherwise.
+	// TODO: getIrrational(i) is not implemented in legacy js fields, but we'll allow it anyway for easier future testing
+	for(const i in values) {
+		if(selectedField == values[i]) {
+			optgroup = document.createElement("optgroup");
+			optgroup.label = "Hidden...";
+			pick.appendChild(optgroup);
+			let option = document.createElement("option");
+			option.value = values[i];
+			option.innerHTML = text[i];
+			option.selected = true;
+			optgroup.appendChild(option);
+			break;
+		}
+	}
+	// Only add the change event handler after the options are added
+	pick.addEventListener("change", onPickFieldChange);
+	// then manually fire the change event once to sync it with the calculator's initial state
+	onPickFieldChange();
+}
+
+function onPickFieldChange() {
+	for(const tagName of ["vzome-calculator"]) { //, "vzome-calculator-grid"]) {
+		const calcs = document.getElementsByTagName(tagName);
+		const fieldName = getSelectedField();
+		for(const calc of calcs) {
+			// Sometimes the fieldName setter and getter method doen't initially exist on the calc object
+			// but I can set the corresponding attribute and it works as expected.
+			// I prefer the setter syntax so ...
+			// TODO: figure out how to be able to set calc.fieldName without testing to see if it exists yet...
+			// or I could just eliminate the getters and setters and use only attributes to control it.
+			console.dir(calc);
+			if( hasClassGetter(calc, "fieldName")) {
+				console.log("Assigning the calc.fieldName PROPERTY setter a value of '" + fieldName + "'");
+				calc.fieldName = fieldName;
+			} else {
+				console.log("Setting the calc.field-name ATTRIBUTE to a value of '" + fieldName + "'");
+				calc.setAttribute("field-name", fieldName);
+			}
+		}
+	}
+}
+
+function showNumberFormat() {
+  // TODO: match the rules by selectorText, not by ordinal
+  // See https://stackoverflow.com/questions/324486/how-do-you-read-css-rule-values-with-javascript
+  const radios = document.getElementsByName("pickNumberFormat");
+  for (let i = 0, length = radios.length; i < length; i++) {
+	const selected = radios[i].checked;
+	if(selected) {
+		for(const tagName of ["vzome-calculator"]) { //, "vzome-calculator-grid"]) {
+			const calcs = document.getElementsByTagName(tagName);
+			for(const calc of calcs) {
+				calc.format = radios[i].value;
+			}
+		}
+	}
+	// TODO:
+	//let style = document.styleSheets['algebraicNumberFormats'].rules[i].style;
+	//style.display = selected ? "table-cell" : "none";
+  }
+}
+
+function hasClassGetter(obj, prop) {
+	const proto = Object.getPrototypeOf(obj);
+	//const objTest = obj.hasOwnProperty(prop);
+	const protoTest = proto.hasOwnProperty(prop);
+	const classTest = protoTest && Object.getOwnPropertyDescriptor(proto, prop);
+	const getterTest = classTest && classTest.get;
+	return !!getterTest;
+}
+
+window.addEventListener("load", () => 
+{
+	// Activate debugger from the queryString
+	if((new URL(document.location)).searchParams.has("debugger")) {
+		debugger;
+	}
+	initializeFieldPickList();
+	// TODO: sync initial pickNumberFormat with calculator.format. Calling showNumberFormat() as-is doesn't do the job.
+});
+	</script>
+	
+<!-- be sure that .alg-num, .dec-num and .tdf-num are the first three rules 
+in the 'algebraicNumberFormats' style until I clean up the hard coded hack.
+Also be sure they are in the same order as the pickNumberFormat options -->
+<style id='algebraicNumberFormats'>
+.algebraic, .alg-num {
+  //display: none;
+  white-space: nowrap;
+}
+.decimal, .dec-num {
+  //display: none;
+  white-space: nowrap;
+}
+.tdf-num {
+  display: table-cell;
+  white-space: nowrap;
+}
+</style>
+
+  </head>
+  <body>
+	<p><h1>vZome Calculator</h1></p>
+	<div id='controls'>
+	<fieldset class="inline">
+	<legend>Algebraic Field</legend>
+	<select id="pickField"><!-- options are generated by script --></select>
+	</fieldset>
+	
+	<fieldset class="inline">
+	<legend>Number Format</legend>
+	<input type="radio" id="numFormat1" name="pickNumberFormat" value="alg" onclick="showNumberFormat()"        ><label for="numFormat1">Algebraic Number</label>
+	<input type="radio" id="numFormat2" name="pickNumberFormat" value="dec" onclick="showNumberFormat()"        ><label for="numFormat2">Decimal</label>
+	<input type="radio" id="numFormat3" name="pickNumberFormat" value="tdf" onclick="showNumberFormat()" checked><label for="numFormat3">Trailing Denominator</label>
+	</fieldset>
+	</div>
+
+	<br><vzome-calculator field-name="polygon7"></vzome-calculator>
+	<!-- TODO: nested calculators could cascade their inputs to/from outputs in a parent/child hierarchy and maybe 
+	the Light DOM as described at https://javascript.works-hub.com/learn/web-components-api-shadow-dom-and-light-dom-e18b6
+	-->
+	<!--br><vzome-calculator></vzome-calculator-->
+	
+  </body>
+</html>

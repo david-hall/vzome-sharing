@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lag='en'>
+	<head>
+		<meta charset="utf-8" />
+		<title>vZome Calculator - grid layout test</title>
+		<link rel="stylesheet" href="./grid-test.css">
+	</head>
+	<body class='container'>
+		<h1>vZome Calculator</h1>
+		<h2>grid layout test</h2>
+		<p>TODO: Review the 
+			<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/::part'>template & ::part docs</a>
+		</p>
+		<div class='calculator'>
+			<div class='header'>
+				<div class='calc-menu'>
+					<select class="calc-menu menu">
+						<option selected="" label="⋮" value="vertical ellipsis">&vellip;</option>
+						<option label="⇵" title="swap operands" value="swap-operands"></option>
+						<option label="?" title="info" value="info"></option>
+					</select>
+				</div>
+				<div class='irrat'>&nbsp;</div>
+				<div class='irrat'>a</div>
+				<div class='irrat'>b</div>
+				<div class='irrat'>c</div>
+				<div class='TODO'     >Add result columns labels</div>
+				<div class='irrat'>&nbsp;</div>
+				<div class='irrat'>a</div>
+				<div class='irrat'>b</div>
+				<div class='irrat'>c</div>
+			</div>	
+						
+			<div class='operand'>
+				<div class='blank'>no operand in this row</div>
+				<div class='equation'>
+					<div class='inputs'>
+						<div class='tdf'>
+							<div class='num'>
+								<input class="tdf-num" type="text" inputmode="numeric" pattern=" *-?[0-9]+ *" value="-2">
+							</div>
+							<div class='num'>
+								<input class="tdf-num" type="text" inputmode="numeric" pattern=" *-?[0-9]+ *" value="3">
+							</div>
+							<div class='num'>
+								<input class="tdf-num" type="text" inputmode="numeric" pattern=" *-?[0-9]+ *" value="-4">
+							</div>
+							<div class='num'>
+								<input class="tdf-num" type="text" inputmode="numeric" pattern=" *-?[0-9]+ *" value="0">
+							</div>
+							<!--}-->
+							<div class='den'>
+								<input class="tdf-den" type="text" inputmode="numeric" pattern=" *-?0*[1-9][0-9]* *" value="1" min="1">
+							</div>
+						</div>	
+						<div class='exponent'>1</div>
+					</div>	
+					<div class='equals menu'>=</div>
+					<div class='output'>
+						<div class='alg'>-2 +3a -4b</div>
+						<div class='dec'>-6.11357705442466</div>
+						<div class='tdf'>
+							<div class='num'>-2</div>
+							<div class='num'>3</div>
+							<div class='num'>-4</div>
+							<div class='num'>0</div>
+							<div class='den'>1</div>
+						</div>
+					</div>
+					<div class='notation'>note</div>
+				</div>	
+			</div>	
+			
+			<div class='operand'>
+				<div class='operator'>&#xFF05;</div>
+				<div class='equation'>
+					<div class='inputs'>
+						<div class='tdf'>
+							<div class='num'>
+								<input class="tdf-num" type="text" inputmode="numeric" pattern=" *-?[0-9]+ *" value="0">
+							</div>
+							<div class='num'>
+								<input class="tdf-num" type="text" inputmode="numeric" pattern=" *-?[0-9]+ *" value="0">
+							</div>
+							<div class='num'>
+								<input class="tdf-num" type="text" inputmode="numeric" pattern=" *-?[0-9]+ *" value="0">
+							</div>
+							<div class='num'>
+								<input class="tdf-num" type="text" inputmode="numeric" pattern=" *-?[0-9]+ *" value="0">
+							</div>
+							<!--}-->
+							<div class='den'>
+								<input class="tdf-den" type="text" inputmode="numeric" pattern=" *-?0*[1-9][0-9]* *" value="1" min="1">
+							</div>
+						</div>
+						<div class='exponent'>-7</div>
+					</div>	
+					<div class='equals'>=</div>
+					<div class='output'>
+						<div class='alg'>0</div>
+						<div class='dec'>0</div>
+						<div class='tdf num'>0</div>
+						<div class='tdf num'>0</div>
+						<div class='tdf num'>0</div>
+						<div class='tdf num'>0</div>
+						<div class='tdf den'>1</div>
+					</div>
+					<div class='notation'>note</div>
+				</div>	
+			</div>	
+
+			<div class='answers'>
+				<div class='answer'>
+					<div class='alg'>-2 +3a -4b</div>
+					<div class='dec'>-6.11357705442466</div>
+					<div class='tdf'>
+						<div class='num'>-2</div>
+						<div class='num'>3</div>
+						<div class='num'>-4</div>
+						<div class='num'>0</div>
+						<div class='den'>1</div>
+					</div>
+					<div class='notation'>note</div>
+				</div>
+				<div class='answer'>
+					<div class='infinite'>&infin;</div>
+					<div class='notation'>big!!</div>
+				</div>
+			</div>
+			
+			<!--div class='footer'>footer</div-->
+		</div>
+
+
+	</body>
+</html>

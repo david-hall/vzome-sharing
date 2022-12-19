@@ -1,0 +1,276 @@
+.container {
+	background-color: lightgray;
+	font-size: 1.125rem;
+	/* min-height: 100vh; */
+	padding: 2em;
+	--field-order: 4;
+}
+
+div {
+	border-color: black;
+	border: 1px;
+}
+
+/* layout */
+.calculator {
+	background-color: lightyellow;
+	/* display: grid; */
+	 /* header operand operand answers */
+	/* grid-template-rows: repeat(4, 1fr ); */
+	text-align: right;
+	vertical-align: center;
+	white-space: nowrap;
+}
+
+/* subgrid containers */
+.header,
+.operand,
+ .equation,
+  .inputs,
+   .tdf,
+ .output,
+.answers,
+ .answer,
+.footer {
+	grid-auto-flow: column;
+	/* op num num num num den exp equ alg dec num num num num den */
+	/* fit-content(12em) */
+	display: grid;
+	/* grid-column span 12; */
+	/* grid-template-columns: subgrid; */
+}
+.equation {
+	grid-column: 2 / -1;
+	grid-template-areas: "inputs equals output notation";
+}
+
+.operand {
+	grid-column: 1 / 1;
+	grid-auto-flow: row;
+}
+
+.answers {
+	grid-auto-flow: row;
+}
+
+.inputs {
+	/* grid-auto-flow: column; */
+	grid-template-areas: "operand tdf exponent";
+}
+
+.output {
+	/* grid-auto-flow: column; */
+	grid-template-areas: "alg tdf dec notation";
+}
+
+.answer {
+	/* grid-auto-flow: column; */
+	grid-template-areas: "notation alg tdf dec";
+}
+
+.tdf {
+	/* grid-template-columns: repeat(4fr); */
+	/* grid-auto-flow: column; */
+	grid-template-areas: "num num num num den";
+}
+
+.answer {
+	/* grid-template-columns: repeat(4fr); */
+	/* grid-auto-flow: column; */
+	grid-template-areas: "notation alg tdf dec infinite";
+}
+
+.foo {
+	/* grid-auto-flow: column; */
+	/* op num num num num den exp equ alg dec num num num num den */
+	/* fit-content(12em) */
+	/* display: grid; */
+	/* grid-column span 12; */
+	/* grid-template-columns: subgrid; */
+	/* grid-column-start: calc(var(--field-order)); */
+	/* grid-template-columns: repeat(12, 1fr); */
+}
+
+/* Appearance */
+
+.header {
+	background-color: lightyellow;
+	font-weight: bold;
+	grid-template-columns: repeat(20, 1fr);
+	text-align: center;
+}
+.footer {
+	color: lightyellow;
+	background-color: darkgray;
+	font-weight: bold;
+	text-align: center;
+}
+
+.irrat {
+	grid-row: 1;
+	background-color: yellow;
+}
+
+.operator {
+	background-color: #87ecf9;
+}
+.operand {
+	grid-template-areas: "operator equation";
+}
+.equation {
+}
+.equals {
+	background-color: white;
+	text-align: center;
+}
+.result {
+}
+.answer {
+}
+.infinite {
+	background-color: lightcyan;
+	font-weight: bold;
+	grid-column: span calc(var(--field-order) + 1);
+	text-align: center;
+}
+
+.tdf{
+	background-color: lightblue;
+	/* color: gray; */
+	grid-area: tdf;
+}
+.num {
+	background-color: lightblue;
+	grid-area: num;
+	grid-column: auto;
+}
+.den {
+	background-color: lightgreen;
+	grid-area: den;
+	grid-column: -1;
+}
+.exponent {
+	background-color: lightpink;
+	grid-area: exponent;
+}
+
+/* leaf node and pseudo-elements */
+
+/* .inputs:nth-of-type(1 of .tdf) { */
+/* .inputs:first-child::before { */
+/* .inputs > .tdf:nth-child(1)::before{ */
+/* .tdf:not(.tdf ~ .tdf)::before { */
+/* .inputs:has(.exponent) >  */
+/*
+.inputs:has(.tdf)::before,
+.output:has(.tdf)::before {
+*/
+:has(> .tdf)::beforeX {
+	content: 'Before TDF(';
+}
+
+/* .inputs:nth-of-type(1 of .tdf) */
+/* .inputs:last-child::before { */
+.tdf:last-child::afterX {
+/* .tdf:not(.tdf ~ .tdf)::before { */
+	content: ')After TDF';
+}
+
+.den::beforeX {
+	/* TODOD: not if den is shown below all nums */
+	content: '/';
+}
+.den::first-letterX {
+	/* TODOD: not if den is shown below all nums */
+	/* font-weight: bold; */
+	font-size: 1.5em;
+}
+
+.inputs:has(.exponent) > :first-child::beforeX {
+	content: "[";
+}
+
+.exponent {
+	font-size: 0.5em;
+	text-align: left;
+	vertical-align: top;
+}
+.exponent::beforeX {
+	content: ']';
+}
+.inputs:has(.exponent) > :first-child::first-letterX {
+	font-size: 1.5em;
+	font-weight: bold;
+	vertical-align: top;
+}
+.exponent::first-letterX {
+	font-size: 3em;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+.alg {
+	background-color: #b2a6e9;
+		grid-area: alg;
+}
+.dec {
+	background-color: lightgray;
+	grid-area: dec;
+}
+
+.notation {
+	grid-area: notation;
+}
+
+.calc-menu {
+	grid-area: calc-menu;
+  	border: 0px solid gray;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	vertical-align: middle;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.calc-menu {
+	appearance: none; /* hide the down arrow of the pick lists */
+}
+
+.menu {
+  	border: 1px solid white;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: left;
+}
+input:hover,
+.menu:hover {
+	border: 1px solid gray;
+	/* padding-left: 3px;
+	padding-right: 3px; */
+}
+
+.exponent > input:focus {
+	font-size: 1em;
+	text-align: right;
+}
+
+input {
+	border: none;
+	text-align: right;
+	width: 100%;
+}
+
+/* .exponent > input:not(:focus) { */
+	/* font-size: 0.5em; */
+	/* text-align: left; */
+/* } */
+
+input:invalid {
+	border: red solid 3px;
+}
+
+.blank,
+.TODO {
+	display: none;
+}

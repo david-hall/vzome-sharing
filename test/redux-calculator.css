@@ -1,0 +1,60 @@
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+table, 
+th, 
+td {
+  /*border: 1px solid black; */
+  border-collapse: collapse;
+}
+
+/* See https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp to remove Arrows/Spinners from numeric inputs */
+
+.row-val, /* deprecated */
+div.tdf-num,
+input[type=number] {
+  font-size: 1em;
+  text-align: right;
+  width: 100px;
+}
+
+.operator, #pickMathOp {
+  /* hide the down arrow of the pick list */
+  appearance: none;
+  border: 0px solid black;
+  font-size: 1em;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+input[type=number].exponent {
+  appearance: none;
+  border: 0px solid black;
+  font-size: 0.5em;
+  vertical-align: top;
+  width: 35px;
+}
+
+/* .tdf-num {
+} */
+
+.tdf-den {
+	border: 0px solid black;
+}
+
+/* .exponent {
+}
+
+.algebraic {
+}
+
+.decimal {
+} */
+
+.error {
+	color: red;
+}

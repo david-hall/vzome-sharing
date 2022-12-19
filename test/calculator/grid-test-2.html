@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lag='en'>
+<head>
+	<meta charset="utf-8" />
+	<title>Fraction grid layout study</title>
+	<link rel="stylesheet" href="./grid-test-2.css">
+	<!-- <script type="module" src="./alg-num-ui-module.js"></script> -->
+	<script type="module" src="./alg-exponent-ui-module.js"></script>
+	<script>
+window.addEventListener("load", () => 
+{
+	const algExponentElement = document.getElementById("algExponentUI");
+	const tdf = [];
+	tdf.push(-5);
+	tdf.push("2");
+	tdf.push(7); // when denom is zero then infinite is automatically true
+	const values = {
+		alg: '-5/7 +2/7φ', 
+		dec: -0.2519902889286015,
+		tdf, 
+		<!-- infinite = false; -->
+		<!-- readonly: true, --> // use divs instead of text inputs
+		exponent: 3,
+		unusedStuff: "junk",
+	};
+	showGetter();
+	let asdf = algExponentElement.values;
+	showGetter();
+	asdf = algExponentElement.values;
+	showGetter();
+	algExponentElement.values = values;
+	showGetter();
+	const checkValues = algExponentElement.values;
+	console.log(Array.isArray(checkValues));
+	console.log(checkValues);
+	//TODO: hook the algExponentElement change event
+	algExponentElement.render();
+});
+
+function showGetter() {
+	const algExponentElement = document.getElementById("algExponentUI");
+	console.log("################");
+	console.log("algExponentElement.values :", algExponentElement.values);
+	let pd = Object.getOwnPropertyDescriptor(algExponentElement, 'values');
+	const proto = Object.getPrototypeOf(algExponentElement);
+	pd = Object.getOwnPropertyDescriptor(proto, 'values');
+	console.log("pd.get:", pd.get);
+	console.log("################");
+}
+	</script>
+</head>
+<body>
+	<h1>Fraction grid layout study</h1>
+	<!-- <alg-num-ui id='algNumUI'></alg-num-ui> -->
+	<alg-exponent-ui id='algExponentUI'></alg-exponent-ui>
+	<br>
+	<div class='container'>
+		<div class='vzome-number'>		
+			<div class='alg'>1/9 -2/9a +1/3b +4/9c</div>
+			<div class='dec'>1.928956672196676</div>
+			<div class='numerators'>
+				<input class='num' type='text' inputmode='numeric' required pattern='^ *-?[0-9]+ *$' value='10'>
+				<input class='num' type='text' inputmode='numeric' required pattern='^ *-?[0-9]+ *$' value='20'>
+				<input class='num' type='text' inputmode='numeric' required pattern='^ *-?[0-9]+ *$' value='-306789'>
+				<input class='num' type='text' inputmode='numeric' required pattern='^ *-?[0-9]+ *$' value='40'>
+			</div>
+			<!-- 
+				Note that denominator pattern does NOT allow zero or negative values
+				although it could validly allow a negative value, just NOT zero.
+			-->
+			<input class='den' type='text' inputmode='numeric' min='1' required pattern='^ *0*[1-9]{1}[0-9]* *$' value='9'>
+		</div>
+		
+		<div class='vzome-number'>		
+			<div class='alg'>10/123 +20/123a -102263/41b +40/123c</div> 
+			<div class='dec'>-6528.559998150022</div> 
+			<div class='numerators'>
+				<div class='num'>10</div> <!-- NO leading '+' generated for first element --> 
+				<div class='num'>+ 0</div> <!-- leading '+ ' generated along with content --> 
+				<div class='num'>-306789</div>  <!-- NO leading '-' generated with content -->   
+				<div class='num'>+ 40</div> <!-- leading '+ ' generated along with content --> 
+			</div>
+			<div class='den'>123</div>
+		</div>
+		
+		<div class='vzome-number'>		
+			<div class='infinite'>&infin;</div> 
+		</div>
+	</div>
+</body>
+</html>

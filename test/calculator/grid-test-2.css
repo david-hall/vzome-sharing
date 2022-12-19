@@ -1,0 +1,147 @@
+.calc-top-grid-unused {
+	display: grid:
+	grid-template-columns: repeat(var(--nTerms), fit-content(1rem));
+}
+
+.tdf-fraction {
+	display: grid;
+	/* grid-template-columns: subgrid; */
+	grid-template-columns: repeat(var(--nTerms), fit-content(1rem));
+	/* grid-rows: 2; */
+	
+	padding: 5px;
+	text-align: right;
+	background-color: tan;
+	text-align: right;
+	vertical-align: center;
+	white-space: nowrap;
+}
+
+.tdf-fraction div {
+	background-color: lightblue;
+	margin-left:  .1rem;
+	margin-right: .1rem;
+	padding: .25rem;
+	grid-row: 1;
+}
+
+.tdf-fraction div:last-of-type {
+	background-color: lightgreen;
+	border-top: 2px solid black; /* division bar */
+	grid-row: 2 / 2;
+	grid-column: 1 / -1; /* calc(1 + var(--nTerms)); *//* span an entire row which generates a second row */
+	text-align: center;
+}
+
+/* insert '+' signs before all numerator terms that are not negative except for the first term */
+.tdf-fraction div:not(:first-of-type):not(:last-of-type)::before {
+	content: attr(data-sign);
+}
+
+/* insert '(' before first term that is not also the last term (e.g. .infinite) */
+.tdf-fraction div:first-of-type:not(:last-of-type)::before {
+	content: '(';
+}
+
+.tdf-fraction div:nth-of-type(4)::after {
+	content: ')';
+}
+
+.tdf-fraction div.infinite {
+	
+}
+/* div.infinite::before {
+	content: 'TODO: Overwrite or overlay content with "&infin;" for .infinite values. --->';
+	background-color: hotpink;
+} */
+
+/******/
+/******/
+/******/
+/******/
+
+
+.container {
+	/* --nTerms: 4; */
+	background-color: lightgray;
+	display: grid;
+	 /* header operand operand answers */
+	/* grid-template-rows: repeat(4, 1fr ); */
+	grid-template-columns: repeat(13, 1fr);
+	grid-template-areas:
+		".  irrrats-in    .        .     .     .  irrats"
+		".  nums-a-in exp-a-in equ-b alg-a dec-a nums-a"
+		".   den-a-in .        .   .   .     .      den-a"
+		"op nums-b-in exp-b-in equ-b alg-b dec-b nums-b"
+		".   den-b-in .        .     .     .      den-b"
+		".   .        .        .     inf   inf    inf"
+		".   .    .   .        mnu   alg   dec    nums"
+		".   .    .   .        mnu   alg   dec     den";
+	margin: 1rem;
+	padding: 1rem;
+	vertical-align: center;
+	white-space: nowrap;
+	/* --nTerms: 4; */
+}
+
+.vzome-number {
+	border: 1px dashed black;  /* 0px */
+	padding: 0.35rem;
+}
+
+input {
+	border: 3px solid transparent;
+	filter: brightness(1.25);
+	font-style: normal;
+	/* width: auto; */
+}
+
+input:invalid {
+	border: 3px solid red;
+	filter: brightness(0.85);
+	font-style: italic;
+}
+
+.alg {
+	background-color: gold;
+	text-align: center;
+}
+.dec {
+	background-color: lightyellow;
+	text-align: center; /* TODO: align the decimal points */
+}
+.num {
+	background-color: lightblue;
+	text-align: right;
+}
+.den {
+	background-color: lightgreen;
+	border-top: 2px solid black; /* division bar TODO: Media query */
+	text-align: center;
+}
+.infinite {
+	background-color: lightpink;
+	text-align: center;
+}
+
+.alg {
+	grid-area: alg;
+}
+.dec {
+	grid-area: dec;
+}
+.numerators {
+	grid-area: nums;
+}
+.num {
+	grid-area: num;
+}
+.den {
+	grid-area: den;
+	/* grid-column: span 4; */
+	/* grid-column: den / den; */
+	/* division bar TODO: Media query */
+}
+.infinite {
+	grid-area: inf;
+}
