@@ -1,8 +1,8 @@
 ---
-title: Rhombicuboctahedron with 18 Cubes
-description: A variation of a design by Jack Pike
+title: Rhombicuboctahedron with 18 Internal Cubes
+description: A variation of Jack Pike's Rhombicuboctahedron design
 image: https://david-hall.github.io/vzome-sharing/2022/12/18/21-36-17-rhombicuboctahedron-with-18-cubes-djh/rhombicuboctahedron-with-18-cubes-djh.png
-published: false
+published: true
 layout: vzome
 ---
 
@@ -12,15 +12,21 @@ layout: vzome
  
 {% endcomment %}
 
-A variation of a design by Jack Pike
+A variation of a Rhombicuboctahedron design, originally by Jack Pike
 
 <figure style="width: 87%; margin: 5%">
-  <vzome-viewer style="width: 100%; height: 60vh"
+  <vzome-viewer scene-titles="_|.." show-scenes="true" style="width: 100%; height: 60vh"
        src="https://david-hall.github.io/vzome-sharing/2022/12/18/21-36-17-rhombicuboctahedron-with-18-cubes-djh/rhombicuboctahedron-with-18-cubes-djh.vZome" >
     <img  style="width: 100%"
        src="https://david-hall.github.io/vzome-sharing/2022/12/18/21-36-17-rhombicuboctahedron-with-18-cubes-djh/rhombicuboctahedron-with-18-cubes-djh.png" >
   </vzome-viewer>
   <figcaption style="text-align: center; font-style: italic;">
-    Rhombicuboctahedron with 18 Cubes
+    Rhombicuboctahedron with 18 internal cubes (4 shown)
   </figcaption>
 </figure>
+
+Two of the nine mirrored pairs of embedded cubes are shown along with all of the balls and struts that form the other cubes.
+All struts are the same length.
+Outer vertices are (±1, ±1, ±(1 + √2)) as shown on [wikipedia](https://en.wikipedia.org/wiki/Rhombicuboctahedron#Cartesian_coordinates)
+
+This model uses the √2 field.
