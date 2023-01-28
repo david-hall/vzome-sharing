@@ -12,7 +12,13 @@
 	<!-- 
 The optional poster attribute specifies an image to be shown while the video is downloading, or until the user hits the play button.
 	-->
-  <video width="548" height="440" controls loop muted poster="http://www.kosticks.com/uploads/1/2/7/8/12789870/__6599389.jpeg" >
+  <video width="548" height="440" poster="./__6599389.jpeg" controls loop muted >
+    <!-- 
+	The poster attribute originally referenced 
+	http://www.kosticks.com/uploads/1/2/7/8/12789870/__6599389.jpeg
+	but an http link won't work if this html page is served by github as https.
+	so I just included and referenced a local copy
+    -->
     <source src="./MVI_0717.MOV">
 	This browser does not support the video tag.
   </video>
