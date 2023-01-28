@@ -8,15 +8,29 @@
  </head>
  <body>
 
+ <figure>
 	<!-- 
 The optional poster attribute specifies an image to be shown while the video is downloading, or until the user hits the play button.
 	-->
-   <video width="548" height="440" name="John Kostick's Great Circle video" 
-		controls loop muted
-		poster="http://www.kosticks.com/uploads/1/2/7/8/12789870/__6599389.jpeg" >
-   <source src="./MVI_0717.MOV">
+  <video width="548" height="440" controls loop muted poster="http://www.kosticks.com/uploads/1/2/7/8/12789870/__6599389.jpeg" >
+    <source src="./MVI_0717.MOV">
 	This browser does not support the video tag.
   </video>
+  <figcaption>
+    John Kostick's Great Circle video with user controls enabled (.MOV)
+  </figcaption>
+ </figure>
+    
+ <figure>
+  <!-- Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed. -->
+  <video width="480" height="270" autoplay loop muted>
+	<source src="./Jitterbug.mp4" type="video/mp4">
+	This browser does not support the video tag.
+  </video>
+  <figcaption>
+    John Kostick's Jitterbug video using autoplay with no user controls (.mp4)
+  </figcaption>
+ </figure>
 
 </body>
 </html>
