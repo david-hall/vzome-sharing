@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WebGL Info</title>
+    <meta property="og:title" content="WebGL Info" />
+    <link rel="shortcut icon" type="image/x-icon" href="/vzome-sharing/favicon.ico">
+    <meta property="og:locale" content="en_US" />
+    <script>
+    function showInfo() {
+        const br = "<br>";
+        const gl = document.createElement("canvas").getContext("webgl");
+        const ext = gl.getExtension("WEBGL_debug_renderer_info");
+        let msg = gl.getParameter(gl.VERSION) + 
+         br + gl.getParameter(gl.SHADING_LANGUAGE_VERSION) +
+         br + gl.getParameter(gl.VENDOR);
+        if(ext) {
+            msg = msg +
+            br + gl.getParameter(ext.UNMASKED_VENDOR_WEBGL) +
+            br + gl.getParameter(ext.UNMASKED_RENDERER_WEBGL);
+        } else {
+            msg = msg +
+            br + "WEBGL_debug_renderer_info extension is undefined."
+        }
+        console.log(msg.replaceAll(br, "\n"));
+        document.getElementById("info").innerHTML = msg;
+    }
+    </script>
+  </head>
+  <body>
+    <h1>WebGL Info</h1>
+    <p id="info"> 
+        <button type="button" onclick="showInfo()">Show WebGL info</button>
+    </p>
+    <ul>
+        <li>Results are based on 
+            <a href="https://stackoverflow.com/questions/23769780/how-to-get-opengl-version-using-javascript" target="_blank" rel="noopener">
+                this StackOverflow question
+            </a>.
+        </li>
+        <li>
+            For LOTS more detail, see <a href="https://webglreport.com/" target="_blank" rel="noopener">WebGLReport.com</a>.
+        </li>
+    </ul>
+ </body>
+</html>
