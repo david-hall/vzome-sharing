@@ -14,7 +14,7 @@ layout: vzome
 
 An Icosian Hamiltonian path
 
-This [vZome](https://www.vzome.com) model is an approximation of of the one on this [YouTube](https://www.youtube.com/watch?v=ak1CekFQbi8&t=74s). The yellow and green balls correspond roughly to the two layers of balls forming a border on either side of the actual Hamiltonian path in the video. The Hamiltonian path itself can be seen as the set of 12 outer struts or the edge of the edge of the inner net of triangular panels.
+This [vZome](https://www.vzome.com) model is an approximation of the one veatured in this instructional [YouTube video](https://www.youtube.com/watch?v=ak1CekFQbi8&t=74s). These yellow and green balls correspond roughly to the two layers of balls forming a border on either side of the Hamiltonian path in the video. The actual Hamiltonian path is seen her as the set of 12 struts or equivalently, the perimiter of folded net of triangular panels shown inside the balls. The panels constitute exactly half of the faces and all of the vertices of the icosahedron.
 
 <figure style="width: 87%; margin: 5%">
   <vzome-viewer style="width: 100%; height: 60vh"
