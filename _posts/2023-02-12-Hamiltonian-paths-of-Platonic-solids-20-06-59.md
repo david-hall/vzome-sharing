@@ -12,7 +12,7 @@ layout: vzome
  
 {% endcomment %}
 
-A 3D design created in vZome.  Use your mouse or touch to interact.
+The icosahedron and its dual the dodecahedron have numerous distinct Hamiltonian paths. The one shown here is different from the one shown in [my earlier post](https://david-hall.github.io/vzome-sharing/2023/02/12/Hamiltonian-path-on-icosa-from-YouTube-19-02-02.html).
 
 <figure style="width: 87%; margin: 5%">
   <vzome-viewer show-scenes="true" style="width: 100%; height: 60vh"
