@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="19" field="golden" version="7.1">
+  <EditHistory editNumber="107" lastStickyEdit="107">
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "golden",
+  "vertices" : [ [ [ -5, -8, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ 3, 5, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -3, -5, 1 ], [ -3, -5, 1 ], [ 3, 5, 1 ] ], [ [ -3, -5, 1 ], [ 0, 0, 1 ], [ -5, -8, 1 ] ], [ [ -3, -5, 1 ], [ 0, 0, 1 ], [ 5, 8, 1 ] ], [ [ -3, -5, 1 ], [ 3, 5, 1 ], [ -3, -5, 1 ] ], [ [ -2, -4, 1 ], [ -2, -4, 1 ], [ -2, -4, 1 ] ], [ [ -2, -4, 1 ], [ -2, -4, 1 ], [ 2, 4, 1 ] ], [ [ -2, -4, 1 ], [ 2, 4, 1 ], [ -2, -4, 1 ] ], [ [ -2, -4, 1 ], [ 2, 4, 1 ], [ 2, 4, 1 ] ], [ [ -2, -3, 1 ], [ 0, 0, 1 ], [ -1, -1, 1 ] ], [ [ -2, -3, 1 ], [ 0, 0, 1 ], [ 1, 1, 1 ] ], [ [ -1, -2, 1 ], [ -1, -2, 1 ], [ -1, -2, 1 ] ], [ [ -1, -2, 1 ], [ -1, -2, 1 ], [ 1, 2, 1 ] ], [ [ -1, -2, 1 ], [ 1, 2, 1 ], [ -1, -2, 1 ] ], [ [ -1, -2, 1 ], [ 1, 2, 1 ], [ 1, 2, 1 ] ], [ [ -1, -1, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -5, -8, 1 ], [ -3, -5, 1 ] ], [ [ 0, 0, 1 ], [ -5, -8, 1 ], [ 3, 5, 1 ] ], [ [ 0, 0, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -1, -1, 1 ], [ -2, -3, 1 ] ], [ [ 0, 0, 1 ], [ -1, -1, 1 ], [ 2, 3, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ -4, -6, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 4, 6, 1 ] ], [ [ 0, 0, 1 ], [ 1, 1, 1 ], [ -2, -3, 1 ] ], [ [ 0, 0, 1 ], [ 1, 1, 1 ], [ 2, 3, 1 ] ], [ [ 0, 0, 1 ], [ 4, 6, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 5, 8, 1 ], [ -3, -5, 1 ] ], [ [ 0, 0, 1 ], [ 5, 8, 1 ], [ 3, 5, 1 ] ], [ [ 1, 1, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 1, 1, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ -1, -2, 1 ], [ -1, -2, 1 ] ], [ [ 1, 2, 1 ], [ -1, -2, 1 ], [ 1, 2, 1 ] ], [ [ 1, 2, 1 ], [ 1, 2, 1 ], [ -1, -2, 1 ] ], [ [ 1, 2, 1 ], [ 1, 2, 1 ], [ 1, 2, 1 ] ], [ [ 2, 3, 1 ], [ 0, 0, 1 ], [ -1, -1, 1 ] ], [ [ 2, 3, 1 ], [ 0, 0, 1 ], [ 1, 1, 1 ] ], [ [ 2, 4, 1 ], [ -2, -4, 1 ], [ -2, -4, 1 ] ], [ [ 2, 4, 1 ], [ -2, -4, 1 ], [ 2, 4, 1 ] ], [ [ 2, 4, 1 ], [ 2, 4, 1 ], [ -2, -4, 1 ] ], [ [ 2, 4, 1 ], [ 2, 4, 1 ], [ 2, 4, 1 ] ], [ [ 3, 5, 1 ], [ -3, -5, 1 ], [ -3, -5, 1 ] ], [ [ 3, 5, 1 ], [ 0, 0, 1 ], [ -5, -8, 1 ] ], [ [ 3, 5, 1 ], [ 0, 0, 1 ], [ 5, 8, 1 ] ], [ [ 3, 5, 1 ], [ 3, 5, 1 ], [ 3, 5, 1 ] ], [ [ 4, 6, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 5, 8, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 5, 8, 1 ], [ 3, 5, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 37,
+    "color" : "#A9A9A9"
+  }, {
+    "vertex" : 39,
+    "color" : "#DA7FA2"
+  }, {
+    "vertex" : 33,
+    "color" : "#A2DA7F"
+  }, {
+    "vertex" : 28,
+    "color" : "#7FA2DA"
+  }, {
+    "vertex" : 38,
+    "color" : "#DA7F5C"
+  }, {
+    "vertex" : 18,
+    "color" : "#5CDA7F"
+  }, {
+    "vertex" : 23,
+    "color" : "#7F5CDA"
+  }, {
+    "vertex" : 36,
+    "color" : "#A9A955"
+  }, {
+    "vertex" : 16,
+    "color" : "#55A9A9"
+  }, {
+    "vertex" : 35,
+    "color" : "#A955A9"
+  }, {
+    "vertex" : 34,
+    "color" : "#A95555"
+  }, {
+    "vertex" : 32,
+    "color" : "#A2247F"
+  }, {
+    "vertex" : 22,
+    "color" : "#7F5C24"
+  }, {
+    "vertex" : 17,
+    "color" : "#5C247F"
+  }, {
+    "vertex" : 27,
+    "color" : "#7FA224"
+  }, {
+    "vertex" : 13,
+    "color" : "#555555"
+  }, {
+    "vertex" : 14,
+    "color" : "#5555A9"
+  }, {
+    "vertex" : 12,
+    "color" : "#247FA2"
+  }, {
+    "vertex" : 11,
+    "color" : "#247F5C"
+  }, {
+    "vertex" : 15,
+    "color" : "#55A955"
+  }, {
+    "vertex" : 2,
+    "color" : "#007F7F"
+  }, {
+    "vertex" : 48,
+    "color" : "#FE7F7F"
+  }, {
+    "vertex" : 26,
+    "color" : "#7F7FFE"
+  }, {
+    "vertex" : 29,
+    "color" : "#7FFE7F"
+  }, {
+    "vertex" : 24,
+    "color" : "#7F7F00"
+  }, {
+    "vertex" : 21,
+    "color" : "#7F007F"
+  }, {
+    "vertex" : 44,
+    "color" : "#A95555"
+  }, {
+    "vertex" : 47,
+    "color" : "#A9A9A9"
+  }, {
+    "vertex" : 3,
+    "color" : "#5555A9"
+  }, {
+    "vertex" : 6,
+    "color" : "#55A955"
+  }, {
+    "vertex" : 43,
+    "color" : "#A9A9A9"
+  }, {
+    "vertex" : 41,
+    "color" : "#A955A9"
+  }, {
+    "vertex" : 42,
+    "color" : "#A9A955"
+  }, {
+    "vertex" : 40,
+    "color" : "#A95555"
+  }, {
+    "vertex" : 10,
+    "color" : "#55A9A9"
+  }, {
+    "vertex" : 9,
+    "color" : "#55A955"
+  }, {
+    "vertex" : 7,
+    "color" : "#555555"
+  }, {
+    "vertex" : 8,
+    "color" : "#5555A9"
+  }, {
+    "vertex" : 45,
+    "color" : "#AF7F31"
+  }, {
+    "vertex" : 50,
+    "color" : "#CDAF7F"
+  }, {
+    "vertex" : 49,
+    "color" : "#CD4F7F"
+  }, {
+    "vertex" : 46,
+    "color" : "#AF7FCD"
+  }, {
+    "vertex" : 20,
+    "color" : "#7F31AF"
+  }, {
+    "vertex" : 19,
+    "color" : "#7F314F"
+  }, {
+    "vertex" : 4,
+    "color" : "#4F7F31"
+  }, {
+    "vertex" : 1,
+    "color" : "#31AF7F"
+  }, {
+    "vertex" : 0,
+    "color" : "#314F7F"
+  }, {
+    "vertex" : 5,
+    "color" : "#4F7FCD"
+  }, {
+    "vertex" : 31,
+    "color" : "#7FCDAF"
+  }, {
+    "vertex" : 30,
+    "color" : "#7FCD4F"
+  }, {
+    "vertex" : 25,
+    "color" : "#7F7F7F"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 27, 36 ],
+    "color" : "#97A640"
+  }, {
+    "vertices" : [ 12, 16 ],
+    "color" : "#4097A6"
+  }, {
+    "vertices" : [ 22, 34 ],
+    "color" : "#975840"
+  }, {
+    "vertices" : [ 17, 14 ],
+    "color" : "#584097"
+  }, {
+    "vertices" : [ 15, 27 ],
+    "color" : "#67A640"
+  }, {
+    "vertices" : [ 34, 32 ],
+    "color" : "#A64067"
+  }, {
+    "vertices" : [ 35, 23 ],
+    "color" : "#9758BE"
+  }, {
+    "vertices" : [ 36, 38 ],
+    "color" : "#BE9758"
+  }, {
+    "vertices" : [ 11, 13 ],
+    "color" : "#406758"
+  }, {
+    "vertices" : [ 28, 37 ],
+    "color" : "#97A6BE"
+  }, {
+    "vertices" : [ 18, 15 ],
+    "color" : "#58BE67"
+  }, {
+    "vertices" : [ 14, 23 ],
+    "color" : "#6758BE"
+  }, {
+    "vertices" : [ 37, 33 ],
+    "color" : "#A6BE97"
+  }, {
+    "vertices" : [ 35, 39 ],
+    "color" : "#BE67A6"
+  }, {
+    "vertices" : [ 22, 13 ],
+    "color" : "#675840"
+  }, {
+    "vertices" : [ 16, 28 ],
+    "color" : "#67A6BE"
+  }, {
+    "vertices" : [ 38, 39 ],
+    "color" : "#FE7F7F"
+  }, {
+    "vertices" : [ 18, 33 ],
+    "color" : "#7FFE7F"
+  }, {
+    "vertices" : [ 17, 32 ],
+    "color" : "#7F007F"
+  }, {
+    "vertices" : [ 11, 12 ],
+    "color" : "#007F7F"
+  }, {
+    "vertices" : [ 25, 34 ],
+    "color" : "#A95555"
+  }, {
+    "vertices" : [ 25, 15 ],
+    "color" : "#55A955"
+  }, {
+    "vertices" : [ 25, 14 ],
+    "color" : "#5555A9"
+  }, {
+    "vertices" : [ 25, 27 ],
+    "color" : "#7FA224"
+  }, {
+    "vertices" : [ 25, 12 ],
+    "color" : "#247FA2"
+  }, {
+    "vertices" : [ 25, 32 ],
+    "color" : "#A2247F"
+  }, {
+    "vertices" : [ 25, 18 ],
+    "color" : "#5CDA7F"
+  }, {
+    "vertices" : [ 25, 23 ],
+    "color" : "#7F5CDA"
+  }, {
+    "vertices" : [ 25, 38 ],
+    "color" : "#DA7F5C"
+  }, {
+    "vertices" : [ 25, 28 ],
+    "color" : "#7FA2DA"
+  }, {
+    "vertices" : [ 25, 39 ],
+    "color" : "#DA7FA2"
+  }, {
+    "vertices" : [ 25, 33 ],
+    "color" : "#A2DA7F"
+  }, {
+    "vertices" : [ 25, 35 ],
+    "color" : "#A955A9"
+  }, {
+    "vertices" : [ 25, 36 ],
+    "color" : "#A9A955"
+  }, {
+    "vertices" : [ 25, 16 ],
+    "color" : "#55A9A9"
+  }, {
+    "vertices" : [ 25, 37 ],
+    "color" : "#A9A9A9"
+  }, {
+    "vertices" : [ 25, 11 ],
+    "color" : "#247F5C"
+  }, {
+    "vertices" : [ 25, 17 ],
+    "color" : "#5C247F"
+  }, {
+    "vertices" : [ 25, 22 ],
+    "color" : "#7F5C24"
+  }, {
+    "vertices" : [ 25, 13 ],
+    "color" : "#555555"
+  }, {
+    "vertices" : [ 44, 3 ],
+    "color" : "#7F007F"
+  }, {
+    "vertices" : [ 47, 6 ],
+    "color" : "#7FFE7F"
+  }, {
+    "vertices" : [ 3, 6 ],
+    "color" : "#007F7F"
+  }, {
+    "vertices" : [ 44, 47 ],
+    "color" : "#FE7F7F"
+  }, {
+    "vertices" : [ 26, 2 ],
+    "color" : "#407FBE"
+  }, {
+    "vertices" : [ 24, 2 ],
+    "color" : "#407F40"
+  }, {
+    "vertices" : [ 29, 24 ],
+    "color" : "#7FBE40"
+  }, {
+    "vertices" : [ 21, 26 ],
+    "color" : "#7F40BE"
+  }, {
+    "vertices" : [ 48, 21 ],
+    "color" : "#BE407F"
+  }, {
+    "vertices" : [ 48, 29 ],
+    "color" : "#BEBE7F"
+  }, {
+    "vertices" : [ 41, 43 ],
+    "color" : "#BE7FBE"
+  }, {
+    "vertices" : [ 42, 40 ],
+    "color" : "#BE7F40"
+  }, {
+    "vertices" : [ 43, 10 ],
+    "color" : "#7FBEBE"
+  }, {
+    "vertices" : [ 42, 9 ],
+    "color" : "#7FBE40"
+  }, {
+    "vertices" : [ 40, 7 ],
+    "color" : "#7F4040"
+  }, {
+    "vertices" : [ 41, 8 ],
+    "color" : "#7F40BE"
+  }, {
+    "vertices" : [ 8, 7 ],
+    "color" : "#40407F"
+  }, {
+    "vertices" : [ 9, 10 ],
+    "color" : "#40BE7F"
+  }, {
+    "vertices" : [ 30, 45 ],
+    "color" : "#97A640"
+  }, {
+    "vertices" : [ 50, 45 ],
+    "color" : "#BE9758"
+  }, {
+    "vertices" : [ 50, 49 ],
+    "color" : "#FE7F7F"
+  }, {
+    "vertices" : [ 49, 46 ],
+    "color" : "#BE67A6"
+  }, {
+    "vertices" : [ 20, 46 ],
+    "color" : "#9758BE"
+  }, {
+    "vertices" : [ 19, 20 ],
+    "color" : "#7F007F"
+  }, {
+    "vertices" : [ 4, 19 ],
+    "color" : "#675840"
+  }, {
+    "vertices" : [ 4, 1 ],
+    "color" : "#409758"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#007F7F"
+  }, {
+    "vertices" : [ 0, 5 ],
+    "color" : "#4067A6"
+  }, {
+    "vertices" : [ 5, 31 ],
+    "color" : "#67A6BE"
+  }, {
+    "vertices" : [ 31, 30 ],
+    "color" : "#7FFE7F"
+  } ],
+  "panels" : [ {
+    "vertices" : [ 36, 27, 15, 18, 33 ],
+    "color" : "#D77F7F"
+  }, {
+    "vertices" : [ 13, 22, 34, 32, 17 ],
+    "color" : "#D77F7F"
+  }, {
+    "vertices" : [ 35, 23, 14, 17, 32 ],
+    "color" : "#288080"
+  }, {
+    "vertices" : [ 16, 28, 37, 33, 18 ],
+    "color" : "#288080"
+  }, {
+    "vertices" : [ 36, 38, 34, 22, 27 ],
+    "color" : "#288080"
+  }, {
+    "vertices" : [ 16, 18, 15, 11, 12 ],
+    "color" : "#288080"
+  }, {
+    "vertices" : [ 15, 27, 22, 13, 11 ],
+    "color" : "#288080"
+  }, {
+    "vertices" : [ 14, 12, 11, 13, 17 ],
+    "color" : "#D77F7F"
+  }, {
+    "vertices" : [ 28, 16, 12, 14, 23 ],
+    "color" : "#D77F7F"
+  }, {
+    "vertices" : [ 39, 35, 32, 34, 38 ],
+    "color" : "#288080"
+  }, {
+    "vertices" : [ 35, 39, 37, 28, 23 ],
+    "color" : "#D77F7F"
+  }, {
+    "vertices" : [ 38, 36, 33, 37, 39 ],
+    "color" : "#D77F7F"
+  } ]
+}
+</ImportColoredMeshJson>
+    <DeselectAll/>
+    <ApplyTool copyColors="true" name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="2 4 2 4 2 4"/>
+    <SelectManifestation endSegment="2 4 2 4 2 4" startSegment="2 4 -2 -4 2 4"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <BookmarkTool name="tool-0"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 5 8 3 5"/>
+    <SelectManifestation endSegment="0 0 5 8 3 5" startSegment="-3 -5 0 0 5 8"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <BookmarkTool name="tool-1"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 4 6"/>
+    <SelectManifestation endSegment="0 0 0 0 4 6" startSegment="0 0 -4 -6 0 0"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <BookmarkTool name="tool-2"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <BeginBlock/>
+    <SelectManifestation point="-3 -5 -3 -5 3 5"/>
+    <SelectManifestation endSegment="-3 -5 -3 -5 3 5" startSegment="3 5 -3 -5 -3 -5"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <BookmarkTool name="tool-3"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <BeginBlock/>
+    <SelectAll originLast="true"/>
+    <AdjustSelectionByOrbitLength orbit="red" panels="DESELECT" struts="IGNORE" symmetry="icosahedral"/>
+    <EndBlock/>
+    <BookmarkTool name="tool-4"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <SelectAll originLast="true"/>
+    <BookmarkTool name="tool-5"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <ApplyTool copyColors="true" name="tool-5" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="0"/>
+    <SelectAll originLast="true"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <ApplyTool copyColors="true" name="tool-4" selectInputs="true"/>
+    <DeselectAll/>
+    <ApplyTool copyColors="true" name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <SelectNeighbors/>
+    <Delete/>
+    <SelectAll originLast="true"/>
+    <BookmarkTool name="tool-6"/>
+    <DeselectAll/>
+    <Snapshot id="1"/>
+    <SelectAll originLast="true"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <ApplyTool copyColors="true" name="tool-0" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="2"/>
+    <SelectAll originLast="true"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="3"/>
+    <SelectAll originLast="true"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <ApplyTool copyColors="true" name="tool-3" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="4"/>
+    <SelectAll originLast="true"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="5"/>
+    <ApplyTool copyColors="true" name="tool-0" selectInputs="true"/>
+    <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
+    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
+    <ApplyTool copyColors="true" name="tool-3" selectInputs="true"/>
+    <ApplyTool copyColors="true" name="tool-6" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="6"/>
+    <ApplyTool copyColors="true" name="tool-5" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="7"/>
+  </EditHistory>
+  <notes>
+    <page snapshot="0" title="baseball">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.505308985710144" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="1" title="dodecahedron">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.505308985710144" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.048849768936634064" y="0.0" z="-0.9988061189651489"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="2" title="cube">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.505308985710144" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.048849768936634064" y="0.0" z="-0.9988061189651489"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="3" title="octahedron">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.505308985710144" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="4" title="tetrahedron">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.505308985710144" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="5" title="icosahedron">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.505308985710144" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="6" title="all platonic solids">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.505308985710144" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="7" title="complete with baseball">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.505308985710144" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+  </notes>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.505308985710144" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.0" y="1.0" z="0.0"/>
+      <LookDirection x="0.0" y="0.0" z="-1.0"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="icosahedral" renderingStyle="printable">
+    <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="0,141,54" name="green" orbit="[[2,-1,1],[5,-3,1]]"/>
+    <Direction color="154,117,74" name="sand" orbit="[[-8,5,1],[5,-3,1]]"/>
+    <Direction color="18,73,48" name="spruce" orbit="[[-5,4,11],[-5,4,11]]"/>
+    <Direction color="175,0,0" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+    <Direction color="255,126,106" name="coral" orbit="[[-3,2,2],[-1,1,2]]"/>
+    <Direction color="30,30,30" name="black" orbit="[[-2,3,11],[-7,5,11]]"/>
+    <Direction color="117,0,50" name="maroon" orbit="[[5,-3,1],[0,0,1]]"/>
+    <Direction color="230,245,62" name="sulfur" orbit="[[-1,1,3],[0,0,1]]"/>
+    <Direction color="240,160,0" name="yellow" orbit="[[0,0,1],[2,-1,1]]"/>
+    <Direction color="255,51,143" name="rose" orbit="[[0,0,1],[-4,3,5]]"/>
+    <Direction color="18,205,148" name="turquoise" orbit="[[2,-1,2],[-3,2,2]]"/>
+    <Direction color="116,195,0" name="apple" orbit="[[2,-1,3],[-1,1,3]]"/>
+    <Direction color="136,37,0" name="cinnamon" orbit="[[5,-3,2],[2,-1,2]]"/>
+    <Direction color="108,0,198" name="purple" orbit="[[2,-1,1],[0,0,1]]"/>
+    <Direction color="220,76,0" name="orange" orbit="[[-4,3,5],[3,-1,5]]"/>
+    <Direction color="0,0,153" name="navy" orbit="[[-1,1,2],[2,-1,2]]"/>
+    <Direction color="107,53,26" name="brown" orbit="[[2,-1,3],[5,-3,3]]"/>
+    <Direction color="175,135,255" name="lavender" orbit="[[-3,2,1],[-3,2,1]]"/>
+    <Direction color="100,113,0" name="olive" orbit="[[3,-1,5],[0,0,1]]"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="octahedral" renderingStyle="trapezoids">
+      <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+      <Direction color="175,135,255" name="lavender" orbit="[[1,2,1],[-1,0,1]]"/>
+      <Direction color="18,205,148" name="turquoise" orbit="[[-1,2,1],[1,-2,1]]"/>
+      <Direction color="30,30,30" name="black" orbit="[[0,1,1],[1,-1,1]]"/>
+      <Direction color="0,141,54" name="green" orbit="[[0,0,1],[-1,0,1]]"/>
+      <Direction color="100,113,0" name="olive" orbit="[[1,0,1],[3,-2,1]]"/>
+      <Direction color="117,0,50" name="maroon" orbit="[[-1,2,1],[1,0,1]]"/>
+      <Direction color="107,53,26" name="brown" orbit="[[1,0,1],[-2,0,1]]"/>
+      <Direction color="240,160,0" name="yellow" orbit="[[1,0,1],[-1,0,1]]"/>
+      <Direction color="175,0,0" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+      <Direction color="108,0,198" name="purple" orbit="[[0,0,1],[2,-1,1]]"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool copyColors="true" deleteInputs="false" id="tool-0" label="cube" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-1" label="icosahedron" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-2" label="octahedron" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-3" label="tetrahedron" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" hidden="true" id="tool-4" label="dodecahedron" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-5" label="baseball (dodecahedron)" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-6" label="dodecahedron" selectInputs="true"/>
+  </Tools>
+</vzome:vZome>
