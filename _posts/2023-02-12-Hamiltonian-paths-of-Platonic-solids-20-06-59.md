@@ -2,7 +2,7 @@
 title: Hamiltonian Paths of Platonic Solids
 description: A 3D design created in vZome.  Use your mouse or touch to interact.
 image: https://david-hall.github.io/vzome-sharing/2023/02/12/20-06-59-Hamiltonian-paths-of-Platonic-solids/Hamiltonian-paths-of-Platonic-solids.png
-published: false
+published: true
 layout: vzome
 ---
 
@@ -15,7 +15,7 @@ layout: vzome
 A 3D design created in vZome.  Use your mouse or touch to interact.
 
 <figure style="width: 87%; margin: 5%">
-  <vzome-viewer style="width: 100%; height: 60vh"
+  <vzome-viewer show-scenes="true" style="width: 100%; height: 60vh"
        src="https://david-hall.github.io/vzome-sharing/2023/02/12/20-06-59-Hamiltonian-paths-of-Platonic-solids/Hamiltonian-paths-of-Platonic-solids.vZome" >
     <img  style="width: 100%"
        src="https://david-hall.github.io/vzome-sharing/2023/02/12/20-06-59-Hamiltonian-paths-of-Platonic-solids/Hamiltonian-paths-of-Platonic-solids.png" >
