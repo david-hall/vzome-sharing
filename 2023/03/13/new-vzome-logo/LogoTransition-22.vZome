@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="4242" field="golden" version="7.1">
+  <EditHistory editNumber="6" lastStickyEdit="-1">
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "golden",
+  "vertices" : [
+    [ [ 73, 29, 150 ], [ 63, -586, 300 ], [ -459, 443, 300 ] ],
+    [ [ -11, -33, 75 ], [ 33, 44, 300 ], [ 391, 793, 300 ] ],
+    [ [ 73, 84, 150 ], [ -47, -476, 300 ], [ -129, 443, 300 ] ],
+    [ [ -11, 42, 75 ], [ -79, -212, 100 ], [ 61, 603, 300 ] ],
+    [ [ 73, 84, 150 ], [ -89, -12, 100 ], [ 531, 223, 300 ] ],
+    [ [ -22, -11, 150 ], [ -77, 374, 300 ], [ 721, 573, 300 ] ],
+    [ [ 33, 44, 150 ], [ 253, -506, 300 ], [ -379, 1123, 300 ] ],
+    [ [ -31, -73, 75 ], [ 63, -886, 300 ], [ -569, 743, 300 ] ],
+    [ [ 33, 139, 150 ], [ -237, -856, 300 ], [ -49, 823, 300 ] ],
+    [ [ -31, -73, 75 ], [ -157, -446, 300 ], [ 91, 523, 300 ] ],
+    [ [ -31, -73, 75 ], [ -157, -226, 300 ], [ 311, 303, 300 ] ],
+    [ [ -22, 29, 150 ], [ -127, -966, 300 ], [ -269, 823, 300 ] ]
+  ],
+  "balls" : [ {
+    "vertex" : 0,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 1,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 2,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 3,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 4,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 5,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 6,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 7,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 8,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 9,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 10,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 11,
+    "color" : "#FFFFFF"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 0, 7 ],
+    "color" : "#AF56A2"
+  }, {
+    "vertices" : [ 1, 10 ],
+    "color" : "#F0A000"
+  }, {
+    "vertices" : [ 2, 8 ],
+    "color" : "#407236"
+  }, {
+    "vertices" : [ 3, 9 ],
+    "color" : "#8A317D"
+  }, {
+    "vertices" : [ 4, 5 ],
+    "color" : "#4B3333"
+  }, {
+    "vertices" : [ 6, 11 ],
+    "color" : "#AF56A2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="111,127,140">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="50.29100049336751" far="100.58199818929036" near="0.1257274960478147" parallel="false" stereoAngle="0.0" width="22.630948289235434">
+      <LookAtPoint x="0.0" y="-2.170465675989787" z="3.5118871370951337"/>
+      <UpDirection x="-0.4100398023923238" y="0.015321055054664634" z="0.5928767691055934"/>
+      <LookDirection x="0.25134644309679666" y="0.14409216046333312" z="0.7493422508239747"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="octahedral" renderingStyle="trapezoids">
+    <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="175,135,255" name="lavender" orbit="[[1,2,1],[-1,0,1]]"/>
+    <Direction color="18,205,148" name="turquoise" orbit="[[-1,2,1],[1,-2,1]]"/>
+    <Direction color="30,30,30" name="black" orbit="[[0,1,1],[1,-1,1]]"/>
+    <Direction color="0,141,54" name="green" orbit="[[0,0,1],[-1,0,1]]"/>
+    <Direction color="100,113,0" name="olive" orbit="[[1,0,1],[3,-2,1]]"/>
+    <Direction color="117,0,50" name="maroon" orbit="[[-1,2,1],[1,0,1]]"/>
+    <Direction color="107,53,26" name="brown" orbit="[[1,0,1],[-2,0,1]]"/>
+    <Direction color="240,160,0" name="yellow" orbit="[[1,0,1],[-1,0,1]]"/>
+    <Direction color="175,0,0" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+    <Direction color="108,0,198" name="purple" orbit="[[0,0,1],[2,-1,1]]"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="icosahedral" renderingStyle="printable">
+    <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="0,141,54" name="green" orbit="[[2,-1,1],[5,-3,1]]"/>
+    <Direction color="154,117,74" name="sand" orbit="[[-8,5,1],[5,-3,1]]"/>
+    <Direction color="18,73,48" name="spruce" orbit="[[-5,4,11],[-5,4,11]]"/>
+    <Direction color="175,0,0" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+    <Direction color="255,126,106" name="coral" orbit="[[-3,2,2],[-1,1,2]]"/>
+    <Direction color="30,30,30" name="black" orbit="[[-2,3,11],[-7,5,11]]"/>
+    <Direction color="117,0,50" name="maroon" orbit="[[5,-3,1],[0,0,1]]"/>
+    <Direction color="230,245,62" name="sulfur" orbit="[[-1,1,3],[0,0,1]]"/>
+    <Direction color="240,160,0" name="yellow" orbit="[[0,0,1],[2,-1,1]]"/>
+    <Direction color="255,51,143" name="rose" orbit="[[0,0,1],[-4,3,5]]"/>
+    <Direction color="18,205,148" name="turquoise" orbit="[[2,-1,2],[-3,2,2]]"/>
+    <Direction color="116,195,0" name="apple" orbit="[[2,-1,3],[-1,1,3]]"/>
+    <Direction color="136,37,0" name="cinnamon" orbit="[[5,-3,2],[2,-1,2]]"/>
+    <Direction color="108,0,198" name="purple" orbit="[[2,-1,1],[0,0,1]]"/>
+    <Direction color="220,76,0" name="orange" orbit="[[-4,3,5],[3,-1,5]]"/>
+    <Direction color="0,0,153" name="navy" orbit="[[-1,1,2],[2,-1,2]]"/>
+    <Direction color="107,53,26" name="brown" orbit="[[2,-1,3],[5,-3,3]]"/>
+    <Direction color="175,135,255" name="lavender" orbit="[[-3,2,1],[-3,2,1]]"/>
+    <Direction color="100,113,0" name="olive" orbit="[[3,-1,5],[0,0,1]]"/>
+  </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools/>
+</vzome:vZome>

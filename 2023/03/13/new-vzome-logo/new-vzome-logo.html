@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>vZome's New Logo</title>
+  <meta property="og:title" content="vZome's New Logo" />
+  <meta property="og:locale" content="en_US" />
+ 
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="David Hall" />
+  <meta name="og:author" content="David Hall" />
+  <meta name="description" content="vZome has a New Logo!"/>
+  <meta property="og:description" content="vZome has a New Logo!" />
+  <link rel="canonical" href="https://david-hall.github.io/vzome-sharing/2023/03/13/new-vzome-logo/new-vzome-logo.html" />
+  <meta property="og:url" content="https://david-hall.github.io/vzome-sharing/2023/03/13/new-vzome-logo/new-vzome-logo.html" />
+  <meta property="og:site_name" content="vzome-sharing" />
+  <meta property="og:image" content="https://david-hall.github.io/vzome-sharing/2023/03/13/new-vzome-logo/LogoTransition-60.png" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2023-03-13T00:00:00+00:00" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:image" content="https://david-hall.github.io/vzome-sharing/2023/03/13/new-vzome-logo/LogoTransition-60.png" />
+  <meta property="twitter:title" content="vZome's New Logo" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://david-hall.github.io/vzome-sharing/favicon.ico">
+  
+  <script type="module" src="https://www.vzome.com/modules/vzome-viewer.js"></script>
+  <script>
+  const sources = [
+	"LogoTransition-00.vZome",
+	"LogoTransition-01.vZome",
+	"LogoTransition-02.vZome",
+	"LogoTransition-03.vZome",
+	"LogoTransition-04.vZome",
+	"LogoTransition-05.vZome",
+	"LogoTransition-06.vZome",
+	"LogoTransition-07.vZome",
+	"LogoTransition-08.vZome",
+	"LogoTransition-09.vZome",
+	"LogoTransition-10.vZome",
+	"LogoTransition-11.vZome",
+	"LogoTransition-12.vZome",
+	"LogoTransition-13.vZome",
+	"LogoTransition-14.vZome",
+	"LogoTransition-15.vZome",
+	"LogoTransition-16.vZome",
+	"LogoTransition-17.vZome",
+	"LogoTransition-18.vZome",
+	"LogoTransition-19.vZome",
+	"LogoTransition-20.vZome",
+	"LogoTransition-21.vZome",
+	"LogoTransition-22.vZome",
+	"LogoTransition-23.vZome",
+	"LogoTransition-24.vZome",
+	"LogoTransition-25.vZome",
+	"LogoTransition-26.vZome",
+	"LogoTransition-27.vZome",
+	"LogoTransition-28.vZome",
+	"LogoTransition-29.vZome",
+	"LogoTransition-30.vZome",
+	"LogoTransition-31.vZome",
+	"LogoTransition-32.vZome",
+	"LogoTransition-33.vZome",
+	"LogoTransition-34.vZome",
+	"LogoTransition-35.vZome",
+	"LogoTransition-36.vZome",
+	"LogoTransition-37.vZome",
+	"LogoTransition-38.vZome",
+	"LogoTransition-39.vZome",
+	"LogoTransition-40.vZome",
+	"LogoTransition-41.vZome",
+	"LogoTransition-42.vZome",
+	"LogoTransition-43.vZome",
+	"LogoTransition-44.vZome",
+	"LogoTransition-45.vZome",
+	"LogoTransition-46.vZome",
+	"LogoTransition-47.vZome",
+	"LogoTransition-48.vZome",
+	"LogoTransition-49.vZome",
+	"LogoTransition-50.vZome",
+	"LogoTransition-51.vZome",
+	"LogoTransition-52.vZome",
+	"LogoTransition-53.vZome",
+	"LogoTransition-54.vZome",
+	"LogoTransition-55.vZome",
+	"LogoTransition-56.vZome",
+	"LogoTransition-57.vZome",
+	"LogoTransition-58.vZome",
+	"LogoTransition-59.vZome",
+	"LogoTransition-60.vZome"
+  ];
+
+  function prevButton() {
+	pause();
+	stepSource(-1);
+  }
+  
+  function nextButton() {
+	pause();
+	stepSource(1);
+  }
+  
+  let timerID = -1;
+  
+  function togglePlay() {
+	if(timerID == -1) {
+		play();
+	} else {
+		pause();
+	}
+  }
+  
+  function play() {
+  	if(timerID == -1) {
+	  document.getElementById('play-pause').textContent = 'PAUSE ||';
+	  timerID = setInterval(() => {
+		stepSource(1);
+	  }, 200);
+	}
+  }
+  
+  function pause() {
+	document.getElementById('play-pause').textContent = 'PLAY >';
+	clearInterval(timerID);
+	timerID = -1;
+  }
+  
+  function stepSource(step) {
+	  const src = document.getElementById("viewer").src;
+	  for (let i = 0; i < sources.length; i++) {
+		if(src == sources[i]) {
+			setSource(i + step);
+			break;
+		}	  
+	  }
+  }
+
+  function setSource(index) {
+	const viewer = document.getElementById("viewer");
+	const i = (index + sources.length) % sources.length;
+	viewer.src = sources[i];
+	if(i == sources.length - 1 && !document.getElementById("repeat").checked) {
+		pause();
+	}
+  }
+  
+  function oldLogo() {
+	pause();
+	setSource(0);
+  }
+
+  function newLogo() {
+	pause();
+	setSource(-1);
+  }
+
+window.addEventListener("load", () => {
+	setTimeout(() => {
+		play();
+	  }, 4000);
+  } 
+);
+
+  </script>
+  
+ </head>
+ <body style="text-align:center;">
+    <h1>
+		vZome has a New Logo!
+    </h1>
+    <div style="width: 100%;">
+		<button type="button" onclick='oldLogo()'>Old Logo</button>
+		<button type="button" onclick='prevButton()'><< Previous</button>
+		<button type="button" id="play-pause" onclick='togglePlay()'>PLAY ></button>
+		<button type="button" onclick='nextButton()'>Next >></button>
+		<button type="button" onclick='newLogo()'>New Logo</button>
+		<label>Repeat<input type="checkbox" id="repeat"></label>
+    </div>
+	<vzome-viewer id="viewer" style="width: 80%; height: 80vh;" src="LogoTransition-00.vZome">
+		<img id="image" src="LogoTransition-00.png" />
+	</vzome-viewer>
+</body>
+</html>
