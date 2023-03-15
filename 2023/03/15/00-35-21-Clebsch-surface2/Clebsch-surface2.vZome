@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="9999" field="golden" version="7.1">
+  <EditHistory editNumber="2" lastStickyEdit="-1">
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "golden",
+  "vertices" : [ [ [ -10, -30, 1 ], [ -10, -10, 1 ], [ 20, 0, 1 ] ], [ [ 10, -20, 1 ], [ -30, -20, 1 ], [ 20, 0, 1 ] ], [ [ 10, -10, 1 ], [ -20, 10, 1 ], [ 10, 0, 1 ] ], [ [ 10, -10, 1 ], [ -10, 20, 1 ], [ 0, -10, 1 ] ], [ [ 0, 0, 1 ], [ -10, 0, 1 ], [ 10, 0, 1 ] ], [ [ 0, 0, 1 ], [ -20, 10, 1 ], [ 20, -10, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -10, 10, 1 ], [ 10, -10, 1 ] ], [ [ 0, 0, 1 ], [ 0, 10, 1 ], [ 0, -10, 1 ] ], [ [ 0, 0, 1 ], [ -10, 20, 1 ], [ 10, -20, 1 ] ], [ [ 20, -10, 1 ], [ -20, 10, 1 ], [ 0, 0, 1 ] ], [ [ 30, -10, 3 ], [ -30, 20, 3 ], [ 40, -10, 3 ] ], [ [ 30, -10, 3 ], [ -20, 50, 3 ], [ 30, -40, 3 ] ], [ [ 15, -5, 1 ], [ -5, 5, 1 ], [ 30, -20, 1 ] ], [ [ 15, -5, 1 ], [ -10, 10, 1 ], [ 15, -5, 1 ] ], [ [ 15, -5, 1 ], [ -5, 15, 1 ], [ 10, -10, 1 ] ], [ [ 15, -5, 1 ], [ 185, 25, 6 ], [ 15, -15, 1 ] ], [ [ 18, -6, 1 ], [ -10, 10, 1 ], [ 16, -12, 1 ] ], [ [ 10, 0, 1 ], [ -20, 10, 1 ], [ 10, -10, 1 ] ], [ [ 10, 0, 1 ], [ -5, 5, 1 ], [ 15, -5, 1 ] ], [ [ 10, 0, 1 ], [ -2, 4, 1 ], [ 16, -12, 1 ] ], [ [ 10, 0, 1 ], [ -10, 10, 1 ], [ 0, -10, 1 ] ], [ [ 10, 0, 1 ], [ -10, 10, 1 ], [ 40, -30, 3 ] ], [ [ 10, 0, 1 ], [ -10, 10, 1 ], [ 20, -10, 1 ] ], [ [ 10, 0, 1 ], [ -20, 30, 3 ], [ 10, -10, 1 ] ], [ [ 10, 0, 1 ], [ 10, 0, 1 ], [ 60, -40, 1 ] ], [ [ 10, 0, 1 ], [ -5, 10, 1 ], [ 15, -10, 1 ] ], [ [ 10, 0, 1 ], [ -6, 12, 1 ], [ 12, -4, 1 ] ], [ [ 10, 0, 1 ], [ 0, 10, 1 ], [ 10, -10, 1 ] ], [ [ 10, 0, 1 ], [ 0, 10, 1 ], [ 30, -10, 1 ] ], [ [ 10, 0, 1 ], [ -8, 16, 1 ], [ 14, -8, 1 ] ], [ [ 10, 0, 1 ], [ -5, 15, 1 ], [ 15, -15, 1 ] ], [ [ 10, 0, 1 ], [ 10, 10, 1 ], [ 20, -10, 1 ] ], [ [ 10, 0, 1 ], [ 0, 20, 1 ], [ 30, 20, 1 ] ], [ [ 10, 0, 1 ], [ 10, 40, 1 ], [ 20, 0, 1 ] ], [ [ 160, -20, 11 ], [ -70, 160, 11 ], [ 150, -60, 11 ] ], [ [ 20, -5, 1 ], [ -10, 15, 1 ], [ 10, -10, 1 ] ], [ [ 40, 0, 3 ], [ -10, 10, 1 ], [ 10, -10, 1 ] ], [ [ 30, -10, 1 ], [ -10, 10, 1 ], [ 60, -40, 1 ] ], [ [ 30, -10, 1 ], [ 0, 10, 1 ], [ 10, 0, 1 ] ], [ [ 30, -10, 1 ], [ -30, 30, 1 ], [ -40, 20, 1 ] ], [ [ 30, -10, 1 ], [ -10, 20, 1 ], [ 20, -10, 1 ] ], [ [ 15, 0, 1 ], [ -10, 10, 1 ], [ 15, -10, 1 ] ], [ [ 15, 0, 1 ], [ -5, 10, 1 ], [ 10, -10, 1 ] ], [ [ 13500, -2550, 571 ], [ 2080, 3160, 571 ], [ 4240, 1610, 571 ] ], [ [ 14, 2, 1 ], [ -10, 10, 1 ], [ 12, -4, 1 ] ], [ [ 14, 2, 1 ], [ -8, 16, 1 ], [ 10, -10, 1 ] ], [ [ 10, 5, 1 ], [ 0, 5, 1 ], [ 10, -10, 1 ] ], [ [ 10, 5, 1 ], [ -10, 15, 1 ], [ 20, 0, 1 ] ], [ [ 10, 5, 1 ], [ 0, 20, 1 ], [ 10, -5, 1 ] ], [ [ 20, 0, 1 ], [ -20, 10, 1 ], [ 0, -10, 1 ] ], [ [ 20, 0, 1 ], [ -10, 10, 1 ], [ 10, -10, 1 ] ], [ [ 20, 0, 1 ], [ -10, 10, 1 ], [ 30, -10, 1 ] ], [ [ 20, 0, 1 ], [ 10, 0, 1 ], [ 10, 0, 1 ] ], [ [ 20, 0, 1 ], [ 0, 10, 1 ], [ 20, -10, 1 ] ], [ [ 20, 0, 1 ], [ -10, 20, 1 ], [ 30, -20, 1 ] ], [ [ 20, 0, 1 ], [ 10, 10, 1 ], [ 10, -10, 1 ] ], [ [ 20, 0, 1 ], [ 0, 20, 1 ], [ 20, -20, 1 ] ], [ [ 150, 50, 11 ], [ -60, 90, 11 ], [ 150, -60, 11 ] ], [ [ 150, 50, 11 ], [ -70, 160, 11 ], [ 160, -130, 11 ] ], [ [ 12, 6, 1 ], [ -10, 10, 1 ], [ 14, -8, 1 ] ], [ [ 12, 6, 1 ], [ -6, 12, 1 ], [ 10, -10, 1 ] ], [ [ -10, 20, 1 ], [ 10, 0, 1 ], [ -40, 20, 1 ] ], [ [ -6440, 6780, 199 ], [ -10420, 8770, 199 ], [ 7980, -5200, 199 ] ], [ [ 15, 5, 1 ], [ -5, 5, 1 ], [ 10, -10, 1 ] ], [ [ 15, 5, 1 ], [ -10, 10, 1 ], [ 15, -15, 1 ] ], [ [ 40, 20, 3 ], [ -30, 20, 3 ], [ 30, -40, 3 ] ], [ [ 10, 10, 1 ], [ -10, 0, 1 ], [ 0, -10, 1 ] ], [ [ 10, 10, 1 ], [ -20, 10, 1 ], [ 10, -20, 1 ] ], [ [ 10, 10, 1 ], [ 10, 0, 1 ], [ 20, -10, 1 ] ], [ [ 10, 10, 1 ], [ 0, 10, 1 ], [ 30, -20, 1 ] ], [ [ 30, 0, 1 ], [ -10, 10, 1 ], [ 20, -10, 1 ] ], [ [ 30, 0, 1 ], [ 0, 10, 1 ], [ 10, -10, 1 ] ], [ [ 20, 10, 1 ], [ -10, 10, 1 ], [ 30, 20, 1 ] ], [ [ 20, 10, 1 ], [ -10, 15, 1 ], [ 10, -5, 1 ] ], [ [ 20, 10, 1 ], [ 0, 10, 1 ], [ 20, -20, 1 ] ], [ [ 20, 10, 1 ], [ 10, 40, 1 ], [ 10, -10, 1 ] ], [ [ 305, -35, 6 ], [ -5, 5, 1 ], [ 15, -15, 1 ] ], [ [ 30, 30, 1 ], [ -10, 10, 1 ], [ 20, 0, 1 ] ], [ [ 30, 30, 1 ], [ 0, 20, 1 ], [ 10, -10, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 76,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 54,
+    "color" : "#FF0000"
+  }, {
+    "vertex" : 33,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 78,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 2,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 5,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 18,
+    "color" : "#FF0000"
+  }, {
+    "vertex" : 50,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 67,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 64,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 68,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 51,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 65,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 42,
+    "color" : "#FF0000"
+  }, {
+    "vertex" : 14,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 23,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 70,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 39,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 29,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 72,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 75,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 9,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 8,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 21,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 7,
+    "color" : "#FF0000"
+  }, {
+    "vertex" : 31,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 3,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 4,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 28,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 15,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 19,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 43,
+    "color" : "#FF0000"
+  }, {
+    "vertex" : 26,
+    "color" : "#FF0000"
+  }, {
+    "vertex" : 41,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 53,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 69,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 55,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 71,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 56,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 32,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 52,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 16,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 73,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 79,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 34,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 74,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 59,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 46,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 40,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 12,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 0,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 11,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 66,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 37,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 38,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 20,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 17,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 22,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 47,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 36,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 24,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 25,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 62,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 61,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 63,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 77,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 44,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 57,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 49,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 1,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 13,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 48,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 30,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 60,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 58,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 35,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 45,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 27,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 10,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 6,
+    "color" : "#FFFFFF"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 76, 1 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 57, 1 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 79, 0 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 75, 0 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 7, 78 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 3, 78 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 18, 34 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 67, 34 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 68, 2 ],
+    "color" : "#008D36"
+  }, {
+    "vertices" : [ 9, 4 ],
+    "color" : "#008D36"
+  }, {
+    "vertices" : [ 7, 79 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 77, 44 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 16, 44 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 77, 63 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 16, 63 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 68, 33 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 21, 33 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 9, 73 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 21, 73 ],
+    "color" : "#FFFFFF"
+  }, {
+    "vertices" : [ 67, 3 ],
+    "color" : "#008D36"
+  }, {
+    "vertices" : [ 64, 15 ],
+    "color" : "#008D36"
+  }, {
+    "vertices" : [ 71, 32 ],
+    "color" : "#008D36"
+  }, {
+    "vertices" : [ 75, 29 ],
+    "color" : "#008D36"
+  }, {
+    "vertices" : [ 57, 52 ],
+    "color" : "#008D36"
+  }, {
+    "vertices" : [ 65, 14 ],
+    "color" : "#008D36"
+  }, {
+    "vertices" : [ 31, 19 ],
+    "color" : "#008D36"
+  }, {
+    "vertices" : [ 18, 76 ],
+    "color" : "#FFFFFF"
+  } ],
+  "panels" : [ {
+    "vertices" : [ 21, 59, 63, 48, 5 ],
+    "color" : "#7FC69A"
+  } ]
+}
+</ImportColoredMeshJson>
+    <DeselectAll/>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="517.4326782226562" far="1034.86376953125" near="1.2935823202133179" parallel="false" stereoAngle="0.0" width="232.84474182128906">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.40824827551841736" y="0.40824827551841736" z="-0.8164965510368347"/>
+      <LookDirection x="-0.5773502588272095" y="-0.5773502588272095" z="-0.5773502588272095"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="icosahedral" renderingStyle="printable">
+    <Direction color="255,255,255" name="5" orbit="[[1,0,3],[0,0,1]]" prototype="0 0 390 -240 130 -80"/>
+    <Direction color="0,141,54" name="green" orbit="[[2,-1,1],[5,-3,1]]"/>
+    <Direction color="255,255,255" name="6" orbit="[[-146,109,217],[13,-1,217]]" prototype="-416165/1142 768665/3426 61715/571 -37955/571 -137625/571 85475/571"/>
+    <Direction color="255,255,255" name="3" orbit="[[6,-3,5],[5,-3,5]]" prototype="290 -180 -130 80 680 -420"/>
+    <Direction color="154,117,74" name="sand" orbit="[[-8,5,1],[5,-3,1]]"/>
+    <Direction color="255,255,255" name="4" orbit="[[0,0,1],[1,0,3]]" prototype="390 -240 0 0 130 -80"/>
+    <Direction color="255,255,255" name="1" orbit="[[-34,23,31],[-9,7,31]]" prototype="-130 80 290 -180 680 -420"/>
+    <Direction color="255,255,255" name="2" orbit="[[-6,7,15],[3,-1,15]]" prototype="160 -100 -470 290 -210 130"/>
+    <Direction color="255,255,255" name="0" orbit="[[2,-1,7],[3,-1,7]]" prototype="-470 290 160 -100 -210 130"/>
+    <Direction color="30,30,30" name="black" orbit="[[-2,3,11],[-7,5,11]]"/>
+    <Direction color="255,51,143" name="rose" orbit="[[0,0,1],[-4,3,5]]"/>
+    <Direction color="18,205,148" name="turquoise" orbit="[[2,-1,2],[-3,2,2]]"/>
+    <Direction color="108,0,198" name="purple" orbit="[[2,-1,1],[0,0,1]]"/>
+    <Direction color="220,76,0" name="orange" orbit="[[-4,3,5],[3,-1,5]]"/>
+    <Direction color="107,53,26" name="brown" orbit="[[2,-1,3],[5,-3,3]]"/>
+    <Direction color="255,255,255" name="7" orbit="[[-228,167,155],[-131,95,155]]" prototype="61715/571 -37955/571 -416165/1142 768665/3426 -137625/571 85475/571"/>
+    <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="18,73,48" name="spruce" orbit="[[-5,4,11],[-5,4,11]]"/>
+    <Direction color="175,0,0" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+    <Direction color="255,126,106" name="coral" orbit="[[-3,2,2],[-1,1,2]]"/>
+    <Direction color="117,0,50" name="maroon" orbit="[[5,-3,1],[0,0,1]]"/>
+    <Direction color="230,245,62" name="sulfur" orbit="[[-1,1,3],[0,0,1]]"/>
+    <Direction color="240,160,0" name="yellow" orbit="[[0,0,1],[2,-1,1]]"/>
+    <Direction color="116,195,0" name="apple" orbit="[[2,-1,3],[-1,1,3]]"/>
+    <Direction color="136,37,0" name="cinnamon" orbit="[[5,-3,2],[2,-1,2]]"/>
+    <Direction color="0,0,153" name="navy" orbit="[[-1,1,2],[2,-1,2]]"/>
+    <Direction color="175,135,255" name="lavender" orbit="[[-3,2,1],[-3,2,1]]"/>
+    <Direction color="100,113,0" name="olive" orbit="[[3,-1,5],[0,0,1]]"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="octahedral" renderingStyle="trapezoids">
+      <Direction color="18,205,148" name="turquoise" orbit="[[-1,2,1],[1,-2,1]]"/>
+      <Direction color="30,30,30" name="black" orbit="[[0,1,1],[1,-1,1]]"/>
+      <Direction color="0,141,54" name="green" orbit="[[0,0,1],[-1,0,1]]"/>
+      <Direction color="240,160,0" name="yellow" orbit="[[1,0,1],[-1,0,1]]"/>
+      <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+      <Direction color="175,135,255" name="lavender" orbit="[[1,2,1],[-1,0,1]]"/>
+      <Direction color="255,255,255" name="0" orbit="[[0,0,1],[1,0,3]]" prototype="130 -80 390 -240 0 0"/>
+      <Direction color="100,113,0" name="olive" orbit="[[1,0,1],[3,-2,1]]"/>
+      <Direction color="117,0,50" name="maroon" orbit="[[-1,2,1],[1,0,1]]"/>
+      <Direction color="107,53,26" name="brown" orbit="[[1,0,1],[-2,0,1]]"/>
+      <Direction color="255,255,255" name="2" orbit="[[102,12,319],[-78,216,319]]" prototype="61715/571 -37955/571 -416165/1142 768665/3426 -137625/571 85475/571"/>
+      <Direction color="255,255,255" name="1" orbit="[[-4,3,2],[2,-1,2]]" prototype="210 -130 470 -290 -160 100"/>
+      <Direction color="175,0,0" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+      <Direction color="108,0,198" name="purple" orbit="[[0,0,1],[2,-1,1]]"/>
+      <Direction color="255,255,255" name="3" orbit="[[-8,6,5],[-1,2,5]]" prototype="290 -180 -130 80 680 -420"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools/>
+</vzome:vZome>
