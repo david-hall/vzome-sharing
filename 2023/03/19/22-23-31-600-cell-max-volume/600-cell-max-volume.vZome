@@ -886,10 +886,10 @@
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="175.71783447265625" far="351.4356384277344" near="0.4392945468425751" parallel="false" stereoAngle="0.0" width="79.07302856445312">
+    <ViewModel distance="320.1787414550781" far="640.3572998046875" near="0.8004468083381653" parallel="true" stereoAngle="0.0" width="144.0804443359375">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-      <UpDirection x="-0.025902708992362022" y="0.9975311756134033" z="-0.0652637779712677"/>
-      <LookDirection x="-0.09655018150806427" y="-0.06747690588235855" z="-0.9930377006530762"/>
+      <UpDirection x="0.0" y="1.0" z="0.0"/>
+      <LookDirection x="0.525731086730957" y="0.0" z="-0.8506507873535156"/>
     </ViewModel>
   </Viewing>
   <SymmetrySystem name="icosahedral" renderingStyle="printable">
