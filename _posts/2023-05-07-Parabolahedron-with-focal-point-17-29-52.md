@@ -33,7 +33,7 @@ An affine hexagon is constructed on each of the XY, YZ and ZX planes using pairs
 
 The six vertices at the end of the green struts farthest from the origin form a regular hexagon. A green strut from any one of them to their midpoint is the radius of the circular paraboloid at that point. A yellow strut from the same midpoint to the origin is the depth of the paraboliod at that point.
 
-Using the blue strut as a unit length, the radius (green strut) is √2 and the depth (yellow strut) is √3. The focal point is calculated from these two lengths as shown in [this PDF document] (https://www.pbs.org/wgbh/nova/teachers/activities/pdf/3406_solar_03.pdf). In this case, the distance from the origin to the focal point is √3/6 which is indicated here by the red ball. It turns out that it's also half way between the origin and the midpoint of the initial three vertices.
+Using the blue strut as a unit length, the radius (green strut) is √2 and the depth (yellow strut) is √3. The focal point is calculated from these two lengths as shown in [this PDF document](https://www.pbs.org/wgbh/nova/teachers/activities/pdf/3406_solar_03.pdf). In this case, the distance from the origin to the focal point is √3/6 which is indicated here by the red ball. It turns out that it's also half way between the origin and the midpoint of the initial three vertices.
 
 Three hexagons don't make a visually convincing paraboloid, so let's extend it a few times. This will also be useful in showing the relationship between the vertex-first and face-first projections. Oops, ignore that extra yellow strut near the opening of the paraboloid.
 
