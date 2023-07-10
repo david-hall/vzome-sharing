@@ -1,8 +1,8 @@
 ---
 title: 4 pentagons folded to a rhombohedron
-description: One of 8 ways to join regular pentagons per Matt Parker's video
+description: One of the 8 ways to join regular pentagons per Matt Parker's video
 image: https://david-hall.github.io/vzome-sharing/2023/07/09/20-14-37-4-pentagons-folded-to-rhombohedron/4-pentagons-folded-to-rhombohedron.png
-published: false
+published: true
 layout: vzome
 ---
 
@@ -12,10 +12,10 @@ layout: vzome
  
 {% endcomment %}
 
-One of 8 ways to join regular pentagons per Matt Parker's video
+One of the 8 ways to join regular pentagons per [Matt Parker's video](https://www.youtube.com/watch?v=ZPMR_UT75a8).
 
 <figure style="width: 87%; margin: 5%">
-  <vzome-viewer style="width: 100%; height: 60vh"
+  <vzome-viewer style="width: 100%; height: 60vh" show-scenes="true" 
        src="https://david-hall.github.io/vzome-sharing/2023/07/09/20-14-37-4-pentagons-folded-to-rhombohedron/4-pentagons-folded-to-rhombohedron.vZome" >
     <img  style="width: 100%"
        src="https://david-hall.github.io/vzome-sharing/2023/07/09/20-14-37-4-pentagons-folded-to-rhombohedron/4-pentagons-folded-to-rhombohedron.png" >
