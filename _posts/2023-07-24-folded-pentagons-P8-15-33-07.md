@@ -21,10 +21,10 @@ This model cannot be built exactly using any of the algebraic fields supported b
 The exact values used in the coordinates are determined by this set of simultaneous equations:
 
 $$ d^2 + c^2 + b^2 -2bc - 1 = 0 $$ <br>
-$$ f^2 + d^2 + b^2 + a^2 - d - 2ab - \frac{{3} {4}} = 0 $$ <br>
-$$ 2f^2 + 4a^2 -2f - \frac{{1} {2}} = 0 $$ <br>
-$$ f^2 + c^2 +a^2 - 2ac - \phi - \frac{{3} {4}} = 0 $$ <br>
-$$ f^2 + d^2 +b^2 + a^2 - 2df + 2ab - \phi - \frac{{3} {4}} = 0 $$ <br>
+$$ f^2 + d^2 + b^2 + a^2 - d - 2ab - \frac{ 3 4 } = 0 $$ <br>
+$$ 2f^2 + 4a^2 -2f - \frac{ 1 2 } = 0 $$ <br>
+$$ f^2 + c^2 +a^2 - 2ac - \phi - \frac{3 4} = 0 $$ <br>
+$$ f^2 + d^2 +b^2 + a^2 - 2df + 2ab - \phi - \frac{3 4} = 0 $$ <br>
 
 $$ \phi = \frac {1 + \sqrt{5}} {2} $$ is the golden ratio.
 
