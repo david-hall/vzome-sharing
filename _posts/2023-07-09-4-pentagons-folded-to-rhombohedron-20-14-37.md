@@ -19,7 +19,7 @@ and described in [this PDF](https://arxiv.org/pdf/2007.01753.pdf).
 <button id="unfold">unfolded view</button>
 
 <script>
-  const viewew = document.querySelector( "vzome-viewer" );
+  const viewer = document.querySelector( "vzome-viewer" );
   document.querySelector( "#folded" ).addEventListener( "click", e => viewer.scene =   "folded pentagons" );
   document.querySelector( "#unfold" ).addEventListener( "click", e => viewer.scene = "unfolded pentagons" );
 </script>
