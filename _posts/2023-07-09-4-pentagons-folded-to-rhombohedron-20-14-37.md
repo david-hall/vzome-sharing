@@ -19,9 +19,8 @@ and described in [this PDF](https://arxiv.org/pdf/2007.01753.pdf).
 <button id="unfold">unfolded view</button>
 
 <script>
-  const viewer = document.querySelector( "vzome-viewer" );
-  document.querySelector( "#folded" ).addEventListener( "click", e => viewer.scene =   "folded pentagons" );
-  document.querySelector( "#unfold" ).addEventListener( "click", e => viewer.scene = "unfolded pentagons" );
+  document.querySelector( "#folded" ).addEventListener( "click", e => document.querySelector( "vzome-viewer" ).scene =   "folded pentagons" );
+  document.querySelector( "#unfold" ).addEventListener( "click", e => document.querySelector( "vzome-viewer" ).scene = "unfolded pentagons" );
 </script>
 
 <figure style="width: 87%; margin: 5%">
