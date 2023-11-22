@@ -30,6 +30,6 @@ A Johnson solid
 <button id="faces">Faces</button></p>
 
 <script>
-  document.querySelector( "#struts" ).addEventListener( "click", e => document.querySelector( "vzome-viewer" ).scene = "Struts & balls" ); // or maybe "Struts &amp; balls"
+  document.querySelector( "#struts" ).addEventListener( "click", e => document.querySelector( "vzome-viewer" ).scene = "Struts &amp; balls" );
   document.querySelector( "#faces"  ).addEventListener( "click", e => document.querySelector( "vzome-viewer" ).scene = "Faces" );
 </script>
