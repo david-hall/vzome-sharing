@@ -26,10 +26,10 @@ A Johnson solid
 </figure>
 
 <p>
-<button id="struts">Struts & balls</button>
+<button id="edges">Edges</button>
 <button id="faces">Faces</button></p>
 
 <script>
-  document.querySelector( "#struts" ).addEventListener( "click", e => document.querySelector( "vzome-viewer" ).scene = "Struts and balls" );
-  document.querySelector( "#faces"  ).addEventListener( "click", e => document.querySelector( "vzome-viewer" ).scene = "Faces" );
+  document.querySelector( "#edges" ).addEventListener( "click", e => document.querySelector( "vzome-viewer" ).scene = "Edges" );
+  document.querySelector( "#faces" ).addEventListener( "click", e => document.querySelector( "vzome-viewer" ).scene = "Faces" );
 </script>

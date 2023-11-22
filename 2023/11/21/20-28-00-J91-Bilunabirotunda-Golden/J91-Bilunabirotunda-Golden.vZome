@@ -109,7 +109,7 @@
     <Snapshot id="1"/>
   </EditHistory>
   <notes>
-    <page snapshot="0" title="Struts and balls">
+    <page snapshot="0" title="Edges">
       <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="-0.5720614194869995" y="-0.21850800514221191" z="-0.7905694246292114"/>
