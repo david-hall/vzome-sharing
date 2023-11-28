@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="34" field="polygon30" version="7.1">
+  <EditHistory editNumber="258" lastStickyEdit="258">
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" index="4" len="0 2 0 1 0 0 0 0" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" index="0" len="0 2 0 1 0 0 0 0" symm="octahedral"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0" index="0" len="0 0 0 0 0 1 0 1" symm="octahedral"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0" index="6" len="0 2 0 1 0 0 0 0" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0" index="4" len="-4/5 0 -3/5 0 3/5 0 3/5 0" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" index="7" len="2 0 3 0 1 0 -1 0" symm="octahedral"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 -2 0 -3 0 -1 0 1 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <EndBlock/>
+    <Branch>
+      <ApplyTool copyColors="true" name="antiprism30 axial symmetry.builtin/symmetry around red through origin" selectInputs="true"/>
+      <BeginBlock/>
+      <DeselectAll/>
+      <SelectManifestation point="0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+      <SelectManifestation point="0 1 0 1/2 0 1/2 0 1/2 -1/2 0 0 0 1 0 1/2 0 0 1 0 1/2 0 0 0 0"/>
+      <SelectManifestation point="0 1 0 1/2 0 0 0 0 1/2 0 3/2 0 3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+      <SelectManifestation point="0 -1 0 -1/2 0 0 0 0 1/2 0 3/2 0 3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+      <SelectManifestation point="0 -1 0 -1/2 0 -1/2 0 -1/2 -1/2 0 0 0 1 0 1/2 0 0 1 0 1/2 0 0 0 0"/>
+      <SelectManifestation point="0 0 0 0 0 -1 0 -1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+      <SelectManifestation point="0 -1 0 -1/2 0 -1/2 0 -1/2 1/2 0 0 0 -1 0 -1/2 0 0 1 0 1/2 0 0 0 0"/>
+      <SelectManifestation point="0 -1 0 -1/2 0 0 0 0 -1/2 0 -3/2 0 -3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+      <SelectManifestation point="0 1 0 1/2 0 0 0 0 -1/2 0 -3/2 0 -3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+      <SelectManifestation point="0 1 0 1/2 0 1/2 0 1/2 1/2 0 0 0 -1 0 -1/2 0 0 1 0 1/2 0 0 0 0"/>
+      <EndBlock/>
+      <JoinPoints/>
+      <BeginBlock/>
+      <SelectManifestation point="0 0 0 0 0 0 0 0 2 0 3 0 1 0 -1 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+      <SelectManifestation point="0 1 0 1/2 0 -1 0 -1 -3/2 0 -3/2 0 1/2 0 1 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+      <SelectManifestation point="0 -3 0 -3/2 0 1/2 0 1/2 1/2 0 0 0 -1 0 -1/2 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+      <SelectManifestation point="0 3 0 3/2 0 -1/2 0 -1/2 1/2 0 0 0 -1 0 -1/2 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+      <SelectManifestation point="0 -1 0 -1/2 0 1 0 1 -3/2 0 -3/2 0 1/2 0 1 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+      <EndBlock/>
+      <JoinPoints/>
+      <BeginBlock/>
+      <DeselectAll/>
+      <AdjustSelectionByClass balls="SELECT" originLast="true" panels="IGNORE" struts="IGNORE"/>
+      <EndBlock/>
+      <Delete/>
+      <BeginBlock/>
+      <AdjustSelectionByOrbitLength length="0 6 0 3 0 -1 0 -1" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+      <AdjustSelectionByOrbitLength length="0 2 0 1 0 0 0 0" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+      <EndBlock/>
+      <BookmarkTool name="tool-0"/>
+      <Branch>
+        <CentralSymmetry>
+          <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+        </CentralSymmetry>
+        <BookmarkTool name="tool-1"/>
+      </Branch>
+      <CentralSymmetry>
+        <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+      </CentralSymmetry>
+      <BookmarkTool name="tool-2"/>
+    </Branch>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -2 0 -3 0 -1 0 1 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 -1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -2 0 -3 0 -1 0 1 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -2 0 -3 0 -1 0 1 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 -1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 -1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <EndBlock/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" index="7" len="3/5 0 6/5 0 4/5 0 -1/5 0" symm="octahedral"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -2 0 -3 0 -1 0 1 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 -2 0 -3 0 -1 0 1 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <EndBlock/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 -1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 -3/5 0 -6/5 0 -4/5 0 1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation point="0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <EndBlock/>
+    <ApplyTool copyColors="true" name="antiprism30 axial symmetry.builtin/symmetry around red through origin" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 1 0 1/2 0 1/2 0 1/2 -1/2 0 0 0 1 0 1/2 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 1 0 1/2 0 0 0 0 1/2 0 3/2 0 3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 0 0 0 1/2 0 3/2 0 3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -1/2 0 -1/2 -1/2 0 0 0 1 0 1/2 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 -1 0 -1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -1/2 0 -1/2 1/2 0 0 0 -1 0 -1/2 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 0 0 0 -1/2 0 -3/2 0 -3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 1 0 1/2 0 0 0 0 -1/2 0 -3/2 0 -3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 1 0 1/2 0 1/2 0 1/2 1/2 0 0 0 -1 0 -1/2 0 0 1 0 1/2 0 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 -3/5 0 -6/5 0 -4/5 0 1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation point="0 0 0 0 0 1/2 0 1/2 2/5 0 3/10 0 -3/10 0 -3/10 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation point="0 1 0 1/2 0 0 0 0 -1/10 0 3/10 0 7/10 0 1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 0 0 0 -1/10 0 3/10 0 7/10 0 1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation point="0 0 0 0 0 -1/2 0 -1/2 2/5 0 3/10 0 -3/10 0 -3/10 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <EndBlock/>
+    <JoinPoints/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <AdjustSelectionByClass balls="SELECT" originLast="true" panels="IGNORE" struts="IGNORE"/>
+    <EndBlock/>
+    <Delete/>
+    <AdjustSelectionByOrbitLength length="0 2 0 1 0 0 0 0" orbit="blue" panels="IGNORE" struts="SELECT" symmetry="antiprism30"/>
+    <BookmarkTool name="tool-3"/>
+    <InvertSelection/>
+    <BookmarkTool name="tool-4"/>
+    <SelectAll originLast="true"/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <ApplyTool copyColors="true" name="tool-4" selectInputs="true"/>
+    <DeselectAll/>
+    <ApplyTool copyColors="true" name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -3/5 0 -6/5 0 -4/5 0 1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 -1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -3/5 0 -6/5 0 -4/5 0 1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 -1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 -1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -3/5 0 -6/5 0 -4/5 0 1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -3/5 0 -6/5 0 -4/5 0 1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectAll originLast="true"/>
+    <EndBlock/>
+    <Delete/>
+    <ApplyTool copyColors="true" name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" index="4" len="0 2 0 1 0 0 0 0" symm="octahedral"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <Midpoint>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Midpoint>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <EndBlock/>
+    <Snapshot id="0"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0"/>
+    <Delete/>
+    <ApplyTool copyColors="true" name="tool-4" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <DeselectAll/>
+    <EndBlock/>
+    <ApplyTool copyColors="true" name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" index="5" len="0 2 0 1 0 0 0 0" symm="octahedral"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 -1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <BookmarkTool name="tool-5"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -3/5 0 -6/5 0 -4/5 0 1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectManifestation endSegment="0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <ShowVertices/>
+    <DeselectAll/>
+    <Snapshot id="1"/>
+    <ApplyTool copyColors="true" name="tool-4" selectInputs="true"/>
+    <DeselectAll/>
+    <ApplyTool copyColors="true" name="tool-5" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -3/5 0 -6/5 0 -4/5 0 1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 -1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <ShowVertices/>
+    <DeselectAll/>
+    <Snapshot id="2"/>
+    <ApplyTool copyColors="true" name="tool-4" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 -1/2 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" index="5" len="3/5 0 6/5 0 4/5 0 -1/5 0" symm="octahedral"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -3/5 0 -6/5 0 -4/5 0 1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <Delete/>
+    <ApplyTool copyColors="true" name="tool-5" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 3/5 0 6/5 0 4/5 0 -1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 3/5 0 6/5 0 4/5 0 -1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <Snapshot id="3"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 3/5 0 6/5 0 4/5 0 -1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation point="0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <EndBlock/>
+    <Snapshot id="4"/>
+    <ApplyTool copyColors="true" name="antiprism30 axial symmetry.builtin/symmetry around red through origin" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 1 0 1/2 0 1/2 0 1/2 -1/2 0 0 0 1 0 1/2 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 1 0 1/2 0 0 0 0 1/2 0 3/2 0 3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 0 0 0 1/2 0 3/2 0 3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -1/2 0 -1/2 -1/2 0 0 0 1 0 1/2 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 -1 0 -1 0 0 0 0 0 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -1/2 0 -1/2 1/2 0 0 0 -1 0 -1/2 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 0 0 0 -1/2 0 -3/2 0 -3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 1 0 1/2 0 0 0 0 -1/2 0 -3/2 0 -3/2 0 0 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 1 0 1/2 0 1/2 0 1/2 1/2 0 0 0 -1 0 -1/2 0 0 1 0 1/2 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 3/5 0 6/5 0 4/5 0 -1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation point="0 0 0 0 0 -1/2 0 -1/2 -2/5 0 -3/10 0 3/10 0 3/10 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 0 0 0 1/10 0 -3/10 0 -7/10 0 -1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation point="0 1 0 1/2 0 0 0 0 1/10 0 -3/10 0 -7/10 0 -1/5 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <SelectManifestation point="0 0 0 0 0 1/2 0 1/2 -2/5 0 -3/10 0 3/10 0 3/10 0 -4/5 1 -3/5 1/2 3/5 0 3/5 0"/>
+    <EndBlock/>
+    <Snapshot id="5"/>
+    <InvertSelection/>
+    <Delete/>
+    <Snapshot id="6"/>
+    <SelectAll originLast="true"/>
+    <BookmarkTool name="tool-6"/>
+    <Branch>
+      <ApplyTool copyColors="true" name="mirror.builtin/reflection through XY plane" selectInputs="true"/>
+      <Snapshot id="7"/>
+    </Branch>
+    <Branch>
+      <CentralSymmetry>
+        <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+      </CentralSymmetry>
+      <SelectAll originLast="true"/>
+      <Snapshot id="8"/>
+      <ConvexHull3d mode=""/>
+      <DeselectAll/>
+      <Snapshot id="9"/>
+    </Branch>
+    <ApplyTool copyColors="true" name="mirror.builtin/reflection through XY plane" selectInputs="true"/>
+    <ConvexHull3d mode=""/>
+    <DeselectAll/>
+    <Snapshot id="10"/>
+  </EditHistory>
+  <notes>
+    <page snapshot="0" title="Step 1">
+      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.08450757712125778" y="0.9825664758682251" z="-0.16561803221702576"/>
+        <LookDirection x="-0.15630993247032166" y="-0.1772274523973465" z="-0.9716786742210388"/>
+      </ViewModel>
+      <content xml:space="preserve">In octahedral symmetry, drag a unit length blue strut to the Z axis, make a ball at the midpoint then delete the strut and both endpoints, leaving just a ball at (0,0,1/2). Call that ball A.</content>
+    </page>
+    <page snapshot="1" title="Step 2">
+      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.08450757712125778" y="0.9825664758682251" z="-0.16561803221702576"/>
+        <LookDirection x="-0.15630993247032166" y="-0.1772274523973465" z="-0.9716786742210388"/>
+      </ViewModel>
+      <content xml:space="preserve">From ball A, drag a strut of custom length phi in the +X direction. Call the new ball B.</content>
+    </page>
+    <page snapshot="2" title="Step 3">
+      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.08450757712125778" y="0.9825664758682251" z="-0.16561803221702576"/>
+        <LookDirection x="-0.15630993247032166" y="-0.1772274523973465" z="-0.9716786742210388"/>
+      </ViewModel>
+      <content xml:space="preserve">From ball A, drag a strut of custom length 1/(-a+c) in the +Z direction. Call the new ball C.</content>
+    </page>
+    <page snapshot="3" title="Step 4">
+      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.08450757712125778" y="0.9825664758682251" z="-0.16561803221702576"/>
+        <LookDirection x="-0.15630993247032166" y="-0.1772274523973465" z="-0.9716786742210388"/>
+      </ViewModel>
+      <content xml:space="preserve">From ball A, drag a strut of custom length 1/(a+2c+e-2g) in the +Y direction. Call the new ball D.</content>
+    </page>
+    <page snapshot="4" title="Step 5">
+      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.08450757712125778" y="0.9825664758682251" z="-0.16561803221702576"/>
+        <LookDirection x="-0.15630993247032166" y="-0.1772274523973465" z="-0.9716786742210388"/>
+      </ViewModel>
+      <content xml:space="preserve">Switch to antiprism symmetry then select balls B and D.</content>
+    </page>
+    <page snapshot="5" title="Step 6">
+      <ViewModel distance="122.59416961669922" far="245.18833923339844" near="0.3064854145050049" parallel="false" stereoAngle="0.0" width="55.16737747192383">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve">Apply the built-in "symmetry around red through origin" tool, deselect all, then select every 3rd ball on the outer ring, starting at ball B and every 6th ball around the inner ring starting at ball D.</content>
+    </page>
+    <page snapshot="6" title="Step 7">
+      <ViewModel distance="122.59416961669922" far="245.18833923339844" near="0.3064854145050049" parallel="false" stereoAngle="0.0" width="55.16737747192383">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve">Invert the selection, then delete, leaving 15 balls.
+At this point, select all and save the file as the common starting point for J38 and J39.</content>
+    </page>
+    <page snapshot="7" title="Step 8 for J38">
+      <ViewModel distance="122.59416961669922" far="245.18833923339844" near="0.3064854145050049" parallel="false" stereoAngle="0.0" width="55.16737747192383">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve">Either  use "Point Reflection" from the "Tools" menu to make the vertices of J38...</content>
+    </page>
+    <page snapshot="8" title="Step 8 for J39">
+      <ViewModel distance="122.59416961669922" far="245.18833923339844" near="0.3064854145050049" parallel="false" stereoAngle="0.0" width="55.16737747192383">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve">... or else use the built-in "reflection through XY plane" tool, then "Select All" to make the vertices of J39.</content>
+    </page>
+    <page snapshot="10" title="Step 9 for J38">
+      <ViewModel distance="122.59416961669922" far="245.18833923339844" near="0.3064854145050049" parallel="false" stereoAngle="0.0" width="55.16737747192383">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="0.7071067690849304" z="0.7071067690849304"/>
+        <LookDirection x="0.0" y="0.7071067690849304" z="-0.7071067690849304"/>
+      </ViewModel>
+      <content xml:space="preserve">In either case, use a 3D convex hull to generate the balls, struts and panels.</content>
+    </page>
+    <page snapshot="9" title="Step 9 for J39">
+      <ViewModel distance="122.59416961669922" far="245.18833923339844" near="0.3064854145050049" parallel="false" stereoAngle="0.0" width="55.16737747192383">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="0.7071067690849304" z="0.7071067690849304"/>
+        <LookDirection x="0.0" y="0.7071067690849304" z="-0.7071067690849304"/>
+      </ViewModel>
+      <content xml:space="preserve">In either case, use a 3D convex hull to generate the balls, struts and panels.</content>
+    </page>
+  </notes>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="120.16664123535156" far="240.33328247070312" near="0.30041658878326416" parallel="false" stereoAngle="0.0" width="54.07498550415039">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="-0.33658042550086975" y="-0.6863377094268799" z="-0.6447176337242126"/>
+      <LookDirection x="0.10846273601055145" y="0.6518513560295105" z="-0.7505554556846619"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="antiprism30" renderingStyle="thin antiprism">
+    <Direction color="0,118,149" name="blue" orbit="[[0,0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0,1]]"/>
+    <Direction color="240,160,0" name="yellow" orbit="[[0,0,0,3,0,3,0,-4,1],[-6,0,4,0,-4,0,2,0,1]]"/>
+    <Direction color="0,141,54" name="green" orbit="[[0,0,0,3,0,3,0,-4,1],[0,0,0,0,0,0,0,0,1]]"/>
+    <Direction color="175,0,0" name="red" orbit="red"/>
+    <Direction color="255,255,255" name="4" orbit="[[0,0,0,3,0,3,0,-4,1],[0,1,0,-2,0,0,0,1,1]]" prototype="0 1/2 0 1/2 0 0 0 -1/2 1/10 0 1/5 0 3/10 0 -1/5 0 -1/5 0 1/10 0 2/5 0 -1/10 0"/>
+    <Direction color="255,255,255" name="5" orbit="[[0,0,0,3,0,3,0,-4,1],[0,0,0,-4,0,-2,0,4,1]]" prototype="0 -1/2 0 0 0 0 0 0 2/5 0 3/10 0 1/5 0 -3/10 0 1/5 0 2/5 0 3/5 0 -2/5 0"/>
+    <Direction color="255,255,255" name="0" orbit="[[0,0,0,0,0,0,0,0,1],[0,1,0,5,0,2,0,-4,5]]" prototype="0 1 0 1 0 0 0 -1 0 0 0 0 0 0 0 0 3/5 0 1/5 0 -1/5 0 -1/5 0"/>
+    <Direction color="255,255,255" name="1" orbit="[[0,0,0,3,0,3,0,-4,1],[0,3,0,2,0,4,0,-5,1]]" prototype="0 -1/2 0 -1/2 0 0 0 1/2 1/10 0 1/5 0 3/10 0 -1/5 0 1 0 1/2 0 0 0 -1/2 0"/>
+    <Direction color="255,255,255" name="2" orbit="[[0,0,0,3,0,3,0,-4,1],[0,-1,0,-4,0,-3,0,5,1]]" prototype="3/2 0 0 0 1/2 0 -1/2 0 0 3/2 0 3/2 0 1 0 -2 0 -2 0 -5/2 0 -3/2 0 3"/>
+    <Direction color="255,255,255" name="3" orbit="[[0,0,0,3,0,3,0,-4,1],[0,-2,0,-4,0,-4,0,6,1]]" prototype="0 0 0 0 0 0 0 0 1/5 0 2/5 0 3/5 0 -2/5 0 3/5 0 1/5 0 -1/5 0 -1/5 0"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="octahedral" renderingStyle="octahedra">
+      <Direction color="255,255,255" name="9" orbit="[[0,-2,0,-1,0,-1,0,2,1],[-4,0,0,0,-3,0,3,0,1]]" prototype="0 1/2 0 1/2 0 0 0 -1/2 -1/10 0 -1/5 0 -3/10 0 1/5 0 -1 0 -1/2 0 0 0 1/2 0"/>
+      <Direction color="0,141,54" name="green" orbit="[[0,0,0,0,0,0,0,0,1],[-1,0,0,0,0,0,0,0,1]]"/>
+      <Direction color="255,255,255" name="18" orbit="[[4,0,0,0,2,0,-2,0,1],[0,-2,0,-1,0,-1,0,2,1]]" prototype="0 -1/2 0 0 0 0 0 0 1/5 0 -1/10 0 -2/5 0 1/10 0 -3/5 0 -1/5 0 1/5 0 1/5 0"/>
+      <Direction color="240,160,0" name="yellow" orbit="[[1,0,0,0,0,0,0,0,1],[-1,0,0,0,0,0,0,0,1]]"/>
+      <Direction color="0,118,149" name="blue" orbit="[[0,0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0,1]]"/>
+      <Direction color="255,255,255" name="13" orbit="[[-1,0,0,0,-1,0,1,0,1],[0,0,0,0,0,0,0,0,1]]" prototype="0 0 0 0 0 0 0 0 1/5 0 2/5 0 3/5 0 -2/5 0 -3/5 0 -1/5 0 1/5 0 1/5 0"/>
+      <Direction color="255,255,255" name="12" orbit="[[0,1,0,2,0,1,0,-2,2],[2,0,0,0,1,0,-1,0,2]]" prototype="0 1/2 0 0 0 0 0 0 -2/5 0 -3/10 0 -1/5 0 3/10 0 1/5 0 2/5 0 3/5 0 -2/5 0"/>
+      <Direction color="255,255,255" name="0" orbit="[[0,4,0,5,0,3,0,-6,5],[-2,0,0,0,-4,0,4,0,5]]" prototype="0 -1 0 -1/2 0 0 0 1/2 1/2 0 1/2 0 1/2 0 -1/2 0 3/5 0 1/5 0 -1/5 0 -1/5 0"/>
+      <Direction color="255,255,255" name="11" orbit="[[0,4,0,5,0,3,0,-6,5],[0,8,0,10,0,6,0,-12,5]]" prototype="0 0 0 -1/2 0 0 0 1/2 -3/10 0 -1/10 0 1/10 0 1/10 0 -3/5 0 -1/5 0 1/5 0 1/5 0"/>
+      <Direction color="255,255,255" name="10" orbit="[[3,0,0,0,1,0,-1,0,2],[0,0,0,0,0,0,0,0,1]]" prototype="0 0 0 0 0 0 0 0 -3/5 0 -1/5 0 1/5 0 1/5 0 -1 0 -1/2 0 0 0 1/2 0"/>
+      <Direction color="255,255,255" name="17" orbit="[[4,0,0,0,2,0,-2,0,1],[0,0,0,0,0,0,0,0,1]]" prototype="0 0 0 0 0 0 0 0 3/5 0 1/5 0 -1/5 0 -1/5 0 1/5 0 -1/10 0 -2/5 0 1/10 0"/>
+      <Direction color="255,255,255" name="16" orbit="[[-1,0,0,0,-1,0,1,0,1],[0,3,0,3,0,2,0,-4,1]]" prototype="0 1/2 0 1/2 0 0 0 -1/2 -1/10 0 -1/5 0 -3/10 0 1/5 0 -1/5 0 1/10 0 2/5 0 -1/10 0"/>
+      <Direction color="255,255,255" name="15" orbit="[[0,-2,0,-1,0,-1,0,2,1],[-3,0,0,0,-2,0,2,0,1]]" prototype="0 -1/2 0 0 0 0 0 0 -2/5 0 -3/10 0 -1/5 0 3/10 0 1/5 0 -1/10 0 -2/5 0 1/10 0"/>
+      <Direction color="255,255,255" name="14" orbit="[[0,-2,0,-1,0,-1,0,2,2],[1,0,0,0,0,0,0,0,2]]" prototype="0 -1/2 0 -1/2 0 0 0 1/2 1/10 0 1/5 0 3/10 0 -1/5 0 1/5 0 2/5 0 3/5 0 -2/5 0"/>
+      <Direction color="255,255,255" name="6" orbit="[[0,0,0,0,0,0,0,0,1],[0,4,0,5,0,3,0,-6,5]]" prototype="1/2 0 0 0 -1/2 0 0 0 0 1/2 0 1/2 0 0 0 -1/2 0 0 0 0 0 0 0 0"/>
+      <Direction color="255,255,255" name="5" orbit="[[0,-2,0,-1,0,-1,0,2,1],[0,0,0,0,0,0,0,0,1]]" prototype="0 0 0 1/2 0 0 0 -1/2 1/2 0 1/2 0 1/2 0 -1/2 0 0 0 0 0 0 0 0 0"/>
+      <Direction color="255,255,255" name="8" orbit="[[-2,0,0,0,-4,0,4,0,5],[0,0,0,0,0,0,0,0,1]]" prototype="0 0 0 0 0 0 0 0 3/5 0 1/5 0 -1/5 0 -1/5 0 -1/2 0 -1/2 0 -1/2 0 1/2 0"/>
+      <Direction color="255,255,255" name="7" orbit="[[3,0,0,0,1,0,-1,0,2],[0,-1,0,1,0,0,0,0,2]]" prototype="0 -1/2 0 0 0 0 0 0 1 0 1/2 0 0 0 -1/2 0 -3/5 0 -1/5 0 1/5 0 1/5 0"/>
+      <Direction color="255,255,255" name="2" orbit="[[0,4,0,5,0,3,0,-6,5],[0,-2,0,-1,0,-1,0,2,1]]" prototype="0 -1/2 0 0 0 0 0 0 2/5 0 3/10 0 1/5 0 -3/10 0 1 0 1/2 0 0 0 -1/2 0"/>
+      <Direction color="255,255,255" name="1" orbit="[[2,0,0,0,-1,0,1,0,5],[0,-3,0,0,0,-1,0,2,5]]" prototype="-2 0 0 0 -3/2 0 3/2 0 0 1/2 0 1 0 1/2 0 -1 0 -2 0 -5/2 0 -3/2 0 3"/>
+      <Direction color="255,255,255" name="4" orbit="[[0,0,0,0,0,0,0,0,1],[0,1,0,5,0,2,0,-4,5]]" prototype="0 -1 0 -1 0 0 0 1 0 0 0 0 0 0 0 0 -3/5 0 -1/5 0 1/5 0 1/5 0"/>
+      <Direction color="255,255,255" name="3" orbit="[[3,0,0,0,1,0,-1,0,5],[0,1,0,5,0,2,0,-4,5]]" prototype="0 -1/2 0 0 0 0 0 0 -2/5 0 -3/10 0 -1/5 0 3/10 0 -1/2 0 -1/2 0 -1/2 0 1/2 0"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool copyColors="true" deleteInputs="false" id="tool-0" label="bookmark 0" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-1" label="bookmark 1" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-2" label="bookmark 2" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-3" label="bookmark 3" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-4" label="bookmark 4" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-5" label="bookmark 5" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-6" label="bookmark 6" selectInputs="true"/>
+  </Tools>
+</vzome:vZome>
