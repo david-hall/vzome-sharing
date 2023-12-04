@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="35" field="polygon12" version="7.1">
+  <EditHistory editNumber="199" lastStickyEdit="77">
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0" index="0" len="0 2 0 1" symm="antiprism12"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0"/>
+    <ApplyTool copyColors="true" name="antiprism12 axial symmetry.builtin/symmetry around red through origin" selectInputs="true"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 3/2 0 1 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 0 0 0"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 3/2 0 1 0 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 -1 0 -1/2 0 3/2 0 1 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 0 0 0"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <SelectManifestation endSegment="0 -1 0 -1/2 0 -3/2 0 -1 0 0 0 0" startSegment="0 -1 0 -1/2 0 3/2 0 1 0 0 0 0"/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <StrutCreation anchor="0 -1 0 -1/2 0 -3/2 0 -1 0 0 0 0" index="4" len="0 3/2 0 1" symm="octahedral"/>
+    <StrutCreation anchor="0 -1 0 -1/2 0 3/2 0 1 0 0 0 0" index="4" len="0 3/2 0 1" symm="octahedral"/>
+    <StrutCreation anchor="0 2 0 1 0 0 0 0 0 0 0 0" index="4" len="0 3/2 0 1" symm="octahedral"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 3/2 0 1 0 3/2 0 1"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 3/2 0 1"/>
+    <EndBlock/>
+    <ApplyTool copyColors="true" name="mirror.builtin/reflection through XY plane" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 -3/2 0 -1"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 3/2 0 1"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 -3/2 0 -1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 -3/2 0 -1"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 3/2 0 1"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 -1 0 -1/2 0 3/2 0 1 0 0 0 0"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 0 0 0"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 3/2 0 1 0 -3/2 0 -1"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 3/2 0 1 0 -3/2 0 -1"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 0 0 0 0 0 0 0"/>
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="IGNORE" struts="SELECT"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectAll originLast="true"/>
+    <ConvexHull3d mode="noPanels"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 3/2 0 1 0 3/2 0 1"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 3/2 0 1"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <StrutCreation anchor="0 2 0 1 0 0 0 0 0 3/2 0 1" dir="red" index="0" len="0 2 0 1" symm="antiprism12"/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 3/2 0 1" dir="red" index="0" len="4/3 0 5/3 0" symm="antiprism12"/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 7/2 0 2" startSegment="0 2 0 1 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 4/3 3/2 5/3 1" startSegment="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 -3/2 0 -1"/>
+    <EndBlock/>
+    <ScalingTool name="tool-0" symmetry="antiprism12"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 3/2 0 1" startSegment="0 2 0 1 0 0 0 0 0 -3/2 0 -1"/>
+    <EndBlock/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="tool-0"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 -3/2 0 -1"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 3/2 0 1"/>
+    <EndBlock/>
+    <ApplyTool copyColors="true" name="tool-0"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 -3/2 0 -1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 2 -3/2 3 -1" startSegment="0 2 0 1 0 0 0 0 0 -3/2 0 -1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 2 -3/2 3 -1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 2 -3/2 3 -1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 2 -3/2 3 -1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 -3/2 0 -1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 -3/2 0 -1"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0 0 0">{
+  "field" : "polygon12",
+  "vertices" : [ [ [ 0, 0, 0, 0, 1 ], [ 0, 0, 0, 0, 1 ], [ 0, 0, 0, 0, 1 ] ], [ [ 0, 0, 0, 0, 1 ], [ 0, 0, 0, 0, 1 ], [ 2, 0, 3, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 1,
+    "color" : "#FFFFFF"
+  }, {
+    "vertex" : 0,
+    "color" : "#FFFFFF"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 0, 1 ],
+    "color" : "#AF0000"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 4/3 3/2 5/3 1"/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 3/2 0 1"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 2 3/2 3 1"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <SelectManifestation endSegment="0 -1 0 -1/2 0 -3/2 0 -1 0 3/2 0 1" startSegment="0 2 0 1 0 0 0 0 0 3/2 0 1"/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0" dir="red" index="0" len="0 2 0 1" symm="antiprism12"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 2 3/2 3 1" startSegment="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 2 0 1"/>
+    <EndBlock/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 2 3/2 3 1"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 2 3/2 3 1" startSegment="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <EndBlock/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0" dir="red" index="0" len="0 2 0 1" symm="antiprism12"/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 2 3/2 3 1" startSegment="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0" dir="red" index="0" len="0 2 0 1" symm="antiprism12"/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 2 3/2 3 1" startSegment="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 2 3/2 3 1" startSegment="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 2 3/2 3 1" startSegment="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 3/2 0 1 0 3/2 0 1"/>
+    <SelectManifestation point="0 -1 0 -1/2 0 -3/2 0 -1 0 3/2 0 1"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 3/2 0 1" dir="red" index="12" len="2 0 3 0" symm="antiprism12"/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 2 3/2 3 1" startSegment="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 2 0 1"/>
+    <EndBlock/>
+    <Delete/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 3/2 0 1" dir="red" index="0" len="2 0 3 0" symm="antiprism12"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 -2 3/2 -3 1" startSegment="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 2 3/2 3 1" startSegment="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 -1 0 -1/2 0 -3/2 0 -1 0 3/2 0 1" startSegment="0 -1 0 -1/2 0 -3/2 0 -1 0 -3/2 0 -1"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 3/2 0 1"/>
+    <EndBlock/>
+    <JoinPoints closedLoop="false"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 7/2 0 2"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 7/2 0 2" startSegment="0 2 0 1 0 0 0 0 0 3/2 0 1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 2 -3/2 3 -1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 2 -3/2 3 -1" startSegment="0 2 0 1 0 0 0 0 0 -3/2 0 -1"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 -2 3/2 -3 1"/>
+    <Delete/>
+    <SelectAll originLast="true"/>
+    <ConvexHull3d mode="noPanels"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 3/2 0 1"/>
+    <SelectNeighbors/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <Delete/>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="143.86558532714844" far="287.7311706542969" near="0.35966408252716064" parallel="false" stereoAngle="0.0" width="64.7395248413086">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.0" y="0.0" z="1.0"/>
+      <LookDirection x="-0.7071067690849304" y="0.7071067690849304" z="0.0"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="antiprism12" renderingStyle="thin antiprism">
+    <Direction color="0,118,149" name="blue" orbit="[[0,0,0,0,1],[0,0,0,0,1]]"/>
+    <Direction color="255,255,255" name="0" orbit="[[0,0,0,0,1],[0,-1,0,1,1]]" prototype="1/2 0 0 0 -1/2 0 1/2 0 0 -1 0 1"/>
+    <Direction color="240,160,0" name="yellow" orbit="[[3,0,-1,0,1],[-6,0,2,0,1]]"/>
+    <Direction color="0,141,54" name="green" orbit="[[3,0,-1,0,1],[0,0,0,0,1]]"/>
+    <Direction color="175,0,0" name="red" orbit="red"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="octahedral" renderingStyle="octahedra">
+      <Direction color="0,118,149" name="blue" orbit="[[0,0,0,0,1],[0,0,0,0,1]]"/>
+      <Direction color="255,255,255" name="0" orbit="[[-1,0,1,0,3],[0,0,0,0,1]]" prototype="-3/2 0 0 0 -1/2 0 1/2 0 0 0 0 0"/>
+      <Direction color="0,141,54" name="green" orbit="[[0,0,0,0,1],[-1,0,0,0,1]]"/>
+      <Direction color="240,160,0" name="yellow" orbit="[[1,0,0,0,1],[-1,0,0,0,1]]"/>
+      <Direction color="255,255,255" name="2" orbit="[[0,3,0,-1,4],[0,-1,0,1,4]]" prototype="1/2 0 0 0 -1/2 0 1/2 0 0 -1 0 1"/>
+      <Direction color="255,255,255" name="1" orbit="[[0,0,0,0,1],[0,-1,0,1,2]]" prototype="-1 0 0 0 0 0 0 0 0 -1 0 1"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool copyColors="true" deleteInputs="false" id="tool-0" label="scaling 0" selectInputs="false"/>
+  </Tools>
+</vzome:vZome>
