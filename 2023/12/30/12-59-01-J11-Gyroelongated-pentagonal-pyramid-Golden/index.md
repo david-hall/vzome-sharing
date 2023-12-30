@@ -7,7 +7,7 @@ image: https://david-hall.github.io/vzome-sharing/2023/12/30/12-59-01-J11-Gyroel
 layout: design
 ---
 
-  <vzome-viewer style="width: 100%; height: 60vh"
+  <vzome-viewer style="width: 100%; height: 60vh" show-scenes="named"
        src="https://david-hall.github.io/vzome-sharing/2023/12/30/12-59-01-J11-Gyroelongated-pentagonal-pyramid-Golden/J11-Gyroelongated-pentagonal-pyramid-Golden.vZome" >
     <img  style="width: 100%"
        src="https://david-hall.github.io/vzome-sharing/2023/12/30/12-59-01-J11-Gyroelongated-pentagonal-pyramid-Golden/J11-Gyroelongated-pentagonal-pyramid-Golden.png" >
