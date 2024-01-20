@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="39" field="polygon20" version="7.1">
+  <EditHistory editNumber="180" lastStickyEdit="180">
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" index="0" len="0 2 0 1 0 0 0 0" symm="antiprism20"/>
+    <StrutCreation anchor="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" index="4" len="0 -2 0 0 0 2 0 1" symm="octahedral"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <Snapshot id="0"/>
+    <ApplyTool copyColors="true" name="tetrahedral.builtin/tetrahedral around origin" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="1"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <EndBlock/>
+    <Delete/>
+    <Snapshot id="2"/>
+    <BeginBlock/>
+    <SelectAll originLast="true"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1 0 2 0 1 0 0 0 0"/>
+    <SelectManifestation point="0 2 0 0 0 -2 0 -1 0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <SelectManifestation point="0 -2 0 0 0 2 0 1 0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <Snapshot id="3"/>
+    <SelectAll originLast="true"/>
+    <ConvexHull3d mode="noPanels"/>
+    <DeselectAll/>
+    <Snapshot id="4"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1" startSegment="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <Midpoint>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Midpoint>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1" index="4" len="-2 0 -3 0 1 0 3 0" symm="octahedral"/>
+    <DeselectAll/>
+    <Snapshot id="5"/>
+    <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 -2 -3 0 1 2 3 1" index="5" len="0 4 0 2 0 0 0 0" symm="octahedral"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 4 0 2 0 0 0 0 -2 -2 -3 0 1 2 3 1" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+    <Midpoint>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Midpoint>
+    <Snapshot id="6"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+    <TranslationTool name="tool-0"/>
+    <SelectCollinear vector1="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 -2 -3 0 1 2 3 1" vector2="0 0 0 0 0 0 0 0 0 4 0 2 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="tool-0"/>
+    <DeselectAll/>
+    <Snapshot id="7"/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 -2 -2 -3 0 1 2 3 1" startSegment="0 0 0 0 0 0 0 0 0 -2 0 -1 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1" startSegment="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <EndBlock/>
+    <ConvexHull3d mode="noPanels"/>
+    <DeselectAll/>
+    <Snapshot id="8"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 -2 -3 0 1 2 3 1" startSegment="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <EndBlock/>
+    <Delete/>
+    <Snapshot id="9"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <SelectManifestation point="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <EndBlock/>
+    <CrossProduct/>
+    <Snapshot id="10"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 -2 0 -1 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <SelectManifestation point="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <EndBlock/>
+    <CrossProduct/>
+    <Branch>
+      <DeselectAll/>
+      <Snapshot id="11"/>
+    </Branch>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 -2 0 -1 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1" startSegment="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <EndBlock/>
+    <ConvexHull3d mode="onlyPanels"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation>
+      <polygonVertex at="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 -2 0 -1 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 -2 0 -1 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+      <polygonVertex at="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <Delete/>
+    <Snapshot id="12"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+    <EndBlock/>
+    <TranslationTool name="tool-1"/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 -2 0 -1 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 -1 0 -1 0 1 0 1 1 -2 1 0 0 2 0 1" startSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+    <EndBlock/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="tool-1"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 -1 0 -1 0 1 0 1 1 2 1 0 0 -2 0 -1" startSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 2 0 2 0 -1 0 -1 0 -1 -2 -1 0 1 2 1 1" startSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <EndBlock/>
+    <setItemColor blue="0" green="0" red="255"/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1" startSegment="0 0 0 0 0 0 0 0 0 -2 0 -1 0 0 0 0 -2 2 -3 0 1 -2 3 -1"/>
+    <EndBlock/>
+    <setItemColor blue="0" green="255" red="0"/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1" startSegment="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <SelectManifestation endSegment="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1" startSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+    <EndBlock/>
+    <setItemColor blue="255" green="0" red="0"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <setItemColor blue="0" green="0" red="0"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 -1 0 -1 0 1 0 1 1 -2 1 0 0 2 0 1"/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 -1 0 -1 0 1 0 1 1 2 1 0 0 -2 0 -1" startSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1" startSegment="0 0 0 0 0 0 0 0 0 -2 0 -1 0 0 0 0 -2 2 -3 0 1 -2 3 -1"/>
+    <SelectManifestation endSegment="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1" startSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 2 0 2 0 -1 0 -1 0 -1 -2 -1 0 1 2 1 1" startSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1" startSegment="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <EndBlock/>
+    <LinearTransformTool name="tool-2"/>
+    <DeselectAll/>
+    <Snapshot id="13"/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 -2 -2 -3 0 1 2 3 1" startSegment="0 0 0 0 0 0 0 0 0 -2 0 -1 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+    <SelectManifestation point="0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectManifestation>
+      <polygonVertex at="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 -2 0 -1 0 0 0 0 -2 -2 -3 0 1 2 3 1"/>
+      <polygonVertex at="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <ApplyTool copyColors="false" deleteInputs="true" name="tool-2"/>
+    <DeselectAll/>
+    <Snapshot id="14"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 2 0 1 0 0 0 0 2 0 2 0 -1 0 -1 0 -1 -2 -1 0 1 2 1 1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 2 0 2 0 -1 0 -1 0 -1 -2 -1 0 1 2 1 1" startSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1" startSegment="0 0 0 0 0 0 0 0 0 -2 0 -1 0 0 0 0 -2 2 -3 0 1 -2 3 -1"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 -1 0 -1 0 1 0 1 1 2 1 0 0 -2 0 -1" startSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+    <EndBlock/>
+    <Delete/>
+    <Snapshot id="15"/>
+    <SelectManifestation>
+      <polygonVertex at="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+      <polygonVertex at="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+    </SelectManifestation>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1" startSegment="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+    <SelectManifestation endSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1" startSegment="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    <SelectManifestation endSegment="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1" startSegment="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+    <EndBlock/>
+    <MapToColor colorMapper="SystemColorMap" symmetry="octahedral"/>
+    <Snapshot id="16"/>
+    <SelectAll originLast="true"/>
+    <BookmarkTool name="tool-3"/>
+    <ConvexHull3d mode="onlyPanels"/>
+    <AdjustSelectionByClass balls="DESELECT" originLast="true" panels="IGNORE" struts="IGNORE"/>
+    <BookmarkTool name="tool-4"/>
+    <InvertSelection/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation>
+      <polygonVertex at="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+      <polygonVertex at="0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+      <polygonVertex at="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 -2 0 -1 0 0 0 0"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 -2 0 -1 0 0 0 0"/>
+      <polygonVertex at="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+      <polygonVertex at="0 -2 0 0 0 2 0 1 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1 0 -2 0 -1 0 0 0 0"/>
+      <polygonVertex at="0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+      <polygonVertex at="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+      <polygonVertex at="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+      <polygonVertex at="0 -2 0 0 0 2 0 1 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <setItemColor blue="0" green="0" red="175"/>
+    <BeginBlock/>
+    <SelectManifestation>
+      <polygonVertex at="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 -4/3 2/3 -8/3 0 -2/3 -2/3 4/3 -1/3 0 -2/3 2/3 1/3 4/3 4/3 2/3 2/3"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 -4/3 2/3 -8/3 0 -2/3 -2/3 4/3 -1/3 0 -2/3 2/3 1/3 4/3 4/3 2/3 2/3"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 -4/3 2/3 -8/3 0 -2/3 -2/3 4/3 -1/3 0 -2/3 2/3 1/3 4/3 4/3 2/3 2/3"/>
+      <polygonVertex at="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1 0 -2 0 -1 0 0 0 0"/>
+      <polygonVertex at="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1 0 -2 0 -1 0 0 0 0"/>
+      <polygonVertex at="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+      <polygonVertex at="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1 0 -2 0 -1 0 0 0 0"/>
+      <polygonVertex at="0 -2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+      <polygonVertex at="0 2 0 0 0 -2 0 -1 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 0 0 0 0 0 0 0 0 -2 0 0 0 2 0 1 0 -2 0 -1 0 0 0 0"/>
+      <polygonVertex at="0 -2 0 0 0 2 0 1 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0"/>
+      <polygonVertex at="0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 -2 0 -1"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <setItemColor blue="0" green="160" red="240"/>
+    <Snapshot id="17"/>
+  </EditHistory>
+  <notes>
+    <page snapshot="0" title="First icosahedral vertex">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Use octahedral symmetry system.
+Drag B1 toward +X.
+Use a custom blue length of phi.
+Drag that length from the prior ball in the +Z direction.</content>
+    </page>
+    <page snapshot="1" title="All icosahedral vertices">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Apply the tetrahedral symmetry tool in the octahedral symmetry system to generate all 12 icosa vertices.</content>
+    </page>
+    <page snapshot="2" title="Remove icosa scafolding">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Delete the two struts, the ball at their common vertex, and the origin, leaving just the icosahedron's 12 vertices.</content>
+    </page>
+    <page snapshot="3" title="Remove tridimished vertices">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Remove the three vertices that are ot part of J63.</content>
+    </page>
+    <page snapshot="4" title="J63 convex hull">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Select all of the balls and make a convex hull having struts only (no panels yet).</content>
+    </page>
+    <page snapshot="5" title="Midpoint of near blue strut">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Make a ball at the midpoint of the near blue strut.
+Use a custom blue length of sqrt(2).
+Drag that length from the midpoint ball in the +Z direction.</content>
+    </page>
+    <page snapshot="6" title="Vertical edge of tetrahedron">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Use "build with this" to set the blue length to the edge of the icosahedron.
+Drag a blue strut in the +Y direction from the most recently added ball, having that length.
+Generate a ball at the midpoint of that strut.
+Use the midpoint and the ball at the bottom of that strut to make a translation tool to move in the -Y direction by half the length of that strut.</content>
+    </page>
+    <page snapshot="7" title="Translate tetrahedron edge">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Use "select collinear" on the most recently built strut to select it, its two end points and its midpoint.
+Apply the translation tool created in the previous step to move it in the -Y direction.</content>
+    </page>
+    <page snapshot="8" title="Generate tetrahedron">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Select the most recently moved strut and the nearest (blue) edge of the icosahedren.
+Make a convex hull having struts only (no panels yet).</content>
+    </page>
+    <page snapshot="9" title="Remove tetrahedron scafolding">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Delete the strut between the midpoints of the tetrahedron's edges and the two balls at its ends.</content>
+    </page>
+    <page snapshot="10" title="Cross product of icosahedron face">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Select the three vertices of the icosahedron face where the tetrahedron will eventually attach to it. Select the one that's at the bottom (on the X=0 plane) first, then move counterclockwise around the triangle.
+Apply the cross product tool.</content>
+    </page>
+    <page snapshot="11" title="Cross product of tetrahedron face">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Select the three vertices of the tetrahedron face where the icosahedron will eventually attach to it. As before, select the one that's at the bottom (on the X=0 plane) first, then move counterclockwise around the triangle.
+Apply the cross product tool.</content>
+    </page>
+    <page snapshot="12" title="Hinge panels">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Two panels are added, not as part of the construction process, but rather to clarify the purpose of the next step. The next objective is to rotate the tetrahedron around the blue strut so the two panels coincide. A linear map tool wil be used to accomplish that rotation.</content>
+    </page>
+    <page snapshot="13" title="Build linear map tool">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">The linear map tool requires 3 struts with a common endpoint as its input or "from" vectors. It requires three more struts as it's output or "to" vectors, and it requires a ball to represent the origin of the linear map.
+
+In this case, one of the input vectors is the same as the corresponding output vector, so we need two parallel struts of the same lengths to represent them both. One for the input vector and one for the output. 
+The input and output struts are colored red, green and blue where the input struts and their corresponding output struts are the same color. The origin of the linear mapping is the black ball originally shared by the two cross product struts.
+
+The red and green input struts are translated to the far side of the icosahedron so they will share a vertex with the parallel blue input strut.
+
+The three input "from" vectors (in order) are the red, green and blue struts having a white ball at their common vertex. The green and blue are parallel to the edges of the tetrahedron's face that we want to rotate, and the red is the "cross product" strut that is normal to that same tetrahedron's face.
+
+The three output "to" vectors are selected in the same order. They are the red, green and blue struts with a black ball at their common vertex. The green and blue output struts are on the icosahedron's face onto which we want to rotate. The red output strut is the "cross product" strut that is normal to that same icosahedron's face.</content>
+    </page>
+    <page snapshot="14" title="Rotate tetrahedron into place">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Select the edges, vertices abd face of the tetrahedron and apply the linear map tool to rotate it into place.</content>
+    </page>
+    <page snapshot="15" title="Remove linear map scaffolding">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Remove the extra struts that weer used to generate the linear map.</content>
+    </page>
+    <page snapshot="16" title="Edges">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Remove the internal triangular panel and reset the strut colors.</content>
+    </page>
+    <page snapshot="17" title="Faces">
+      <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+        <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+      </ViewModel>
+      <content xml:space="preserve">Select all, apply a 3D convex hull, delete all balls and struts. Color the panels to match the Johnson solids web site.</content>
+    </page>
+  </notes>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="158.99606323242188" far="317.99212646484375" near="0.3974902033805847" parallel="false" stereoAngle="0.0" width="71.5482406616211">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.0019901969935745" y="0.9576005935668945" z="-0.2880925238132477"/>
+      <LookDirection x="-0.07725387811660767" y="-0.2870849072933197" z="-0.9547842144966125"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="octahedral" renderingStyle="octahedra">
+    <Direction color="255,255,255" name="9" orbit="[[15,6,9,-10,-9,-2,0,6,1],[0,0,0,0,0,0,0,0,1]]" prototype="0 0 0 0 0 0 0 0 8/3 4/3 -4 0 4 -4/3 -4/3 2/3 0 -4/3 -4/3 -2/3 8/3 8/3 -4/3 -4/3"/>
+    <Direction color="0,141,54" name="green" orbit="[[0,0,0,0,0,0,0,0,1],[-1,0,0,0,0,0,0,0,1]]"/>
+    <Direction color="240,160,0" name="yellow" orbit="[[1,0,0,0,0,0,0,0,1],[-1,0,0,0,0,0,0,0,1]]"/>
+    <Direction color="0,118,149" name="blue" orbit="[[0,0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0,1]]"/>
+    <Direction color="255,255,255" name="0" orbit="[[2,0,1,0,-1,0,0,0,1],[-1,0,-1,0,1,0,0,0,1]]" prototype="-1 0 0 0 0 0 0 0 0 0 1 0 -1 0 0 0 -1 0 -1 0 1 0 0 0"/>
+    <Direction color="255,255,255" name="6" orbit="[[-8,-4,-5,6,5,2,0,-4,1],[15,6,9,-10,-9,-2,0,6,1]]" prototype="1 0 0 0 0 0 0 0 0 -2/3 -1/3 2/3 1/3 2/3 0 -2/3 -1/3 2/3 -1/3 0 1/3 -4/3 0 2/3"/>
+    <Direction color="255,255,255" name="5" orbit="[[1,-1,1,1,-1,1,0,-1,1],[0,0,0,0,0,0,0,0,1]]" prototype="0 0 0 0 0 0 0 0 0 -4/3 2/3 -2/3 -4/3 8/3 2/3 -4/3 4/3 -4/3 -2 0 2 4/3 -2/3 -2/3"/>
+    <Direction color="255,255,255" name="8" orbit="[[-1,0,-1,0,1,0,0,0,1],[0,0,0,0,0,0,0,0,1]]" prototype="0 -4 0 -2 0 8 0 -4 0 0 0 2 0 -4 0 2 0 0 0 0 0 0 0 0"/>
+    <Direction color="255,255,255" name="7" orbit="[[2,-1,2,0,-2,2,0,-1,6],[0,-1,-2,1,2,1,0,-1,6]]" prototype="4 0 -4 0 2 0 0 0 -4/3 4/3 2 0 -2 -4/3 2/3 2/3 0 -4/3 2/3 -2/3 -4/3 8/3 2/3 -4/3"/>
+    <Direction color="255,255,255" name="2" orbit="[[2,0,1,0,-1,0,0,0,1],[0,0,0,0,0,0,0,0,1]]" prototype="0 0 0 0 0 0 0 0 1 0 1 0 -1 0 0 0 0 0 -1 0 1 0 0 0"/>
+    <Direction color="255,255,255" name="1" orbit="[[0,0,0,-1,0,1,0,0,2],[0,0,0,-1,0,1,0,0,2]]" prototype="-1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 -1 0 0"/>
+    <Direction color="255,255,255" name="4" orbit="[[3,-1,2,1,-2,1,0,-1,3],[5,-2,2,3,-2,1,0,-2,3]]" prototype="2 -2 -3 0 3 2 -1 -1 -2 2 2 0 -1 -2 0 1 0 -2 0 0 0 2 0 -1"/>
+    <Direction color="255,255,255" name="3" orbit="[[0,0,0,-1,0,1,0,0,2],[0,0,0,0,0,0,0,0,1]]" prototype="0 0 0 0 0 0 0 0 0 0 0 -1 0 1 0 0 1 0 0 0 0 0 0 0"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="antiprism20" renderingStyle="thin antiprism">
+      <Direction color="240,160,0" name="yellow" orbit="[[1,0,-3,0,3,0,-1,0,1],[-8,0,8,0,-6,0,2,0,1]]"/>
+      <Direction color="255,255,255" name="3" orbit="[[1,0,-3,0,3,0,-1,0,1],[0,0,0,-2,0,4,0,-2,1]]" prototype="1 0 0 0 0 0 0 0 -1 0 0 0 0 0 0 0 0 0 0 1 0 -1 0 0"/>
+      <Direction color="0,118,149" name="blue" orbit="[[0,0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0,1]]"/>
+      <Direction color="255,255,255" name="4" orbit="[[0,0,0,0,0,0,0,0,1],[1,0,-1,0,1,0,0,0,1]]" prototype="0 0 0 0 0 0 0 0 1 0 1 0 -1 0 0 0 0 0 -1 0 1 0 0 0"/>
+      <Direction color="255,255,255" name="0" orbit="[[-23,0,11,0,-13,0,9,0,19],[2,0,4,0,16,0,-14,0,19]]" prototype="1 0 0 0 0 0 0 0 0 0 1 0 -1 0 0 0 -1 0 -1 0 1 0 0 0"/>
+      <Direction color="255,255,255" name="1" orbit="[[-23,0,11,0,-13,0,9,0,19],[22,0,-32,0,24,0,-2,0,19]]" prototype="1 0 1 0 -1 0 0 0 -1 0 0 0 0 0 0 0 0 0 -1 0 1 0 0 0"/>
+      <Direction color="175,0,0" name="red" orbit="red"/>
+      <Direction color="255,255,255" name="2" orbit="[[1,0,-49,0,13,0,15,0,59],[16,0,42,0,-28,0,4,0,59]]" prototype="0 0 -1 0 1 0 0 0 -1 0 -1 0 1 0 0 0 -1 0 0 0 0 0 0 0"/>
+      <Direction color="0,141,54" name="green" orbit="[[1,0,-3,0,3,0,-1,0,1],[0,0,0,0,0,0,0,0,1]]"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool copyColors="true" deleteInputs="true" id="tool-0" label="Move -Z by 1/2 edge length" selectInputs="false"/>
+    <Tool copyColors="true" deleteInputs="true" id="tool-1" label="move linear map basis" selectInputs="false"/>
+    <Tool copyColors="false" deleteInputs="true" id="tool-2" label="rotate tetrahedron" selectInputs="false"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-3" label="Edges" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-4" label="Faces" selectInputs="true"/>
+  </Tools>
+</vzome:vZome>
