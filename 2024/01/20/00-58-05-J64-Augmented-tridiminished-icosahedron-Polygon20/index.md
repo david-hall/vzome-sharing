@@ -11,6 +11,12 @@ layout: design
 <button id="prev">prev</button> 
 <button id="next">next</button> 
  
+  <vzome-viewer style="width: 100%; height: 60vh" scene="will be replaced" reactive="false"
+       src="https://david-hall.github.io/vzome-sharing/2024/01/20/00-58-05-J64-Augmented-tridiminished-icosahedron-Polygon20/J64-Augmented-tridiminished-icosahedron-Polygon20.vZome" >
+    <img  style="width: 100%"
+       src="https://david-hall.github.io/vzome-sharing/2024/01/20/00-58-05-J64-Augmented-tridiminished-icosahedron-Polygon20/J64-Augmented-tridiminished-icosahedron-Polygon20.png" >
+  </vzome-viewer>
+
 <script> 
 // copied from https://codepen.io/scottvorthmann/pen/JjeZZev
 let scenes;
@@ -40,12 +46,6 @@ viewer .addEventListener( "vzome-scenes-discovered", (e) => {
 
 </script>
 
-  <vzome-viewer style="width: 100%; height: 60vh" scene="will be replaced" reactive="false"
-       src="https://david-hall.github.io/vzome-sharing/2024/01/20/00-58-05-J64-Augmented-tridiminished-icosahedron-Polygon20/J64-Augmented-tridiminished-icosahedron-Polygon20.vZome" >
-    <img  style="width: 100%"
-       src="https://david-hall.github.io/vzome-sharing/2024/01/20/00-58-05-J64-Augmented-tridiminished-icosahedron-Polygon20/J64-Augmented-tridiminished-icosahedron-Polygon20.png" >
-  </vzome-viewer>
-  
 This version is built from scratch rather than from a VEF import. The scenes show the construction process. Download the vZome file for an extensive description of each scene.
   
 [Source folder](<https://github.com/david-hall/vzome-sharing/tree/main/2024/01/20/00-58-05-J64-Augmented-tridiminished-icosahedron-Polygon20/>)
