@@ -13,8 +13,6 @@ layout: design
        src="https://david-hall.github.io/vzome-sharing/2024/01/19/20-50-12-J64-Augmented-tridiminished-icosahedron-Polygon20/J64-Augmented-tridiminished-icosahedron-Polygon20.png" >
   </vzome-viewer>
   
-    <p>
-      This version uses a VEF import of coordinates derived by modifying the VEF export of a model by John Kostick in the 40-gon field.
-    </p>
+This version uses a VEF import of coordinates derived by modifying the VEF export of a model by John Kostick in the 40-gon field.
 
 [Source folder](<https://github.com/david-hall/vzome-sharing/tree/main/2024/01/19/20-50-12-J64-Augmented-tridiminished-icosahedron-Polygon20/>)

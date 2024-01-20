@@ -13,8 +13,6 @@ layout: design
        src="https://david-hall.github.io/vzome-sharing/2024/01/20/00-58-05-J64-Augmented-tridiminished-icosahedron-Polygon20/J64-Augmented-tridiminished-icosahedron-Polygon20.png" >
   </vzome-viewer>
   
-    <p>
-      This version is built from scratch rather than from a VEF import. The scenes the show the process. Download the vZome file for an extensive description of each scene.
-    </p>
-
+This version is built from scratch rather than from a VEF import. The scenes the show the process. Download the vZome file for an extensive description of each scene.
+  
 [Source folder](<https://github.com/david-hall/vzome-sharing/tree/main/2024/01/20/00-58-05-J64-Augmented-tridiminished-icosahedron-Polygon20/>)
