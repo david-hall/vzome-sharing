@@ -11,7 +11,7 @@ layout: design
 <button id="prev">prev</button> 
 <button id="next">next</button> 
  
-  <vzome-viewer style="width: 100%; height: 60vh" scene="will be replaced" reactive="false"
+  <vzome-viewer style="width: 100%; height: 60vh" scene="First icosahedral vertex" reactive="false"
        src="https://david-hall.github.io/vzome-sharing/2024/01/20/00-58-05-J64-Augmented-tridiminished-icosahedron-Polygon20/J64-Augmented-tridiminished-icosahedron-Polygon20.vZome" >
     <img  style="width: 100%"
        src="https://david-hall.github.io/vzome-sharing/2024/01/20/00-58-05-J64-Augmented-tridiminished-icosahedron-Polygon20/J64-Augmented-tridiminished-icosahedron-Polygon20.png" >
