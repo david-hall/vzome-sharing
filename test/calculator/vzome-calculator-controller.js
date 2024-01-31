@@ -294,13 +294,18 @@ export class VZomeCalculatorController extends EventTarget {
 		let result = exponent == 0 ? operand.getField().one() : operand;
 		if(!result.isOne() && !result.isZero() ) {
 			// only one (or neither) of the loops below will be applicable
-			// when exponent >= 2
-			for(let exp = 2; exp <= exponent; exp++) {
-				result = result.times(operand);
-			}
-			// when exponent <= -2
-			for(let exp = -2; exp >= exponent; exp--) {
-				result = result.dividedBy(operand);
+			if(exponent >= 2) {
+				for(let exp = 2; exp <= exponent; exp++) {
+					result = result.times(operand);
+				}
+			} else if(exponent <= -2) {
+				console.log("TODO: I'm pretty sure this math is wrong when the exponent is negative...");
+				console.log(operand);
+				for(let exp = -2; exp >= exponent; exp--) {
+					console.log(result);
+					result = result.dividedBy(operand);
+				}
+				console.log(result);
 			}
 		}
 		return result;
