@@ -300,12 +300,12 @@ export class VZomeCalculatorController extends EventTarget {
 				}
 			} else if(exponent <= -2) {
 				console.log("TODO: I'm pretty sure this math is wrong when the exponent is negative...");
-				console.log(operand);
+				console.log(operand.toString());
 				for(let exp = -2; exp >= exponent; exp--) {
-					console.log(result);
+					console.log(result.toString());
 					result = result.dividedBy(operand);
 				}
-				console.log(result);
+				console.log(result.toString());
 			}
 		}
 		return result;
