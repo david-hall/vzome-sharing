@@ -95,7 +95,7 @@ export class VZomeCalculator extends HTMLElement {
 			//
 			td = tr.insertCell();
 			td.className = "exponent";
-			td.innerHTML = "<input class='exponent' type='text' inputmode='numeric' pattern=' *-?[0-9][0-9]? *' value='" + exponents[row] + "'>";
+			td.innerHTML = "<input class='exponent' type='text' inputmode='numeric' pattern=' *-?[0-9][0-9]? *' required value='" + exponents[row] + "'>";
 			td.querySelector("input").addEventListener('change',
 			function (event) {
 				event.target.setCustomValidity("");
@@ -267,7 +267,7 @@ export class VZomeCalculator extends HTMLElement {
 				td.className = className;
 				// TODO: may be unnecessary if the change event uses a closure
 				td.setAttribute("data-col", num);
-				td.innerHTML = "<input class='" + className + "' type='text' inputmode='numeric' pattern=' *-?[0-9]+ *' value='" + tdf[num] + "'>";
+				td.innerHTML = "<input class='" + className + "' type='text' inputmode='numeric' pattern=' *-?[0-9]+ *' required value='" + tdf[num] + "'>";
 				// See https://stackoverflow.com/questions/10320343/dont-make-functions-within-a-loop
 				// we're safe here because for all event listeners, event.target is the "this" in the executing context;
 				td.querySelector("input").addEventListener('change', 
@@ -301,7 +301,7 @@ export class VZomeCalculator extends HTMLElement {
 		if(asInput) {
 			td = tr.insertCell();
 			td.className = className;
-			td.innerHTML = "<input class='" + className + "' type='text' inputmode='numeric' pattern=' *-?0*[1-9][0-9]* *' value='" + tdf[order] + "' min='1'>";
+			td.innerHTML = "<input class='" + className + "' type='text' inputmode='numeric' pattern=' *-?0*[1-9][0-9]* *' required value='" + tdf[order] + "' min='1'>";
 			// See https://stackoverflow.com/questions/10320343/dont-make-functions-within-a-loop
 			// we're safe here because for all event listeners, event.target is the "this" in the executing context;
 			td.querySelector("input").addEventListener('change', 
