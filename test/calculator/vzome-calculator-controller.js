@@ -1,4 +1,4 @@
-import "https://unpkg.com/redux@latest/dist/redux.min.js";
+import "https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"; // 5.0 has breaking changes, so don't use @latest
 import { getField } from "https://www.vzome.com/modules/vzome-legacy.js";
 import { ContinuedFraction } from "./continued-fraction.js";
 

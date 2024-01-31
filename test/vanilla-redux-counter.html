@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Redux basic example</title>
     <link rel="shortcut icon" type="image/x-icon" href="/vzome-sharing/favicon.ico">
-    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"></script>
     <script src="./vanilla-redux-counter.js"></script>
   </head>
   <body>
@@ -15,7 +15,10 @@
 	  The original code for this page can be found in the article 
 	  <a href='https://dev.to/papercoding22/how-redux-works-4gnl'>How Redux works ? (Only HTML & Pure JS)</a>.
 	  <br>
-	   I have modified it as follows:
+      It was written using Redux 4.2.1. It does not work with the breaking changes in Redux 5.0, but an example that does is available here:
+	  <a href='https://codesandbox.io/p/sandbox/github/reduxjs/redux/tree/master/examples/counter-vanilla'>Example using Redux 5.x</a>.
+	  <br>
+	   I have modified the code from the original article as follows:
 	   <ol>
 		<li>Split the HTML and the <a href="./vanilla-redux-counter.js">javascript code</a> into separate files.</li>
 		<li>Reformat the page by adding a heading, this list of changes and a few layout tweaks.</li>
