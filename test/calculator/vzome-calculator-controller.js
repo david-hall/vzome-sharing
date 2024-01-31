@@ -491,18 +491,34 @@ export class VZomeCalculatorController extends EventTarget {
 			const parsedValue = parseInt(value);
 			if(parsedValue != 0 && ! Number.isNaN(parsedValue)) {
 				newState.operands[id].tdf[order] = parsedValue;
+				return VZomeCalculatorController.evaluate(newState);
 			}	
-			return VZomeCalculatorController.evaluate(newState);
-			// could include an error message in the state
-		} return state; 
+			// could include an error message in the new state
+		}
+		console.log("Reverting invalid divisor: " + value);
+		return state; 
 
 		case 'exponent-change': {
-			newState.exponents[id] = parseInt(value);
-		} return VZomeCalculatorController.evaluate(newState);
+			const parsedValue = parseInt(value);
+			if(! Number.isNaN(parsedValue)) {
+				newState.exponents[id] = parseInt(value);
+				return VZomeCalculatorController.evaluate(newState);
+			}
+			// could include an error message in the new state
+		}
+		console.log("Reverting invalid exponent: " + value);
+		return state; 
 
 		case 'operand-change': {
-			newState.operands[id].tdf[term] = parseInt(value);
-		} return VZomeCalculatorController.evaluate(newState);
+			const parsedValue = parseInt(value);
+			if(! Number.isNaN(parsedValue)) {
+				newState.operands[id].tdf[term] = parseInt(value);
+				return VZomeCalculatorController.evaluate(newState);
+			}
+			// could include an error message in the new state
+		}
+		console.log("Reverting invalid operand: " + value);
+		return state; 
 
 		case 'format-change': {
 			// TODO: validate against the formats array
