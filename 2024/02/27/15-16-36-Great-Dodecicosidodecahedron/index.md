@@ -7,7 +7,7 @@ image: https://david-hall.github.io/vzome-sharing/2024/02/27/15-16-36-Great-Dode
 layout: design
 ---
 
-  <vzome-viewer style="width: 100%; height: 60vh"
+  <vzome-viewer style="width: 100%; height: 60vh" show-scenes="all"   
        src="https://david-hall.github.io/vzome-sharing/2024/02/27/15-16-36-Great-Dodecicosidodecahedron/Great-Dodecicosidodecahedron.vZome" >
     <img  style="width: 100%"
        src="https://david-hall.github.io/vzome-sharing/2024/02/27/15-16-36-Great-Dodecicosidodecahedron/Great-Dodecicosidodecahedron.png" >
