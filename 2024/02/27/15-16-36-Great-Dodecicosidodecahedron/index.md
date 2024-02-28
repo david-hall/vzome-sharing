@@ -14,3 +14,6 @@ layout: design
   </vzome-viewer>
 
 [Source folder](<https://github.com/david-hall/vzome-sharing/tree/main/2024/02/27/15-16-36-Great-Dodecicosidodecahedron/>)
+<h2>References</h2>
+[polyhedra.mathmos.net](https://polyhedra.mathmos.net/entry/greatdodecicosidodecahedron.html)
+[Stella](https://www.software3d.com/GreatDodecicosidodeca.php)
