@@ -2,7 +2,7 @@
 title: Rhombic Helicoid from an 18-gonal prism
 description: Based on the work of Vladimir Mikhalkinsky
 image: https://david-hall.github.io/vzome-sharing/2024/07/19/01-34-46-18-gon-Rhombic-Helicoid/18-gon-Rhombic-Helicoid.png
-published: false
+published: true
 layout: vzome
 ---
 
@@ -12,7 +12,7 @@ layout: vzome
  
 {% endcomment %}
 
-Based on the work of Vladimir Mikhalkinsky
+Based on the work of [Vladimir Mikhalkinsky](https://www.facebook.com/vladimir.mikhalkinsky/videos/1882442852208666)
 
 <figure style="width: 87%; margin: 5%">
   
