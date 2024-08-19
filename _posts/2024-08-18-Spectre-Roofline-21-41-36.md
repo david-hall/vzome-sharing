@@ -44,4 +44,4 @@ Solving the fold-and-cut problem for the Spectre tile
   The end result is that the resulting ridge line can be projected onto the polygon's plane (the spectre in our case) 
   and the projection of the various vertices of the ridge line serve as a starting point for producing the necessary folds.
   
-  This design includes several views of that approach. It can be seen thathe resulting ridge line projections corespond exactly to folds in David's solution.
+  This design includes several views of that approach. It can be seen that the resulting ridge line projections corespond exactly to folds in David's solution.
