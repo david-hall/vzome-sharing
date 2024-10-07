@@ -1,6 +1,6 @@
 ---
-title: Haberdashers Puzzle
-share-description: Form a square or an equalateral triangle from the same four tiles.
+title: Haberdasher's Puzzle
+share-description: Form a square or an equilateral triangle from the same four tiles.
 image: https://david-hall.github.io/vzome-sharing/2024/10/07/15-54-49-Haberdashers-Puzzle/Haberdashers-Puzzle.png
 layout: design
 ---
