@@ -1,58 +1,66 @@
 import "https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"; // 5.0 has breaking changes, so don't use @latest
-import { getField } from "https://www.vzome.com/modules/vzome-legacy.js";
+import { initialize as vZomeLegacyIsReady } from "https://www.vzome.com/modules/vzome-legacy.js";
 import { ContinuedFraction } from "./continued-fraction.js";
 
 export class VZomeCalculatorController extends EventTarget {
 	#store;
 
-	constructor(fieldName = "polygon5", store = null) {
+	constructor() {
 		super();
-		if(store != null) {
-			this.#store = store;
-			console.log("Using existing store", store);
-		} else {
-			const initialState = VZomeCalculatorController.evaluate({
-				format: "tdf",
-				...VZomeCalculatorController.#newFieldOperands(fieldName),
-				exponents: [1, 1],
-				op: "multiply",
-				operations: this.operations
-			});
-			this.#store = Redux.createStore(VZomeCalculatorController.calculatorReducer, // the reducer function that manages all actions on the store
-				initialState, // optional param may be omitted
-				window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // may be 2nd or 3rd param to enable the chrome Redux extension
-			);
-			console.log("Using new store", this.#store);
-		}
-		// Subscribe this.render to be called for any store changes
-		// CAREFUL, if we subscribe non-static member methods directly, "this" will be undefined when the method gets invoked later.
-		// The following line will execute with no problem, but render() will fail when invoked later.
-		// DON'T DO THIS: // this.#store.subscribe(this.render);
-		
-		// The solution is to use a closure.
-		// Adapted from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
-		// An immediately invoked function will subscribe the store to call "render"
-		// with "this" in it's current context being preserved in the "calculator" parameter when render() is called later.
-		(function (calculator) {
-			calculator.#store.subscribe(
-				() => {
-					calculator.render();
-				}
-			);
-		})(this); 
-		// then call render once to fire a changeEvent to the UI
-		this.render();
+  }
+
+  initialize( fieldName ) {
+    vZomeLegacyIsReady()
+      .then( core => {
+        const field = core .getField( fieldName );
+        if ( field.unknown ) {
+          console .dir( field );
+          return; // don't change anything
+        }
+        const initialState = VZomeCalculatorController.evaluate({
+          format: "tdf",
+          ...VZomeCalculatorController.#newFieldOperands(field),
+          exponents: [1, 1],
+          op: "multiply",
+          operations: this.operations
+        });
+        this.#store = Redux.createStore(VZomeCalculatorController.calculatorReducer, // the reducer function that manages all actions on the store
+          initialState, // optional param may be omitted
+          window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // may be 2nd or 3rd param to enable the chrome Redux extension
+        );
+        console.log("Using new store", this.#store);
+        // Subscribe this.fireChangeEvent to be called for any store changes
+        // CAREFUL, if we subscribe non-static member methods directly, "this" will be undefined when the method gets invoked later.
+        // The following line will execute with no problem, but fireChangeEvent() will fail when invoked later.
+        // DON'T DO THIS: // this.#store.subscribe(this.fireChangeEvent);
+        
+        // The solution is to use a closure.
+        // Adapted from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+        // An immediately invoked function will subscribe the store to call "fireChangeEvent"
+        // with "this" in it's current context being preserved in the "calculator" parameter when fireChangeEvent() is called later.
+        (function (calculator) {
+          calculator.#store.subscribe(
+            () => {
+              calculator.fireChangeEvent();
+            }
+          );
+        })(this); 
+
+        this.#store.dispatch( { type: 'field-name-changed' } ); // trigger the reducer to evaluate
+
+        // then call fireChangeEvent once to trigger UI update
+        this.fireChangeEvent();    
+      })
 	}
 	
-	// The render function will be notified after any store action has been invoked and handled (e.g. store.dispatch)
+	// The fireChangeEvent function will be called after any store action has been invoked and handled (e.g. store.dispatch)
 	// The UI module will hook this event to completely replace its html content based on the current state
-	render() {
+	fireChangeEvent() {
 		// the detail prop is not used, but it's shown here to remind me that it's available
 		this.dispatchEvent( new CustomEvent("change", { srcElement: this, detail: ""}) );
 	}
 
-	static #newFieldOperands(fieldName) {
-		const field = getField(fieldName);
+	static #newFieldOperands(field) {
 		const order = field.getOrder();
 		const irrationalLabels = [];
 		for(let i = 0; i < order; i++) {
@@ -61,7 +69,7 @@ export class VZomeCalculatorController extends EventTarget {
 		const operand = VZomeCalculatorController.expandAN(field.zero());
 		const namedNumbers = VZomeCalculatorController.#getNamedNumbers(field);
 		return {
-			fieldName,
+			field,
 			order,
 			irrationalLabels,
 			namedNumbers,
@@ -149,8 +157,8 @@ export class VZomeCalculatorController extends EventTarget {
 		return result;
 	}
 	
-	static #createAlgebraicNumberFromTD(fieldName, tdf) {
-		return getField(fieldName).createAlgebraicNumberFromTD(tdf);
+	static #createAlgebraicNumberFromTD(field, tdf) {
+		return field.createAlgebraicNumberFromTD(tdf);
 	}
 
 	// Using Proxies to provide array-like syntax in the event handlers:
@@ -223,10 +231,11 @@ export class VZomeCalculatorController extends EventTarget {
 	}
 
 	get fieldName() {
-		return this.#store.getState().fieldName;
+		return this.#store.getState().field.getName();
 	}
 	set fieldName(newValue) {
-		this.#store.dispatch( { type: 'field-name-change', payload: newValue } );
+    this.initialize( newValue );
+    //  .then evaluate?
 	}
 
 	get format() {
@@ -263,10 +272,9 @@ export class VZomeCalculatorController extends EventTarget {
 	}
 	
 	static evaluate(state) {
-		const {fieldName, operands, exponents, op} = state;
+		const {field, operands, exponents, op} = state;
 		const algebraicOperands = [];
 		const results = [];
-		const field = getField(fieldName);
 		for(let i = 0; i < 2; i++) {
 			// TODO: Check if the tdf divisor is 0. If so, then get zero and append isInfinity instead of throwing a divide by zero exception
 			const inputOperand = field.numberFactory.createAlgebraicNumberFromTD(field, operands[i].tdf);
@@ -361,7 +369,7 @@ export class VZomeCalculatorController extends EventTarget {
 	// calculatorReducer is the reducer function that manages all actions upon the stored state
 	static calculatorReducer(state, action) {
 		const newState = {...state}; // clone current state
-		const {fieldName, format, order, exponents, op} = {...state};
+		const {field, format, order, exponents, op} = {...state};
 		const {id, term, value} = {...action.payload};
 		switch (action.type) {
 		case 'double-polygon-field': {
@@ -372,30 +380,15 @@ export class VZomeCalculatorController extends EventTarget {
 			return state;
 		}
 			
-		case 'field-name-change': {
-			const fieldName = action.payload;
-			if(fieldName == newState.fieldName) {
-				// this avoids resetting all of the operands and exponents when the fieldName isn't actually changing
-				return state; // unchanged
-			}
-			const field = getField(fieldName);
-			if(field.unknown) {
-				console.dir(field);
-				return state; // unchanged
-			}
-			const newFieldState = {format,
-				...VZomeCalculatorController.#newFieldOperands(fieldName),
-				exponents,
-				op,
-			}
-			return VZomeCalculatorController.evaluate(newFieldState);
+		case 'field-name-changed': {
+			return VZomeCalculatorController.evaluate( state );
 		}
 		
 		case 'calculator-action': {
 			const {subAction, props} = action.payload;
 			switch(subAction) {
 			case 'clear-operands':
-				const zero = VZomeCalculatorController.expandAN(getField(fieldName).zero());
+				const zero = VZomeCalculatorController.expandAN(field.zero());
 				newState.operands  = [zero, zero];
 				newState.exponents = [1, 1];
 				return VZomeCalculatorController.evaluate(newState);
@@ -420,7 +413,7 @@ export class VZomeCalculatorController extends EventTarget {
 					return state; // unchanged;
 				}
 				if(id == 0 || id == 1) {
-					let anum = VZomeCalculatorController.#createAlgebraicNumberFromTD(fieldName, operands[id].tdf);
+					let anum = VZomeCalculatorController.#createAlgebraicNumberFromTD(field, operands[id].tdf);
 					let success = false;
 					// TODO: put all of these in another string-to-unary-function map and refactor this switch ...
 					switch(name) {
@@ -462,7 +455,7 @@ export class VZomeCalculatorController extends EventTarget {
 							// TODO: Add this.ceiling(id) method which does this
 							// Act on operand and exponent together
 							anum = VZomeCalculatorController.power(anum, exponents[id]);
-							anum = getField(fieldName).createRational(Math.ceil(anum.evaluate()));
+							anum = field.createRational(Math.ceil(anum.evaluate()));
 							newState.exponents[id] = 1;
 							success = true;
 							break;
@@ -470,7 +463,7 @@ export class VZomeCalculatorController extends EventTarget {
 							// TODO: Add this.floor(id) method which does this
 							// Act on operand and exponent together
 							anum = VZomeCalculatorController.power(anum, exponents[id]);
-							anum = getField(fieldName).createRational(Math.floor(anum.evaluate()));
+							anum = field.createRational(Math.floor(anum.evaluate()));
 							newState.exponents[id] = 1;
 							success = true;
 							break;
