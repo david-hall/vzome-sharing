@@ -24,17 +24,34 @@ export class VZomeCalculator extends HTMLElement {
 		const {fieldName, format, operator} = this;
 		// TODO: Check if we have a parent object with a store we can use, like the top level React <App>
 		const sharedStore = null; // passing null will let the model generate its own private store
-		this.#model = new VZomeCalculatorController(fieldName, sharedStore);
-		// now that #model is defined, our member getters will read from the store, not the attributes
-		// sync our initial attribute values with the store's default values before we hook the change notification
-		if(this.format != format) {
-			this.format = format;
-		}
-		if(this.operator != operator) {
-			this.operator = operator;
-		}
+		const controller = new VZomeCalculatorController();
+    this.#model = controller;
 
-		// Now that the attributes are in sync with the store, we can hook the store change event 
+    // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    //  SV NOTE:
+    //   I had to comment out the two if statements, since they access the getters on
+    //   the controller before they are ready.  I'm a little unsure of your changing
+    //   source of truth for the attributes/fields here, so I guess it is a puzzle for
+    //   us to play with and discuss.
+    // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    // now that #model is defined, our member getters will read from the store, not the attributes
+		// sync our initial attribute values with the store's default values before we hook the change notification
+		// if(this.format != format) {
+		// 	this.format = format;
+		// }
+		// if(this.operator != operator) {
+		// 	this.operator = operator;
+		// }
+
+    // Can't render here yet, we have to wait until there is state,
+    //   and this will make sure that the state (with field) gets initialized IN DUE COURSE,
+    //   in a later microtask.
+    Promise.resolve()
+      .then( () => {
+        controller .fieldName = fieldName; // setter proxy will trigger async cascade, including the first change event to trigger render()
+      });
+
 		// CAREFUL, if we subscribe to non-static member methods directly, "this" will be undefined when the method gets invoked later.
 		// The following line will execute with no problem, but render() will fail when invoked later.
 		// DON'T DO THIS: // this.#store.subscribe(this.render);
@@ -44,6 +61,11 @@ export class VZomeCalculator extends HTMLElement {
 		// An immediately invoked function will subscribe the store to call "render"
 		// with "this" in it's current context being preserved in the "calculator" parameter when render() is called later.
 
+    //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    // SV NOTE:  *MAYBE* you can replace the IIFE below (and the comments above) with this line:
+    // controller .addEventListener( "change", () => render() );
+    //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 		(function (calculator) {
 			calculator.#model.addEventListener("change",
 				(event) => {
@@ -51,14 +73,12 @@ export class VZomeCalculator extends HTMLElement {
 				}
 			);
 		})(this); 
-		// Call render once to sync the UI with the store
-		this.render();
 	}
 	
 	// The render function will be notified after any store action has been invoked and handled (e.g. store.dispatch)
 	// It will completely replace the prior html content based on the current model state
 	render() {
-		const {answers, exponents, fieldName, format, op, operands, order, results} = this.#model.state;
+    const {answers, exponents, format, op, operands, order, results} = this.#model.state;
 		const table = document.createElement("table");
 		table.className = "calculator";
 		//this.#container.appendChild(table);
@@ -447,7 +467,7 @@ export class VZomeCalculator extends HTMLElement {
 				// The innerHTML doesn't get rendered while the table is loading unless we are at a breakpoint in the debugger
 				// TODO: await a promise ???
 				this.#container.innerHTML = "<div class='loading'>Loading " + newValue + "...</div>"; // with div wrapper
-				this.#store.dispatch( { type: 'field-name-change', payload: newValue } );
+        this.#model.fieldName = newValue; // setter will trigger async init, render, evaluate
 				return;
 			case "operator":
 				this.#store.dispatch( { type: 'operator-change', payload: newValue } );
