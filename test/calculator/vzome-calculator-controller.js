@@ -200,7 +200,7 @@ export class VZomeCalculatorController extends EventTarget {
 
 	divisors = new Proxy(this, {
 		get (target, id, reciever) {
-			const { order } = this.#store.getState();
+			const { order } = target.#store.getState();
 			return target.#store.getState().operands[id].tdf[order];
 		},
 		set ( target, id, value, reciever ) {
