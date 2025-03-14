@@ -16,7 +16,7 @@ Construction of a chiral 3D cubic tiling by a_mino
 
 <figure style="width: 87%; margin: 5%">
   
-  <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
+  <vzome-viewer style="width: 100%; height: 60dvh" show-scenes='all'
         src="https://david-hall.github.io/vzome-sharing/2025/03/14/15-13-33-a_mino_chiral-triangular-antiprism-symmetry/a_mino_chiral-triangular-antiprism-symmetry.vZome" >
     <img  style="width: 100%"
         src="https://david-hall.github.io/vzome-sharing/2025/03/14/15-13-33-a_mino_chiral-triangular-antiprism-symmetry/a_mino_chiral-triangular-antiprism-symmetry.png" >
