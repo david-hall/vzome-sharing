@@ -12202,7 +12202,7 @@
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
-    <page snapshot="21" title="Select topi and 3 extreme points">
+    <page snapshot="21" title="Select tip and 3 extreme points">
       <ViewModel distance="162.20799255371094" far="324.4159851074219" near="0.4055200219154358" parallel="false" stereoAngle="0.0" width="72.99360656738281">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="0.5000000596046448" y="-0.80901700258255" z="0.30901700258255005"/>
