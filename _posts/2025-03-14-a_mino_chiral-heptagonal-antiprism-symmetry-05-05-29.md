@@ -1,6 +1,6 @@
 ---
 title: Chiral Heptagonal Antiprism Symmetry
-description: Construction of an assymetrical chiral 3D cubic tiling by a_mino
+description: Construction of an asymetrical chiral 3D cubic tiling by a_mino
 image: https://david-hall.github.io/vzome-sharing/2025/03/14/05-05-29-a_mino_chiral-heptagonal-antiprism-symmetry/a_mino_chiral-heptagonal-antiprism-symmetry.png
 published: true
 layout: vzome
