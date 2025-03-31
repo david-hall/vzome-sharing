@@ -18,12 +18,12 @@ Sorry, I got too ambitious with this lattice and killed the performance.
 Please just be patient for now when it's first loading or when you change scenes. 
 I'll post a simpler more responsive version in a few days.
 
-The lattice itself is composed of one affine Soccer ball in 4 differnt orientations. 
-The `Initial 4 Balls` scene initially appears to have tetrahedral symmetry, but it doesn't. 
+The lattice itself is composed of one affine Soccer ball in 4 different orientations. 
+The `Initial 4 Balls` scene may appear to have tetrahedral symmetry, but it doesn't. 
 It just has a couple of perpendicular mirror symmetries that may not be initially obvious.
 
 The lattice is not exactly the standard diamond lattice made with `yellow` vZome struts. 
-It's topologiclly equivalent, but it's struts unepectedly are in a slightly differnt direction 
+It's topologically equivalent, but its struts are in a slightly different direction 
 from the typical symmetrical diamond lattice.
 
 <figure style="width: 87%; margin: 5%">
