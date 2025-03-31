@@ -12,7 +12,7 @@ layout: vzome
  
 {% endcomment %}
 
-A 3D design created in vZome.  Use your mouse or touch to interact.
+A 3D design created in vZome.  Turn off perspective for best results.
 
 <figure style="width: 87%; margin: 5%">
   
