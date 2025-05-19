@@ -121,6 +121,10 @@ img {
 
 /* --- Navbar --- */
 
+.navbar {
+  flex-wrap: nowrap;
+}
+
 .navbar-custom {
   background-color: {{ site.navbar-col | default: "#EAEAEA" }};
   border-bottom: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
@@ -146,6 +150,7 @@ img {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   font-size: 1.125rem;
+  overflow: auto;
 }
 
 .navbar-custom .navbar-brand-logo {
