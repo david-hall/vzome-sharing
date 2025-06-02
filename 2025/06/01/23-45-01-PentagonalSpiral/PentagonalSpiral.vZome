@@ -1,0 +1,3287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="111" field="polygon5" version="7.1">
+  <EditHistory editNumber="250" lastStickyEdit="162">
+    <StrutCreation anchor="0 0 0 0 0 0" index="0" len="2 3" symm="antiprism5"/>
+    <StrutCreation anchor="0 0 0 0 0 0" index="0" len="2 3" outbound="false" symm="antiprism5"/>
+    <StrutCreation anchor="-2 -3 0 0 0 0" index="4" len="2 3" symm="antiprism5"/>
+    <StrutCreation anchor="2 3 0 0 0 0" index="4" len="2 3" symm="antiprism5"/>
+    <StrutCreation anchor="-1 -1 -2 -3 0 0" index="3" len="2 3" symm="antiprism5"/>
+    <StrutCreation anchor="3 5 -2 -3 0 0" index="3" len="2 3" symm="antiprism5"/>
+    <StrutCreation anchor="-2 -3 -3 -5 0 0" index="2" len="2 3" outbound="false" symm="antiprism5"/>
+    <StrutCreation anchor="2 3 -3 -5 0 0" index="2" len="2 3" outbound="false" symm="antiprism5"/>
+    <StrutCreation anchor="0 0 -4 -7 0 0" index="1" len="2 3" outbound="false" symm="antiprism5"/>
+    <StrutCreation anchor="4 6 -4 -7 0 0" index="1" len="2 3" outbound="false" symm="antiprism5"/>
+    <StrutCreation anchor="0 0 -6 -10 0 0" index="0" len="2 3" symm="antiprism5"/>
+    <StrutCreation anchor="2 3 -6 -10 0 0" index="0" len="2 3" symm="antiprism5"/>
+    <SelectAll originLast="true"/>
+    <BookmarkTool name="tool-0"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism5 rotation.builtin/rotate around red through origin"/>
+    <BookmarkTool name="tool-1"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism5 rotation.builtin/rotate around red through origin"/>
+    <BookmarkTool name="tool-2"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism5 rotation.builtin/rotate around red through origin"/>
+    <BookmarkTool name="tool-3"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism5 rotation.builtin/rotate around red through origin"/>
+    <BookmarkTool name="tool-4"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism5 rotation.builtin/rotate around red through origin"/>
+    <CentralSymmetry>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </CentralSymmetry>
+    <DeselectAll/>
+    <ApplyTool copyColors="true" name="tool-4" selectInputs="true"/>
+    <BeginBlock/>
+    <SelectManifestation point="-5 -8 -2 -3 0 0"/>
+    <SelectManifestation point="-5 -8 -2 -3 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectManifestation point="-2 -3 0 0 0 0"/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -6, -10, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -4, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 1, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-8 -13 0 0 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -6, -10, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -4, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 1, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-6 -9 -4 -6 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -6, -10, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -4, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 1, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-14 -23 0 0 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -6, -10, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -4, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 1, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-12 -19 -4 -6 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -6, -10, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -4, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 1, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-11 -17 -6 -9 0 0"/>
+    <SelectManifestation point="-10 -15 -8 -12 0 0"/>
+    <SelectManifestation point="-11 -17 -6 -9 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -6, -10, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -4, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 1, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-20 -33 0 0 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -6, -10, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -4, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 1, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-18 -29 -4 -6 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -6, -10, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -4, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 1, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-16 -25 -8 -12 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -6, -10, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -4, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 1, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-14 -21 -12 -18 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -6, -10, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -4, -7, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -4, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 1, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <DeselectAll/>
+    <ApplyTool copyColors="true" name="tool-0" selectInputs="true"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 -6 -10 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -2, -3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 3, 5, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 5, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 11 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 10 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="4 6 -6 -10 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -2, -3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 3, 5, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 5, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 11 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 10 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 -12 -20 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -2, -3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 3, 5, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 5, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 11 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 10 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="4 6 -12 -20 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -2, -3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 3, 5, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 5, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 11 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 10 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="8 12 -12 -20 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -2, -3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 3, 5, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 5, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 11 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 10 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="0 0 -18 -30 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -2, -3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 3, 5, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 5, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 11 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 10 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="4 6 -18 -30 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -2, -3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 3, 5, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 5, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 11 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 10 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="8 12 -18 -30 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -2, -3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 3, 5, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 5, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 11 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 10 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="12 18 -18 -30 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -2, -3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -3, -5, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 3, 5, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -6, -10, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ -4, -7, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 5, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 11 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 10 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="-4 -6 -2 -3 0 0" startSegment="-2 -3 -3 -5 0 0"/>
+    <SelectManifestation endSegment="-3 -5 2 3 0 0" startSegment="-2 -3 0 0 0 0"/>
+    <SelectManifestation endSegment="1 1 2 3 0 0" startSegment="2 3 0 0 0 0"/>
+    <EndBlock/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
+    <BeginBlock/>
+    <SelectManifestation point="4 6 -12 -20 0 0"/>
+    <SelectManifestation point="8 12 -24 -40 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectNeighbors/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <EndBlock/>
+    <BookmarkTool name="tool-5"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism5 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism5 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism5 rotation.builtin/rotate around red through origin"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectManifestation endSegment="-2 -3 3 5 0 0" startSegment="-3 -5 2 3 0 0"/>
+    <ShowVertices/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="-3 -5 2 3 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -24, -40, 1 ], [ 16, 24, 1 ], [ 0, 0, 1 ] ], [ [ -23, -38, 1 ], [ 14, 21, 1 ], [ 0, 0, 1 ] ], [ [ -23, -38, 1 ], [ 17, 26, 1 ], [ 0, 0, 1 ] ], [ [ -22, -36, 1 ], [ 18, 28, 1 ], [ 0, 0, 1 ] ], [ [ -21, -35, 1 ], [ 12, 18, 1 ], [ 0, 0, 1 ] ], [ [ -21, -35, 1 ], [ 14, 21, 1 ], [ 0, 0, 1 ] ], [ [ -21, -34, 1 ], [ 16, 25, 1 ], [ 0, 0, 1 ] ], [ [ -21, -34, 1 ], [ 19, 30, 1 ], [ 0, 0, 1 ] ], [ [ -20, -32, 1 ], [ 20, 32, 1 ], [ 0, 0, 1 ] ], [ [ -19, -32, 1 ], [ 11, 16, 1 ], [ 0, 0, 1 ] ], [ [ -19, -31, 1 ], [ 14, 22, 1 ], [ 0, 0, 1 ] ], [ [ -19, -31, 1 ], [ 16, 25, 1 ], [ 0, 0, 1 ] ], [ [ -19, -30, 1 ], [ 18, 29, 1 ], [ 0, 0, 1 ] ], [ [ -19, -30, 1 ], [ 21, 34, 1 ], [ 0, 0, 1 ] ], [ [ -18, -30, 1 ], [ 12, 18, 1 ], [ 0, 0, 1 ] ], [ [ -18, -28, 1 ], [ 22, 36, 1 ], [ 0, 0, 1 ] ], [ [ -17, -28, 1 ], [ 10, 15, 1 ], [ 0, 0, 1 ] ], [ [ -17, -28, 1 ], [ 13, 20, 1 ], [ 0, 0, 1 ] ], [ [ -17, -27, 1 ], [ 16, 26, 1 ], [ 0, 0, 1 ] ], [ [ -17, -27, 1 ], [ 18, 29, 1 ], [ 0, 0, 1 ] ], [ [ -17, -26, 1 ], [ 20, 33, 1 ], [ 0, 0, 1 ] ], [ [ -17, -26, 1 ], [ 23, 38, 1 ], [ 0, 0, 1 ] ], [ [ -16, -26, 1 ], [ 14, 22, 1 ], [ 0, 0, 1 ] ], [ [ -15, -25, 1 ], [ 8, 12, 1 ], [ 0, 0, 1 ] ], [ [ -15, -25, 1 ], [ 10, 15, 1 ], [ 0, 0, 1 ] ], [ [ -16, -24, 1 ], [ 24, 40, 1 ], [ 0, 0, 1 ] ], [ [ -15, -24, 1 ], [ 12, 19, 1 ], [ 0, 0, 1 ] ], [ [ -15, -24, 1 ], [ 15, 24, 1 ], [ 0, 0, 1 ] ], [ [ -15, -23, 1 ], [ 18, 30, 1 ], [ 0, 0, 1 ] ], [ [ -15, -23, 1 ], [ 20, 33, 1 ], [ 0, 0, 1 ] ], [ [ -15, -22, 1 ], [ 22, 37, 1 ], [ 0, 0, 1 ] ], [ [ -14, -22, 1 ], [ 16, 26, 1 ], [ 0, 0, 1 ] ], [ [ -13, -22, 1 ], [ 7, 10, 1 ], [ 0, 0, 1 ] ], [ [ -13, -21, 1 ], [ 10, 16, 1 ], [ 0, 0, 1 ] ], [ [ -13, -21, 1 ], [ 12, 19, 1 ], [ 0, 0, 1 ] ], [ [ -13, -20, 1 ], [ 14, 23, 1 ], [ 0, 0, 1 ] ], [ [ -13, -20, 1 ], [ 17, 28, 1 ], [ 0, 0, 1 ] ], [ [ -12, -20, 1 ], [ 8, 12, 1 ], [ 0, 0, 1 ] ], [ [ -13, -19, 1 ], [ 20, 34, 1 ], [ 0, 0, 1 ] ], [ [ -13, -19, 1 ], [ 22, 37, 1 ], [ 0, 0, 1 ] ], [ [ -12, -18, 1 ], [ 18, 30, 1 ], [ 0, 0, 1 ] ], [ [ -11, -18, 1 ], [ 6, 9, 1 ], [ 0, 0, 1 ] ], [ [ -11, -18, 1 ], [ 9, 14, 1 ], [ 0, 0, 1 ] ], [ [ -11, -17, 1 ], [ 12, 20, 1 ], [ 0, 0, 1 ] ], [ [ -11, -17, 1 ], [ 14, 23, 1 ], [ 0, 0, 1 ] ], [ [ -11, -16, 1 ], [ 16, 27, 1 ], [ 0, 0, 1 ] ], [ [ -11, -16, 1 ], [ 19, 32, 1 ], [ 0, 0, 1 ] ], [ [ -10, -16, 1 ], [ 10, 16, 1 ], [ 0, 0, 1 ] ], [ [ -9, -15, 1 ], [ 4, 6, 1 ], [ 0, 0, 1 ] ], [ [ -9, -15, 1 ], [ 6, 9, 1 ], [ 0, 0, 1 ] ], [ [ -9, -14, 1 ], [ 8, 13, 1 ], [ 0, 0, 1 ] ], [ [ -9, -14, 1 ], [ 11, 18, 1 ], [ 0, 0, 1 ] ], [ [ -9, -13, 1 ], [ 14, 24, 1 ], [ 0, 0, 1 ] ], [ [ -9, -13, 1 ], [ 16, 27, 1 ], [ 0, 0, 1 ] ], [ [ -8, -12, 1 ], [ 12, 20, 1 ], [ 0, 0, 1 ] ], [ [ -7, -12, 1 ], [ 3, 4, 1 ], [ 0, 0, 1 ] ], [ [ -7, -11, 1 ], [ 6, 10, 1 ], [ 0, 0, 1 ] ], [ [ -7, -11, 1 ], [ 8, 13, 1 ], [ 0, 0, 1 ] ], [ [ -7, -10, 1 ], [ 10, 17, 1 ], [ 0, 0, 1 ] ], [ [ -7, -10, 1 ], [ 13, 22, 1 ], [ 0, 0, 1 ] ], [ [ -6, -10, 1 ], [ 4, 6, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -5, -8, 1 ], [ 5, 8, 1 ], [ 0, 0, 1 ] ], [ [ -5, -7, 1 ], [ 8, 14, 1 ], [ 0, 0, 1 ] ], [ [ -5, -7, 1 ], [ 10, 17, 1 ], [ 0, 0, 1 ] ], [ [ -4, -6, 1 ], [ 6, 10, 1 ], [ 0, 0, 1 ] ], [ [ -3, -5, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ -3, -5, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ -3, -4, 1 ], [ 4, 7, 1 ], [ 0, 0, 1 ] ], [ [ -3, -4, 1 ], [ 7, 12, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ -1, -2, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ 2, 4, 1 ], [ 0, 0, 1 ] ], [ [ -1, -1, 1 ], [ 4, 7, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 1, 2, 1 ], [ 1, 2, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 46,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 38,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 14,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 40,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 39,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 17,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 16,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 36,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 45,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 55,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 69,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 30,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 28,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 22,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 24,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 48,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 31,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 53,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 63,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 60,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 65,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 68,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 61,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 25,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 29,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 27,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 26,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 23,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 49,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 35,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 52,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 64,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 62,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 72,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 67,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 21,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 20,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 18,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 34,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 32,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 41,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 44,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 59,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 58,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 56,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 71,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 66,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 15,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 19,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 33,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 37,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 43,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 54,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 57,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 74,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 70,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 13,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 12,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 42,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 51,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 50,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 47,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 73,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 9, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 46, 38 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 14, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 40, 46 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 38, 39 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 17, 14 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 16, 14 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 40, 36 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 45, 40 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 17, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 39, 30 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 36, 28 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 22, 17 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 24, 16 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 55, 48 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 36, 31 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 53, 45 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 69, 63 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 60, 55 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 65, 69 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 68, 65 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 61, 60 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 11 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 30, 25 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 28, 29 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 27, 22 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 31, 27 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 26, 22 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 23, 24 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 48, 49 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 35, 31 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 52, 53 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 63, 64 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 62, 60 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 65, 62 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 72, 68 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 67, 61 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 25, 21 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 29, 20 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 27, 18 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 34, 26 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 32, 23 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 49, 41 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 44, 35 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 59, 52 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 64, 58 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 62, 56 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 71, 72 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 66, 67 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 21, 15 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 20, 15 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 18, 19 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 33, 34 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 37, 32 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 41, 37 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 43, 44 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 54, 59 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 58, 54 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 56, 57 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 74, 71 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 70, 66 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 15, 13 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 19, 12 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 42, 33 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 42, 37 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 51, 43 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 54, 51 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 57, 50 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 73, 74 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 73, 70 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 13, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 12, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 47, 42 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 51, 47 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 50, 47 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <ApplyTool copyColors="true" name="tool-5" selectInputs="true"/>
+    <DeselectAll/>
+    <ShowHidden/>
+    <DeselectAll/>
+    <ApplyTool copyColors="true" name="tool-5" selectInputs="true"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism5 rotation.builtin/rotate around red through origin"/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="antiprism5 rotation.builtin/rotate around red through origin"/>
+    <BeginBlock/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectManifestation point="2 3 3 5 0 0"/>
+    <ApplyTool copyColors="true" name="tool-5" selectInputs="true"/>
+    <SelectAll originLast="true"/>
+    <CentralSymmetry>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </CentralSymmetry>
+    <DeselectAll/>
+    <ApplyTool copyColors="true" name="tool-5" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="6 10 -2 -3 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ 0, 0, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 3, 5, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ 3, 5, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 4, 7, 1 ], [ -3, -4, 1 ], [ 0, 0, 1 ] ], [ [ 4, 7, 1 ], [ 1, 2, 1 ], [ 0, 0, 1 ] ], [ [ 6, 10, 1 ], [ -6, -9, 1 ], [ 0, 0, 1 ] ], [ [ 6, 10, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ 6, 10, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 6, 10, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 6, 10, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 8, 13, 1 ], [ -6, -9, 1 ], [ 0, 0, 1 ] ], [ [ 8, 13, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 8, 13, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 9, 15, 1 ], [ -8, -12, 1 ], [ 0, 0, 1 ] ], [ [ 9, 15, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ 9, 15, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 10, 17, 1 ], [ -7, -10, 1 ], [ 0, 0, 1 ] ], [ [ 10, 17, 1 ], [ -3, -4, 1 ], [ 0, 0, 1 ] ], [ [ 10, 17, 1 ], [ 1, 2, 1 ], [ 0, 0, 1 ] ], [ [ 12, 20, 1 ], [ -10, -15, 1 ], [ 0, 0, 1 ] ], [ [ 12, 20, 1 ], [ -8, -12, 1 ], [ 0, 0, 1 ] ], [ [ 12, 20, 1 ], [ -6, -9, 1 ], [ 0, 0, 1 ] ], [ [ 12, 20, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ 12, 20, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 12, 20, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 12, 20, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 14, 23, 1 ], [ -10, -15, 1 ], [ 0, 0, 1 ] ], [ [ 14, 23, 1 ], [ -6, -9, 1 ], [ 0, 0, 1 ] ], [ [ 14, 23, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 14, 23, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 15, 25, 1 ], [ -12, -18, 1 ], [ 0, 0, 1 ] ], [ [ 15, 25, 1 ], [ -8, -12, 1 ], [ 0, 0, 1 ] ], [ [ 15, 25, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ 15, 25, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 16, 27, 1 ], [ -11, -16, 1 ], [ 0, 0, 1 ] ], [ [ 16, 27, 1 ], [ -7, -10, 1 ], [ 0, 0, 1 ] ], [ [ 16, 27, 1 ], [ -3, -4, 1 ], [ 0, 0, 1 ] ], [ [ 16, 27, 1 ], [ 1, 2, 1 ], [ 0, 0, 1 ] ], [ [ 18, 30, 1 ], [ -14, -21, 1 ], [ 0, 0, 1 ] ], [ [ 18, 30, 1 ], [ -12, -18, 1 ], [ 0, 0, 1 ] ], [ [ 18, 30, 1 ], [ -10, -15, 1 ], [ 0, 0, 1 ] ], [ [ 18, 30, 1 ], [ -8, -12, 1 ], [ 0, 0, 1 ] ], [ [ 18, 30, 1 ], [ -6, -9, 1 ], [ 0, 0, 1 ] ], [ [ 18, 30, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ 18, 30, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 18, 30, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 18, 30, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 20, 33, 1 ], [ -14, -21, 1 ], [ 0, 0, 1 ] ], [ [ 20, 33, 1 ], [ -10, -15, 1 ], [ 0, 0, 1 ] ], [ [ 20, 33, 1 ], [ -6, -9, 1 ], [ 0, 0, 1 ] ], [ [ 20, 33, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 20, 33, 1 ], [ 2, 3, 1 ], [ 0, 0, 1 ] ], [ [ 21, 35, 1 ], [ -16, -24, 1 ], [ 0, 0, 1 ] ], [ [ 21, 35, 1 ], [ -12, -18, 1 ], [ 0, 0, 1 ] ], [ [ 21, 35, 1 ], [ -8, -12, 1 ], [ 0, 0, 1 ] ], [ [ 21, 35, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ 21, 35, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 22, 37, 1 ], [ -15, -22, 1 ], [ 0, 0, 1 ] ], [ [ 22, 37, 1 ], [ -11, -16, 1 ], [ 0, 0, 1 ] ], [ [ 22, 37, 1 ], [ -7, -10, 1 ], [ 0, 0, 1 ] ], [ [ 22, 37, 1 ], [ -3, -4, 1 ], [ 0, 0, 1 ] ], [ [ 22, 37, 1 ], [ 1, 2, 1 ], [ 0, 0, 1 ] ], [ [ 24, 40, 1 ], [ -16, -24, 1 ], [ 0, 0, 1 ] ], [ [ 24, 40, 1 ], [ -14, -21, 1 ], [ 0, 0, 1 ] ], [ [ 24, 40, 1 ], [ -12, -18, 1 ], [ 0, 0, 1 ] ], [ [ 24, 40, 1 ], [ -10, -15, 1 ], [ 0, 0, 1 ] ], [ [ 24, 40, 1 ], [ -8, -12, 1 ], [ 0, 0, 1 ] ], [ [ 24, 40, 1 ], [ -6, -9, 1 ], [ 0, 0, 1 ] ], [ [ 24, 40, 1 ], [ -4, -6, 1 ], [ 0, 0, 1 ] ], [ [ 24, 40, 1 ], [ -2, -3, 1 ], [ 0, 0, 1 ] ], [ [ 24, 40, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 50,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 42,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 55,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 51,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 49,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 43,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 60,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 56,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 48,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 41,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 44,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 38,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 13,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 65,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 54,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 61,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 52,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 47,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 37,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 16,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 45,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 34,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 14,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 12,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 74,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 59,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 66,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 57,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 46,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 40,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 33,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 19,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 39,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 30,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 17,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 73,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 64,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 67,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 62,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 53,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 36,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 29,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 22,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 35,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 23,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 20,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 15,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 72,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 68,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 58,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 32,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 28,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 31,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 24,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 18,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 71,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 69,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 63,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 27,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 25,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 21,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 70,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 26,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 50, 55 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 42, 51 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 49, 50 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 43, 42 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 55, 60 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 51, 56 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 48, 49 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 41, 49 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 44, 43 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 38, 43 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 60, 65 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 48, 54 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 56, 61 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 44, 52 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 47, 48 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 37, 41 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 13, 16 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 44, 45 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 34, 38 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 14 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 12, 13 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 12 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 65, 74 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 54, 59 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 61, 66 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 52, 57 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 46, 47 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 45, 46 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 40, 47 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 33, 37 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 16, 19 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 39, 45 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 30, 34 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 14, 17 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 12 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 7 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 73, 74 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 59, 64 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 67, 66 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 57, 62 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 46, 53 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 36, 40 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 29, 33 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 19, 22 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 35, 39 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 23, 30 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 17, 20 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 15 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 72, 73 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 64, 72 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 67, 68 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 62, 68 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 53, 58 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 32, 36 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 28, 29 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 22, 28 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 31, 35 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 24, 23 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 20, 24 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 15, 18 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 71, 72 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 68, 69 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 58, 63 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 27, 32 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 27, 28 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 25, 31 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 25, 24 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 18, 21 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 70, 71 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 69, 70 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 63, 70 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 26, 27 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 25, 26 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 21, 26 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <CentralSymmetry>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </CentralSymmetry>
+    <DeselectAll/>
+    <ApplyTool copyColors="true" name="tool-5" selectInputs="true"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="2 3 3 5 0 0"/>
+    <EndBlock/>
+    <ImportColoredMeshJson scale="1 0">{
+  "field" : "polygon5",
+  "vertices" : [ [ [ -2, -3, 1 ], [ 1, 2, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 3, 5, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 7, 12, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 9, 15, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 13, 22, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 15, 25, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 19, 32, 1 ], [ 0, 0, 1 ] ], [ [ -2, -3, 1 ], [ 21, 35, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 5, 8, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 11, 18, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 17, 28, 1 ], [ 0, 0, 1 ] ], [ [ -1, -2, 1 ], [ 23, 38, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 0, 0, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 3, 5, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 6, 10, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 9, 15, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 12, 20, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 15, 25, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 18, 30, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 21, 35, 1 ], [ 0, 0, 1 ] ], [ [ 0, 0, 1 ], [ 24, 40, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ -1, -2, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 5, 8, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 7, 11, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 11, 18, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 13, 21, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 17, 28, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 19, 31, 1 ], [ 0, 0, 1 ] ], [ [ 2, 3, 1 ], [ 23, 38, 1 ], [ 0, 0, 1 ] ], [ [ 3, 4, 1 ], [ 3, 4, 1 ], [ 0, 0, 1 ] ], [ [ 3, 4, 1 ], [ 9, 14, 1 ], [ 0, 0, 1 ] ], [ [ 3, 4, 1 ], [ 15, 24, 1 ], [ 0, 0, 1 ] ], [ [ 3, 4, 1 ], [ 21, 34, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ 1, 1, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ 4, 6, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ 7, 11, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ 10, 16, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ 13, 21, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ 16, 26, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ 19, 31, 1 ], [ 0, 0, 1 ] ], [ [ 4, 6, 1 ], [ 22, 36, 1 ], [ 0, 0, 1 ] ], [ [ 6, 9, 1 ], [ 3, 4, 1 ], [ 0, 0, 1 ] ], [ [ 6, 9, 1 ], [ 5, 7, 1 ], [ 0, 0, 1 ] ], [ [ 6, 9, 1 ], [ 9, 14, 1 ], [ 0, 0, 1 ] ], [ [ 6, 9, 1 ], [ 11, 17, 1 ], [ 0, 0, 1 ] ], [ [ 6, 9, 1 ], [ 15, 24, 1 ], [ 0, 0, 1 ] ], [ [ 6, 9, 1 ], [ 17, 27, 1 ], [ 0, 0, 1 ] ], [ [ 6, 9, 1 ], [ 21, 34, 1 ], [ 0, 0, 1 ] ], [ [ 7, 10, 1 ], [ 7, 10, 1 ], [ 0, 0, 1 ] ], [ [ 7, 10, 1 ], [ 13, 20, 1 ], [ 0, 0, 1 ] ], [ [ 7, 10, 1 ], [ 19, 30, 1 ], [ 0, 0, 1 ] ], [ [ 8, 12, 1 ], [ 5, 7, 1 ], [ 0, 0, 1 ] ], [ [ 8, 12, 1 ], [ 8, 12, 1 ], [ 0, 0, 1 ] ], [ [ 8, 12, 1 ], [ 11, 17, 1 ], [ 0, 0, 1 ] ], [ [ 8, 12, 1 ], [ 14, 22, 1 ], [ 0, 0, 1 ] ], [ [ 8, 12, 1 ], [ 17, 27, 1 ], [ 0, 0, 1 ] ], [ [ 8, 12, 1 ], [ 20, 32, 1 ], [ 0, 0, 1 ] ], [ [ 10, 15, 1 ], [ 7, 10, 1 ], [ 0, 0, 1 ] ], [ [ 10, 15, 1 ], [ 9, 13, 1 ], [ 0, 0, 1 ] ], [ [ 10, 15, 1 ], [ 13, 20, 1 ], [ 0, 0, 1 ] ], [ [ 10, 15, 1 ], [ 15, 23, 1 ], [ 0, 0, 1 ] ], [ [ 10, 15, 1 ], [ 19, 30, 1 ], [ 0, 0, 1 ] ], [ [ 11, 16, 1 ], [ 11, 16, 1 ], [ 0, 0, 1 ] ], [ [ 11, 16, 1 ], [ 17, 26, 1 ], [ 0, 0, 1 ] ], [ [ 12, 18, 1 ], [ 9, 13, 1 ], [ 0, 0, 1 ] ], [ [ 12, 18, 1 ], [ 12, 18, 1 ], [ 0, 0, 1 ] ], [ [ 12, 18, 1 ], [ 15, 23, 1 ], [ 0, 0, 1 ] ], [ [ 12, 18, 1 ], [ 18, 28, 1 ], [ 0, 0, 1 ] ], [ [ 14, 21, 1 ], [ 11, 16, 1 ], [ 0, 0, 1 ] ], [ [ 14, 21, 1 ], [ 13, 19, 1 ], [ 0, 0, 1 ] ], [ [ 14, 21, 1 ], [ 17, 26, 1 ], [ 0, 0, 1 ] ], [ [ 15, 22, 1 ], [ 15, 22, 1 ], [ 0, 0, 1 ] ], [ [ 16, 24, 1 ], [ 13, 19, 1 ], [ 0, 0, 1 ] ], [ [ 16, 24, 1 ], [ 16, 24, 1 ], [ 0, 0, 1 ] ] ],
+  "balls" : [ {
+    "vertex" : 37,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 57,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 31,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 44,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 25,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 51,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 62,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 48,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 0,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 21,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 36,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 53,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 45,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 16,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 26,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 56,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 68,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 41,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 1,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 22,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 24,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 49,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 58,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 54,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 9,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 4,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 38,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 47,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 64,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 71,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 33,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 29,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 13,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 34,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 23,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 52,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 59,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 50,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 15,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 5,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 32,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 46,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 67,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 74,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 40,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 20,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 8,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 30,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 35,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 14,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 43,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 65,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 55,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 3,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 17,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 39,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 61,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 72,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 28,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 11,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 42,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 2,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 63,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 60,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 10,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 27,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 73,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 19,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 66,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 18,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 70,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 7,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 69,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 6,
+    "color" : "#F2F2F2"
+  }, {
+    "vertex" : 12,
+    "color" : "#F2F2F2"
+  } ],
+  "struts" : [ {
+    "vertices" : [ 31, 37 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 37, 44 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 37, 25 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 51, 57 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 62, 57 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 57, 48 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 12, 0 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 12, 21 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 36, 31 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 44, 53 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 44, 45 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 25, 16 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 25, 26 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 56, 51 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 68, 62 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 48, 41 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 0, 1 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 21, 22 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 24, 36 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 49, 53 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 53, 58 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 45, 54 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 9, 16 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 16, 4 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 26, 38 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 47, 56 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 64, 68 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 68, 71 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 33, 41 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 41, 29 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 1, 13 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 22, 34 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 23, 24 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 52, 49 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 58, 59 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 54, 50 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 15, 9 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 4, 5 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 38, 32 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 46, 47 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 67, 64 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 71, 74 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 40, 33 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 29, 20 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 13, 8 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 34, 30 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 23, 35 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 23, 14 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 43, 52 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 59, 65 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 50, 55 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 3, 15 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 5, 17 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 32, 39 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 55, 46 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 46, 39 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 61, 67 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 72, 74 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 28, 40 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 11, 20 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 8, 14 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 30, 35 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 35, 42 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 14, 2 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 42, 43 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 65, 63 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 55, 60 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 2, 3 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 17, 10 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 39, 27 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 60, 61 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 73, 72 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 27, 28 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 19, 11 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 63, 66 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 60, 66 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 10, 18 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 27, 18 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 70, 73 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 7, 19 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 66, 69 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 18, 6 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 69, 70 ],
+    "color" : "#008EC2"
+  }, {
+    "vertices" : [ 6, 7 ],
+    "color" : "#008EC2"
+  } ],
+  "panels" : [ ]
+}
+</ImportColoredMeshJson>
+    <CentralSymmetry>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </CentralSymmetry>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="16 24 -24 -40 0 0"/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 -24 -40 0 0"/>
+    <EndBlock/>
+    <Polygon>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Polygon>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="27 45 -18 -27 0 0"/>
+    <SelectManifestation point="3 5 -2 -3 0 0"/>
+    <SelectManifestation point="19 29 -26 -43 0 0"/>
+    <EndBlock/>
+    <Polygon>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Polygon>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="30 50 -2 -3 0 0"/>
+    <SelectManifestation point="6 10 -2 -3 0 0"/>
+    <SelectManifestation point="30 50 -18 -27 0 0"/>
+    <EndBlock/>
+    <Polygon>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Polygon>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="18 27 16 24 0 0"/>
+    <SelectManifestation point="2 3 0 0 0 0"/>
+    <SelectManifestation point="26 43 0 0 0 0"/>
+    <EndBlock/>
+    <Polygon>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Polygon>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation point="2 3 27 45 0 0"/>
+    <SelectManifestation point="2 3 3 5 0 0"/>
+    <SelectManifestation point="18 27 19 29 0 0"/>
+    <EndBlock/>
+    <Polygon>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Polygon>
+    <BeginBlock/>
+    <DeselectAll/>
+    <AdjustSelectionByOrbitLength orbit="red" panels="SELECT" struts="IGNORE" symmetry="antiprism5"/>
+    <EndBlock/>
+    <CentralSymmetry>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </CentralSymmetry>
+    <DeselectAll/>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="870.3360595703125" far="1740.6708984375" near="2.175840377807617" parallel="false" stereoAngle="0.0" width="391.6513977050781">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.0" y="1.0" z="0.0"/>
+      <LookDirection x="0.0" y="0.0" z="-1.0"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="antiprism5" renderingStyle="thin antiprism">
+    <Direction color="255,179,26" name="yellow" orbit="[[2,-1,1],[1,-1,1]]"/>
+    <Direction color="0,142,194" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="0,153,63" name="green" orbit="[[2,-1,1],[0,0,1]]"/>
+    <Direction color="217,18,24" name="red" orbit="red"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="icosahedral" renderingStyle="printable">
+      <Direction color="0,142,194" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+      <Direction color="0,153,63" name="green" orbit="[[2,-1,1],[5,-3,1]]"/>
+      <Direction color="154,117,74" name="sand" orbit="[[-8,5,1],[5,-3,1]]"/>
+      <Direction color="18,73,48" name="spruce" orbit="[[-5,4,11],[-5,4,11]]"/>
+      <Direction color="217,18,24" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+      <Direction color="255,126,106" name="coral" orbit="[[-3,2,2],[-1,1,2]]"/>
+      <Direction color="50,50,50" name="black" orbit="[[-2,3,11],[-7,5,11]]"/>
+      <Direction color="117,0,50" name="maroon" orbit="[[5,-3,1],[0,0,1]]"/>
+      <Direction color="239,245,61" name="sulfur" orbit="[[-1,1,3],[0,0,1]]"/>
+      <Direction color="255,179,26" name="yellow" orbit="[[0,0,1],[2,-1,1]]"/>
+      <Direction color="255,51,143" name="rose" orbit="[[0,0,1],[-4,3,5]]"/>
+      <Direction color="0,179,161" name="turquoise" orbit="[[2,-1,2],[-3,2,2]]"/>
+      <Direction color="116,195,0" name="apple" orbit="[[2,-1,3],[-1,1,3]]"/>
+      <Direction color="136,37,0" name="cinnamon" orbit="[[5,-3,2],[2,-1,2]]"/>
+      <Direction color="125,54,211" name="purple" orbit="[[2,-1,1],[0,0,1]]"/>
+      <Direction color="235,82,0" name="orange" orbit="[[-4,3,5],[3,-1,5]]"/>
+      <Direction color="0,0,153" name="navy" orbit="[[-1,1,2],[2,-1,2]]"/>
+      <Direction color="107,53,26" name="brown" orbit="[[2,-1,3],[5,-3,3]]"/>
+      <Direction color="175,135,255" name="lavender" orbit="[[-3,2,1],[-3,2,1]]"/>
+      <Direction color="100,113,0" name="olive" orbit="[[3,-1,5],[0,0,1]]"/>
+    </SymmetrySystem>
+    <SymmetrySystem name="octahedral" renderingStyle="octahedra">
+      <Direction color="0,142,194" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+      <Direction color="255,255,255" name="0" orbit="[[0,0,1],[-1,1,1]]" prototype="0 -1 1 0 0 0"/>
+      <Direction color="0,153,63" name="green" orbit="[[0,0,1],[-1,0,1]]"/>
+      <Direction color="255,179,26" name="yellow" orbit="[[1,0,1],[-1,0,1]]"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool copyColors="true" deleteInputs="false" id="tool-0" label="bookmark 0" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-1" label="bookmark 1" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-2" label="bookmark 2" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-3" label="bookmark 3" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-4" label="bookmark 4" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-5" label="bookmark 5" selectInputs="true"/>
+  </Tools>
+</vzome:vZome>
