@@ -18,7 +18,7 @@ export class VZomeCalculatorController extends EventTarget {
           return; // don't change anything
         }
         const initialState = VZomeCalculatorController.evaluate({
-          format: "tdf",
+          format: "tdf", // TODO: format should be passed in from the radio buttons or else reset them from this state
           ...VZomeCalculatorController.#newFieldOperands(field),
           exponents: [1, 1],
           op: "multiply",

@@ -84,7 +84,7 @@ function onPickFieldChange() {
 		const calcs = document.getElementsByTagName(tagName);
 		const fieldName = getSelectedField();
 		for(const calc of calcs) {
-			// Sometimes the fieldName setter and getter method doen't initially exist on the calc object
+			// Sometimes the fieldName setter and getter method doesn't initially exist on the calc object
 			// but I can set the corresponding attribute and it works as expected.
 			// I prefer the setter syntax so ...
 			// TODO: figure out how to be able to set calc.fieldName without testing to see if it exists yet...
@@ -99,6 +99,7 @@ function onPickFieldChange() {
 			}
 		}
 	}
+	showNumberFormat(); // this doesn't seem to help with syncing the format with the new store
 }
 
 function showNumberFormat() {
@@ -146,11 +147,11 @@ in the 'algebraicNumberFormats' style until I clean up the hard coded hack.
 Also be sure they are in the same order as the pickNumberFormat options -->
 <style id='algebraicNumberFormats'>
 .algebraic, .alg-num {
-  //display: none;
+  /*display: none;*/
   white-space: nowrap;
 }
 .decimal, .dec-num {
-  //display: none;
+  /*display: none;*/
   white-space: nowrap;
 }
 .tdf-num {
