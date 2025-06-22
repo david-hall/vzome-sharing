@@ -22,7 +22,7 @@ Many of them, especially some of the 2D nets, are based on derivations from pent
 and are very close approximations. Unfortunately, they often give the impression that they are exact geometric constructions, but in fact, they are just near misses.
 
 I have been trying to find a closed form (algebraic) expression for a Chestaheron's coordinates. Given that it has 3-fold rotational symmetry, 
-I made vZome and [Geogebra](https://www.geogebra.org/m/ayw9hvau) models of it such that the axis of 3-fold symmetry is on the { 1, 1, 1 } vector 
+I made vZome and [GeoGebra](https://www.geogebra.org/m/ayw9hvau) models of it such that the axis of 3-fold symmetry is on the { 1, 1, 1 } vector 
 and the vertices of the "base" triangular face are at { 1, 0, 0 }, { 0, 1, 0 } and { 0, 0, 1 }. 
 I can then define the vertex where the 3 kites meet to be in the first (all positive) octant of 3D space.
  This orientation allows the coordinates of the 3 remaining triangular faces' vertices to be defined with just 2 positive numbers. I call them **a** and **b**,
