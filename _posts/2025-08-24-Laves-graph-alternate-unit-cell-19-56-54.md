@@ -26,4 +26,10 @@ One of many possible unit cells for the Laves graph
   <figcaption style="text-align: center; font-style: italic;">
     Laves graph alternate unit cell
   </figcaption>
+   
+ This unit cell consists of 12 green struts.  
+ They are color coded to highlight the 6 pairs of parallel edges. The whole unit cell can be translated in any of 3 directions  
+ such that one strut is translated onto the other of the same color. Performing all 3 translations  
+ will replicate the unit cell to fill space. 
+
 </figure>

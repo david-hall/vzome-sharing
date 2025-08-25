@@ -13,9 +13,4 @@ layout: design
         src="https://david-hall.github.io/vzome-sharing/2025/08/24/19-56-54-Laves-graph-alternate-unit-cell/Laves-graph-alternate-unit-cell.png" >
   </vzome-viewer>
 
- This unit cell consists of 12 green struts. 
- They are color coded to highlight the 6 pairs of parallel edges. The whole unit cell can be translated in any of 3 directions 
- such that one strut is translated onto the other of the same color. Performing all 3 translations 
- will replicate the unit cell to fill space.
-
 [Source folder](<https://github.com/david-hall/vzome-sharing/tree/main/2025/08/24/19-56-54-Laves-graph-alternate-unit-cell/>)
