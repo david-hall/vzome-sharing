@@ -181,7 +181,8 @@ export class VZomeCalculator extends HTMLElement {
 	}
 
 	generateHeaderRow(thead, firstInputCell, firstResultCell, nAllColspan) {
-		const { fieldName, irrationalLabels, order, format} = {... this.#store.getState()};
+		const { field, irrationalLabels, order, format} = {... this.#store.getState()};
+        const fieldName = field.name;
 		const tr = thead.insertRow();
 		let th = document.createElement("th");
 		th.innerHTML = this.getActionPickList(fieldName, order);
