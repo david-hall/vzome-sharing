@@ -18,7 +18,7 @@ export class VZomeCalculatorController extends EventTarget {
           return; // don't change anything
         }
         const initialState = VZomeCalculatorController.evaluate({
-          format: "tdf", // TODO: format should be passed in from the radio buttons or else reset them from this state
+          format: this.format, 
           ...VZomeCalculatorController.#newFieldOperands(field),
           exponents: [1, 1],
           op: "multiply",
@@ -239,7 +239,8 @@ export class VZomeCalculatorController extends EventTarget {
 	}
 
 	get format() {
-		return this.#store.getState().format;
+		const fmt = this.#store?.getState().format;
+        return fmt ? fmt : "tdf";
 	}
 	set format(newValue) {
 		this.#store.dispatch( { type: 'format-change', payload: newValue } );
@@ -475,7 +476,8 @@ export class VZomeCalculatorController extends EventTarget {
 				}
 			} 
 			}
-		}  break; // fall thru and log the unexpected args
+		    break; // fall thru and log the unexpected args
+        }
 
 		case 'operator-change': {
 			const operator = action.payload;
@@ -483,7 +485,8 @@ export class VZomeCalculatorController extends EventTarget {
 				newState.op = operator;
 				return VZomeCalculatorController.evaluate(newState);
 			}
-		}  break; // fall thru and log the unexpected args
+		    break; // fall thru and log the unexpected args
+        }
 
 		case 'divisor-change': {
 			const parsedValue = parseInt(value);
@@ -492,9 +495,9 @@ export class VZomeCalculatorController extends EventTarget {
 				return VZomeCalculatorController.evaluate(newState);
 			}	
 			// could include an error message in the new state
+		    console.log("Reverting invalid divisor: " + value);
+		    return state; 
 		}
-		console.log("Reverting invalid divisor: " + value);
-		return state; 
 
 		case 'exponent-change': {
 			const parsedValue = parseInt(value);
@@ -503,9 +506,9 @@ export class VZomeCalculatorController extends EventTarget {
 				return VZomeCalculatorController.evaluate(newState);
 			}
 			// could include an error message in the new state
+            console.log("Reverting invalid exponent: " + value);
+		    return state;
 		}
-		console.log("Reverting invalid exponent: " + value);
-		return state; 
 
 		case 'operand-change': {
 			const parsedValue = parseInt(value);
@@ -514,19 +517,31 @@ export class VZomeCalculatorController extends EventTarget {
 				return VZomeCalculatorController.evaluate(newState);
 			}
 			// could include an error message in the new state
-		}
-		console.log("Reverting invalid operand: " + value);
-		return state; 
+    		console.log("Reverting invalid operand: " + value);
+	    	return state;
+        } 
 
 		case 'format-change': {
 			// TODO: validate against the formats array
 			newState.format = action.payload;
-		} return newState;
+		    return newState;
+        }
 
-		case "@@INIT": // redux store is initializing
+		case "@@INIT": {
+            // older version of redux store is initializing
 			//console.log(action, state);
 			return newState;
-		}
+        }
+
+        default: {
+            if(action.type.startsWith("@@redux/INIT")) {
+                // newer version of redux store is initializing
+                //console.log(action, state);
+                return newState;
+            } 
+        }
+		} // end case
+        
 		console.dir({$error: "Unexpected action.type", action, state});
 		return state;
 	}
