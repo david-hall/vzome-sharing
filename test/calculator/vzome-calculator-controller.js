@@ -120,7 +120,9 @@ export class VZomeCalculatorController extends EventTarget {
 	}
 
 	static isAlgebraicNumber(num) {
-		return num 
+		return num
+            && !(num == null) // note that null == undefined (use double equal, not triple equal)
+            //&& !(typeof num === undefined) // so this line is redundant and unnecessary
 			&& num === Object(num)
 			&& Array.isArray(num.__proto__.constructor.__interfaces)
 			&& num.__proto__.constructor.__interfaces.includes("com.vzome.core.algebra.AlgebraicNumber");
@@ -137,7 +139,7 @@ export class VZomeCalculatorController extends EventTarget {
 			tdf: num.toTrailingDivisor(),
 			isInfinite: num.isInfinite,
 		}
-		: num.isInfinite && num.label ?
+		: num && num.isInfinite && num.label ?
 		{ ...num,
 			alg: num.label, // or use num.html
 			dec: num.label, // or use num.html
@@ -150,7 +152,7 @@ export class VZomeCalculatorController extends EventTarget {
 			alg: num,
 			dec: num,
 			tdf: num,
-			isInfinite: num.isInfinite,
+			isInfinite: num ? num.isInfinite : true,
 			numType: typeof num,
 			// loggged: console.dir(num),
 		};
@@ -278,18 +280,24 @@ export class VZomeCalculatorController extends EventTarget {
 		const results = [];
 		for(let i = 0; i < 2; i++) {
 			// TODO: Check if the tdf divisor is 0. If so, then get zero and append isInfinity instead of throwing a divide by zero exception
+			// TODO: Check if operands[i].tdf is undefined. If so, then get zero and append isInfinity instead of throwing an exception reading null
 			const inputOperand = field.numberFactory.createAlgebraicNumberFromTD(field, operands[i].tdf);
 			 // Put the AN back into the state to ensure that the denominator is positive and all numerators are valid and normalized
 			 // This makes for some potentially unexpected behavior when denominator is not positive, but it keeps the inputs valid and auto-normalized
 			operands[i] = VZomeCalculatorController.expandAN(inputOperand);
 			const reducedOperand = VZomeCalculatorController.power(inputOperand, exponents[i]);
+            // TODO: handle the case where reducedOperand = 0^0 = undefined
 			algebraicOperands.push(reducedOperand);
 			results.push(VZomeCalculatorController.expandAN(reducedOperand));
 		}
 		const algOp0 = algebraicOperands[0];
 		const algOp1 = algebraicOperands[1];
+        // algOp0 or algOp1 or both may be undefined as when 0^0 = undefined
 		const operate = VZomeCalculatorController.operationMap.get(op);
-		const rawAnswer = (algOp0.isInfinite || algOp1.isInfinite)
+		const rawAnswer = (!VZomeCalculatorController.isAlgebraicNumber(algOp0) 
+                        || !VZomeCalculatorController.isAlgebraicNumber(algOp1) 
+                        || algOp0.isInfinite 
+                        || algOp1.isInfinite)
 			? {... field.zero(), isInfinite: true}
 			: operate(algOp0, algOp1);
 		const answers = Array.isArray(rawAnswer) ? rawAnswer : [rawAnswer];
@@ -299,25 +307,20 @@ export class VZomeCalculatorController extends EventTarget {
 		return { ...state, results, answers };
 	}
 
-	static power(operand, exponent) {
-		let result = exponent == 0 ? operand.getField().one() : operand;
-		if(!result.isOne() && !result.isZero() ) {
-			// only one (or neither) of the loops below will be applicable
-			if(exponent >= 2) {
-				for(let exp = 2; exp <= exponent; exp++) {
-					result = result.times(operand);
-				}
-			} else if(exponent <= -2) {
-				console.log("TODO: I'm pretty sure this math is wrong when the exponent is negative...");
-				console.log(operand.toString());
-				for(let exp = -2; exp >= exponent; exp--) {
-					console.log(result.toString());
-					result = result.dividedBy(operand);
-				}
-				console.log(result.toString());
-			}
-		}
-		return result;
+	static power(base, exponent) {
+        if(exponent == 0) {
+            // 0^0 = undefined
+            return base.isZero() ? undefined : base.getField().one();
+        }
+        if(base.isZero() || base.isOne()) {
+            return base;
+        }
+		let result = base;
+        const negativeExponent = exponent < 0;
+        for(let i = negativeExponent ? exponent *= -1 : exponent; i>1; i--) {
+            result = result.times(base);
+        }
+        return negativeExponent ? result.reciprocal() : result;
 	}
 
 	static add(a, b) { return a.plus(b); }
@@ -440,6 +443,7 @@ export class VZomeCalculatorController extends EventTarget {
 								return state; // unchanged
 							}
 							anum = VZomeCalculatorController.power(anum, exponents[id]);
+                            // TODO: handle the case where anum = 0^0 = undefined
 							newState.exponents[id] = 1;
 							success = true;
 							break;
@@ -456,6 +460,7 @@ export class VZomeCalculatorController extends EventTarget {
 							// TODO: Add this.ceiling(id) method which does this
 							// Act on operand and exponent together
 							anum = VZomeCalculatorController.power(anum, exponents[id]);
+                            // TODO: handle the case where anum = 0^0 = undefined
 							anum = field.createRational(Math.ceil(anum.evaluate()));
 							newState.exponents[id] = 1;
 							success = true;
@@ -464,6 +469,7 @@ export class VZomeCalculatorController extends EventTarget {
 							// TODO: Add this.floor(id) method which does this
 							// Act on operand and exponent together
 							anum = VZomeCalculatorController.power(anum, exponents[id]);
+                            // TODO: handle the case where anum = 0^0 = undefined
 							anum = field.createRational(Math.floor(anum.evaluate()));
 							newState.exponents[id] = 1;
 							success = true;
