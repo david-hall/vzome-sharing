@@ -309,8 +309,11 @@ export class VZomeCalculatorController extends EventTarget {
 
 	static power(base, exponent) {
         if(exponent == 0) {
-            // 0^0 = undefined
-            return base.isZero() ? undefined : base.getField().one();
+            if(base.isZero()) {
+                // So I can avoid having to deal with undefined everywhere.
+                console.log("0^0 is technically undefined, but I'm returning 1 which is consistent with Java's Math.pow().")
+            } 
+            return base.getField().one();
         }
         if(base.isZero() || base.isOne()) {
             return base;
