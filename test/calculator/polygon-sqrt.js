@@ -32,13 +32,13 @@ export class SqrtCalculator extends HTMLElement {
                 // so start the loop with diags 2 & 3
                 const diagLimit = radicand - 1;
                 const fmt = 4; // MATHML
-                let sFrac = `<mo>(</mo>
+                let sFractions = `<mo>(</mo>
                                 <mfrac>
                                     <mrow>${num.toString(fmt)}</mrow>
                                     <mrow>${den.toString(fmt)}</mrow>
                                 </mfrac>
                             <mo>)</mo>`
-                let sTerm = `<mo>(</mo>
+                let sFactors = `<mo>(</mo>
                                 <mrow>${num.toString(fmt)}</mrow>
                             <mo>)</mo>`
                 for(let diag = 2; diag < diagLimit; diag += 2) {
@@ -48,13 +48,13 @@ export class SqrtCalculator extends HTMLElement {
                     let n = field.getUnitDiagonal(diag+1);
                     den = den.times(d);
                     num = num.times(n);
-                    sFrac += `<mo>(</mo>
+                    sFractions += `<mo>(</mo>
                                 <mfrac>
                                     <mrow>${n.toString(fmt)}</mrow>
                                     <mrow>${d.toString(fmt)}</mrow>
                                 </mfrac>
                             <mo>)</mo>`
-                    sTerm += `<mo>(</mo>
+                    sFactors += `<mo>(</mo>
                                 <mrow>${n.dividedBy(d).toString(fmt)}</mrow>
                             <mo>)</mo>`
                 }
@@ -75,14 +75,88 @@ export class SqrtCalculator extends HTMLElement {
                      <hr>
                      <math display="block">
                         <mrow>
-                            <mrow>${sFrac}</mrow>
+                            <mi>r</mi><mo>≥</mo><mn>2</mn><mtext>,&nbsp;</mtext>
+                            <mi>r</mi><mo>∈</mo><mtext>&Nopf;&nbsp;</mtext>
+                            <!--mo stretchy="false" lspace="0em" rspace="0em">⇒</mo-->
+                        <mrow>
+                    </math>
+                     <br>
+                     <math display="block">
+    <mrow>
+      <msqrt><mi>r</mi></msqrt><mo>=</mo>
+      <munderover>
+        <mo movablelimits="false">∏</mo>
+        <mrow>
+          <mi>k</mi>
+          <mo>=</mo>
+          <mn>1</mn>
+        </mrow>
+        <mrow>
+          <mo fence="true" form="prefix">⌊</mo>
+          <mfrac>
+            <mi>r</mi>
+            <mn>2</mn>
+          </mfrac>
+          <mo fence="true" form="postfix">⌋</mo>
+        </mrow>
+      </munderover>
+    </mrow>
+    <mfrac>
+      <mrow>
+        <mi>s</mi>
+        <mi>i</mi>
+        <mi>n</mi>
+        <mo>(</mo>
+        <mfrac>
+          <mrow>
+            <mn>2</mn>
+            <mi>k</mi>
+            <mi>π</mi>
+          </mrow>
+          <mrow>
+            <mn>2</mn>
+            <mi>r</mi>
+          </mrow>
+        </mfrac>
+        <mo>)</mo>
+      </mrow>
+      <mrow>
+        <mi>s</mi>
+        <mi>i</mi>
+        <mi>n</mi>k
+        <mo>(</mo>
+        <mfrac>
+          <mrow>
+            <mo>(</mo>
+            <mn>2</mn>
+            <mi>k</mi>
+            <mo>-</mo>
+            <mn>1</mn>
+            <mo>)</mo>
+            <mi>π</mi>
+          </mrow>
+          <mrow>
+            <mn>2</mn>
+            <mi>r</mi>
+          </mrow>
+        </mfrac>
+        <mo>)</mo>
+      </mrow>
+    </mfrac>
+  </mrow>
+                        </mrow>
+                     </math>
+                     <hr>
+                     <math display="block">
+                        <mrow>
+                            <mrow>${sFractions}</mrow>
                         </mrow>
                      </math>
                      <br>
                      <math display="block">
                         <mrow>
                             <mo>=</mo>
-                            <mrow>${sTerm}</mrow>
+                            <mrow>${sFactors}</mrow>
                         </mrow>
                      </math>
                      <br>
