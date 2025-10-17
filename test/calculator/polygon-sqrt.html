@@ -6,10 +6,81 @@
     <title>Square Roots in Polygon Fields</title>
     <link rel='shortcut icon' type='image/x-icon' href='/vzome-sharing/favicon.ico'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!--link rel='stylesheet' type='text/css' media='screen' href='polygon-sqrt.css'-->
+    <link rel='stylesheet' type='text/css' media='screen' href='polygon-sqrt.css'>
     <script type='module' src='polygon-sqrt.js'></script>
 </head>
 <body>
+    <math display="block">
+        <mrow>
+            <mi>R</mi><mo>≥</mo><mn>2</mn><mtext>,&nbsp;</mtext>
+            <mi>R</mi><mo>∈</mo><mtext>&Nopf;&nbsp;</mtext>
+        <mrow>
+    </math>
+    <br>
+    <math display="block">
+        <mrow>
+            <msqrt><mi>R</mi></msqrt><mo>=</mo>
+            <munderover>
+                <mo movablelimits="false">∏</mo>
+                <mrow>
+                    <mi>&Kappa;</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                </mrow>
+                <mrow>
+                    <mo fence="true" form="prefix">⌊</mo>
+                    <mfrac>
+                        <mi>R</mi>
+                        <mn>2</mn>
+                    </mfrac>
+                    <mo fence="true" form="postfix">⌋</mo>
+                </mrow>
+            </munderover>
+        </mrow>
+        <mfrac>
+            <mrow>
+                <mi>s</mi>
+                <mi>i</mi>
+                <mi>n</mi>
+                <mo>(</mo>
+                <mfrac>
+                <mrow>
+                    <mn>2</mn>
+                    <mi>&Kappa;</mi>
+                    <mi>π</mi>
+                </mrow>
+                <mrow>
+                    <mn>2</mn>
+                    <mi>R</mi>
+                </mrow>
+                </mfrac>
+                <mo>)</mo>
+            </mrow>
+            <mrow>
+                <mi>s</mi>
+                <mi>i</mi>
+                <mi>n</mi>
+                <mo>(</mo>
+                <mfrac>
+                    <mrow>
+                        <mo>(</mo>
+                        <mn>2</mn>
+                        <mi>&Kappa;</mi>
+                        <mo>-</mo>
+                        <mn>1</mn>
+                        <mo>)</mo>
+                        <mi>π</mi>
+                    </mrow>
+                    <mrow>
+                        <mn>2</mn>
+                        <mi>R</mi>
+                    </mrow>
+                </mfrac>
+                <mo>)</mo>
+            </mrow>
+        </mfrac>
+    </math>
+    <hr>
     <sqrt-calculator></sqrt-calculator>
 </body>
 </html>
