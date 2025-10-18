@@ -25,14 +25,16 @@ function onRadicandChange() {
 }
 
 window.addEventListener("load", () => {
+    const radicandInput = document.getElementById("radicand");
     const r = parseInt((new URL(document.location)).searchParams.get("r"));
     if(r>=2 && r<=40) {
-        document.getElementById("radicand").value = r;
+        radicandInput.value = r;
         onRadicandChange();
     } else {
-        // sync the input with any specified attribute
-        document.getElementById("radicand").value = calc.radicand;
+        // sync the input with any specified attribute of calc
+        radicandInput.value = calc.radicand;
     }
+    radicandInput.focus();
 });
     </script>
 </head>
@@ -119,9 +121,7 @@ window.addEventListener("load", () => {
         <mtext>
             <input id="radicand" type="number" min="2" max="40" onchange="onRadicandChange()">
         </mtext>
-        <mtext>&nbsp;(Max&nbsp;</mtext>
-        <mi>R</mi>
-        <mtext>&nbsp;is 40.)</mtext>
+        <mtext>&nbsp;(Limited to 40)</mtext>
     </math>
     <hr>
     <sqrt-calculator id="calc"></sqrt-calculator>
