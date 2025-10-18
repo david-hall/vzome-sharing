@@ -1,3 +1,4 @@
 body {
   font-size: 1.5em; /* Makes all text 50% larger than the browser's default */
+  overflow: scroll; /* Always show both scrollbars so they don't make other things jump around as they appear and disappear */
 }

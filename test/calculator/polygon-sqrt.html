@@ -8,15 +8,35 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='polygon-sqrt.css'>
     <script type='module' src='polygon-sqrt.js'></script>
+    <script>
+function onRadicandChange() {
+	const radicandInput = document.getElementById("radicand");
+    radicandInput.disabled = true; // avoid rendering multiple changes when calc is slow
+	const r = parseInt(radicandInput.value);
+    if(r>=2 && r<=40) {
+        const calc = document.getElementById("calc");
+        calc.radicand = r;
+    }
+    if(calc.radicand != r) {
+        // sync the input to the last valid value
+        radicandInput.value = calc.radicand;
+    }
+    radicandInput.disabled = false;
+}
+
+window.addEventListener("load", () => {
+    const r = parseInt((new URL(document.location)).searchParams.get("r"));
+    if(r>=2 && r<=40) {
+        document.getElementById("radicand").value = r;
+        onRadicandChange();
+    } else {
+        // sync the input with any specified attribute
+        document.getElementById("radicand").value = calc.radicand;
+    }
+});
+    </script>
 </head>
 <body>
-    <math display="block">
-        <mrow>
-            <mi>R</mi><mo>≥</mo><mn>2</mn><mtext>,&nbsp;</mtext>
-            <mi>R</mi><mo>∈</mo><mtext>&Nopf;&nbsp;</mtext>
-        <mrow>
-    </math>
-    <br>
     <math display="block">
         <mrow>
             <msqrt><mi>R</mi></msqrt><mo>=</mo>
@@ -45,8 +65,12 @@
                 <mo>(</mo>
                 <mfrac>
                 <mrow>
-                    <mn>2</mn>
-                    <mi>&Kappa;</mi>
+                    <mo>(</mo>
+                        <mn>2</mn>
+                        <mi>&Kappa;</mi>
+                        <mo>-</mo>
+                        <mn>0</mn>
+                        <mo>)</mo>
                     <mi>π</mi>
                 </mrow>
                 <mrow>
@@ -80,7 +104,26 @@
             </mrow>
         </mfrac>
     </math>
+    <br>
+    <math display="block">
+        <mrow>
+            <mi>R</mi><mo>≥</mo><mn>2</mn><mtext>,&nbsp;</mtext>
+            <mi>R</mi><mo>∈</mo><mtext>&Nopf;&nbsp;</mtext>
+        <mrow>
+    </math>
+    <br>
+    <math display="block">
+        <mtext>Solve for&nbsp;</mtext>
+        <mi>R</mi>
+        <mo>=</mo>
+        <mtext>
+            <input id="radicand" type="number" min="2" max="40" onchange="onRadicandChange()">
+        </mtext>
+        <mtext>&nbsp;(Max&nbsp;</mtext>
+        <mi>R</mi>
+        <mtext>&nbsp;is 40.)</mtext>
+    </math>
     <hr>
-    <sqrt-calculator></sqrt-calculator>
+    <sqrt-calculator id="calc"></sqrt-calculator>
 </body>
 </html>
