@@ -83,6 +83,7 @@ export class SqrtCalculator extends HTMLElement {
                 </mtr>`
         }
         const result = num.dividedBy(den);
+        console.log(`  ${num.times(num)}\n/ ${den.times(den)}\n= ${num.times(num).dividedBy(den.times(den))}`);
         let sRes = result.toString(fmt);
         const r = result.evaluate();
         this.#container.innerHTML = 
@@ -121,7 +122,7 @@ export class SqrtCalculator extends HTMLElement {
             <math display="block">
                 <mrow>
                     <mo>=</mo>
-                    <msqrt><mn>${this.radicand}</mn></msqrt>
+                    <msqrt><mn>${result.times(result)}</mn></msqrt>
                 </mrow>
             </math>
             <hr>`
