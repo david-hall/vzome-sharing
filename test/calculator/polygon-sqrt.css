@@ -2,3 +2,21 @@ body {
   font-size: 1.5em; /* Makes all text 50% larger than the browser's default */
   overflow: scroll; /* Always show both scrollbars so they don't make other things jump around as they appear and disappear */
 }
+
+.centered {
+    aspect-ratio: 1;
+    height: auto;
+    margin: auto;
+    width: 50%;
+}
+
+svg {
+    outline: solid 3px lightblue;
+    outline-offset: 15px;
+}
+
+polygon {
+    fill: gray;
+    fill-opacity: .25;
+}
+
