@@ -5,74 +5,68 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>SVG Test</title>
     <script type='module'>
-// set up the links for debugging
+// Set up the links for debugging
 const url = new URL(document.location)
 const {href, search} = url
 const link = href.slice(0, -search.length)
 const doFail = url.searchParams.size > 0
 document.getElementById("good").setAttribute("href", link)
 document.getElementById("fail").setAttribute("href", link+"?fail")
+// Add the SVG
+const svgNS = 'http://www.w3.org/2000/svg'
+const root = document.getElementById("root")
+const css = '#origin { r: .9; fill: red; }'
+root.appendChild( document.createElementNS(svgNS, "style") ).textContent = css
+const container = document.createElement("div")
+container.setAttribute('id', "container")
+root.appendChild(container)   
+const viewBox = '-1 -1 2 2'
+const svg = document.createElementNS(svgNS, 'svg')
+svg.setAttribute('xmlns', svgNS) // can't use setAttributeNS here
+svg.setAttributeNS(svgNS, 'version', "1.1")
+svg.setAttributeNS(svgNS, 'id', "svg")
+svg.setAttributeNS(svgNS, 'viewBox', viewBox) // setAttribute makes 'viewbox' all lowercase
+const g = document.createElementNS(svgNS, 'g')
+g.setAttributeNS(svgNS, 'id', "svgGroup")
+svg.appendChild(g)
 
-export class SvgNsTest extends HTMLElement {
-    constructor() {
-        super()
-        const svgNS = 'http://www.w3.org/2000/svg'
-        const root = this.attachShadow({ mode: "open" })
-        const css = '#origin { r: .9; fill: red; }'
-        root.appendChild( document.createElementNS(svgNS, "style") ).textContent = css
-        const container = document.createElement("div")
-        container.setAttribute('id', "container")
-        root.appendChild(container)   
-        const viewBox = '-1 -1 2 2'
-        const svg = document.createElementNS(svgNS, 'svg')
-        svg.setAttribute('xmlns', svgNS) // can't use setAttributeNS here
-        svg.setAttributeNS(svgNS, 'version', "1.1")
-        svg.setAttributeNS(svgNS, 'id', "svg")
-        svg.setAttributeNS(svgNS, 'viewBox', viewBox) // setAttribute makes 'viewbox' all lowercase
-        const g = document.createElementNS(svgNS, 'g')
-        g.setAttributeNS(svgNS, 'id', "svgGroup")
-        svg.appendChild(g)
+// HERE'S THE CRITICAL DISTINCTION 
+if(!doFail) {
+    console.log("root.getElementById('svgGroup') will return non-null if I use container.innerHTML = svg.outerHTML.")
+    container.innerHTML = svg.outerHTML
+} else {
+    console.log("root.getElementById('svgGroup') will return null if I use container.appendChild(svg).")
+    container.appendChild(svg)
+}
 
-        // HERE'S THE CRITICAL QUESTION 
-        if(!doFail) {
-            console.log("root.getElementById('svgGroup') will return non-null if I use container.innerHTML = svg.outerHTML.")
-            container.innerHTML = svg.outerHTML
-        } else {
-            console.log("root.getElementById('svgGroup') will return null if I use container.appendChild(svg).")
-            container.appendChild(svg)
-        }
+// Verify that the HTML is what we expect
+if(container.innerHTML == svg.outerHTML) {
+    // Either way, the HTML matches
+    console.log("container.innerHTML == svg.outerHTML\n\n" + container.innerHTML)
+} else {
+    // Strings don't match exactly if 'viewBox' attribute is all lowercase and I use innerHTML instead of appendChild
+    console.log("innerHTML: " + container.innerHTML)
+    console.log("outerHTML: " + svg.outerHTML)
+    console.log("Notice that lowercase 'viewbox' is different from 'viewBox'.\nUse setAttributeNS() instead of setAttribute()")
+}
 
-        // Verify that the HTML is what we expect
-        if(container.innerHTML == svg.outerHTML) {
-            // Either way, the HTML matches
-            console.log("container.innerHTML == svg.outerHTML\n\n" + container.innerHTML)
-        } else {
-            // Strings don't match exactly if 'viewBox' attribute is all lowercase and I use innerHTML instead of appendChild
-            console.log("innerHTML: " + container.innerHTML)
-            console.log("outerHTML: " + svg.outerHTML)
-            console.log("Notice that lowercase 'viewbox' is different from 'viewBox'.\nUse setAttributeNS() instead of setAttribute()")
-        }
+const dot = document.createElementNS(svgNS, 'circle')
+dot.setAttribute('id', 'origin')
 
-        const dot = document.createElementNS(svgNS, 'circle')
-        dot.setAttribute('id', 'origin')
-
-        // HERE IS THE FIRST SIGN OF THE PROBLEM.
-        const svgGroup = root.getElementById('svgGroup')
-        if(svgGroup) {
-            svgGroup.appendChild(dot)
-        } else {
-            g.appendChild(dot)
-            console.log(
-            `
-Why does root.getElementById('svgGroup') return null when I use container.appendChild()
+// HERE IS THE FIRST SIGN OF THE PROBLEM.
+const svgGroup = document.getElementById('svgGroup')
+if(svgGroup) {
+    svgGroup.appendChild(dot)
+} else {
+    g.appendChild(dot)
+    console.log(
+    `
+Why does document.getElementById('svgGroup') return null when I use container.appendChild()
 but not when I use container.innerHTML = svg.outerHTML ?
 
 Both methods look like they generate the same HTML and DOM elements.`)
-        }
-    }
 }
 
-customElements.define( "svg-ns-test", SvgNsTest )
     </script>
 </head>
 <body>
@@ -86,8 +80,6 @@ customElements.define( "svg-ns-test", SvgNsTest )
         <br>(See the console.)
         </p>
     </h2>
-    <div>
-        <svg-ns-test></svg-ns-test>
-    </div>
+    <div id="root"></div>
 </body>
 </html>
