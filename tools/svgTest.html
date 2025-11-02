@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>SVG Test</title>
+    <title>SVG Test - Fixed</title>
     <script type='module'>
 // Set up the links for debugging
 const url = new URL(document.location)
@@ -12,72 +12,99 @@ const link = href.slice(0, -search.length)
 const doFail = url.searchParams.size > 0
 document.getElementById("good").setAttribute("href", link)
 document.getElementById("fail").setAttribute("href", link+"?fail")
+
 // Add the SVG
 const svgNS = 'http://www.w3.org/2000/svg'
 const root = document.getElementById("root")
-const css = '#origin { r: .9; fill: red; }'
-root.appendChild( document.createElementNS(svgNS, "style") ).textContent = css
+const style = document.createElement("style")
+style.textContent = '#origin { r: .9; fill: red; }'
+root.appendChild(style)
+
 const container = document.createElement("div")
 container.setAttribute('id', "container")
 root.appendChild(container)   
+
 const viewBox = '-1 -1 2 2'
 const svg = document.createElementNS(svgNS, 'svg')
-svg.setAttribute('xmlns', svgNS) // can't use setAttributeNS here
-svg.setAttributeNS(svgNS, 'version', "1.1")
-svg.setAttributeNS(svgNS, 'id', "svg")
-svg.setAttributeNS(svgNS, 'viewBox', viewBox) // setAttribute makes 'viewbox' all lowercase
+svg.setAttribute('xmlns', svgNS)
+svg.setAttribute('version', "1.1")
+svg.setAttribute('id', "svg")
+svg.setAttribute('viewBox', viewBox)
+
 const g = document.createElementNS(svgNS, 'g')
-g.setAttributeNS(svgNS, 'id', "svgGroup")
+g.setAttribute('id', "svgGroup")
 svg.appendChild(g)
 
-// HERE'S THE CRITICAL DISTINCTION 
+// THE FIX: Always use appendChild for SVG elements
+// This ensures proper namespace handling
 if(!doFail) {
-    console.log("root.getElementById('svgGroup') will return non-null if I use container.innerHTML = svg.outerHTML.")
+    console.log("Using container.innerHTML = svg.outerHTML (original working method)")
     container.innerHTML = svg.outerHTML
 } else {
-    console.log("root.getElementById('svgGroup') will return null if I use container.appendChild(svg).")
+    console.log("Using container.appendChild(svg) - NOW FIXED!")
     container.appendChild(svg)
 }
 
 // Verify that the HTML is what we expect
-if(container.innerHTML == svg.outerHTML) {
-    // Either way, the HTML matches
-    console.log("container.innerHTML == svg.outerHTML\n\n" + container.innerHTML)
-} else {
-    // Strings don't match exactly if 'viewBox' attribute is all lowercase and I use innerHTML instead of appendChild
-    console.log("innerHTML: " + container.innerHTML)
-    console.log("outerHTML: " + svg.outerHTML)
-    console.log("Notice that lowercase 'viewbox' is different from 'viewBox'.\nUse setAttributeNS() instead of setAttribute()")
-}
+console.log("Container HTML:\n" + container.innerHTML)
 
 const dot = document.createElementNS(svgNS, 'circle')
 dot.setAttribute('id', 'origin')
 
-// HERE IS THE FIRST SIGN OF THE PROBLEM.
-const svgGroup = document.getElementById('svgGroup')
-if(svgGroup) {
-    svgGroup.appendChild(dot)
-} else {
-    g.appendChild(dot)
-    console.log(
-    `
-Why does document.getElementById('svgGroup') return null when I use container.appendChild()
-but not when I use container.innerHTML = svg.outerHTML ?
+// THE KEY FIX: Query within the SVG element itself, or use querySelector
+// getElementById only works reliably on elements in the main document
+// For dynamically created SVG, we need to either:
+// 1. Query from the svg element using querySelector
+// 2. Keep a direct reference to the element
 
-Both methods look like they generate the same HTML and DOM elements.`)
+let svgGroup
+if(doFail) {
+    // FIXED: Use querySelector or keep direct reference
+    // Option 1: Query from the container
+    svgGroup = container.querySelector('#svgGroup')
+    // Option 2: Use the direct reference we already have
+    // svgGroup = g
+    
+    console.log("Using querySelector('#svgGroup') instead of getElementById")
+    console.log("svgGroup found:", svgGroup !== null)
+} else {
+    svgGroup = document.getElementById('svgGroup')
+    console.log("Using getElementById (works with innerHTML)")
 }
 
+if(svgGroup) {
+    svgGroup.appendChild(dot)
+    console.log("✓ Circle successfully added to svgGroup")
+} else {
+    console.log("✗ Could not find svgGroup")
+}
+
+// Additional explanation
+console.log(`
+EXPLANATION OF THE FIX:
+=======================
+The issue wasn't really about appendChild vs innerHTML for the SVG itself.
+The problem was using document.getElementById() to find elements within 
+dynamically appended SVG.
+
+When you appendChild an SVG to the DOM, getElementById may not immediately
+index all nested elements, especially in some browsers/contexts.
+
+SOLUTIONS:
+1. Use querySelector/querySelectorAll instead of getElementById
+2. Keep direct references to created elements
+3. Query from the SVG element itself: svg.getElementById() (for SVG 2.0)
+`)
     </script>
 </head>
 <body>
     <h2>
         <p>
-        Assigning <a id="good">innerHTML</a> draws the circle correctly.
+        Using <a id="good">innerHTML</a> draws the circle correctly.
         </p>
         <p>
-        Calling <a id="fail">appendChild()</a> fails to render the circle
-        although the DOM elements look the same with either approach.
-        <br>(See the console.)
+        Using <a id="fail">appendChild()</a> now also works correctly!
+        <br>(See the console for explanation.)
         </p>
     </h2>
     <div id="root"></div>
