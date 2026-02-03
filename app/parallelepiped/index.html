@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+
+    <title>vZome Parallelepiped Generator</title>
+    <meta property="og:title"      content="vZome Parallelepiped Generator">
+    <meta property="twitter:title" content="vZome Parallelepiped Generator">
+
+    <meta name="author"                content="David Hall">
+    <meta property="og:article:author" content="David Hall">
+    <meta property="og:type" content="article">
+    <meta property="og:article:published_time" content="2026-02-03T00:00:00-00:00">
+    <meta property="og:url"   content="https://david-hall.github.io/vzome-sharing/app/parallelepiped/">
+    <link rel="canonical"        href="https://david-hall.github.io/vzome-sharing/app/parallelepiped/">
+    <meta property="og:image" content="https://david-hall.github.io/vzome-sharing/app/parallelepiped/card-image.png">
+    <meta name="description"             content="Generate Parallelepipeds in any Zometool strut direction">
+    <meta property="og:description"      content="Generate Parallelepipeds in any Zometool strut direction">
+    <meta property="twitter:description" content="Generate Parallelepipeds in any Zometool strut direction">
+
+    <script type="module" src="https://www.vzome.com/modules/vzome-viewer.js"></script>
+    <script type="module" src="../modules/axis-picker.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <script defer src="app.js"></script>
+
+    <script id="template-1" type="text/xmldata">`
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="116" field="golden" version="7.1">
+    <EditHistory editNumber="0" lastStickyEdit="-1">
+    <StrutCreation anchor="0 0 0 0 0 0" dir="green" index="0" len="2 2"/>
+    </EditHistory>
+    <notes/>
+    <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+    </sceneModel>
+    <Viewing>
+    <ViewModel distance="75.0" far="150.0" near="0.19" parallel="false" stereoAngle="0.0" width="35.0">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.40824830532073975" y="0.8164966106414795" z="-0.40824830532073975"/>
+        <LookDirection x="-0.5773502588272095" y="-0.5773502588272095" z="-0.5773502588272095"/>
+    </ViewModel>
+    </Viewing>
+    <SymmetrySystem name="icosahedral" renderingStyle="lifelike">
+    <Direction color="0,142,194" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="0,153,63" name="green" orbit="[[2,-1,1],[5,-3,1]]"/>
+    <Direction color="154,117,74" name="sand" orbit="[[-8,5,1],[5,-3,1]]"/>
+    <Direction color="18,73,48" name="spruce" orbit="[[-5,4,11],[-5,4,11]]"/>
+    <Direction color="217,18,24" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+    <Direction color="255,126,106" name="coral" orbit="[[-3,2,2],[-1,1,2]]"/>
+    <Direction color="50,50,50" name="black" orbit="[[-2,3,11],[-7,5,11]]"/>
+    <Direction color="117,0,50" name="maroon" orbit="[[5,-3,1],[0,0,1]]"/>
+    <Direction color="255,179,26" name="yellow" orbit="[[0,0,1],[2,-1,1]]"/>
+    <Direction color="239,245,61" name="sulfur" orbit="[[-1,1,3],[0,0,1]]"/>
+    <Direction color="255,51,143" name="rose" orbit="[[0,0,1],[-4,3,5]]"/>
+    <Direction color="0,179,161" name="turquoise" orbit="[[2,-1,2],[-3,2,2]]"/>
+    <Direction color="116,195,0" name="apple" orbit="[[2,-1,3],[-1,1,3]]"/>
+    <Direction color="136,37,0" name="cinnamon" orbit="[[5,-3,2],[2,-1,2]]"/>
+    <Direction color="125,54,211" name="purple" orbit="[[2,-1,1],[0,0,1]]"/>
+    <Direction color="235,82,0" name="orange" orbit="[[-4,3,5],[3,-1,5]]"/>
+    <Direction color="0,0,153" name="navy" orbit="[[-1,1,2],[2,-1,2]]"/>
+    <Direction color="107,53,26" name="brown" orbit="[[2,-1,3],[5,-3,3]]"/>
+    <Direction color="175,135,255" name="lavender" orbit="[[-3,2,1],[-3,2,1]]"/>
+    <Direction color="100,113,0" name="olive" orbit="[[3,-1,5],[0,0,1]]"/>
+    </SymmetrySystem>
+    <OtherSymmetries>
+    <SymmetrySystem name="octahedral" renderingStyle="trapezoids">
+        <Direction color="0,142,194" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+        <Direction color="175,135,255" name="lavender" orbit="[[1,2,1],[-1,0,1]]"/>
+        <Direction color="0,179,161" name="turquoise" orbit="[[-1,2,1],[1,-2,1]]"/>
+        <Direction color="50,50,50" name="black" orbit="[[0,1,1],[1,-1,1]]"/>
+        <Direction color="0,153,63" name="green" orbit="[[0,0,1],[-1,0,1]]"/>
+        <Direction color="100,113,0" name="olive" orbit="[[1,0,1],[3,-2,1]]"/>
+        <Direction color="117,0,50" name="maroon" orbit="[[-1,2,1],[1,0,1]]"/>
+        <Direction color="107,53,26" name="brown" orbit="[[1,0,1],[-2,0,1]]"/>
+        <Direction color="255,179,26" name="yellow" orbit="[[1,0,1],[-1,0,1]]"/>
+        <Direction color="217,18,24" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+        <Direction color="125,54,211" name="purple" orbit="[[0,0,1],[2,-1,1]]"/>
+    </SymmetrySystem>
+    </OtherSymmetries>
+    </vzome:vZome>
+    `
+    </script>
+    <script id="template-2" type="text/xmldata">`
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="116" field="golden" version="7.1">
+    <EditHistory editNumber="0" lastStickyEdit="-1">
+    <StrutCreation anchor="0 0 0 0 0 0" dir="green" index="0" len="2 2"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="green" index="1" len="2 2"/>
+    <SelectAll originLast="true"/>
+    <AffinePolygon mode="4"/>
+    <Polygon/>
+    <DeselectAll/>
+
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="SELECT" struts="IGNORE"/>
+    <Hide/>
+    <SelectAll originLast="true"/>
+    <JoinPoints closedLoop="false" joinMode="ALL_POSSIBLE"/>
+    <DeselectAll/>
+    <ShowHidden/>
+    <DeselectAll/>
+    </EditHistory>
+    <notes/>
+    <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+    </sceneModel>
+    <Viewing>
+    <ViewModel distance="75.0" far="150.0" near="0.19" parallel="false" stereoAngle="0.0" width="35.0">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.40824830532073975" y="0.8164966106414795" z="-0.40824830532073975"/>
+        <LookDirection x="-0.5773502588272095" y="-0.5773502588272095" z="-0.5773502588272095"/>
+    </ViewModel>
+    </Viewing>
+    <SymmetrySystem name="icosahedral" renderingStyle="lifelike">
+    <Direction color="0,142,194" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="0,153,63" name="green" orbit="[[2,-1,1],[5,-3,1]]"/>
+    <Direction color="154,117,74" name="sand" orbit="[[-8,5,1],[5,-3,1]]"/>
+    <Direction color="18,73,48" name="spruce" orbit="[[-5,4,11],[-5,4,11]]"/>
+    <Direction color="217,18,24" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+    <Direction color="255,126,106" name="coral" orbit="[[-3,2,2],[-1,1,2]]"/>
+    <Direction color="50,50,50" name="black" orbit="[[-2,3,11],[-7,5,11]]"/>
+    <Direction color="117,0,50" name="maroon" orbit="[[5,-3,1],[0,0,1]]"/>
+    <Direction color="255,179,26" name="yellow" orbit="[[0,0,1],[2,-1,1]]"/>
+    <Direction color="239,245,61" name="sulfur" orbit="[[-1,1,3],[0,0,1]]"/>
+    <Direction color="255,51,143" name="rose" orbit="[[0,0,1],[-4,3,5]]"/>
+    <Direction color="0,179,161" name="turquoise" orbit="[[2,-1,2],[-3,2,2]]"/>
+    <Direction color="116,195,0" name="apple" orbit="[[2,-1,3],[-1,1,3]]"/>
+    <Direction color="136,37,0" name="cinnamon" orbit="[[5,-3,2],[2,-1,2]]"/>
+    <Direction color="125,54,211" name="purple" orbit="[[2,-1,1],[0,0,1]]"/>
+    <Direction color="235,82,0" name="orange" orbit="[[-4,3,5],[3,-1,5]]"/>
+    <Direction color="0,0,153" name="navy" orbit="[[-1,1,2],[2,-1,2]]"/>
+    <Direction color="107,53,26" name="brown" orbit="[[2,-1,3],[5,-3,3]]"/>
+    <Direction color="175,135,255" name="lavender" orbit="[[-3,2,1],[-3,2,1]]"/>
+    <Direction color="100,113,0" name="olive" orbit="[[3,-1,5],[0,0,1]]"/>
+    </SymmetrySystem>
+    <OtherSymmetries>
+    <SymmetrySystem name="octahedral" renderingStyle="trapezoids">
+        <Direction color="0,142,194" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+        <Direction color="175,135,255" name="lavender" orbit="[[1,2,1],[-1,0,1]]"/>
+        <Direction color="0,179,161" name="turquoise" orbit="[[-1,2,1],[1,-2,1]]"/>
+        <Direction color="50,50,50" name="black" orbit="[[0,1,1],[1,-1,1]]"/>
+        <Direction color="0,153,63" name="green" orbit="[[0,0,1],[-1,0,1]]"/>
+        <Direction color="100,113,0" name="olive" orbit="[[1,0,1],[3,-2,1]]"/>
+        <Direction color="117,0,50" name="maroon" orbit="[[-1,2,1],[1,0,1]]"/>
+        <Direction color="107,53,26" name="brown" orbit="[[1,0,1],[-2,0,1]]"/>
+        <Direction color="255,179,26" name="yellow" orbit="[[1,0,1],[-1,0,1]]"/>
+        <Direction color="217,18,24" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+        <Direction color="125,54,211" name="purple" orbit="[[0,0,1],[2,-1,1]]"/>
+    </SymmetrySystem>
+    </OtherSymmetries>
+    </vzome:vZome>
+    `
+    </script>
+    <script id="template-3" type="text/xmldata">`
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="116" field="golden" version="7.1">
+    <EditHistory editNumber="0" lastStickyEdit="40">
+    <StrutCreation anchor="0 0 0 0 0 0" dir="green" index="0" len="2 2"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="green" index="1" len="2 2"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="green" index="2" len="2 2"/>
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="IGNORE" struts="SELECT"/>
+    <Parallelepiped/>
+    <DeselectAll/>
+    <BeginBlock/>
+    <SelectAll originLast="true"/>
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="DESELECT" struts="IGNORE"/>
+    <InvertSelection/>
+    <EndBlock/>
+    <Hide/>
+    <AdjustSelectionByClass balls="SELECT" originLast="true" panels="IGNORE" struts="IGNORE"/>
+    <BookmarkTool name="tool-0"/>
+    <NewCentroid/>
+    <ApplyTool copyColors="true" name="tool-0" selectInputs="true"/>
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="IGNORE" struts="SELECT"/>
+    <Hide/>
+    <SelectAll originLast="true"/>
+    <ApplyTool copyColors="true" name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <TranslationTool name="tool-1"/>
+    <ShowHidden/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectAll originLast="true"/>
+    <EndBlock/>
+    <ApplyTool copyColors="true" deleteInputs="true" name="tool-1"/>
+    <DeselectAll/>
+    <ApplyTool copyColors="true" name="bookmark.builtin/ball at origin" selectInputs="true"/>
+    <Delete/>
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="SELECT" struts="IGNORE"/>
+    <BookmarkTool name="tool-2"/>
+    <InvertSelection/>
+    <BookmarkTool name="tool-3"/>
+    <Delete/>
+    <Snapshot id="0"/>
+    <SelectAll originLast="true"/>
+    <Delete/>
+    <ApplyTool copyColors="true" name="tool-3" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="1"/>
+    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
+    <DeselectAll/>
+
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="SELECT" struts="IGNORE"/>
+    <Hide/>
+    <SelectAll originLast="true"/>
+    <JoinPoints closedLoop="false" joinMode="ALL_POSSIBLE"/>
+    <DeselectAll/>
+    <ShowHidden/>
+    <DeselectAll/>
+
+    </EditHistory>
+    <notes>
+    <page snapshot="0" title="Faces">
+        <ViewModel distance="75.0" far="150.0" near="0.19" parallel="false" stereoAngle="0.0" width="35.0">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.40824830532073975" y="0.8164966106414795" z="-0.40824830532073975"/>
+        <LookDirection x="-0.5773502588272095" y="-0.5773502588272095" z="-0.5773502588272095"/>
+        </ViewModel>
+        <content xml:space="preserve"/>
+    </page>
+    <page snapshot="1" title="Edges">
+        <ViewModel distance="75.0" far="150.0" near="0.19" parallel="false" stereoAngle="0.0" width="35.0">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.40824830532073975" y="0.8164966106414795" z="-0.40824830532073975"/>
+        <LookDirection x="-0.5773502588272095" y="-0.5773502588272095" z="-0.5773502588272095"/>
+        </ViewModel>
+        <content xml:space="preserve"/>
+    </page>
+    </notes>
+    <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+    </sceneModel>
+    <Viewing>
+    <ViewModel distance="75.0" far="150.0" near="0.19" parallel="false" stereoAngle="0.0" width="35.0">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.40824830532073975" y="0.8164966106414795" z="-0.40824830532073975"/>
+        <LookDirection x="-0.5773502588272095" y="-0.5773502588272095" z="-0.5773502588272095"/>
+    </ViewModel>
+    </Viewing>
+    <SymmetrySystem name="icosahedral" renderingStyle="lifelike">
+    <Direction color="0,142,194" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="0,153,63" name="green" orbit="[[2,-1,1],[5,-3,1]]"/>
+    <Direction color="154,117,74" name="sand" orbit="[[-8,5,1],[5,-3,1]]"/>
+    <Direction color="18,73,48" name="spruce" orbit="[[-5,4,11],[-5,4,11]]"/>
+    <Direction color="217,18,24" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+    <Direction color="255,126,106" name="coral" orbit="[[-3,2,2],[-1,1,2]]"/>
+    <Direction color="50,50,50" name="black" orbit="[[-2,3,11],[-7,5,11]]"/>
+    <Direction color="117,0,50" name="maroon" orbit="[[5,-3,1],[0,0,1]]"/>
+    <Direction color="255,179,26" name="yellow" orbit="[[0,0,1],[2,-1,1]]"/>
+    <Direction color="239,245,61" name="sulfur" orbit="[[-1,1,3],[0,0,1]]"/>
+    <Direction color="255,51,143" name="rose" orbit="[[0,0,1],[-4,3,5]]"/>
+    <Direction color="0,179,161" name="turquoise" orbit="[[2,-1,2],[-3,2,2]]"/>
+    <Direction color="116,195,0" name="apple" orbit="[[2,-1,3],[-1,1,3]]"/>
+    <Direction color="136,37,0" name="cinnamon" orbit="[[5,-3,2],[2,-1,2]]"/>
+    <Direction color="125,54,211" name="purple" orbit="[[2,-1,1],[0,0,1]]"/>
+    <Direction color="235,82,0" name="orange" orbit="[[-4,3,5],[3,-1,5]]"/>
+    <Direction color="0,0,153" name="navy" orbit="[[-1,1,2],[2,-1,2]]"/>
+    <Direction color="107,53,26" name="brown" orbit="[[2,-1,3],[5,-3,3]]"/>
+    <Direction color="175,135,255" name="lavender" orbit="[[-3,2,1],[-3,2,1]]"/>
+    <Direction color="100,113,0" name="olive" orbit="[[3,-1,5],[0,0,1]]"/>
+    </SymmetrySystem>
+    <OtherSymmetries>
+    <SymmetrySystem name="octahedral" renderingStyle="trapezoids">
+        <Direction color="0,142,194" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+        <Direction color="175,135,255" name="lavender" orbit="[[1,2,1],[-1,0,1]]"/>
+        <Direction color="0,179,161" name="turquoise" orbit="[[-1,2,1],[1,-2,1]]"/>
+        <Direction color="50,50,50" name="black" orbit="[[0,1,1],[1,-1,1]]"/>
+        <Direction color="0,153,63" name="green" orbit="[[0,0,1],[-1,0,1]]"/>
+        <Direction color="100,113,0" name="olive" orbit="[[1,0,1],[3,-2,1]]"/>
+        <Direction color="117,0,50" name="maroon" orbit="[[-1,2,1],[1,0,1]]"/>
+        <Direction color="107,53,26" name="brown" orbit="[[1,0,1],[-2,0,1]]"/>
+        <Direction color="255,179,26" name="yellow" orbit="[[1,0,1],[-1,0,1]]"/>
+        <Direction color="217,18,24" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+        <Direction color="125,54,211" name="purple" orbit="[[0,0,1],[2,-1,1]]"/>
+    </SymmetrySystem>
+    </OtherSymmetries>
+    <Tools>
+    <Tool copyColors="true" deleteInputs="false" id="tool-0" label="vertices" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="true" id="tool-1" label="translation 1" selectInputs="false"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-2" label="Faces" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-3" label="Edges" selectInputs="true"/>
+    </Tools>
+    </vzome:vZome>
+    `
+    </script>
+</head>
+<body>
+    <div class="main">
+    <h1>vZome Parallelepiped Generator</h1>
+    <div id="viewer-container">
+        <vzome-viewer id="viewer" reactive="false"></vzome-viewer>
+    </div>
+        <div class="controls">
+            <div class="output-container">
+            <label class="n"><output id="message"></output></label>
+            </div>
+            <div class="axis-picker">
+            <axis-picker id="axis-0" orbit="blue", index="0"></axis-picker>
+            <axis-picker id="axis-1" orbit="red", index="1"></axis-picker>
+            <axis-picker id="axis-2" orbit="yellow", index="2"></axis-picker>
+            </div>
+            <div class="editNumber-container">
+            <label class="n">
+                <input type="range" id="editNumber" min="0" max="50" value="43" list="ticks">
+                <output id="out-editNumber">0</output>
+            </label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

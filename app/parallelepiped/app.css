@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 24px;
+}
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1ch;
+}
+#viewer-container {
+  height: 65vh;
+  width: 100vh;
+}
+#viewer {
+  height:100%;
+  width: 100%;
+}
+label,
+.output-container {
+  display: flex;
+  height: 3ch;
+  justify-content: center;
+  align-items: center;
+}
+input[type="range"] {
+  width: 100%;
+}
+output {
+  min-width: 2ch;
+  display: inline-block;
+  white-space: nowrap;
+}
+input,
+label {
+  padding: 0.5ch;
+  margin: 0.25ch;
+}
+label.n {
+  width: 100%;
+  min-width: 15ch;
+  text-align: right;
+}
+.editNumber-container,
+.output-container{
+  background-color: whitesmoke;
+}
