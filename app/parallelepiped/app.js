@@ -20,8 +20,7 @@ async function refresh() {
     const regex = /editNumber="(\d+)"/
     const match = template.match(regex)
     if (match && match.length > 1) {
-        const oldEditNumber = match[1] // 
-        console.log(oldEditNumber)
+        const oldEditNumber = match[1]
         // It's OK for the viewer if editNumber is larger than the total number of edits,
         // but I'll limit it in case the file is downloaded to desktop, which is a bit pickier.
         const newEditNumber = document.getElementById("editNumber").value
@@ -30,7 +29,7 @@ async function refresh() {
             template = template.replace(`editNumber="${oldEditNumber}"`, `editNumber="${newEditNumber}"`)
         }
     }
-    
+
     // Adjust template directions
     directionValues.forEach((value, i) => {
         const {orbit, axis, len, zomic} = value
@@ -53,8 +52,8 @@ async function refresh() {
     // but if it's not trimmed, then a vZome file downloaded from the current version of the viewer
     // will fail to opened in desktop because that XML parser can't handle leading whitespace.
     // TODO: The viewer itself should trim anything rec'd by loadFromText()
-    template = template.trim() 
-    
+    template = template.trim()
+
     const filename = `Parallelepiped-${directionValues.map(value => `${value.orbit}_${value.axis}`).join('-')}.vZome`
     // update the viewer
     const viewer = document.getElementById("viewer")
