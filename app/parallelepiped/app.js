@@ -61,22 +61,33 @@ async function refresh() {
     // We use Promise.resolve rather than await
     // so we can be sure there is a .then() method
     // when using this code with older versions of the viewer.
-    Promise.resolve(viewer.loadFromText(filename, template))
-        .then(results => {
-            if(results !== undefined) {
-                console.log(results)
-            }
-            if(viewer.reactive == 'false') {
-                viewer.update({camera:false})
-            }
-        })
-        .catch(error => {
-            console.error(error)
-            alert(error)
-            // TODO: Implement a retry that doesn't choke the viewer
-            // console.log(`Retrying refresh() in ${retryInterval} mSec.`)
-            // setTimeout(refresh, retryInterval)
-        })
+    // Promise.resolve(viewer.loadFromText(filename, template))
+    //     .then(results => {
+    //         if(results !== undefined) {
+    //             console.log(results)
+    //         }
+    //         if(viewer.reactive == 'false') {
+    //             viewer.update({camera:false})
+    //         }
+    //     })
+    //     .catch(error => {
+    //         console.error(error)
+    //         alert(error)
+    //         // TODO: Implement a retry that doesn't choke the viewer
+    //         // console.log(`Retrying refresh() in ${retryInterval} mSec.`)
+    //         // setTimeout(refresh, retryInterval)
+    //     })
+
+    // Let's use a dataURL instead of a BlobURL or loadFromText()
+    const mimeType = "text/plain"
+    // Combine into a Data URL and add the filename using the hitchhiker method (after #/)
+    // const dataUrl = `data:${mimeType};base64,${ btoa(template)}#/${encodeURIComponent(filename)}`
+    const dataUrl = `data:${mimeType};charset=utf-8,${encodeURIComponent(template)}#/${encodeURIComponent(filename)}`
+    console.log(`DataUrl length = ${dataUrl.length}. Chrome's limit is 512 MB.`)
+    viewer.src = dataUrl
+    if(viewer.reactive == 'false') {
+        viewer.update({camera:false})
+    }
 }
 
 window.addEventListener("load", () => {
