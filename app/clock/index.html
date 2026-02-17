@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Hall">
+    <meta name="description" content="Zometool digital clock">
+    <meta property="og:title" content="Zome Clock">
+    <meta property="og:description" content="Zometool digital clock">
+    <meta property="og:image" content="./card-image.png">
+    <meta property="og:type" content="article">
+    <meta property="og:article:author" content="David Hall">
+    <meta property="og:article:published_time" content="2026-02-17T00:00:00-00:00">
+    <meta property="og:url" content="https://david-hall.github.io/vzome-sharing/app/clock/">
+    <title>Zome Clock</title>
+    <link rel="canonical" href="https://david-hall.github.io/vzome-sharing/app/clock/">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"><!-- dev -->
+	<link rel="shortcut icon" type="image/x-icon" href="/vzome-sharing/favicon.ico"><!-- live -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <style>
+html, body {
+    height: 100%;
+    margin: 0; /* Removes default browser margin */
+}
+
+body {
+    background-color: rgb(140 194 231); /* viewer's default background is rgb(140 194 231) */
+}
+
+div {
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Stacks the children vertically */
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+}
+
+#btn {
+    background-color: rgba(0, 0, 0, 0.05); /* Semi-transparent normally */
+    transition: background-color 0.25s ease; /* Smooth transition for the effect */
+    border-radius: 8px;
+    height: 3ch;
+    visibility: hidden;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+}
+#btn:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* More opaque on hover */
+}
+
+#viewer-7segment {
+    width: 100vw;
+    height: calc(99vh - 3ch);
+}
+    </style>
+    <script type="module" src="https://www.vzome.com/modules/vzome-viewer.js"></script>
+    <script id="template-7segment" type="text/xmldata">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="116" field="golden" version="7.1">
+  <EditHistory editNumber="4" lastStickyEdit="-1">
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <Delete/>
+    <LoadVEF projection="Quaternion" quaternion="1 0 0 0 0 0 0 0" scale="1 0">vZome VEF 6 field golden
+4
+(0,0) (-7,-9/2) (-3/2,-1) (-1,-1/2)
+(0,0) (-7,-9/2) (3/2,1) (1,1/2)
+(0,0) (7,9/2) (-3/2,-1) (-1,-1/2)
+(0,0) (7,9/2) (3/2,1) (1,1/2)
+
+0
+
+0
+
+4
+0 1 2 3 
+</LoadVEF>
+    <RunZomicScript>
+/*
+    Position the cursor 3 chars to the left of center
+        minus half of the inter-character spacing between MM.
+    Characters remain centered vertically on the origin.
+*/
+move
+half blue -2
+short half blue -2
+blue -2
+blue -2
+build orange 0
+</RunZomicScript>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="140,194,231">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="214.62225341796875" far="429.2443542480469" near="0.5365555286407471" parallel="false" stereoAngle="0.0" width="96.57998657226562">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.0" y="1.0" z="0.0"/>
+      <LookDirection x="0.0" y="0.0" z="-1.0"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="icosahedral" renderingStyle="lifelike">
+    <Direction color="0,142,194" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="0,153,63" name="green" orbit="[[2,-1,1],[5,-3,1]]"/>
+    <Direction color="217,18,24" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+    <Direction color="255,179,26" name="yellow" orbit="[[0,0,1],[2,-1,1]]"/>
+  </SymmetrySystem>
+  <Tools/>
+</vzome:vZome>
+    </script>
+    <script>
+        function randomJitter() {
+            const range = 0.005 // radians
+            return  Math.sin(Math.random() * (2*range) - range)
+        }
+
+        function onTick() {
+            const now = new Date();
+            // Ensure that we always have exactly 6 digits using a 12 hr clock
+            // regardless of the time of day and local time format.
+            // e.g. 01:23:45 instead of 1:23:45
+            const timeString = now.toLocaleString('en-US', {
+                hour12: true,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            })
+            const timeDigits = timeString.replace(/\D/g, "")
+            // const timeDigits = "012345" // TODO: use this for the metadata image capture
+            const zomic = getZomicDigits(timeDigits)
+            const filename = `Zome-Clock-${timeDigits}.vZome`
+            const jit = randomJitter()
+            const template = document.getElementById("template-7segment").textContent
+                .replace("build orange 0", zomic)
+                // not quite a perfect rotation on the unit sphere, but close enough for a slight jitter
+                .replace('UpDirection x="0.0" y="1.0" z="0.0"', `UpDirection x="${jit}" y="${1-jit}" z="${-jit}"`)
+                .replace('LookDirection x="0.0" y="0.0" z="-1.0"', `LookDirection x="${jit}" y="${-jit}" z="${jit-1}"`)
+            // TODO: We could schedule 2 ticks per second which would let
+            // us leisurely build the template in the last half of the cycle
+            // so it's ready to send to the viewer in the first half cycle
+            // as seconds approaches a transition.
+            // TODO: Cache viewer as a member variable if we are in a class method
+            const viewer = document.getElementById("viewer-7segment")
+            // Older versions of the viewer didn't return a promise.
+            // We use Promise.resolve rather than await
+            // so we can be sure there is a .then() method
+            // when using this code with older versions of the viewer.
+            Promise.resolve(viewer.loadFromText(filename, template.trim()))
+                .then(results => {
+                    if(results !== undefined) {
+                        console.log(results)
+                    }
+                    if(viewer.reactive == 'false') {
+                        viewer.update({camera: false})
+                    }
+                    // Log the dataUrl even though we aren't otherwise using it in any way
+                    // because the console will render it as a link
+                    // and we can click it to show the whole string in a new tab.
+                    // Appending the filename after the /# is a freebee hack
+                    const dataUrl = `data:text/plain;charset=utf-8,${encodeURIComponent(template.trim())}#/${encodeURIComponent(filename)}`
+                    // Using console.debug instead of console.log lets us easily filter out all of these messages in the console
+                    console.debug(dataUrl)
+                })
+                .catch(error => {
+                    console.error(error)
+                })
+                .finally(() => {
+                    // Only schedule the next tick after loadFromText() completes.
+                    // Hopefully this avoids the viewer throwing
+                    // Error: loadFromText ignored; Waiting for previous design to load
+                    scheduleNextTick()
+                })
+        }
+
+        function getZomicDigits(digitString) {
+            const digits = digitString.split("")
+            return `
+    short half blue -2              /* negate the space between HH : MM to stay centered */
+${getZomicDigit(digits[0])}
+${getZomicDigit(digits[1])}
+    short half blue 2               /* space between HH : MM */
+${getZomicDigit(digits[2])}
+${getZomicDigit(digits[3])}
+    short half blue 2               /* space between MM : SS */
+${getZomicDigit(digits[4])}
+${getZomicDigit(digits[5])}`
+        }
+
+        let zomicFontCache = []
+        function getZomicDigit(digit) {
+            if(!zomicFontCache[digit]) {
+            /*
+                +---1---+
+                |       |
+                0       2
+                |       |
+Start here ===> *---6---+    * <=== End here, ready for next char
+                |       |
+                5       3
+                |       |
+                +---4---+
+
+            font array contains the action (0 or 1 = "move " or "build") for each of the 7 segments:
+            */
+            const font = [
+                [1,1,1,1,1,1,0], // 0
+                [0,0,1,1,0,0,0], // 1
+                [0,1,1,0,1,1,1], // 2
+                [0,1,1,1,1,0,1], // 3
+                [1,0,1,1,0,0,1], // 4
+                [1,1,0,1,1,0,1], // 5
+                [1,1,0,1,1,1,1], // 6
+                [0,1,1,1,0,0,0], // 7
+                [1,1,1,1,1,1,1], // 8
+                [1,1,1,1,0,0,1], // 9
+            ]
+            const segments = font[+digit]
+            const act = ["move ", "build"]
+            const n = "short red   +1" // "short blue  +5" or "short red   +1"
+            const s = "short red   -1" // "short blue  -5" or "short red   -1"
+            const e = "short blue  +2"
+            const w = "short blue  -2"
+            zomicFontCache[digit] = `
+// ${digit}
+${act[segments[0]]} ${n}
+${act[segments[1]]} ${e}
+${act[segments[2]]} ${s}
+${act[segments[3]]} ${s}
+${act[segments[4]]} ${w}
+${act[segments[5]]} ${n}
+${act[segments[6]]} ${e}
+    move blue 2 short blue -2       /* get ready for next character */`
+            }
+            return zomicFontCache[digit]
+        }
+
+        let timerId
+        function scheduleNextTick() {
+            const now = new Date();
+            // 1. Target the very next second
+            const nextTick = new Date(now);
+            nextTick.setSeconds(now.getSeconds() + 1);
+            const targetDelay = 0
+            nextTick.setMilliseconds(targetDelay); // offset from 0 msec
+
+            // 2. Calculate how long to wait from 'now' to hit that target
+            // but make sure it's not too short of a time between frames
+            // so the viewer isn't trying to process a recent update
+            // that was sent just before the seconds incremented
+            // e.g. 990 msec then again at 0 mSec is too close together.
+            // This can happen in the first couple of frames after resuming the ticks.
+            // Having a min of 950 makes the tick interval gradually sync with real tine
+            // over no more than 20 ticks, typically fewer than 10.
+            const delay = Math.max(950, nextTick.getTime() - Date.now())
+            // 3. Schedule the next call
+            timerId = setTimeout(onTick, delay)
+        }
+
+        window.addEventListener("load", () => {
+             document.getElementById("btn").addEventListener("click", (event) => {
+                const {target} = event
+                target.style.visibility = "visible"
+                if(timerId) {
+                    clearTimeout(timerId)
+                    timerId = undefined
+                    target.textContent = ">>"
+                } else {
+                    target.textContent = "||"
+                    scheduleNextTick()
+                }
+            })
+            // Delay the initial call to render the clock so the viewer has some time to initialize its internal API
+            setTimeout(() => document.getElementById("btn").dispatchEvent(new Event('click', { bubbles: true })), 4000)
+        } )
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="controls">
+             <button id="btn"></button>
+        </div>
+        <div id="viewer-container">
+            <vzome-viewer id="viewer-7segment" reactive="false" show-settings="false" tween-duration="900"></vzome-viewer>
+        </div>
+    </div>
+</body>
+</html>
