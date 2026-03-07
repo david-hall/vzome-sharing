@@ -1,5 +1,5 @@
 ---
-title: IcosaDodecahdron Starter Green Helix
+title: IcosaDodecahedron Starter Green Helix
 description: A 3D design created in vZome.  Use your mouse or touch to interact.
 image: https://david-hall.github.io/vzome-sharing/2026/03/07/15-25-19-IcosaDodec-Starter-GreenHelix/IcosaDodec-Starter-GreenHelix.png
 published: true
@@ -24,6 +24,6 @@ A 3D design created in vZome.  Use your mouse or touch to interact.
   </vzome-viewer>
 
   <figcaption style="text-align: center; font-style: italic;">
-    IcosaDodecahdron Starter Green Helix
+    IcosaDodecahedron Starter Green Helix
   </figcaption>
 </figure>
