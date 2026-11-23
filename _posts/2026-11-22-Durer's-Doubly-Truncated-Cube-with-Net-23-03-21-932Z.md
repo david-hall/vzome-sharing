@@ -31,7 +31,7 @@ A 2D net of a doubly truncated cube, originally by Albrecht Durer
 Albrecht Durer was one of the first renaissance artists to use 2D nets to describe 3D polyhedra. George Hart has a [short article](https://www.georgehart.com/virtual-polyhedra/durer.html) describing three of Durer's noteworthy polyhedral nets. The article mentions that Durer's net of the doubly truncated cube has some significant geometric errors. Hart also notes that this particular polyhedron can be inscribed in a sphere by ensuring that the dodecagons are regular. Although the article includes 3D models of two of Durer's polyhedra, it did not include a model of the doubly truncated cube. I was [nerd-sniped](https://xkcd.com/356/) by the article and this vZome article is the result.
 
 
-The 2D net shown in this design avoids the errors in Durer's original work.
+The 2D net shown in this design corrects the errors in Durer's original work.
 
 
 The doubly truncated cube can be generated in the **ℚ[√3]** algebraic field. However, its net requires √7 to be adjoined in addition. vZome does not (yet) support the **ℚ[√3, √7]** algebraic field directly, however, both roots can be generated in the polygon42 algebraic field which is how this design was generated. The dodecagon's edges are scaled to a length of 8 which results in all coordinates having integer coefficients, so this particular design needs only **ℤ[√3, √7]**.
